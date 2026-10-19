@@ -4,7 +4,8 @@
             {
                 "parent": { "id": "490G000866" },
                 "disassembledName": "Swa",
-                "properties": { "areaId": "0", "areaType": 97 }
+                "properties": { "areaId": "0", "areaType": 97 },
+                "transportations": [{ "product": { "class": 5 } }]
             },
             {
                 "parent": { "id": "490G00015176" },
@@ -14,12 +15,14 @@
             {
                 "parent": { "id": "940GZZLUSKS" },
                 "disassembledName": "Bus",
-                "properties": { "areaId": "1", "areaType": 97 }
+                "properties": { "areaId": "1", "areaType": 97 },
+                "transportations": [{ "product": { "class": 5 } }]
             },
             {
                 "parent": { "id": "940GZZLUSKS" },
                 "disassembledName": "DistE",
-                "properties": { "areaId": "2", "areaType": 81 }
+                "properties": { "areaId": "2", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUSKS" },
@@ -29,12 +32,14 @@
             {
                 "parent": { "id": "940GZZLUSKS" },
                 "disassembledName": "PicEB",
-                "properties": { "areaId": "4", "areaType": 81 }
+                "properties": { "areaId": "4", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUSKS" },
                 "disassembledName": "PicWB",
-                "properties": { "areaId": "5", "areaType": 81 }
+                "properties": { "areaId": "5", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUSKS" },
@@ -64,7 +69,8 @@
             {
                 "parent": { "id": "940GZZLUSKS" },
                 "disassembledName": "DistW",
-                "properties": { "areaId": "11", "areaType": 81 }
+                "properties": { "areaId": "11", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUSKS" },

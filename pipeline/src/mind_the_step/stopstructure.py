@@ -14,6 +14,7 @@ the NaPTAN id and the ICS code return identical responses.
 from __future__ import annotations
 
 import gzip
+import json
 from pathlib import Path
 
 import httpx
@@ -32,29 +33,64 @@ BASE_PARAMS = {
 }
 
 
-def station_ids(stop_points_payload) -> list[str]:
-    """NaPTAN ids of the stations in a ``/StopPoint/Mode`` response."""
+def station_queries(stop_points_payload) -> dict[str, list[str]]:
+    """NaPTAN id -> ids to try, in order, for the stations in a ``/StopPoint/Mode`` response.
+
+    Stations that share an interchange with other modes (Bank, Euston, Stratford...) return
+    an empty structure for their own id; theirs is filed under the hub (``HUB...``). The ICS
+    code is a last resort.
+    """
     stops = (stop_points_payload or {}).get("stopPoints", [])
-    return sorted(
-        sp["naptanId"]
-        for sp in stops
-        if sp.get("stopType") in ("NaptanMetroStation", "NaptanRailStation")
-        and isinstance(sp.get("naptanId"), str)
-        and sp["naptanId"].isalnum()
-    )
+    queries = {}
+    for sp in stops:
+        naptan = sp.get("naptanId")
+        if sp.get("stopType") not in ("NaptanMetroStation", "NaptanRailStation"):
+            continue
+        if not isinstance(naptan, str) or not naptan.isalnum():
+            continue
+        candidates = [naptan, sp.get("hubNaptanCode"), sp.get("icsCode")]
+        queries[naptan] = [
+            c for c in dict.fromkeys(candidates) if isinstance(c, str) and c.isalnum()
+        ]
+    return dict(sorted(queries.items()))
+
+
+def _has_areas(body: bytes) -> bool:
+    try:
+        return bool((json.loads(body).get("stop") or {}).get("areas"))
+    except (ValueError, AttributeError):
+        return False
 
 
 def fetch_all(
-    client: httpx.Client, app_key: str, day_dir: Path, files: dict, naptan_ids: list[str]
+    client: httpx.Client, app_key: str, day_dir: Path, files: dict, queries: dict[str, list[str]]
 ) -> None:
-    """Fetch each station's topology into ``stopstructure/<naptanId>.json.gz``."""
+    """Fetch each station's topology into ``stopstructure/<naptanId>.json.gz``.
+
+    Tries each candidate id until one returns areas; the manifest records which one did, or
+    that none did (the last response is still saved).
+    """
     out = day_dir / "stopstructure"
     out.mkdir(parents=True, exist_ok=True)
-    for naptan in naptan_ids:
-        url = str(httpx.URL(ENDPOINT, params={**BASE_PARAMS, "sSStopNr": naptan}))
-        result = fetch(client, app_key, url=url)
+    for naptan, candidates in queries.items():
+        entry, body = None, None
+        for stop_id in candidates:
+            url = str(httpx.URL(ENDPOINT, params={**BASE_PARAMS, "sSStopNr": stop_id}))
+            result = fetch(client, app_key, url=url)
+            entry = manifest_entry(url, result)
+            entry["queried_as"] = stop_id
+            if result.body is None:
+                continue
+            body = result.body
+            if _has_areas(body):
+                break
+        else:
+            if entry is not None and body is not None:
+                entry["empty"] = True
         name = f"{naptan}.json.gz"
-        files[f"stopstructure/{name}"] = manifest_entry(url, result)
-        if result.body is not None:
+        if entry is not None:
+            entry["ok"] = body is not None
+            files[f"stopstructure/{name}"] = entry
+        if body is not None:
             with gzip.open(out / name, "wb") as f:
-                f.write(result.body)
+                f.write(body)

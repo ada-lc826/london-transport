@@ -9,17 +9,20 @@
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "JubNB",
-                "properties": { "areaId": "2", "areaType": 81 }
+                "properties": { "areaId": "2", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "JubSB",
-                "properties": { "areaId": "3", "areaType": 81 }
+                "properties": { "areaId": "3", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "MET6",
-                "properties": { "areaId": "4", "areaType": 81 }
+                "properties": { "areaId": "4", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUWYP" },
@@ -34,7 +37,8 @@
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "Met5",
-                "properties": { "areaId": "7", "areaType": 81 }
+                "properties": { "areaId": "7", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             },
             {
                 "parent": { "id": "940GZZLUWYP" },
@@ -54,12 +58,14 @@
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "Bus",
-                "properties": { "areaId": "11", "areaType": 97 }
+                "properties": { "areaId": "11", "areaType": 97 },
+                "transportations": [{ "product": { "class": 5 } }, { "product": { "class": 11 } }]
             },
             {
                 "parent": { "id": "940GZZLUWYP" },
                 "disassembledName": "Met2",
-                "properties": { "areaId": "12", "areaType": 81 }
+                "properties": { "areaId": "12", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
             }
         ],
         "footpaths": [

@@ -68,7 +68,7 @@ def snapshot(client: httpx.Client, app_key: str, out_dir: Path, now: datetime) -
         app_key,
         day_dir,
         manifest["files"],
-        stopstructure.station_ids(stop_points["tube"]),
+        stopstructure.station_queries(stop_points["tube"]),
     )
 
     (day_dir / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n", encoding="utf-8")

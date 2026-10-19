@@ -4,7 +4,7 @@ from datetime import UTC, datetime
 
 import httpx
 
-from mind_the_step import lifts, snapshot
+from mind_the_step import lifts, snapshot, stopstructure
 
 NOW = datetime(2026, 10, 19, 9, 0, tzinfo=UTC)
 OPEN_DATA_HTML = '<a href="https://content.tfl.gov.uk/topology.zip">Station topology files</a>'
@@ -128,3 +128,42 @@ def test_main_tolerates_best_effort_failures(tmp_path, monkeypatch):
     }
     monkeypatch.setattr(snapshot, "snapshot", lambda client, key, out, now: {"files": files})
     assert snapshot.main(["--out", str(tmp_path)]) == 0
+
+
+def test_stopstructure_falls_back_to_the_hub(tmp_path, monkeypatch):
+    no_sleep(monkeypatch)
+    seen = []
+
+    def handler(request: httpx.Request):
+        stop_id = request.url.params["sSStopNr"]
+        seen.append(stop_id)
+        areas = [{"id": "a"}] if stop_id == "HUBBAN" else []
+        return httpx.Response(200, json={"stop": {"areas": areas}})
+
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    stops = {
+        "stopPoints": [
+            {
+                "naptanId": "940GZZLUBNK",
+                "stopType": "NaptanMetroStation",
+                "hubNaptanCode": "HUBBAN",
+                "icsCode": "1000013",
+            },
+            {"naptanId": "940GZZLUXXX", "stopType": "NaptanMetroStation", "icsCode": "1000999"},
+            {"naptanId": "9400ZZLUBNK1", "stopType": "NaptanMetroPlatform"},
+        ]
+    }
+    files = {}
+    queries = stopstructure.station_queries(stops)
+    assert queries == {
+        "940GZZLUBNK": ["940GZZLUBNK", "HUBBAN", "1000013"],
+        "940GZZLUXXX": ["940GZZLUXXX", "1000999"],
+    }
+    stopstructure.fetch_all(client, "k", tmp_path, files, queries)
+
+    assert seen == ["940GZZLUBNK", "HUBBAN", "940GZZLUXXX", "1000999"]
+    assert files["stopstructure/940GZZLUBNK.json.gz"]["queried_as"] == "HUBBAN"
+    assert "empty" not in files["stopstructure/940GZZLUBNK.json.gz"]
+    assert files["stopstructure/940GZZLUXXX.json.gz"]["empty"] is True
+    with gzip.open(tmp_path / "stopstructure" / "940GZZLUBNK.json.gz", "rt") as f:
+        assert json.load(f)["stop"]["areas"] == [{"id": "a"}]
