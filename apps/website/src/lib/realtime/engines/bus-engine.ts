@@ -1,13 +1,18 @@
 import type { Store } from '@tanstack/react-store';
 
+import { isBinaryFrame } from '../clock';
 import type { BusMessage, EngineRole, EngineStoreState, HelloBusMessage } from '../types';
 
-const RECONNECT_DELAY_MS = 1_500;
+// Exponential backoff with full jitter, so 64 screens that lose the server together do not
+// all reconnect in the same instant when it comes back.
+const RECONNECT_BASE_MS = 500;
+const RECONNECT_MAX_MS = 15_000;
 
 // Shared websocket transport used by both control and screen engines.
 export abstract class BusEngine<TStoreState extends EngineStoreState = EngineStoreState> {
     private socket: WebSocket | null = null;
     private reconnectTimer: ReturnType<typeof setTimeout> | null = null;
+    private reconnectAttempts = 0;
     private readonly role: EngineRole;
     protected readonly store: Store<TStoreState>;
 
@@ -46,15 +51,20 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
         const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
         const url = `${protocol}://${window.location.host}/bus`;
         const socket = new WebSocket(url);
+        // Binary frames (clock sync) arrive as ArrayBuffer rather than Blob, so they can be read
+        // synchronously.
+        socket.binaryType = 'arraybuffer';
         this.socket = socket;
 
         socket.onopen = () => {
             if (this.socket !== socket) return;
+            this.reconnectAttempts = 0;
             this.store.setState((prev) => ({
                 ...prev,
                 connection: 'open',
                 lastError: null
             }));
+            this.onOpen();
         };
 
         socket.onmessage = (event) => {
@@ -78,6 +88,7 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
                 ...prev,
                 connection: 'closed'
             }));
+            this.onClose();
             this.scheduleReconnect();
         };
     }
@@ -85,6 +96,23 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
     send(message: BusMessage) {
         if (!this.socket || this.socket.readyState !== WebSocket.OPEN) return;
         this.socket.send(JSON.stringify(message));
+    }
+
+    sendBinary(frame: ArrayBuffer) {
+        if (!this.socket || this.socket.readyState !== WebSocket.OPEN) return;
+        this.socket.send(frame);
+    }
+
+    protected onOpen() {
+        // Hook for work that needs an open socket (e.g. clock sync).
+    }
+
+    protected onClose() {
+        // Hook for tearing down per-connection work.
+    }
+
+    protected onBinary(_bytes: Uint8Array) {
+        // Hook for binary frames; see `clock.ts` for the opcodes.
     }
 
     protected onMessage(_message: BusMessage) {
@@ -134,6 +162,11 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
         }
 
         if (typeof ArrayBuffer !== 'undefined' && data instanceof ArrayBuffer) {
+            const bytes = new Uint8Array(data);
+            if (isBinaryFrame(bytes)) {
+                this.onBinary(bytes);
+                return;
+            }
             const text = new TextDecoder().decode(data);
             this.processParsedMessage(text, sourceSocket);
         }
@@ -201,10 +234,15 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
 
     private scheduleReconnect() {
         if (this.reconnectTimer || !this.canUseBrowserSockets()) return;
+        const ceiling = Math.min(RECONNECT_MAX_MS, RECONNECT_BASE_MS * 2 ** this.reconnectAttempts);
+        this.reconnectAttempts += 1;
+        // Jitter is the one place randomness is fine: it only affects when we reconnect,
+        // never what a screen draws.
+        const delay = RECONNECT_BASE_MS + Math.random() * ceiling;
         this.reconnectTimer = window.setTimeout(() => {
             this.reconnectTimer = null;
             this.connect();
-        }, RECONNECT_DELAY_MS);
+        }, delay);
     }
 
     private clearReconnectTimer() {

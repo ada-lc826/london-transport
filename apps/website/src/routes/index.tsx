@@ -36,6 +36,12 @@ function HomePage() {
         });
     }, []);
 
+    // The full 16x4 wall renders in one `/world` iframe (one WebGL context); the 3x2 mode keeps
+    // the starter's one-iframe-per-screen wall for exercising the `/screen` path itself.
+    const [wallMode, setWallMode] = useState<'world' | 'mini'>('world');
+    const [devOverlay, setDevOverlay] = useState(false);
+    const devParam = devOverlay ? '&m=dev' : '';
+
     const [disconnectedById, setDisconnectedById] = useState<Record<string, boolean>>({});
     const [refreshNonceById, setRefreshNonceById] = useState<Record<string, number>>({});
     const [disconnectedControlById, setDisconnectedControlById] = useState<Record<string, boolean>>(
@@ -69,7 +75,9 @@ function HomePage() {
         const nonce = refreshNonceById[screen.id] ?? 0;
         const disconnected = disconnectedById[screen.id] ?? false;
 
-        return disconnected ? `/noop?v=${nonce}` : `/screen?c=${screen.c}&r=${screen.r}&v=${nonce}`;
+        return disconnected
+            ? `/noop?v=${nonce}`
+            : `/screen?c=${screen.c}&r=${screen.r}&layout=mini${devParam}&v=${nonce}`;
     };
 
     const toggleControlDisconnect = (id: string) => {
@@ -97,7 +105,7 @@ function HomePage() {
         <main className="mx-auto flex h-screen w-full max-w-7xl flex-col gap-4 overflow-hidden px-4 py-4 text-[var(--foreground)] md:px-6">
             <section className="flex items-center justify-between">
                 <h1 className="text-lg font-semibold tracking-tight md:text-xl">
-                    DO Dev Playground
+                    Mind the Step · DO Playground
                 </h1>
                 <button
                     type="button"
@@ -115,38 +123,65 @@ function HomePage() {
             </section>
 
             <section className="flex min-h-0 flex-col rounded-xl border border-[var(--border)] bg-[var(--muted)] p-3">
-                <div className="mb-2 flex items-center justify-between">
+                <div className="mb-2 flex items-center justify-between gap-2">
                     <h2 className="text-sm font-medium text-[var(--foreground)]">
-                        Mini-DO (2 x 3) · 1920x1080 per unit
+                        {wallMode === 'world'
+                            ? 'Full DO wall (16 x 4) · /world'
+                            : 'Mini-DO (3 x 2) · one /screen iframe per unit'}
                     </h2>
-                    <span className="rounded-full bg-[var(--primary)] px-2 py-1 text-[10px] font-medium text-[var(--primary-foreground)]">
-                        /screen
-                    </span>
+                    <div className="flex gap-1 text-[11px]">
+                        <button
+                            type="button"
+                            onClick={() => setWallMode(wallMode === 'world' ? 'mini' : 'world')}
+                            className="cursor-pointer rounded-md border border-[var(--border)] bg-[var(--card)] px-2 py-1 text-[var(--card-foreground)]"
+                        >
+                            {wallMode === 'world' ? 'Show 3 x 2 iframes' : 'Show full wall'}
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => setDevOverlay(!devOverlay)}
+                            aria-pressed={devOverlay}
+                            className="cursor-pointer rounded-md border border-[var(--border)] bg-[var(--card)] px-2 py-1 text-[var(--card-foreground)]"
+                        >
+                            Debug overlay {devOverlay ? 'on' : 'off'}
+                        </button>
+                    </div>
                 </div>
 
-                <div className="bg-back m-auto flex h-fit items-start justify-center overflow-hidden">
-                    <div className="bg-back aspect-[8/3] h-full max-h-full w-full shadow-lg">
-                        {/*
+                {wallMode === 'world' ? (
+                    <div className="aspect-[64/9] w-full overflow-hidden bg-black shadow-lg">
+                        <iframe
+                            src={`/world?bezels=1${devParam}`}
+                            title="Full wall preview"
+                            scrolling="no"
+                            className="h-full w-full border-0"
+                        />
+                    </div>
+                ) : (
+                    <div className="bg-back m-auto flex h-fit items-start justify-center overflow-hidden">
+                        <div className="bg-back aspect-[8/3] h-full max-h-full w-full shadow-lg">
+                            {/*
                           Simulator wall:
                           - each iframe acts as one physical display node
                           - controls let developers test reconnect/refresh behavior quickly
                           - opening any screen in a new tab simulates standalone deployment
                         */}
-                        <div className="grid h-full w-full grid-cols-3 grid-rows-2 gap-0">
-                            {wallScreens.map((screen) => (
-                                <MiniWallScreen
-                                    key={screen.id}
-                                    c={screen.c}
-                                    r={screen.r}
-                                    src={buildScreenSrc(screen)}
-                                    disconnected={disconnectedById[screen.id] ?? false}
-                                    onToggleDisconnect={() => toggleDisconnect(screen.id)}
-                                    onRefresh={() => refreshFrame(screen.id)}
-                                />
-                            ))}
+                            <div className="grid h-full w-full grid-cols-3 grid-rows-2 gap-0">
+                                {wallScreens.map((screen) => (
+                                    <MiniWallScreen
+                                        key={screen.id}
+                                        c={screen.c}
+                                        r={screen.r}
+                                        src={buildScreenSrc(screen)}
+                                        disconnected={disconnectedById[screen.id] ?? false}
+                                        onToggleDisconnect={() => toggleDisconnect(screen.id)}
+                                        onRefresh={() => refreshFrame(screen.id)}
+                                    />
+                                ))}
+                            </div>
                         </div>
                     </div>
-                </div>
+                )}
             </section>
 
             <section className="rounded-xl border border-[var(--border)] bg-[var(--card)] p-3">
@@ -215,7 +250,7 @@ function HomePage() {
                                     </button>
                                 </div>
                             </div>
-                            <div className="h-[25vh] min-h-[110px] bg-[var(--card)]">
+                            <div className="h-[34vh] min-h-[220px] bg-[var(--card)]">
                                 <iframe
                                     src={buildControlSrc(panel)}
                                     title={panel.label}

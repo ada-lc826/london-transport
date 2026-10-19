@@ -1,6 +1,6 @@
 import { throttle } from '@tanstack/pacer';
 
-import { loadArcSegmentsDataset } from '../arc-segments';
+import { isSceneId, type SceneId } from '../../../scenes/scene-state';
 import { getCityMapView, isMapCity } from '../map-cities';
 import { controlStore } from '../stores/control-store';
 import type {
@@ -9,8 +9,8 @@ import type {
     ControlStoreState,
     HelloBusMessage,
     MapCity,
-    ScreenMapViewMessage,
-    ScreenSegmentSelectionMessage
+    SceneStateMessage,
+    ScreenMapViewMessage
 } from '../types';
 import { BusEngine } from './bus-engine';
 
@@ -19,12 +19,8 @@ const SLIDER_MIN = 0;
 const SLIDER_MAX = 100;
 const MAP_ZOOM_MIN = 6;
 const MAP_ZOOM_MAX = 18;
-const DEFAULT_SHUFFLE_SELECTION_COUNT = 24;
 
 export class ControlEngine extends BusEngine<ControlStoreState> {
-    // Cached once loaded to avoid repeated dataset fetches from the control route.
-    private segmentCount: number | null = null;
-
     // Slider moves can emit many events per second; throttle keeps interaction smooth locally
     // while reducing websocket chatter for all connected peers.
     private readonly broadcastSliderValueThrottled = throttle(
@@ -126,24 +122,18 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
         });
     }
 
-    async shuffleSegments() {
-        // Demo helper: choose a random subset for immediate visual feedback.
-        const segmentCount = await this.ensureSegmentCount();
-        if (segmentCount <= 0) return;
+    // Scene intents. The bus owns scene state and replies to everyone with `scene/state`, so
+    // the local store only changes when that reply arrives.
+    gotoScene(sceneId: SceneId, step = 0) {
+        this.send({ type: 'scene/goto', sceneId, step });
+    }
 
-        const targetCount = Math.min(DEFAULT_SHUFFLE_SELECTION_COUNT, segmentCount);
-        const indexes = this.pickRandomIndexes(segmentCount, targetCount);
+    stepScene(delta: 1 | -1) {
+        this.send({ type: 'scene/step', delta });
+    }
 
-        this.store.setState((prev) => ({
-            ...prev,
-            selectedSegmentIndexes: indexes
-        }));
-
-        this.send({
-            type: 'screen/segment-selection',
-            indexes,
-            peerId: this.getPeerId() ?? undefined
-        });
+    setScenePlaying(playing: boolean) {
+        this.send({ type: 'scene/play', playing });
     }
 
     protected override onMessage(message: BusMessage) {
@@ -191,21 +181,8 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
             return;
         }
 
-        if (message.type === 'screen/segment-selection') {
-            const segmentSelectionMessage = message as ScreenSegmentSelectionMessage;
-            if (!Array.isArray(segmentSelectionMessage.indexes)) return;
-            const indexes = segmentSelectionMessage.indexes
-                .filter((value): value is number => Number.isInteger(value) && value >= 0)
-                .slice()
-                .sort((a, b) => a - b);
-
-            this.store.setState((prev) => {
-                if (arraysEqual(prev.selectedSegmentIndexes, indexes)) return prev;
-                return {
-                    ...prev,
-                    selectedSegmentIndexes: indexes
-                };
-            });
+        if (message.type === 'scene/state') {
+            this.applySceneState((message as SceneStateMessage).scene);
         }
     }
 
@@ -217,25 +194,23 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
         this.store.setState((prev) => {
             const nextCity = state.city;
             const nextSliderValue = this.sliderFromZoom(state.zoom);
-            const nextSelectedIndexes = Array.isArray(state.selectedSegmentIndexes)
-                ? state.selectedSegmentIndexes
-                      .filter((value): value is number => Number.isInteger(value) && value >= 0)
-                      .slice()
-                      .sort((a, b) => a - b)
-                : prev.selectedSegmentIndexes;
-            if (
-                prev.selectedCity === nextCity &&
-                prev.sliderValue === nextSliderValue &&
-                arraysEqual(prev.selectedSegmentIndexes, nextSelectedIndexes)
-            ) {
+            if (prev.selectedCity === nextCity && prev.sliderValue === nextSliderValue) {
                 return prev;
             }
             return {
                 ...prev,
                 selectedCity: nextCity,
-                sliderValue: nextSliderValue,
-                selectedSegmentIndexes: nextSelectedIndexes
+                sliderValue: nextSliderValue
             };
+        });
+        this.applySceneState(state.scene, { force: true });
+    }
+
+    private applySceneState(scene: SceneStateMessage['scene'] | undefined, { force = false } = {}) {
+        if (!scene || !isSceneId(scene.id)) return;
+        this.store.setState((prev) => {
+            if (!force && prev.scene && scene.revision <= prev.scene.revision) return prev;
+            return { ...prev, scene };
         });
     }
 
@@ -255,38 +230,6 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
         const normalized = (clampedZoom - MAP_ZOOM_MIN) / (MAP_ZOOM_MAX - MAP_ZOOM_MIN);
         return this.clampSliderValue(normalized * (SLIDER_MAX - SLIDER_MIN) + SLIDER_MIN);
     }
-
-    private async ensureSegmentCount() {
-        if (this.segmentCount !== null) return this.segmentCount;
-        if (typeof window === 'undefined') return 0;
-
-        const payload = await loadArcSegmentsDataset();
-        if (!payload) {
-            // Soft-fail: control features should keep working even if optional data fetch fails.
-            return 0;
-        }
-
-        this.segmentCount = payload.length;
-        return this.segmentCount;
-    }
-
-    private pickRandomIndexes(maxExclusive: number, count: number) {
-        // Fisher-Yates shuffle for unbiased random subset.
-        const pool = Array.from({ length: maxExclusive }, (_, index) => index);
-        for (let i = pool.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [pool[i], pool[j]] = [pool[j], pool[i]];
-        }
-        return pool.slice(0, count).sort((a, b) => a - b);
-    }
 }
 
 export const controlEngine = ControlEngine.getInstance();
-
-function arraysEqual(a: number[], b: number[]) {
-    if (a.length !== b.length) return false;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] !== b[i]) return false;
-    }
-    return true;
-}

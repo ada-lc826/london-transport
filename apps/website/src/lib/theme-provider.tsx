@@ -1,5 +1,7 @@
 import { createContext, use, useCallback, useEffect, useMemo, useState } from 'react';
 
+import { safeStorage } from './safe-storage';
+
 type Theme = 'dark' | 'light' | 'system';
 const MEDIA = '(prefers-color-scheme: dark)';
 
@@ -39,7 +41,7 @@ export function ThemeProvider({
     // handles pre-hydration class setup to avoid mismatches/flashes.
     const [theme, setTheme] = useState<Theme>(() => {
         if (typeof window === 'undefined') return defaultTheme;
-        const stored = localStorage.getItem(storageKey);
+        const stored = safeStorage.getItem(storageKey);
         return isTheme(stored) ? stored : defaultTheme;
     });
 
@@ -72,10 +74,10 @@ export function ThemeProvider({
         let targetTheme: string;
 
         if (theme === 'system') {
-            localStorage.removeItem(storageKey);
+            safeStorage.removeItem(storageKey);
             targetTheme = window.matchMedia(MEDIA).matches ? 'dark' : 'light';
         } else {
-            localStorage.setItem(storageKey, theme);
+            safeStorage.setItem(storageKey, theme);
             targetTheme = theme;
         }
 

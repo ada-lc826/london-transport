@@ -1,25 +1,26 @@
-import { loadArcSegmentsDataset } from '../arc-segments';
+import { isSceneId } from '../../../scenes/scene-state';
+import { ClockEstimator, decodePong, encodePing, sampleFromPong } from '../clock';
 import { getCityMapView, isMapCity } from '../map-cities';
 import { screenStore } from '../stores/screen-store';
 import type {
-    ArcSegment,
     BusMessage,
     HelloBusMessage,
+    SceneStateMessage,
     ScreenMapViewMessage,
     ScreenMapViewState,
-    ScreenSegmentSelectionMessage,
     ScreenStoreState
 } from '../types';
 import { BusEngine } from './bus-engine';
 
+// Vizzy pings every 2 s; the estimator keeps the best of the last 8 samples (~16 s window).
+const CLOCK_PING_INTERVAL_MS = 2_000;
+
 export class ScreenEngine extends BusEngine<ScreenStoreState> {
-    // Guards repeated fetches during retries/rerenders.
-    private hasAttemptedArcSegmentLoad = false;
+    private readonly clock = new ClockEstimator();
+    private pingTimer: ReturnType<typeof setInterval> | null = null;
 
     private constructor() {
         super('screen', screenStore);
-        // Prime dataset early so first render after route mount has data asap.
-        void this.ensureArcSegmentsLoaded();
     }
 
     static getInstance() {
@@ -45,36 +46,35 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
         }));
     }
 
-    async ensureArcSegmentsLoaded() {
-        if (typeof window === 'undefined') return;
-        if (this.hasAttemptedArcSegmentLoad || this.store.state.arcSegments.length > 0) return;
+    /** Current server time, or null before the first clock sample arrives. */
+    serverNow(): number | null {
+        const offset = this.store.state.clockOffsetMs;
+        return offset === null ? null : localNow() + offset;
+    }
 
-        this.hasAttemptedArcSegmentLoad = true;
-        this.store.setState((prev) => ({
-            ...prev,
-            isArcSegmentsLoading: true
-        }));
+    protected override onOpen() {
+        // A new connection may reach a different server process, so start the estimate afresh.
+        this.clock.reset();
+        this.sendPing();
+        this.pingTimer = setInterval(() => this.sendPing(), CLOCK_PING_INTERVAL_MS);
+    }
 
-        try {
-            const payload = await loadArcSegmentsDataset();
-            if (!payload) {
-                throw new Error('Failed to load arc segments');
-            }
-            const arcSegments = this.parseArcSegments(payload);
+    protected override onClose() {
+        if (this.pingTimer !== null) clearInterval(this.pingTimer);
+        this.pingTimer = null;
+    }
 
-            this.store.setState((prev) => ({
-                ...prev,
-                arcSegments,
-                isArcSegmentsLoading: false
-            }));
-        } catch {
-            // Reset guard so a later user action / reconnect can retry loading data.
-            this.hasAttemptedArcSegmentLoad = false;
-            this.store.setState((prev) => ({
-                ...prev,
-                isArcSegmentsLoading: false
-            }));
-        }
+    protected override onBinary(bytes: Uint8Array) {
+        const pong = decodePong(bytes);
+        if (!pong) return;
+        this.clock.add(sampleFromPong(pong.t0, pong.t1, pong.t2, localNow()));
+        const best = this.clock.best();
+        if (!best) return;
+        this.store.setState((prev) =>
+            prev.clockOffsetMs === best.offsetMs && prev.clockRttMs === best.rttMs
+                ? prev
+                : { ...prev, clockOffsetMs: best.offsetMs, clockRttMs: best.rttMs }
+        );
     }
 
     protected override onMessage(message: BusMessage) {
@@ -84,9 +84,8 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
             return;
         }
 
-        if (message.type === 'screen/segment-selection') {
-            const segmentSelectionMessage = message as ScreenSegmentSelectionMessage;
-            this.applySegmentSelection(segmentSelectionMessage.indexes);
+        if (message.type === 'scene/state') {
+            this.applySceneState((message as SceneStateMessage).scene);
         }
     }
 
@@ -99,7 +98,21 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
             city: hello.state.city,
             view: { zoom: hello.state.zoom }
         });
-        this.applySegmentSelection(hello.state.selectedSegmentIndexes);
+        this.applySceneState(hello.state.scene, { force: true });
+    }
+
+    private sendPing() {
+        this.sendBinary(encodePing(localNow()));
+    }
+
+    private applySceneState(scene: SceneStateMessage['scene'] | undefined, { force = false } = {}) {
+        if (!scene || !isSceneId(scene.id)) return;
+        this.store.setState((prev) => {
+            // Revisions only grow within one server process; a hello may come from a restarted
+            // server whose count began again, so it always wins.
+            if (!force && prev.scene && scene.revision <= prev.scene.revision) return prev;
+            return { ...prev, scene };
+        });
     }
 
     private applyMapViewMessage(mapViewMessage: ScreenMapViewMessage) {
@@ -128,66 +141,12 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
 
         this.setMapView(nextView);
     }
-
-    private applySegmentSelection(indexes: unknown) {
-        if (!Array.isArray(indexes)) return;
-
-        const sanitizedIndexes = indexes
-            .filter((value): value is number => Number.isInteger(value) && value >= 0)
-            .slice()
-            .sort((a, b) => a - b);
-
-        this.store.setState((prev) => {
-            if (arraysEqual(prev.selectedSegmentIndexes, sanitizedIndexes)) return prev;
-            return {
-                ...prev,
-                selectedSegmentIndexes: sanitizedIndexes
-            };
-        });
-    }
-
-    private parseArcSegments(payload: unknown): ArcSegment[] {
-        // Runtime validation keeps map rendering resilient against malformed datasets.
-        if (!Array.isArray(payload)) return [];
-
-        const segments: ArcSegment[] = [];
-        for (const item of payload) {
-            if (typeof item !== 'object' || item === null) continue;
-            const candidate = item as Partial<ArcSegment>;
-            if (
-                typeof candidate.id !== 'string' ||
-                !Array.isArray(candidate.start) ||
-                !Array.isArray(candidate.end) ||
-                candidate.start.length !== 2 ||
-                candidate.end.length !== 2 ||
-                typeof candidate.start[0] !== 'number' ||
-                typeof candidate.start[1] !== 'number' ||
-                typeof candidate.end[0] !== 'number' ||
-                typeof candidate.end[1] !== 'number' ||
-                typeof candidate.weight !== 'number'
-            ) {
-                continue;
-            }
-
-            segments.push({
-                id: candidate.id,
-                // Copy values into fresh tuples to avoid retaining untrusted references.
-                start: [candidate.start[0], candidate.start[1]],
-                end: [candidate.end[0], candidate.end[1]],
-                weight: candidate.weight
-            });
-        }
-
-        return segments;
-    }
 }
 
 export const screenEngine = ScreenEngine.getInstance();
 
-function arraysEqual(a: number[], b: number[]) {
-    if (a.length !== b.length) return false;
-    for (let i = 0; i < a.length; i++) {
-        if (a[i] !== b[i]) return false;
-    }
-    return true;
+// Epoch-based local clock, comparable with the server's Date.now() once offset is applied.
+// Screens read wall-clock time only here; rendering uses `serverNow()` so all screens agree.
+function localNow() {
+    return performance.timeOrigin + performance.now();
 }
