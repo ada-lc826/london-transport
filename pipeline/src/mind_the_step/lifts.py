@@ -56,17 +56,18 @@ def fetch(
     client: httpx.Client,
     app_key: str,
     *,
+    url: str = LIFTS_URL,
     attempts: int = ATTEMPTS,
     backoff: float = BACKOFF_SECONDS,
     sleep: Callable[[float], None] = time.sleep,
 ) -> FetchResult:
-    """GET the lift disruptions, retrying network errors, 429 and 5xx."""
+    """GET `url` (by default the lift disruptions), retrying network errors, 429 and 5xx."""
     started = time.monotonic()
     status: int | None = None
     error: str | None = None
     for attempt in range(1, attempts + 1):
         try:
-            response = client.get(LIFTS_URL, params={"app_key": app_key})
+            response = client.get(url, params={"app_key": app_key})
         except httpx.HTTPError as exc:
             status, error = None, f"{type(exc).__name__}: {exc}"
         else:
