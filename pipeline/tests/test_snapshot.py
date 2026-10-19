@@ -21,7 +21,8 @@ def fake_tfl(failing: set[str] = frozenset()):
         if path in failing:
             return httpx.Response(404)
         if path.startswith("/StopPoint/Mode/"):
-            return httpx.Response(200, json={"stopPoints": [{"naptanId": path[-4:]}]})
+            stop = {"naptanId": path[-4:], "stopType": "NaptanMetroStation"}
+            return httpx.Response(200, json={"stopPoints": [stop]})
         if path.startswith("/Line/Mode/"):
             return httpx.Response(
                 200, json=[{"id": "victoria"}, {"id": "elizabeth"}, {"id": "../x"}]
@@ -72,12 +73,10 @@ def test_snapshot_writes_every_file_and_a_manifest(tmp_path, monkeypatch):
         + ["lines.json.gz", "route-victoria.json.gz", "route-elizabeth.json.gz", "manifest.json"]
         + ["accessibility", "crosscheck", "stopstructure"]
     )
-    probe = day / "stopstructure" / "south-kensington-ics-xml.xml"
-    assert not probe.exists()
-    assert (day / "stopstructure" / "south-kensington-naptan-xml.xml").read_text() == (
-        "<ss stop='940GZZLUSKS'/>"
-    )
-    assert len(list((day / "stopstructure").iterdir())) == 15
+    # One topology file per tube station, fetched by NaPTAN id.
+    with gzip.open(day / "stopstructure" / "tube.json.gz", "rt") as f:
+        assert f.read() == "<ss stop='tube'/>"
+    assert len(list((day / "stopstructure").iterdir())) == 1
     crosscheck = sorted(p.name for p in (day / "crosscheck").iterdir())
     assert crosscheck == ["stations.csv", "zenodo-record.json"]
     assert (day / "accessibility" / "topology.zip").read_bytes() == b"PK zip"

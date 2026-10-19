@@ -6,13 +6,14 @@ path uses lifts, escalators or stairs. That is enough to work out step-free rout
 street to each platform ourselves, which the Unified API's stop point attributes (present
 for only 82 of 272 tube stations) cannot give us.
 
-Its response format is not documented publicly, so this first stage only fetches a few
-stations whose step-free status is well known, in several parameter variants, and stores the
-raw responses for inspection. Parameter names follow the EFA interface it is built on.
+Responses are stored verbatim (gzipped), one file per station; ``stepfree.py`` derives
+step-free status from them. Parameter names follow the EFA interface the API is built on;
+the NaPTAN id and the ICS code return identical responses.
 """
 
 from __future__ import annotations
 
+import gzip
 from pathlib import Path
 
 import httpx
@@ -22,40 +23,38 @@ from .lifts import API_HOST, fetch
 
 ENDPOINT = f"https://{API_HOST}/jp_public/api10/XML_STOPSTRUCTURE_REQUEST"
 
-# (naptanId, icsCode, label): two step-free stations, three that are not.
-PROBE_STATIONS = [
-    ("940GZZLUWSM", "1000266", "westminster"),  # step-free
-    ("940GZZLUGPK", "1000093", "green-park"),  # step-free
-    ("940GZZLUSKS", "1000212", "south-kensington"),  # not step-free until ~2031
-    ("940GZZLUBST", "1000011", "baker-street"),  # not step-free
-    ("940GZZLUWYP", "1000257", "wembley-park"),  # step-free
-]
-
 BASE_PARAMS = {
     "sSInclSP": "1",  # include platforms
     "sSInclSL": "1",  # include the lines serving each platform
     "sSFEA": "1",  # drop empty areas
     "coordOutputFormat": "WGS84[dd.ddddd]",
+    "outputFormat": "rapidJSON",
 }
 
 
-def probe_variants(naptan: str, ics: str) -> dict[str, tuple[dict, str]]:
-    """Variant name -> (query parameters, file extension)."""
-    return {
-        "naptan-json": ({**BASE_PARAMS, "sSStopNr": naptan, "outputFormat": "rapidJSON"}, "json"),
-        "naptan-xml": ({**BASE_PARAMS, "sSStopNr": naptan}, "xml"),
-        "ics-json": ({**BASE_PARAMS, "sSStopNr": ics, "outputFormat": "rapidJSON"}, "json"),
-    }
+def station_ids(stop_points_payload) -> list[str]:
+    """NaPTAN ids of the stations in a ``/StopPoint/Mode`` response."""
+    stops = (stop_points_payload or {}).get("stopPoints", [])
+    return sorted(
+        sp["naptanId"]
+        for sp in stops
+        if sp.get("stopType") in ("NaptanMetroStation", "NaptanRailStation")
+        and isinstance(sp.get("naptanId"), str)
+        and sp["naptanId"].isalnum()
+    )
 
 
-def probe(client: httpx.Client, app_key: str, day_dir: Path, files: dict) -> None:
+def fetch_all(
+    client: httpx.Client, app_key: str, day_dir: Path, files: dict, naptan_ids: list[str]
+) -> None:
+    """Fetch each station's topology into ``stopstructure/<naptanId>.json.gz``."""
     out = day_dir / "stopstructure"
     out.mkdir(parents=True, exist_ok=True)
-    for naptan, ics, label in PROBE_STATIONS:
-        for variant, (params, ext) in probe_variants(naptan, ics).items():
-            url = str(httpx.URL(ENDPOINT, params=params))
-            result = fetch(client, app_key, url=url)
-            name = f"{label}-{variant}.{ext}"
-            files[f"stopstructure/{name}"] = manifest_entry(url, result)
-            if result.body is not None:
-                (out / name).write_bytes(result.body)
+    for naptan in naptan_ids:
+        url = str(httpx.URL(ENDPOINT, params={**BASE_PARAMS, "sSStopNr": naptan}))
+        result = fetch(client, app_key, url=url)
+        name = f"{naptan}.json.gz"
+        files[f"stopstructure/{name}"] = manifest_entry(url, result)
+        if result.body is not None:
+            with gzip.open(out / name, "wb") as f:
+                f.write(result.body)

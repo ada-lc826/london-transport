@@ -1,9 +1,11 @@
 """Build the web app's tube network asset from a snapshot.
 
 Reads ``snapshots/<date>/`` (from the ``data`` branch) and writes one JSON file with the tube
-lines (geometry from route sequences) and the 272 tube stations. Each station has a
-``stepFree`` field that stays ``null`` until a step-free source is joined: the scenes show
-unknown as unknown rather than guessing.
+lines (geometry from route sequences) and the 272 tube stations. Each station's
+``stepFree`` is ``"full"``, ``"partial"`` or ``"none"`` (street to platform, derived from its
+topology by ``stepfree.py``), or ``null`` when the topology is missing or unusable: the
+scenes show unknown as unknown rather than guessing. ``stepFreePlatforms`` is
+``[step-free platforms, platforms]``.
 
     uv run python -m mind_the_step.network --snapshot <dir> --out <network.json>
 """
@@ -15,6 +17,8 @@ import gzip
 import json
 import sys
 from pathlib import Path
+
+from . import stepfree
 
 # TfL line colours (TfL colour standard). Used only where viewers need to recognise a line.
 LINE_COLOURS = {
@@ -45,6 +49,17 @@ def _round(value: float) -> float:
     return round(value, COORD_DECIMALS)
 
 
+def _step_free(snapshot_dir: Path, naptan_id: str) -> dict:
+    """Street-to-platform status from the station's topology, or nulls when it is missing."""
+    topology = snapshot_dir / "stopstructure" / f"{naptan_id}.json.gz"
+    if not topology.exists():
+        return {"stepFree": None, "stepFreePlatforms": None}
+    with gzip.open(topology, "rb") as f:
+        access = stepfree.analyse_bytes(naptan_id, f.read())
+    reachable = sum(access.platforms.values())
+    return {"stepFree": access.status, "stepFreePlatforms": [reachable, len(access.platforms)]}
+
+
 def build_network(snapshot_dir: Path) -> dict:
     stop_points = _load(snapshot_dir / "stoppoints-tube.json.gz")["stopPoints"]
     stations = []
@@ -64,7 +79,7 @@ def build_network(snapshot_dir: Path) -> dict:
                 "lon": _round(sp["lon"]),
                 "lat": _round(sp["lat"]),
                 "lines": tube_lines,
-                "stepFree": None,
+                **_step_free(snapshot_dir, sp["naptanId"]),
             }
         )
     stations.sort(key=lambda s: s["id"])
@@ -83,6 +98,7 @@ def build_network(snapshot_dir: Path) -> dict:
         "source": {
             "snapshot": snapshot_dir.name,
             "attribution": "Powered by TfL Open Data",
+            "stepFree": "street to platform, derived from TfL Stop Structure topology",
         },
         "lines": lines,
         "stations": stations,

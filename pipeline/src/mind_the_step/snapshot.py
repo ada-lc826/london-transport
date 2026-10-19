@@ -53,8 +53,7 @@ def snapshot(client: httpx.Client, app_key: str, out_dir: Path, now: datetime) -
             json.dump(payload, f, ensure_ascii=False)
         return payload
 
-    for mode in MODES:
-        get(f"stoppoints-{mode}", f"StopPoint/Mode/{mode}")
+    stop_points = {mode: get(f"stoppoints-{mode}", f"StopPoint/Mode/{mode}") for mode in MODES}
 
     lines = get("lines", f"Line/Mode/{','.join(MODES)}") or []
     for line in lines:
@@ -64,7 +63,13 @@ def snapshot(client: httpx.Client, app_key: str, out_dir: Path, now: datetime) -
 
     accessibility.download(client, app_key, day_dir, manifest["files"])
     accessibility.download_zenodo(client, app_key, day_dir, manifest["files"])
-    stopstructure.probe(client, app_key, day_dir, manifest["files"])
+    stopstructure.fetch_all(
+        client,
+        app_key,
+        day_dir,
+        manifest["files"],
+        stopstructure.station_ids(stop_points["tube"]),
+    )
 
     (day_dir / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n", encoding="utf-8")
     return manifest
