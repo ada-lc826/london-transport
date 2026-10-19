@@ -1,0 +1,197 @@
+{
+ "fetched_at": "2026-10-19T19:54:11+00:00",
+ "files": {
+  "stoppoints-tube": {
+   "path": "StopPoint/Mode/tube",
+   "ok": true,
+   "status": 200,
+   "attempts": 2,
+   "elapsed_ms": 41167,
+   "error": null
+  },
+  "stoppoints-dlr": {
+   "path": "StopPoint/Mode/dlr",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 2465,
+   "error": null
+  },
+  "stoppoints-overground": {
+   "path": "StopPoint/Mode/overground",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 5601,
+   "error": null
+  },
+  "stoppoints-elizabeth-line": {
+   "path": "StopPoint/Mode/elizabeth-line",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1260,
+   "error": null
+  },
+  "lines": {
+   "path": "Line/Mode/tube,dlr,overground,elizabeth-line",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 498,
+   "error": null
+  },
+  "route-bakerloo": {
+   "path": "Line/bakerloo/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1387,
+   "error": null
+  },
+  "route-central": {
+   "path": "Line/central/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1227,
+   "error": null
+  },
+  "route-circle": {
+   "path": "Line/circle/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1105,
+   "error": null
+  },
+  "route-district": {
+   "path": "Line/district/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 178,
+   "error": null
+  },
+  "route-dlr": {
+   "path": "Line/dlr/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 912,
+   "error": null
+  },
+  "route-elizabeth": {
+   "path": "Line/elizabeth/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1376,
+   "error": null
+  },
+  "route-hammersmith-city": {
+   "path": "Line/hammersmith-city/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 808,
+   "error": null
+  },
+  "route-jubilee": {
+   "path": "Line/jubilee/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 383,
+   "error": null
+  },
+  "route-liberty": {
+   "path": "Line/liberty/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 336,
+   "error": null
+  },
+  "route-lioness": {
+   "path": "Line/lioness/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 566,
+   "error": null
+  },
+  "route-metropolitan": {
+   "path": "Line/metropolitan/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1883,
+   "error": null
+  },
+  "route-mildmay": {
+   "path": "Line/mildmay/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 519,
+   "error": null
+  },
+  "route-northern": {
+   "path": "Line/northern/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 120,
+   "error": null
+  },
+  "route-piccadilly": {
+   "path": "Line/piccadilly/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 1287,
+   "error": null
+  },
+  "route-suffragette": {
+   "path": "Line/suffragette/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 411,
+   "error": null
+  },
+  "route-victoria": {
+   "path": "Line/victoria/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 688,
+   "error": null
+  },
+  "route-waterloo-city": {
+   "path": "Line/waterloo-city/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 384,
+   "error": null
+  },
+  "route-weaver": {
+   "path": "Line/weaver/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 732,
+   "error": null
+  },
+  "route-windrush": {
+   "path": "Line/windrush/Route/Sequence/all",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 2406,
+   "error": null
+  }
+ }
+}
