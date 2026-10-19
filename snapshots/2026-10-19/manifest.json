@@ -1,12 +1,12 @@
 {
- "fetched_at": "2026-10-19T23:47:12+00:00",
+ "fetched_at": "2026-10-19T23:52:11+00:00",
  "files": {
   "stoppoints-tube": {
    "path": "StopPoint/Mode/tube",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 207,
+   "elapsed_ms": 200,
    "error": null
   },
   "stoppoints-dlr": {
@@ -14,7 +14,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
+   "elapsed_ms": 104,
    "error": null
   },
   "stoppoints-overground": {
@@ -22,7 +22,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
+   "elapsed_ms": 91,
    "error": null
   },
   "stoppoints-elizabeth-line": {
@@ -30,7 +30,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 159,
+   "elapsed_ms": 103,
    "error": null
   },
   "lines": {
@@ -38,7 +38,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 95,
+   "elapsed_ms": 89,
    "error": null
   },
   "route-bakerloo": {
@@ -46,7 +46,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 947,
+   "elapsed_ms": 1006,
    "error": null
   },
   "route-central": {
@@ -54,7 +54,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 985,
+   "elapsed_ms": 1102,
    "error": null
   },
   "route-circle": {
@@ -62,7 +62,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 898,
+   "elapsed_ms": 736,
    "error": null
   },
   "route-district": {
@@ -70,7 +70,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
+   "elapsed_ms": 95,
    "error": null
   },
   "route-dlr": {
@@ -78,7 +78,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 785,
+   "elapsed_ms": 200,
    "error": null
   },
   "route-elizabeth": {
@@ -86,7 +86,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1042,
+   "elapsed_ms": 112,
    "error": null
   },
   "route-hammersmith-city": {
@@ -94,7 +94,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 880,
+   "elapsed_ms": 91,
    "error": null
   },
   "route-jubilee": {
@@ -102,7 +102,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 104,
+   "elapsed_ms": 814,
    "error": null
   },
   "route-liberty": {
@@ -110,7 +110,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1798,
+   "elapsed_ms": 98,
    "error": null
   },
   "route-lioness": {
@@ -118,7 +118,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1103,
+   "elapsed_ms": 98,
    "error": null
   },
   "route-metropolitan": {
@@ -126,7 +126,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 901,
+   "elapsed_ms": 97,
    "error": null
   },
   "route-mildmay": {
@@ -134,7 +134,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 628,
+   "elapsed_ms": 88,
    "error": null
   },
   "route-northern": {
@@ -142,7 +142,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1908,
+   "elapsed_ms": 89,
    "error": null
   },
   "route-piccadilly": {
@@ -150,7 +150,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 957,
+   "elapsed_ms": 88,
    "error": null
   },
   "route-suffragette": {
@@ -158,7 +158,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 384,
+   "elapsed_ms": 90,
    "error": null
   },
   "route-victoria": {
@@ -166,7 +166,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 809,
+   "elapsed_ms": 90,
    "error": null
   },
   "route-waterloo-city": {
@@ -174,7 +174,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 91,
+   "elapsed_ms": 681,
    "error": null
   },
   "route-weaver": {
@@ -182,7 +182,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 570,
+   "elapsed_ms": 93,
    "error": null
   },
   "route-windrush": {
@@ -190,7 +190,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 95,
+   "elapsed_ms": 604,
    "error": null
   },
   "accessibility/open-data-page.html": {
@@ -198,7 +198,7 @@
    "ok": false,
    "status": 403,
    "attempts": 1,
-   "elapsed_ms": 35,
+   "elapsed_ms": 91,
    "error": "HTTP 403"
   },
   "crosscheck/zenodo-record.json": {
@@ -206,7 +206,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 717,
+   "elapsed_ms": 576,
    "error": null
   },
   "crosscheck/london_underground_metadata.csv": {
@@ -214,7 +214,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 309,
+   "elapsed_ms": 283,
    "error": null
   },
   "crosscheck/README.md": {
@@ -222,7 +222,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 164,
+   "elapsed_ms": 282,
    "error": null
   },
   "stopstructure/940GZZBPSUST.json.gz": {
@@ -230,296 +230,333 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 259,
-   "error": null
+   "elapsed_ms": 229,
+   "error": null,
+   "queried_as": "940GZZBPSUST"
   },
   "stopstructure/940GZZLUACT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUACT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 217,
-   "error": null
+   "elapsed_ms": 222,
+   "error": null,
+   "queried_as": "940GZZLUACT"
   },
   "stopstructure/940GZZLUACY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUACY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 185,
-   "error": null
+   "elapsed_ms": 226,
+   "error": null,
+   "queried_as": "940GZZLUACY"
   },
   "stopstructure/940GZZLUADE.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUADE",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 175,
+   "error": null,
+   "queried_as": "940GZZLUADE"
   },
   "stopstructure/940GZZLUAGL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUAGL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 176,
-   "error": null
+   "elapsed_ms": 103,
+   "error": null,
+   "queried_as": "940GZZLUAGL"
   },
   "stopstructure/940GZZLUALD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUALD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 197,
+   "error": null,
+   "queried_as": "940GZZLUALD"
   },
   "stopstructure/940GZZLUALP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUALP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 195,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUALP"
   },
   "stopstructure/940GZZLUAMS.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUAMS",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000006",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "1000006"
   },
   "stopstructure/940GZZLUASG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUASG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 131,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUASG"
   },
   "stopstructure/940GZZLUASL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUASL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUASL"
   },
   "stopstructure/940GZZLUBBB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBBB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 131,
+   "error": null,
+   "queried_as": "940GZZLUBBB"
   },
   "stopstructure/940GZZLUBBN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBBN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "940GZZLUBBN"
   },
   "stopstructure/940GZZLUBDS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBDS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 206,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUBDS"
   },
   "stopstructure/940GZZLUBEC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBEC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLUBEC"
   },
   "stopstructure/940GZZLUBKE.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBKE",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 139,
+   "error": null,
+   "queried_as": "940GZZLUBKE"
   },
   "stopstructure/940GZZLUBKF.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBKF",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000023",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "1000023"
   },
   "stopstructure/940GZZLUBKG.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBKG",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000015",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 110,
-   "error": null
+   "elapsed_ms": 102,
+   "error": null,
+   "queried_as": "1000015"
   },
   "stopstructure/940GZZLUBKH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBKH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 140,
-   "error": null
+   "elapsed_ms": 134,
+   "error": null,
+   "queried_as": "940GZZLUBKH"
   },
   "stopstructure/940GZZLUBLG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBLG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "940GZZLUBLG"
   },
   "stopstructure/940GZZLUBLM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBLM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 149,
+   "error": null,
+   "queried_as": "940GZZLUBLM"
   },
   "stopstructure/940GZZLUBLR.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBLR",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000024",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 104,
+   "error": null,
+   "queried_as": "1000024"
   },
   "stopstructure/940GZZLUBMY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBMY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 148,
+   "error": null,
+   "queried_as": "940GZZLUBMY"
   },
   "stopstructure/940GZZLUBND.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBND",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 163,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUBND"
   },
   "stopstructure/940GZZLUBNK.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBNK",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000013",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 128,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "1000013"
   },
   "stopstructure/940GZZLUBOR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBOR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUBOR"
   },
   "stopstructure/940GZZLUBOS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBOS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUBOS"
   },
   "stopstructure/940GZZLUBSC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBSC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUBSC"
   },
   "stopstructure/940GZZLUBST.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBST",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUBST"
   },
   "stopstructure/940GZZLUBTK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBTK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 137,
-   "error": null
+   "elapsed_ms": 115,
+   "error": null,
+   "queried_as": "940GZZLUBTK"
   },
   "stopstructure/940GZZLUBTX.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBTX",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUBTX"
   },
   "stopstructure/940GZZLUBWR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBWR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 111,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUBWR"
   },
   "stopstructure/940GZZLUBWT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBWT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 185,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUBWT"
   },
   "stopstructure/940GZZLUBXN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBXN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUBXN"
   },
   "stopstructure/940GZZLUBZP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUBZP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUBZP"
   },
   "stopstructure/940GZZLUCAL.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCAL",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000042",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 132,
-   "error": null
+   "elapsed_ms": 112,
+   "error": null,
+   "queried_as": "1000042"
   },
   "stopstructure/940GZZLUCAR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCAR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 135,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUCAR"
   },
   "stopstructure/940GZZLUCFM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCFM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "940GZZLUCFM"
   },
   "stopstructure/940GZZLUCGN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCGN",
@@ -527,23 +564,26 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 125,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUCGN"
   },
   "stopstructure/940GZZLUCGT.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCGT",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000039",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 131,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "1000039"
   },
   "stopstructure/940GZZLUCHL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCHL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 235,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUCHL"
   },
   "stopstructure/940GZZLUCHX.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCHX",
@@ -551,311 +591,351 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 134,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUCHX"
   },
   "stopstructure/940GZZLUCKS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCKS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 135,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUCKS"
   },
   "stopstructure/940GZZLUCND.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCND",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 129,
+   "error": null,
+   "queried_as": "940GZZLUCND"
   },
   "stopstructure/940GZZLUCPC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCPC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "940GZZLUCPC"
   },
   "stopstructure/940GZZLUCPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUCPK"
   },
   "stopstructure/940GZZLUCPN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCPN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 136,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUCPN"
   },
   "stopstructure/940GZZLUCPS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCPS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUCPS"
   },
   "stopstructure/940GZZLUCSD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCSD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 149,
+   "error": null,
+   "queried_as": "940GZZLUCSD"
   },
   "stopstructure/940GZZLUCSM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCSM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 136,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLUCSM"
   },
   "stopstructure/940GZZLUCST.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCST",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 133,
+   "error": null,
+   "queried_as": "940GZZLUCST"
   },
   "stopstructure/940GZZLUCTN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCTN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 150,
+   "error": null,
+   "queried_as": "940GZZLUCTN"
   },
   "stopstructure/940GZZLUCWL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCWL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZLUCWL"
   },
   "stopstructure/940GZZLUCWP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCWP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 139,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUCWP"
   },
   "stopstructure/940GZZLUCWR.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCWR",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000037",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 202,
-   "error": null
+   "elapsed_ms": 104,
+   "error": null,
+   "queried_as": "1000037"
   },
   "stopstructure/940GZZLUCXY.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCXY",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000057",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 94,
+   "error": null,
+   "queried_as": "1000057",
+   "empty": true
   },
   "stopstructure/940GZZLUCYD.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCYD",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000049",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "1000049"
   },
   "stopstructure/940GZZLUCYF.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUCYF",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 150,
+   "error": null,
+   "queried_as": "940GZZLUCYF"
   },
   "stopstructure/940GZZLUDBN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUDBN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 154,
-   "error": null
+   "elapsed_ms": 111,
+   "error": null,
+   "queried_as": "940GZZLUDBN"
   },
   "stopstructure/940GZZLUDGE.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUDGE",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUDGE"
   },
   "stopstructure/940GZZLUDGY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUDGY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 111,
-   "error": null
+   "elapsed_ms": 100,
+   "error": null,
+   "queried_as": "940GZZLUDGY"
   },
   "stopstructure/940GZZLUDOH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUDOH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUDOH"
   },
   "stopstructure/940GZZLUEAC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEAC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 128,
-   "error": null
+   "elapsed_ms": 285,
+   "error": null,
+   "queried_as": "940GZZLUEAC"
   },
   "stopstructure/940GZZLUEAE.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEAE",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 109,
-   "error": null
+   "elapsed_ms": 97,
+   "error": null,
+   "queried_as": "940GZZLUEAE"
   },
   "stopstructure/940GZZLUEAN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEAN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 128,
-   "error": null
+   "elapsed_ms": 134,
+   "error": null,
+   "queried_as": "940GZZLUEAN"
   },
   "stopstructure/940GZZLUEBY.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEBY",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000062",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "1000062"
   },
   "stopstructure/940GZZLUECM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUECM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUECM"
   },
   "stopstructure/940GZZLUECT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUECT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 178,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUECT"
   },
   "stopstructure/940GZZLUEFY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEFY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "940GZZLUEFY"
   },
   "stopstructure/940GZZLUEGW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEGW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 138,
+   "error": null,
+   "queried_as": "940GZZLUEGW"
   },
   "stopstructure/940GZZLUEHM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEHM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 111,
+   "error": null,
+   "queried_as": "940GZZLUEHM"
   },
   "stopstructure/940GZZLUEMB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEMB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUEMB"
   },
   "stopstructure/940GZZLUEPG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEPG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUEPG"
   },
   "stopstructure/940GZZLUEPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUEPK"
   },
   "stopstructure/940GZZLUEPY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEPY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "940GZZLUEPY"
   },
   "stopstructure/940GZZLUERB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUERB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUERB"
   },
   "stopstructure/940GZZLUERC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUERC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUERC"
   },
   "stopstructure/940GZZLUESQ.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUESQ",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 138,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUESQ"
   },
   "stopstructure/940GZZLUEUS.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUEUS",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000077",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "1000077"
   },
   "stopstructure/940GZZLUFBY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFBY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 96,
+   "error": null,
+   "queried_as": "940GZZLUFBY"
   },
   "stopstructure/940GZZLUFCN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFCN",
@@ -863,407 +943,458 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 119,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUFCN"
   },
   "stopstructure/940GZZLUFLP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFLP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUFLP"
   },
   "stopstructure/940GZZLUFPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 131,
+   "error": null,
+   "queried_as": "940GZZLUFPK"
   },
   "stopstructure/940GZZLUFYC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFYC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 138,
+   "error": null,
+   "queried_as": "940GZZLUFYC"
   },
   "stopstructure/940GZZLUFYR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUFYR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 135,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUFYR"
   },
   "stopstructure/940GZZLUGBY.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGBY",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000094",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 96,
+   "error": null,
+   "queried_as": "1000094"
   },
   "stopstructure/940GZZLUGDG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGDG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUGDG"
   },
   "stopstructure/940GZZLUGFD.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGFD",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000092",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 101,
+   "error": null,
+   "queried_as": "1000092"
   },
   "stopstructure/940GZZLUGGH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGGH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 143,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUGGH"
   },
   "stopstructure/940GZZLUGGN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGGN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUGGN"
   },
   "stopstructure/940GZZLUGHK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGHK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUGHK"
   },
   "stopstructure/940GZZLUGPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUGPK"
   },
   "stopstructure/940GZZLUGPS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGPS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "940GZZLUGPS"
   },
   "stopstructure/940GZZLUGTH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGTH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 159,
-   "error": null
+   "elapsed_ms": 139,
+   "error": null,
+   "queried_as": "940GZZLUGTH"
   },
   "stopstructure/940GZZLUGTR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUGTR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "940GZZLUGTR"
   },
   "stopstructure/940GZZLUHAI.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHAI",
-   "ok": true,
-   "status": 200,
-   "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
-  },
-  "stopstructure/940GZZLUHAW.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHAW",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000108",
    "ok": true,
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 110,
-   "error": null
+   "error": null,
+   "queried_as": "1000108"
+  },
+  "stopstructure/940GZZLUHAW.json.gz": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000101",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 103,
+   "error": null,
+   "queried_as": "1000101"
   },
   "stopstructure/940GZZLUHBN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHBN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 112,
+   "error": null,
+   "queried_as": "940GZZLUHBN"
   },
   "stopstructure/940GZZLUHBT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHBT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 143,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "940GZZLUHBT"
   },
   "stopstructure/940GZZLUHCH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHCH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZLUHCH"
   },
   "stopstructure/940GZZLUHCL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHCL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUHCL"
   },
   "stopstructure/940GZZLUHGD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHGD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 110,
-   "error": null
+   "elapsed_ms": 129,
+   "error": null,
+   "queried_as": "940GZZLUHGD"
   },
   "stopstructure/940GZZLUHGR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHGR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUHGR"
   },
   "stopstructure/940GZZLUHGT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHGT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUHGT"
   },
   "stopstructure/940GZZLUHLT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHLT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 96,
+   "error": null,
+   "queried_as": "940GZZLUHLT"
   },
   "stopstructure/940GZZLUHNX.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHNX",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 145,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUHNX"
   },
   "stopstructure/940GZZLUHOH.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHOH",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000102",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 105,
+   "error": null,
+   "queried_as": "1000102"
   },
   "stopstructure/940GZZLUHPC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHPC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 138,
+   "error": null,
+   "queried_as": "940GZZLUHPC"
   },
   "stopstructure/940GZZLUHPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 136,
+   "error": null,
+   "queried_as": "940GZZLUHPK"
   },
   "stopstructure/940GZZLUHR4.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHR4",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000104",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 146,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "1000104"
   },
   "stopstructure/940GZZLUHR5.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHR5",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1016430",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 100,
+   "error": null,
+   "queried_as": "1016430"
   },
   "stopstructure/940GZZLUHRC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHRC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUHRC"
   },
   "stopstructure/940GZZLUHSC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHSC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 183,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUHSC"
   },
   "stopstructure/940GZZLUHSD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHSD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUHSD"
   },
   "stopstructure/940GZZLUHSK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHSK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUHSK"
   },
   "stopstructure/940GZZLUHSN.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHSN",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000100",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 105,
+   "error": null,
+   "queried_as": "1000100"
   },
   "stopstructure/940GZZLUHTD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHTD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "940GZZLUHTD"
   },
   "stopstructure/940GZZLUHWC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHWC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 112,
+   "error": null,
+   "queried_as": "940GZZLUHWC"
   },
   "stopstructure/940GZZLUHWE.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHWE",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 131,
+   "error": null,
+   "queried_as": "940GZZLUHWE"
   },
   "stopstructure/940GZZLUHWT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHWT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 148,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUHWT"
   },
   "stopstructure/940GZZLUHWY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUHWY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 108,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLUHWY"
   },
   "stopstructure/940GZZLUICK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUICK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "940GZZLUICK"
   },
   "stopstructure/940GZZLUKBN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKBN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUKBN"
   },
   "stopstructure/940GZZLUKBY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKBY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUKBY"
   },
   "stopstructure/940GZZLUKEN.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKEN",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000124",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 99,
+   "error": null,
+   "queried_as": "1000124"
   },
   "stopstructure/940GZZLUKNB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKNB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 131,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUKNB"
   },
   "stopstructure/940GZZLUKNG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKNG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUKNG"
   },
   "stopstructure/940GZZLUKOY.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKOY",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000170",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 104,
+   "error": null,
+   "queried_as": "1000170"
   },
   "stopstructure/940GZZLUKPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 135,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUKPK"
   },
   "stopstructure/940GZZLUKSH.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKSH",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000123",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 111,
+   "error": null,
+   "queried_as": "1000123"
   },
   "stopstructure/940GZZLUKSL.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKSL",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000122",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 99,
+   "error": null,
+   "queried_as": "1000122"
   },
   "stopstructure/940GZZLUKSX.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKSX",
@@ -1271,359 +1402,404 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 137,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUKSX"
   },
   "stopstructure/940GZZLUKWG.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUKWG",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000125",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 97,
+   "error": null,
+   "queried_as": "1000125"
   },
   "stopstructure/940GZZLULAD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULAD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLULAD"
   },
   "stopstructure/940GZZLULBN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULBN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 108,
+   "error": null,
+   "queried_as": "940GZZLULBN"
   },
   "stopstructure/940GZZLULGN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULGN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLULGN"
   },
   "stopstructure/940GZZLULGT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULGT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLULGT"
   },
   "stopstructure/940GZZLULNB.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULNB",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000139",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "1000139"
   },
   "stopstructure/940GZZLULRD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULRD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLULRD"
   },
   "stopstructure/940GZZLULSQ.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULSQ",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 144,
+   "error": null,
+   "queried_as": "940GZZLULSQ"
   },
   "stopstructure/940GZZLULVT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULVT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 134,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLULVT"
   },
   "stopstructure/940GZZLULYN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULYN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLULYN"
   },
   "stopstructure/940GZZLULYS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLULYS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 155,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLULYS"
   },
   "stopstructure/940GZZLUMBA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMBA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 136,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUMBA"
   },
   "stopstructure/940GZZLUMDN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMDN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUMDN"
   },
   "stopstructure/940GZZLUMED.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMED",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUMED"
   },
   "stopstructure/940GZZLUMGT.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMGT",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000149",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 115,
+   "error": null,
+   "queried_as": "1000149"
   },
   "stopstructure/940GZZLUMHL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMHL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUMHL"
   },
   "stopstructure/940GZZLUMMT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMMT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 210,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUMMT"
   },
   "stopstructure/940GZZLUMPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 177,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZLUMPK"
   },
   "stopstructure/940GZZLUMRH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMRH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 194,
-   "error": null
+   "elapsed_ms": 137,
+   "error": null,
+   "queried_as": "940GZZLUMRH"
   },
   "stopstructure/940GZZLUMSH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMSH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 129,
+   "error": null,
+   "queried_as": "940GZZLUMSH"
   },
   "stopstructure/940GZZLUMTC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMTC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZLUMTC"
   },
   "stopstructure/940GZZLUMVL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMVL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUMVL"
   },
   "stopstructure/940GZZLUMYB.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUMYB",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000145",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 164,
-   "error": null
+   "elapsed_ms": 104,
+   "error": null,
+   "queried_as": "1000145"
   },
   "stopstructure/940GZZLUNAN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNAN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUNAN"
   },
   "stopstructure/940GZZLUNBP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNBP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 112,
+   "error": null,
+   "queried_as": "940GZZLUNBP"
   },
   "stopstructure/940GZZLUNDN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNDN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "940GZZLUNDN"
   },
   "stopstructure/940GZZLUNEN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNEN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 132,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUNEN"
   },
   "stopstructure/940GZZLUNFD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNFD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUNFD"
   },
   "stopstructure/940GZZLUNGW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNGW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 100,
-   "error": null
+   "elapsed_ms": 136,
+   "error": null,
+   "queried_as": "940GZZLUNGW"
   },
   "stopstructure/940GZZLUNHA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNHA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 111,
+   "error": null,
+   "queried_as": "940GZZLUNHA"
   },
   "stopstructure/940GZZLUNHG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNHG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 137,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUNHG"
   },
   "stopstructure/940GZZLUNHT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNHT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUNHT"
   },
   "stopstructure/940GZZLUNKP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNKP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 128,
-   "error": null
+   "elapsed_ms": 104,
+   "error": null,
+   "queried_as": "940GZZLUNKP"
   },
   "stopstructure/940GZZLUNOW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNOW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUNOW"
   },
   "stopstructure/940GZZLUNWH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNWH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 144,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUNWH"
   },
   "stopstructure/940GZZLUNWY.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUNWY",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000163",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 105,
+   "error": null,
+   "queried_as": "1000163"
   },
   "stopstructure/940GZZLUOAK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUOAK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 145,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "940GZZLUOAK"
   },
   "stopstructure/940GZZLUODS.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUODS",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000169",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 134,
-   "error": null
+   "elapsed_ms": 94,
+   "error": null,
+   "queried_as": "1000169"
   },
   "stopstructure/940GZZLUOSY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUOSY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUOSY"
   },
   "stopstructure/940GZZLUOVL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUOVL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUOVL"
   },
   "stopstructure/940GZZLUOXC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUOXC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 137,
+   "error": null,
+   "queried_as": "940GZZLUOXC"
   },
   "stopstructure/940GZZLUPAC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPAC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUPAC"
   },
   "stopstructure/940GZZLUPAH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPAH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUPAH"
   },
   "stopstructure/940GZZLUPCC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPCC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUPCC"
   },
   "stopstructure/940GZZLUPCO.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPCO",
@@ -1631,407 +1807,458 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 137,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUPCO"
   },
   "stopstructure/940GZZLUPKR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPKR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 203,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUPKR"
   },
   "stopstructure/940GZZLUPLW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPLW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUPLW"
   },
   "stopstructure/940GZZLUPNR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPNR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUPNR"
   },
   "stopstructure/940GZZLUPRD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPRD",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUPRD"
   },
   "stopstructure/940GZZLUPSG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPSG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 137,
+   "error": null,
+   "queried_as": "940GZZLUPSG"
   },
   "stopstructure/940GZZLUPVL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPVL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLUPVL"
   },
   "stopstructure/940GZZLUPYB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUPYB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 188,
+   "error": null,
+   "queried_as": "940GZZLUPYB"
   },
   "stopstructure/940GZZLUQBY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUQBY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 131,
-   "error": null
+   "elapsed_ms": 97,
+   "error": null,
+   "queried_as": "940GZZLUQBY"
   },
   "stopstructure/940GZZLUQPS.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUQPS",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000186",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "1000186"
   },
   "stopstructure/940GZZLUQWY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUQWY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 103,
+   "error": null,
+   "queried_as": "940GZZLUQWY"
   },
   "stopstructure/940GZZLURBG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURBG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLURBG"
   },
   "stopstructure/940GZZLURGP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURGP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 102,
+   "error": null,
+   "queried_as": "940GZZLURGP"
   },
   "stopstructure/940GZZLURKW.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURKW",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000193",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 106,
+   "error": null,
+   "queried_as": "1000193"
   },
   "stopstructure/940GZZLURMD.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURMD",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000192",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "1000192"
   },
   "stopstructure/940GZZLURSG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURSG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 176,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLURSG"
   },
   "stopstructure/940GZZLURSM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURSM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLURSM"
   },
   "stopstructure/940GZZLURSP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURSP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLURSP"
   },
   "stopstructure/940GZZLURSQ.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURSQ",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLURSQ"
   },
   "stopstructure/940GZZLURVP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURVP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 242,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLURVP"
   },
   "stopstructure/940GZZLURVY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURVY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 112,
+   "error": null,
+   "queried_as": "940GZZLURVY"
   },
   "stopstructure/940GZZLURYL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURYL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 135,
+   "error": null,
+   "queried_as": "940GZZLURYL"
   },
   "stopstructure/940GZZLURYO.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLURYO",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLURYO"
   },
   "stopstructure/940GZZLUSBC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSBC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 144,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUSBC"
   },
   "stopstructure/940GZZLUSBM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSBM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 115,
+   "error": null,
+   "queried_as": "940GZZLUSBM"
   },
   "stopstructure/940GZZLUSEA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSEA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUSEA"
   },
   "stopstructure/940GZZLUSFB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSFB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUSFB"
   },
   "stopstructure/940GZZLUSFS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSFS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 115,
+   "error": null,
+   "queried_as": "940GZZLUSFS"
   },
   "stopstructure/940GZZLUSGN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSGN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 121,
+   "error": null,
+   "queried_as": "940GZZLUSGN"
   },
   "stopstructure/940GZZLUSGP.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSGP",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000224",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 108,
-   "error": null
+   "elapsed_ms": 97,
+   "error": null,
+   "queried_as": "1000224"
   },
   "stopstructure/940GZZLUSGT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSGT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 199,
+   "error": null,
+   "queried_as": "940GZZLUSGT"
   },
   "stopstructure/940GZZLUSHH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSHH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 134,
-   "error": null
+   "elapsed_ms": 190,
+   "error": null,
+   "queried_as": "940GZZLUSHH"
   },
   "stopstructure/940GZZLUSJP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSJP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 118,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUSJP"
   },
   "stopstructure/940GZZLUSJW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSJW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 239,
-   "error": null
+   "elapsed_ms": 115,
+   "error": null,
+   "queried_as": "940GZZLUSJW"
   },
   "stopstructure/940GZZLUSKS.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSKS",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 134,
-   "error": null
+   "elapsed_ms": 108,
+   "error": null,
+   "queried_as": "940GZZLUSKS"
   },
   "stopstructure/940GZZLUSKT.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSKT",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000213",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "1000213"
   },
   "stopstructure/940GZZLUSKW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSKW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 129,
+   "error": null,
+   "queried_as": "940GZZLUSKW"
   },
   "stopstructure/940GZZLUSNB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSNB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 186,
-   "error": null
+   "elapsed_ms": 120,
+   "error": null,
+   "queried_as": "940GZZLUSNB"
   },
   "stopstructure/940GZZLUSPU.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSPU",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 191,
-   "error": null
+   "elapsed_ms": 114,
+   "error": null,
+   "queried_as": "940GZZLUSPU"
   },
   "stopstructure/940GZZLUSRP.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSRP",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000214",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 107,
+   "error": null,
+   "queried_as": "1000214"
   },
   "stopstructure/940GZZLUSSQ.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSSQ",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 190,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUSSQ"
   },
   "stopstructure/940GZZLUSTD.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSTD",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000226",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "1000226"
   },
   "stopstructure/940GZZLUSTM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSTM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUSTM"
   },
   "stopstructure/940GZZLUSUH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSUH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 115,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUSUH"
   },
   "stopstructure/940GZZLUSUT.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSUT",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 143,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUSUT"
   },
   "stopstructure/940GZZLUSVS.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSVS",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000201",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "1000201"
   },
   "stopstructure/940GZZLUSWC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSWC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 126,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUSWC"
   },
   "stopstructure/940GZZLUSWF.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSWF",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 125,
+   "error": null,
+   "queried_as": "940GZZLUSWF"
   },
   "stopstructure/940GZZLUSWK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSWK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 139,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUSWK"
   },
   "stopstructure/940GZZLUSWN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUSWN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 188,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUSWN"
   },
   "stopstructure/940GZZLUTAW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTAW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 135,
-   "error": null
+   "elapsed_ms": 147,
+   "error": null,
+   "queried_as": "940GZZLUTAW"
   },
   "stopstructure/940GZZLUTBC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTBC",
@@ -2039,23 +2266,26 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 119,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUTBC"
   },
   "stopstructure/940GZZLUTBY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTBY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 143,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUTBY"
   },
   "stopstructure/940GZZLUTCR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTCR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 224,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUTCR"
   },
   "stopstructure/940GZZLUTFP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTFP",
@@ -2063,279 +2293,314 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 130,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUTFP"
   },
   "stopstructure/940GZZLUTHB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTHB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 133,
-   "error": null
+   "elapsed_ms": 113,
+   "error": null,
+   "queried_as": "940GZZLUTHB"
   },
   "stopstructure/940GZZLUTMH.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTMH",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000236",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 127,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "1000236"
   },
   "stopstructure/940GZZLUTMP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTMP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 178,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUTMP"
   },
   "stopstructure/940GZZLUTNG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTNG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 148,
+   "error": null,
+   "queried_as": "940GZZLUTNG"
   },
   "stopstructure/940GZZLUTPN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTPN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 143,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUTPN"
   },
   "stopstructure/940GZZLUTWH.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUTWH",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 147,
+   "error": null,
+   "queried_as": "940GZZLUTWH"
   },
   "stopstructure/940GZZLUUPB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUUPB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 118,
+   "error": null,
+   "queried_as": "940GZZLUUPB"
   },
   "stopstructure/940GZZLUUPK.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUUPK",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 124,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUUPK"
   },
   "stopstructure/940GZZLUUPM.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUUPM",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000242",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 100,
+   "error": null,
+   "queried_as": "1000242"
   },
   "stopstructure/940GZZLUUPY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUUPY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 116,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "940GZZLUUPY"
   },
   "stopstructure/940GZZLUUXB.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUUXB",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 129,
-   "error": null
+   "elapsed_ms": 134,
+   "error": null,
+   "queried_as": "940GZZLUUXB"
   },
   "stopstructure/940GZZLUVIC.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUVIC",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 252,
-   "error": null
+   "elapsed_ms": 214,
+   "error": null,
+   "queried_as": "940GZZLUVIC"
   },
   "stopstructure/940GZZLUVXL.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUVXL",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 114,
-   "error": null
+   "elapsed_ms": 142,
+   "error": null,
+   "queried_as": "940GZZLUVXL"
   },
   "stopstructure/940GZZLUWAF.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWAF",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUWAF"
   },
   "stopstructure/940GZZLUWBN.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWBN",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000260",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 113,
-   "error": null
+   "elapsed_ms": 108,
+   "error": null,
+   "queried_as": "1000260"
   },
   "stopstructure/940GZZLUWCY.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWCY",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUWCY"
   },
   "stopstructure/940GZZLUWFN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWFN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUWFN"
   },
   "stopstructure/940GZZLUWHM.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWHM",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000262",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 125,
-   "error": null
+   "elapsed_ms": 98,
+   "error": null,
+   "queried_as": "1000262"
   },
   "stopstructure/940GZZLUWHP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWHP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUWHP"
   },
   "stopstructure/940GZZLUWHW.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWHW",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 130,
+   "error": null,
+   "queried_as": "940GZZLUWHW"
   },
   "stopstructure/940GZZLUWIG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWIG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 116,
+   "error": null,
+   "queried_as": "940GZZLUWIG"
   },
   "stopstructure/940GZZLUWIM.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWIM",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000272",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 111,
-   "error": null
+   "elapsed_ms": 97,
+   "error": null,
+   "queried_as": "1000272"
   },
   "stopstructure/940GZZLUWIP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWIP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 139,
-   "error": null
+   "elapsed_ms": 103,
+   "error": null,
+   "queried_as": "940GZZLUWIP"
   },
   "stopstructure/940GZZLUWJN.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWJN",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000271",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 110,
+   "error": null,
+   "queried_as": "1000271"
   },
   "stopstructure/940GZZLUWKA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWKA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 123,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUWKA"
   },
   "stopstructure/940GZZLUWKN.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWKN",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 121,
-   "error": null
+   "elapsed_ms": 119,
+   "error": null,
+   "queried_as": "940GZZLUWKN"
   },
   "stopstructure/940GZZLUWLA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWLA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 128,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUWLA"
   },
   "stopstructure/940GZZLUWLO.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWLO",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000254",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 134,
-   "error": null
+   "elapsed_ms": 106,
+   "error": null,
+   "queried_as": "1000254"
   },
   "stopstructure/940GZZLUWOF.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWOF",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 126,
+   "error": null,
+   "queried_as": "940GZZLUWOF"
   },
   "stopstructure/940GZZLUWOG.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWOG",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 100,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUWOG"
   },
   "stopstructure/940GZZLUWOP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWOP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 117,
-   "error": null
+   "elapsed_ms": 124,
+   "error": null,
+   "queried_as": "940GZZLUWOP"
   },
   "stopstructure/940GZZLUWPL.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWPL",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000268",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 106,
+   "error": null,
+   "queried_as": "1000268"
   },
   "stopstructure/940GZZLUWRP.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWRP",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000267",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 119,
-   "error": null
+   "elapsed_ms": 96,
+   "error": null,
+   "queried_as": "1000267"
   },
   "stopstructure/940GZZLUWRR.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWRR",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
-   "error": null
+   "elapsed_ms": 128,
+   "error": null,
+   "queried_as": "940GZZLUWRR"
   },
   "stopstructure/940GZZLUWSD.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWSD",
@@ -2343,63 +2608,71 @@
    "status": 200,
    "attempts": 1,
    "elapsed_ms": 130,
-   "error": null
+   "error": null,
+   "queried_as": "940GZZLUWSD"
   },
   "stopstructure/940GZZLUWSM.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWSM",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 137,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUWSM"
   },
   "stopstructure/940GZZLUWSP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWSP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 112,
-   "error": null
+   "elapsed_ms": 122,
+   "error": null,
+   "queried_as": "940GZZLUWSP"
   },
   "stopstructure/940GZZLUWTA.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWTA",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 122,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZLUWTA"
   },
   "stopstructure/940GZZLUWWL.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWWL",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000249",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 131,
-   "error": null
+   "elapsed_ms": 117,
+   "error": null,
+   "queried_as": "1000249"
   },
   "stopstructure/940GZZLUWYC.json.gz": {
-   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWYC",
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=1000256",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 107,
-   "error": null
+   "elapsed_ms": 123,
+   "error": null,
+   "queried_as": "1000256"
   },
   "stopstructure/940GZZLUWYP.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZLUWYP",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 141,
-   "error": null
+   "elapsed_ms": 127,
+   "error": null,
+   "queried_as": "940GZZLUWYP"
   },
   "stopstructure/940GZZNEUGST.json.gz": {
    "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&outputFormat=rapidJSON&sSStopNr=940GZZNEUGST",
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 130,
-   "error": null
+   "elapsed_ms": 109,
+   "error": null,
+   "queried_as": "940GZZNEUGST"
   }
  }
 }
