@@ -1,12 +1,12 @@
 {
- "fetched_at": "2026-10-19T20:26:28+00:00",
+ "fetched_at": "2026-10-19T23:43:37+00:00",
  "files": {
   "stoppoints-tube": {
    "path": "StopPoint/Mode/tube",
    "ok": true,
    "status": 200,
-   "attempts": 1,
-   "elapsed_ms": 532,
+   "attempts": 3,
+   "elapsed_ms": 46418,
    "error": null
   },
   "stoppoints-dlr": {
@@ -14,7 +14,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1737,
+   "elapsed_ms": 143,
    "error": null
   },
   "stoppoints-overground": {
@@ -22,7 +22,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 4748,
+   "elapsed_ms": 4541,
    "error": null
   },
   "stoppoints-elizabeth-line": {
@@ -30,7 +30,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 4229,
+   "elapsed_ms": 131,
    "error": null
   },
   "lines": {
@@ -38,7 +38,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 966,
+   "elapsed_ms": 205,
    "error": null
   },
   "route-bakerloo": {
@@ -46,7 +46,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 100,
+   "elapsed_ms": 739,
    "error": null
   },
   "route-central": {
@@ -54,7 +54,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1363,
+   "elapsed_ms": 933,
    "error": null
   },
   "route-circle": {
@@ -62,7 +62,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 108,
+   "elapsed_ms": 994,
    "error": null
   },
   "route-district": {
@@ -70,7 +70,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1364,
+   "elapsed_ms": 1147,
    "error": null
   },
   "route-dlr": {
@@ -78,7 +78,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 927,
+   "elapsed_ms": 1063,
    "error": null
   },
   "route-elizabeth": {
@@ -86,7 +86,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1113,
+   "elapsed_ms": 945,
    "error": null
   },
   "route-hammersmith-city": {
@@ -94,7 +94,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 618,
+   "elapsed_ms": 713,
    "error": null
   },
   "route-jubilee": {
@@ -102,7 +102,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 109,
+   "elapsed_ms": 1064,
    "error": null
   },
   "route-liberty": {
@@ -110,7 +110,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 485,
+   "elapsed_ms": 682,
    "error": null
   },
   "route-lioness": {
@@ -118,7 +118,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 683,
+   "elapsed_ms": 622,
    "error": null
   },
   "route-metropolitan": {
@@ -126,7 +126,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 120,
+   "elapsed_ms": 841,
    "error": null
   },
   "route-mildmay": {
@@ -134,7 +134,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 819,
+   "elapsed_ms": 704,
    "error": null
   },
   "route-northern": {
@@ -142,7 +142,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1163,
+   "elapsed_ms": 1635,
    "error": null
   },
   "route-piccadilly": {
@@ -150,7 +150,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 1133,
+   "elapsed_ms": 1132,
    "error": null
   },
   "route-suffragette": {
@@ -158,7 +158,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 103,
+   "elapsed_ms": 477,
    "error": null
   },
   "route-victoria": {
@@ -166,7 +166,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 968,
+   "elapsed_ms": 671,
    "error": null
   },
   "route-waterloo-city": {
@@ -174,7 +174,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 368,
+   "elapsed_ms": 558,
    "error": null
   },
   "route-weaver": {
@@ -182,7 +182,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 672,
+   "elapsed_ms": 694,
    "error": null
   },
   "route-windrush": {
@@ -190,7 +190,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 102,
+   "elapsed_ms": 706,
    "error": null
   },
   "accessibility/open-data-page.html": {
@@ -198,7 +198,7 @@
    "ok": false,
    "status": 403,
    "attempts": 1,
-   "elapsed_ms": 38,
+   "elapsed_ms": 105,
    "error": "HTTP 403"
   },
   "crosscheck/zenodo-record.json": {
@@ -206,7 +206,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 397,
+   "elapsed_ms": 507,
    "error": null
   },
   "crosscheck/london_underground_metadata.csv": {
@@ -214,7 +214,7 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 266,
+   "elapsed_ms": 317,
    "error": null
   },
   "crosscheck/README.md": {
@@ -222,7 +222,127 @@
    "ok": true,
    "status": 200,
    "attempts": 1,
-   "elapsed_ms": 171,
+   "elapsed_ms": 297,
+   "error": null
+  },
+  "stopstructure/westminster-naptan-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUWSM&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 191,
+   "error": null
+  },
+  "stopstructure/westminster-naptan-xml.xml": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUWSM",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 309,
+   "error": null
+  },
+  "stopstructure/westminster-ics-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=1000266&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 153,
+   "error": null
+  },
+  "stopstructure/green-park-naptan-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUGPK&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 164,
+   "error": null
+  },
+  "stopstructure/green-park-naptan-xml.xml": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUGPK",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 177,
+   "error": null
+  },
+  "stopstructure/green-park-ics-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=1000093&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 165,
+   "error": null
+  },
+  "stopstructure/south-kensington-naptan-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUSKS&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 185,
+   "error": null
+  },
+  "stopstructure/south-kensington-naptan-xml.xml": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUSKS",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 180,
+   "error": null
+  },
+  "stopstructure/south-kensington-ics-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=1000212&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 166,
+   "error": null
+  },
+  "stopstructure/baker-street-naptan-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUBST&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 158,
+   "error": null
+  },
+  "stopstructure/baker-street-naptan-xml.xml": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUBST",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 189,
+   "error": null
+  },
+  "stopstructure/baker-street-ics-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=1000011&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 147,
+   "error": null
+  },
+  "stopstructure/wembley-park-naptan-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUWYP&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 175,
+   "error": null
+  },
+  "stopstructure/wembley-park-naptan-xml.xml": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=940GZZLUWYP",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 164,
+   "error": null
+  },
+  "stopstructure/wembley-park-ics-json.json": {
+   "path": "https://api.tfl.gov.uk/jp_public/api10/XML_STOPSTRUCTURE_REQUEST?sSInclSP=1&sSInclSL=1&sSFEA=1&coordOutputFormat=WGS84%5Bdd.ddddd%5D&sSStopNr=1000257&outputFormat=rapidJSON",
+   "ok": true,
+   "status": 200,
+   "attempts": 1,
+   "elapsed_ms": 161,
    "error": null
   }
  }

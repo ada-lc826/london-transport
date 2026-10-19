@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itdRequest version="10.6.30.10" language="de" lengthUnit="METER" sessionID="0" client="mind-the-step" clientIP="" serverID="" virtDir="api10" calcTime="29.521" now="2026-10-20T00:44:49" nowWD="3" logRequestId="361f99c0562b3eb1">
+  <clientHeaderLines/>
+  <itdVersionInfo>
+    <ptKernel>
+      <appVersion>10.6.30.15 build 16.04.2026 00:23:45</appVersion>
+      <dataFormat>EFA10_06_01</dataFormat>
+      <dataBuild>2026-10-19T05:35:56</dataBuild>
+    </ptKernel>
+  </itdVersionInfo>
+  <itdStopStructureRequest requestID="0">
+    <stopStructure>
+      <stopAreaLinesSeq>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="97" stopName="South Kensington Stn / Old Brompton Rd" areaName="Swa">
+            <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid="" areaGid="" x="-0.173704" y="51.493420" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="3" number="" symbol="345" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:21345: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="21345" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Peckham - Camberwell - Brixton - Clapham North, Common &amp; Junction - South Kensington</itdRouteDescText>
+              <itdOperator>
+                <code>CX</code>
+                <name>Transport UK</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="360" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:45360: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="45360" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Elephant &amp; Castle - Vauxhall - Pimlico - Sloane Square - Royal Albert Hall</itdRouteDescText>
+              <itdOperator>
+                <code>LC</code>
+                <name>LONDON CENTRAL BUS COMPANY LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="14" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Putney Heath - Fulham Broadway - South Kensington - Piccadilly Circus - Russell Square</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014:P:H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="H" supplement="P" network="tfl"/>
+              <itdRouteDescText>Putney Heath - Putney Bridge - Fulham Broadway - South Kensington - Hyde Park Corner - Piccadilly Circus - Russell Square</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="49" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:49049: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="49049" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Clapham Junction - Chelsea - South Kensington - Shepherd's Bush - White City</itdRouteDescText>
+              <itdOperator>
+                <code>LU</code>
+                <name>LONDON UNITED BUSWAYS LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="2" areaType="33" stopName="Pelham Street" areaName="Swa">
+            <itdPoint stopID="1015176" area="0" platform="" gid="490G00015176" pointGid="" areaGid="" x="-0.171402" y="51.493708" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="2" areaType="97" stopName="South Kensington Station" areaName="Bus">
+            <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" areaGid="490G00212G" x="-0.174383" y="51.494447" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="3" number="" symbol="345" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:21345: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="21345" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>South Kensington - Clapham Junction, Common &amp; North - Brixton - Camberwell - Peckham</itdRouteDescText>
+              <itdOperator>
+                <code>CX</code>
+                <name>Transport UK</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="360" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:45360: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="45360" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Elephant &amp; Castle - Vauxhall - Pimlico - Sloane Square - Royal Albert Hall</itdRouteDescText>
+              <itdOperator>
+                <code>LC</code>
+                <name>LONDON CENTRAL BUS COMPANY LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="360" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:45360: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="45360" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Royal Albert Hall - Sloane Square - Pimlico - Vauxhall - Elephant &amp; Castle</itdRouteDescText>
+              <itdOperator>
+                <code>LC</code>
+                <name>LONDON CENTRAL BUS COMPANY LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="14" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Putney Heath - Fulham Broadway - South Kensington - Piccadilly Circus - Russell Square</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="14" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Russell Square - Piccadilly Circus - South Kensington - Fulham Broadway - Putney Heath</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014:P:H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="H" supplement="P" network="tfl"/>
+              <itdRouteDescText>Putney Heath - Putney Bridge - Fulham Broadway - South Kensington - Hyde Park Corner - Piccadilly Circus - Russell Square</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48014:P:R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48014" project="y05" direction="R" supplement="P" network="tfl"/>
+              <itdRouteDescText>Russell Square - Piccadilly Circus - Hyde Park Corner - South Kensington - Fulham Broadway - Putney Bridge - Putney Heath</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="74" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48074: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48074" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Putney - Earl's Court - South Kensington - Marble Arch - Baker Street Station</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="74" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48074: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48074" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Baker Street Station - Marble Arch - South Kensington - Earl's Court - Putney</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="430" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48430: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48430" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Roehampton, Danebury Avenue - Putney Station and High Street - Putney Bridge - Fulham Cross - South Kensington</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="430" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48430: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48430" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>South Kensington - Fulham Cross - Putney Bridge - Putney High Street and Station - Roehampton, Danebury Avenue</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="N74" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48N74: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48N74" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Roehampton, Danebury Avenue - Putney - Earls Court - Marble Arch - Baker Street Station</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="N74" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:48N74: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48N74" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Baker Street Station - Marble Arch - Earls Court - Putney - Roehampton, Danebury Avenue</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="N97" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="" stateless="tfl:48N97: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48N97" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Hammersmith - Fulham Cross - Earls Court - Green Park - Trafalgar Square</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="N97" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="0" type="unknown" spTr="" destID="" stateless="tfl:48N97: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="48N97" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Trafalgar Square - Green Park - Earls Court - Fulham Cross - Hammersmith</itdRouteDescText>
+              <itdOperator>
+                <code>LG</code>
+                <name>LONDON GENERAL TRANSPORT SERVICES LTD</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="49" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:49049: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="49049" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>White City - Shepherd's Bush - South Kensington - Chelsea - Clapham Junction</itdRouteDescText>
+              <itdOperator>
+                <code>LU</code>
+                <name>LONDON UNITED BUSWAYS LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="70" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:49070: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="49070" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>South Kensington - Notting Hill Gate - Queensway - Bayswater - Ladbroke Grove - St Quintin Park - East Acton - Acton Town - Chiswick, Business Park</itdRouteDescText>
+              <itdOperator>
+                <code>LU</code>
+                <name>LONDON UNITED BUSWAYS LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="C1" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:490C1: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="490C1" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Victoria - Knightsbridge - South Kensington - Holland Road - White City</itdRouteDescText>
+              <itdOperator>
+                <code>LU</code>
+                <name>LONDON UNITED BUSWAYS LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="3" number="" symbol="C1" motType="5" productId="0" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:490C1: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="490C1" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>White City - Holland Road - South Kensington - Knightsbridge - Victoria</itdRouteDescText>
+              <itdOperator>
+                <code>LU</code>
+                <name>LONDON UNITED BUSWAYS LIMITED</name>
+                <publicCode>LBSL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-2" duration="2" areaType="81" stopName="South Kensington Station" areaName="DistE">
+            <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" areaGid="9400ZZLUSKS1" x="-0.173098" y="51.494157" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="1" number="" symbol="CIR" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01CIR: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01CIR" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Tower Hill - King's Cross St. Pancras - Hammersmith</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="1" number="" symbol="DIS" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01DIS: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01DIS" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Ealing Broadway/Richmond/Wimbledon - Earl's Court - Upminster/Edgware Road</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="2" areaType="33" stopName="South Kensington Station" areaName="BUSS">
+            <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" areaGid="4900ZZLUSKS1" x="-0.173039" y="51.493841" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-4" duration="2" areaType="81" stopName="South Kensington Station" areaName="PicEB">
+            <itdPoint stopID="1000212" area="4" platform="" gid="940GZZLUSKS" pointGid="" areaGid="9400ZZLUSKS2" x="-0.173363" y="51.494017" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="1" number="" symbol="PIC" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01PIC: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01PIC" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Heathrow Airport - Acton Town (Wednesday - Friday) no service on entire line Saturday and Sunday</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-6" duration="2" areaType="81" stopName="South Kensington Station" areaName="PicWB">
+            <itdPoint stopID="1000212" area="5" platform="" gid="940GZZLUSKS" pointGid="" areaGid="9400ZZLUSKS3" x="-0.173263" y="51.493998" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="1" number="" symbol="PIC" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01PIC: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01PIC" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Acton Town - Heathrow Airport (Wednesday - Friday) no service on entire line Saturday and Sunday</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="36" stopName="South Kensington Station" areaName="A-PEL">
+            <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" areaGid="4900ZZLUSKS2" x="-0.174096" y="51.494074" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="36" stopName="South Kensington Station" areaName="B-THU">
+            <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" areaGid="4900ZZLUSKS3" x="-0.174091" y="51.494200" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="36" stopName="South Kensington Station" areaName="EXHIB">
+            <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" areaGid="4900ZZLUSKS4" x="-0.173494" y="51.494703" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="36" stopName="South Kensington Station" areaName="CROMW">
+            <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" areaGid="4900ZZLUSKS5" x="-0.173773" y="51.495669" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-1" duration="0" areaType="4096" stopName="South Kensington Station" areaName="BookH">
+            <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" areaGid="" x="-0.173921" y="51.494134" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-2" duration="2" areaType="81" stopName="South Kensington Station" areaName="DistW">
+            <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" areaGid="9400ZZLUSKS4" x="-0.173074" y="51.494058" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines>
+            <itdServingLine selected="0" code="1" number="" symbol="CIR" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01CIR: :H:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01CIR" project="y05" direction="H" supplement=" " network="tfl"/>
+              <itdRouteDescText>Hammersmith - King's Cross St. Pancras - Tower Hill</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+            <itdServingLine selected="0" code="1" number="" symbol="DIS" motType="2" productId="1" realtime="0" direction="" valid="y05 current project" compound="0" TTB="0" STT="1" ROP="1" type="unknown" spTr="" destID="" stateless="tfl:01DIS: :R:y05" oK="-1" lineDisplay="line">
+              <itdNoTrain/>
+              <motDivaParams line="01DIS" project="y05" direction="R" supplement=" " network="tfl"/>
+              <itdRouteDescText>Upminster/Edgware Road - Earl's Court - Ealing Broadway/Richmond/Wimbledon</itdRouteDescText>
+              <itdOperator>
+                <code>LUL</code>
+                <name>London Underground</name>
+                <publicCode>LUL</publicCode>
+              </itdOperator>
+            </itdServingLine>
+          </itdServingLines>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-3" duration="0" areaType="4096" stopName="South Kensington Station" areaName="MiCon">
+            <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" areaGid="" x="-0.173225" y="51.493871" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="-5" duration="0" areaType="4096" stopName="South Kensington Station" areaName="LoCon">
+            <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" areaGid="" x="-0.173987" y="51.493919" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+        <stopAreaLines>
+          <stopArea level="0" duration="0" areaType="4096" stopName="South Kensington Station" areaName="MET">
+            <itdPoint stopID="1000212" area="14" platform="" gid="940GZZLUSKS" pointGid="" areaGid="9400ZZLUSKS" x="-0.174138" y="51.494092" mapName="TFLV"/>
+          </stopArea>
+          <itdServingLines/>
+        </stopAreaLines>
+      </stopAreaLinesSeq>
+      <stopPoints>
+        <itdPoint name="" stopID="1000212" area="1" platform="-&gt;W" gid="940GZZLUSKS" pointGid="490000212Z" x="-0.171973" y="51.496001" mapName="TFLV"/>
+        <itdPoint name="D" stopID="1000212" area="1" platform="D" gid="940GZZLUSKS" pointGid="490000212E1" x="-0.175461" y="51.494167" mapName="TFLV"/>
+        <itdPoint name="E" stopID="1000212" area="1" platform="E" gid="940GZZLUSKS" pointGid="490000212E" x="-0.174815" y="51.494463" mapName="TFLV"/>
+        <itdPoint name="S" stopID="1000212" area="1" platform="S" gid="940GZZLUSKS" pointGid="490000212S" x="-0.174583" y="51.494504" mapName="TFLV"/>
+        <itdPoint name="T" stopID="1000212" area="1" platform="T" gid="940GZZLUSKS" pointGid="490000212S1" x="-0.174586" y="51.494423" mapName="TFLV"/>
+        <itdPoint name="" stopID="1000212" area="2" platform="86336" gid="940GZZLUSKS" pointGid="" x="-0.173084" y="51.494157" mapName="TFLV"/>
+        <itdPoint name="" stopID="1000212" area="4" platform="86338" gid="940GZZLUSKS" pointGid="" x="-0.173363" y="51.494017" mapName="TFLV"/>
+        <itdPoint name="" stopID="1000212" area="5" platform="86339" gid="940GZZLUSKS" pointGid="" x="-0.173249" y="51.493998" mapName="TFLV"/>
+        <itdPoint name="B" stopID="1015173" area="0" platform="B" gid="490G000866" pointGid="490015173D" x="-0.173747" y="51.493439" mapName="TFLV"/>
+        <itdPoint name="" stopID="1015176" area="0" platform="A" gid="490G00015176" pointGid="490000212A" x="-0.171404" y="51.493672" mapName="TFLV"/>
+      </stopPoints>
+      <footpathInfos>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="68">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="68" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="12">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="12" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="42">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="42" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="3" distance="177">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="26" distance="177" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="4" distance="0">
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1015176" area="0" platform="" gid="490G00015176" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1015176" area="0" platform="" gid="490G00015176" pointGid="" level="0" x="-0.171402" y="51.493708" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="40" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859170:5:TFLV:100" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" georef="1000827219:43:TFLV:100" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" georef="504131193:5:TFLV:100" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid="" georef="0:0::100" level="0" x="-0.173704" y="51.493420" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="4" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="4" platform="" gid="940GZZLUSKS" pointGid="" level="-4" x="-0.173363" y="51.494017" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="5" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="5" platform="" gid="940GZZLUSKS" pointGid="" level="-6" x="-0.173263" y="51.493998" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="68">
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="68" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="3" distance="0">
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid="" georef="0:0::100" level="0" x="-0.173704" y="51.493420" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="25" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="3" distance="0">
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1015176" area="0" platform="" gid="490G00015176" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859169:8:TFLV:100" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1015176" area="0" platform="" gid="490G00015176" pointGid="" georef="0:0::100" level="0" x="-0.171402" y="51.493708" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="30" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="12">
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859170:5:TFLV:100" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="12" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859170:5:TFLV:100" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859170:5:TFLV:100" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="3" distance="0">
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" georef="1000859170:5:TFLV:100" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1015173" area="0" platform="" gid="490G000866" pointGid="" georef="0:0::100" level="0" x="-0.173704" y="51.493420" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="30" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="42">
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" georef="1000827219:43:TFLV:100" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="42" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" georef="1000827219:43:TFLV:100" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" georef="1000827219:43:TFLV:100" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="3" distance="177">
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" georef="504131193:5:TFLV:100" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="1" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="0" x="-0.174383" y="51.494447" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="26" distance="177" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="5" distance="0">
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" georef="504131193:5:TFLV:100" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="3" platform="" gid="940GZZLUSKS" pointGid="" georef="1001745654:62:TFLV:100" level="0" x="-0.173039" y="51.493841" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="50" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" georef="504131193:5:TFLV:100" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="6" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174096" y="51.494074" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="7" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.174091" y="51.494200" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="8" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.173494" y="51.494703" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="9" platform="" gid="940GZZLUSKS" pointGid="" level="0" x="-0.173773" y="51.495669" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="ESCALATOR">
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="LEVEL">
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" georef="1000946823:184:TFLV:100" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" georef="1000946823:184:TFLV:100" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" georef="1000946823:184:TFLV:100" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" georef="0:0::100" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="2" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173098" y="51.494157" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="ESCALATOR">
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="10" platform="" gid="940GZZLUSKS" pointGid="" level="-1" x="-0.173921" y="51.494134" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="11" platform="" gid="940GZZLUSKS" pointGid="" level="-2" x="-0.173074" y="51.494058" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="ESCALATOR">
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="4" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="4" platform="" gid="940GZZLUSKS" pointGid="" level="-4" x="-0.173363" y="51.494017" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="1" distance="0">
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="5" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="STAIRS">
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="5" platform="" gid="940GZZLUSKS" pointGid="" level="-6" x="-0.173263" y="51.493998" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="10" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+        <footpathInfo duration="2" distance="0">
+          <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid=""/>
+          <footpathPartInfos>
+            <footpathPartInfo desc="" type="ESCALATOR">
+              <itdPoint stopID="1000212" area="13" platform="" gid="940GZZLUSKS" pointGid="" level="-5" x="-0.173987" y="51.493919" mapName="WGS84[dd.ddddd]"/>
+              <itdPoint stopID="1000212" area="12" platform="" gid="940GZZLUSKS" pointGid="" level="-3" x="-0.173225" y="51.493871" mapName="WGS84[dd.ddddd]"/>
+              <attributes duration="20" distance="0" narrowestWidth="-1" elevLength="0" elevWidth="0" elevDoorWidth="0" rampLength="0" rampWidth="0" rampInclination="0" numberSteps="0" maxStepHeight="0">
+                <openingHours/>
+              </attributes>
+            </footpathPartInfo>
+          </footpathPartInfos>
+        </footpathInfo>
+      </footpathInfos>
+    </stopStructure>
+  </itdStopStructureRequest>
+</itdRequest>
