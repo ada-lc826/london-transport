@@ -18,7 +18,7 @@ from pathlib import Path
 
 import httpx
 
-from . import accessibility
+from . import accessibility, stopstructure
 from .lifts import EXIT_CONFIG_ERROR, TIMEOUT_SECONDS, fetch
 
 API = "https://api.tfl.gov.uk"
@@ -26,7 +26,7 @@ API = "https://api.tfl.gov.uk"
 # Rail modes in scope: the network with step-free data that the story is about. Buses are
 # step-free by design and are handled separately.
 MODES = ("tube", "dlr", "overground", "elizabeth-line")
-BEST_EFFORT_PREFIXES = ("accessibility/", "crosscheck/")
+BEST_EFFORT_PREFIXES = ("accessibility/", "crosscheck/", "stopstructure/")
 
 
 def _url(path: str) -> str:
@@ -64,6 +64,7 @@ def snapshot(client: httpx.Client, app_key: str, out_dir: Path, now: datetime) -
 
     accessibility.download(client, app_key, day_dir, manifest["files"])
     accessibility.download_zenodo(client, app_key, day_dir, manifest["files"])
+    stopstructure.probe(client, app_key, day_dir, manifest["files"])
 
     (day_dir / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n", encoding="utf-8")
     return manifest

@@ -42,6 +42,8 @@ def fake_tfl(failing: set[str] = frozenset()):
                 {"key": "huge.zip", "size": 10**9, "links": {"self": "https://zenodo.org/f/h.zip"}},
             ]
             return httpx.Response(200, json={"files": files})
+        if path == "/jp_public/api10/XML_STOPSTRUCTURE_REQUEST":
+            return httpx.Response(200, text=f"<ss stop='{request.url.params['sSStopNr']}'/>")
         if path == "/f/s.csv":
             return httpx.Response(200, text="station,step_free\n")
         return httpx.Response(500)
@@ -68,8 +70,14 @@ def test_snapshot_writes_every_file_and_a_manifest(tmp_path, monkeypatch):
     assert names == sorted(
         [f"stoppoints-{m}.json.gz" for m in snapshot.MODES]
         + ["lines.json.gz", "route-victoria.json.gz", "route-elizabeth.json.gz", "manifest.json"]
-        + ["accessibility", "crosscheck"]
+        + ["accessibility", "crosscheck", "stopstructure"]
     )
+    probe = day / "stopstructure" / "south-kensington-ics-xml.xml"
+    assert not probe.exists()
+    assert (day / "stopstructure" / "south-kensington-naptan-xml.xml").read_text() == (
+        "<ss stop='940GZZLUSKS'/>"
+    )
+    assert len(list((day / "stopstructure").iterdir())) == 15
     crosscheck = sorted(p.name for p in (day / "crosscheck").iterdir())
     assert crosscheck == ["stations.csv", "zenodo-record.json"]
     assert (day / "accessibility" / "topology.zip").read_bytes() == b"PK zip"

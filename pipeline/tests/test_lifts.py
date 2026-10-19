@@ -116,3 +116,9 @@ def test_main_exit_codes(tmp_path, monkeypatch, status, code):
     result = lifts.FetchResult(status, body, 1, 1, None if body else f"HTTP {status}")
     monkeypatch.setattr(lifts, "fetch", lambda client, key: result)
     assert lifts.main(["--out", str(tmp_path)]) == code
+
+
+def test_fetch_keeps_existing_query_parameters():
+    client, seen = client_for(httpx.Response(200, json=PAYLOAD))
+    lifts.fetch(client, KEY, url="https://api.tfl.gov.uk/x?a=1&b=two", sleep=no_sleep)
+    assert dict(seen[0].url.params) == {"a": "1", "b": "two", "app_key": KEY}

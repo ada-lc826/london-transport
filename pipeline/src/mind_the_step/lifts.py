@@ -68,7 +68,8 @@ def fetch(
     error: str | None = None
     for attempt in range(1, attempts + 1):
         try:
-            response = client.get(url, params=_key_params(url, app_key))
+            # Merge rather than replace any query string already in `url`.
+            response = client.get(httpx.URL(url).copy_merge_params(_key_params(url, app_key) or {}))
         except httpx.HTTPError as exc:
             status, error = None, f"{type(exc).__name__}: {exc}"
         else:
