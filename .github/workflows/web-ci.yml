@@ -1,0 +1,21 @@
+name: Web CI
+
+on:
+    push:
+        paths-ignore: ['pipeline/**', 'docs/**']
+    pull_request:
+        paths-ignore: ['pipeline/**', 'docs/**']
+
+jobs:
+    check:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        steps:
+            - uses: actions/checkout@v7
+            - uses: voidzero-dev/setup-vp@v1
+              with:
+                  cache: true
+            # Format, lint and typecheck before building: the linter would also scan build output.
+            - run: vp check
+            - run: vp run test -r
+            - run: vp run build -r

@@ -21,11 +21,11 @@ export const Route = createRootRouteWithContext()({
                 content: 'width=device-width, initial-scale=1'
             },
             {
-                title: 'DO app'
+                title: 'Mind the Step'
             },
             {
                 name: 'description',
-                content: 'A minimal DO app starter'
+                content: 'Mind the Step: a Data Observatory demo on step-free access in London'
             }
         ],
         links: [
@@ -65,10 +65,15 @@ function RootDocument({ children }: { readonly children: React.ReactNode }) {
                     even as routes change.
                 */}
                 <ScriptOnce>
-                    {`document.documentElement.classList.toggle(
-              'dark',
-              localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-          );`}
+                    {`(function () {
+              var stored = null;
+              // Sandboxed iframes without allow-same-origin throw on any localStorage access.
+              try { stored = localStorage.getItem('theme'); } catch (e) {}
+              document.documentElement.classList.toggle(
+                'dark',
+                stored === 'dark' || (stored === null && window.matchMedia('(prefers-color-scheme: dark)').matches)
+              );
+          })();`}
                 </ScriptOnce>
                 {/* ThemeProvider keeps theme state in sync across routes, tabs, and iframes. */}
                 <ThemeProvider>{children}</ThemeProvider>

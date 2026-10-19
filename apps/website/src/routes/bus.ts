@@ -1,22 +1,14 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { defineHooks } from 'crossws';
 
-import type {
-    BusMessage,
-    BusSharedState,
-    ScreenMapViewMessage,
-    ScreenSegmentSelectionMessage
-} from '../lib/realtime';
-import { isMapCity } from '../lib/realtime/map-cities';
+import type { BusMessage } from '../lib/realtime';
+import { initialBusState, reduceBusMessage } from '../lib/realtime/bus-state';
+import { decodePing, encodePong, isBinaryFrame } from '../lib/realtime/clock';
 
 // In-memory bus state for this server process.
 // New clients receive this snapshot in the `hello` handshake so they can
 // join late without waiting for another control interaction.
-const busSharedState: BusSharedState = {
-    city: 'london',
-    zoom: 9,
-    selectedSegmentIndexes: []
-};
+let busSharedState = initialBusState(Date.now());
 
 const hooks = defineHooks({
     open(peer) {
@@ -38,6 +30,15 @@ const hooks = defineHooks({
         });
     },
     message(peer, message) {
+        const bytes = message.uint8Array();
+        if (isBinaryFrame(bytes)) {
+            // Clock pings are answered directly and never fanned out.
+            const receivedAt = Date.now();
+            const t0 = decodePing(bytes);
+            if (t0 !== null) peer.send(encodePong(t0, receivedAt, Date.now()));
+            return;
+        }
+
         // Ignore malformed payloads; only valid JSON objects enter the shared-state path.
         let payload: Partial<BusMessage>;
         try {
@@ -47,7 +48,18 @@ const hooks = defineHooks({
         } catch {
             return;
         }
-        updateBusSharedState(payload);
+
+        const { state, broadcast } = reduceBusMessage(busSharedState, payload, Date.now());
+        busSharedState = state;
+
+        if (broadcast) {
+            // Server-owned state: everyone, sender included, gets the authoritative version.
+            // No `peerId`, so the sender's engine does not drop it as its own echo.
+            const outgoing = { ...broadcast, peerCount: peer.peers.size };
+            peer.send(outgoing);
+            peer.publish('do', outgoing);
+            return;
+        }
 
         // Broadcast to all peers. Each client engine can ignore own echoes via peerId.
         peer.publish('do', {
@@ -65,32 +77,6 @@ const hooks = defineHooks({
         peer.unsubscribe('do');
     }
 });
-
-function updateBusSharedState(payload: Partial<BusMessage>) {
-    if (payload.type === 'screen/map-view') {
-        const message = payload as Partial<ScreenMapViewMessage>;
-        // Preserve last known valid city/zoom for hello-state replay.
-        if (isMapCity(message.city)) {
-            busSharedState.city = message.city;
-        }
-
-        if (typeof message.view?.zoom === 'number') {
-            busSharedState.zoom = message.view.zoom;
-        }
-        return;
-    }
-
-    if (payload.type === 'screen/segment-selection') {
-        const message = payload as Partial<ScreenSegmentSelectionMessage>;
-        if (!Array.isArray(message.indexes)) return;
-
-        // Keep indexes deterministic for easier equality checks in clients and debugging.
-        busSharedState.selectedSegmentIndexes = message.indexes
-            .filter((value): value is number => Number.isInteger(value) && value >= 0)
-            .slice()
-            .sort((a, b) => a - b);
-    }
-}
 
 export const Route = createFileRoute('/bus')({
     server: {

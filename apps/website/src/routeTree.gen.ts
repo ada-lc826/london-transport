@@ -9,12 +9,18 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WorldRouteImport } from './routes/world'
 import { Route as ScreenRouteImport } from './routes/screen'
 import { Route as NoopRouteImport } from './routes/noop'
 import { Route as ControlRouteImport } from './routes/control'
 import { Route as BusRouteImport } from './routes/bus'
 import { Route as IndexRouteImport } from './routes/index'
 
+const WorldRoute = WorldRouteImport.update({
+  id: '/world',
+  path: '/world',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ScreenRoute = ScreenRouteImport.update({
   id: '/screen',
   path: '/screen',
@@ -47,6 +53,7 @@ export interface FileRoutesByFullPath {
   '/control': typeof ControlRoute
   '/noop': typeof NoopRoute
   '/screen': typeof ScreenRoute
+  '/world': typeof WorldRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +61,7 @@ export interface FileRoutesByTo {
   '/control': typeof ControlRoute
   '/noop': typeof NoopRoute
   '/screen': typeof ScreenRoute
+  '/world': typeof WorldRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +70,14 @@ export interface FileRoutesById {
   '/control': typeof ControlRoute
   '/noop': typeof NoopRoute
   '/screen': typeof ScreenRoute
+  '/world': typeof WorldRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/bus' | '/control' | '/noop' | '/screen'
+  fullPaths: '/' | '/bus' | '/control' | '/noop' | '/screen' | '/world'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/bus' | '/control' | '/noop' | '/screen'
-  id: '__root__' | '/' | '/bus' | '/control' | '/noop' | '/screen'
+  to: '/' | '/bus' | '/control' | '/noop' | '/screen' | '/world'
+  id: '__root__' | '/' | '/bus' | '/control' | '/noop' | '/screen' | '/world'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -77,10 +86,18 @@ export interface RootRouteChildren {
   ControlRoute: typeof ControlRoute
   NoopRoute: typeof NoopRoute
   ScreenRoute: typeof ScreenRoute
+  WorldRoute: typeof WorldRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/world': {
+      id: '/world'
+      path: '/world'
+      fullPath: '/world'
+      preLoaderRoute: typeof WorldRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/screen': {
       id: '/screen'
       path: '/screen'
@@ -125,6 +142,7 @@ const rootRouteChildren: RootRouteChildren = {
   ControlRoute: ControlRoute,
   NoopRoute: NoopRoute,
   ScreenRoute: ScreenRoute,
+  WorldRoute: WorldRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

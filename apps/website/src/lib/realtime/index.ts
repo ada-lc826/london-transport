@@ -12,6 +12,9 @@ export type {
     EngineStoreState,
     HelloBusMessage,
     MapCity,
-    ScreenMapViewMessage,
-    ScreenSegmentSelectionMessage
+    SceneGotoMessage,
+    ScenePlayMessage,
+    SceneStateMessage,
+    SceneStepMessage,
+    ScreenMapViewMessage
 } from './types';

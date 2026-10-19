@@ -1,0 +1,51 @@
+name: Snapshot network data
+
+# Fetches TfL stations, lines and route sequences (pipeline/src/mind_the_step/snapshot.py) and
+# commits them to the `data` branch under snapshots/<date>/. Run by hand when the network
+# changes; the scenes are built from the latest snapshot.
+
+on:
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+# Shares the lift logger's group so the two never push to `data` at the same time.
+concurrency:
+    group: collect-lifts
+    cancel-in-progress: false
+
+jobs:
+    snapshot:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        steps:
+            - uses: actions/checkout@v7
+
+            - uses: astral-sh/setup-uv@v7
+              with:
+                  working-directory: pipeline
+
+            - name: Check out the data branch
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git fetch --depth=1 origin data
+                  git worktree add -B data data-branch FETCH_HEAD
+
+            - name: Fetch network data
+              working-directory: pipeline
+              env:
+                  TFL_APP_KEY: ${{ secrets.TFL_APP_KEY }}
+              run: uv run --frozen python -m mind_the_step.snapshot --out ../data-branch
+
+            - name: Commit and push
+              working-directory: data-branch
+              run: |
+                  git add -A
+                  if git diff --cached --quiet; then
+                    echo "Nothing to commit"
+                    exit 0
+                  fi
+                  git commit -q -m "snapshot: $(date -u +%Y-%m-%dT%H:%MZ)"
+                  git push origin data

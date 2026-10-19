@@ -25,7 +25,9 @@ export default defineConfig({
             '.tanstack/',
             '.cache',
             '.output',
-            'dist'
+            'dist',
+            // Research notes, edited by hand; keep their formatting as written.
+            'docs/plan/'
         ]
     }
 });

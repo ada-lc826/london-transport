@@ -1,3 +1,5 @@
+import type { SceneId, SceneState } from '../../scenes/scene-state';
+
 export type BusMessage = {
     // Keep message kinds namespaced (`control/*`, `screen/*`).
     type: string;
@@ -17,18 +19,19 @@ export type ControlSliderMessage = BusMessage & {
     value: number;
 };
 
-export type ScreenSegmentSelectionMessage = BusMessage & {
-    type: 'screen/segment-selection';
-    indexes: number[];
-};
-
 export type MapCity = 'london' | 'paris' | 'berlin' | 'madrid' | 'rome' | 'amsterdam';
 
 export type BusSharedState = {
     city: MapCity;
     zoom: number;
-    selectedSegmentIndexes: number[];
+    scene: SceneState;
 };
+
+// Control -> bus intents. The bus owns scene state and answers each with `scene/state`.
+export type SceneGotoMessage = BusMessage & { type: 'scene/goto'; sceneId: SceneId; step?: number };
+export type SceneStepMessage = BusMessage & { type: 'scene/step'; delta: 1 | -1 };
+export type ScenePlayMessage = BusMessage & { type: 'scene/play'; playing: boolean };
+export type SceneStateMessage = BusMessage & { type: 'scene/state'; scene: SceneState };
 
 export type ScreenMapViewState = {
     longitude: number;
@@ -42,13 +45,6 @@ export type ScreenMapViewMessage = BusMessage & {
     type: 'screen/map-view';
     view: Partial<ScreenMapViewState>;
     city?: MapCity;
-};
-
-export type ArcSegment = {
-    id: string;
-    start: [number, number];
-    end: [number, number];
-    weight: number;
 };
 
 export type EngineRole = 'screen' | 'control';
@@ -79,14 +75,15 @@ export type ControlStoreState = EngineStoreState & {
     sliderValue: number;
     isSliderInteracting: boolean;
     selectedCity: MapCity;
-    selectedSegmentIndexes: number[];
+    scene: SceneState | null;
 };
 
 export type ScreenStoreState = EngineStoreState & {
     mapView: ScreenMapViewState;
-    arcSegments: ArcSegment[];
-    selectedSegmentIndexes: number[];
-    isArcSegmentsLoading: boolean;
+    scene: SceneState | null;
+    // Best estimate of (server clock - local clock); null until the first pong.
+    clockOffsetMs: number | null;
+    clockRttMs: number | null;
 };
 
 export const createInitialControlStoreState = (): ControlStoreState => ({
@@ -94,7 +91,7 @@ export const createInitialControlStoreState = (): ControlStoreState => ({
     sliderValue: 25,
     isSliderInteracting: false,
     selectedCity: 'london',
-    selectedSegmentIndexes: []
+    scene: null
 });
 
 export const createInitialScreenStoreState = (): ScreenStoreState => ({
@@ -106,7 +103,7 @@ export const createInitialScreenStoreState = (): ScreenStoreState => ({
         bearing: 0,
         pitch: 0
     },
-    arcSegments: [],
-    selectedSegmentIndexes: [],
-    isArcSegmentsLoading: false
+    scene: null,
+    clockOffsetMs: null,
+    clockRttMs: null
 });

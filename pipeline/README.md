@@ -26,3 +26,16 @@ TFL_APP_KEY=... uv run python -m mind_the_step.lifts --out ../data-local
 ```
 
 Exit codes: `0` for a logged run (including a failed fetch, so an API outage does not fail the schedule), `2` when the key is missing or rejected.
+
+## Network snapshot
+
+`mind_the_step.snapshot` fetches the reference data the scenes are built from, for the tube, DLR, Overground and Elizabeth line:
+
+| File                                         | Source                                                  |
+| -------------------------------------------- | ------------------------------------------------------- |
+| `snapshots/<date>/stoppoints-<mode>.json.gz` | `/StopPoint/Mode/<mode>`                                |
+| `snapshots/<date>/lines.json.gz`             | `/Line/Mode/<modes>`                                    |
+| `snapshots/<date>/route-<line>.json.gz`      | `/Line/<line>/Route/Sequence/all`                       |
+| `snapshots/<date>/manifest.json`             | What was fetched, when, and the outcome of each request |
+
+Run it with the **Snapshot network data** workflow (Actions → Run workflow), which commits to the `data` branch. Unlike the lift logger, it exits `1` if any request fails, because a partial snapshot is not usable.

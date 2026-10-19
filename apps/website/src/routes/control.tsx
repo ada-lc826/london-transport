@@ -1,10 +1,11 @@
-import { createFileRoute } from '@tanstack/react-router';
+import { createFileRoute, useHydrated } from '@tanstack/react-router';
 
 import { Button } from '../components/button';
 import { Slider } from '../components/slider';
 import { controlEngine } from '../lib/realtime/engines/control-engine';
 import { useControlStore } from '../lib/realtime/stores/control-store';
 import type { MapCity } from '../lib/realtime/types';
+import { SCENE_IDS, SCENE_META } from '../scenes/scene-state';
 
 type ControlSearch = {
     // Optional label so multiple control clients can be distinguished in the simulator.
@@ -22,6 +23,13 @@ export const Route = createFileRoute('/control')({
 });
 
 function ControlPage() {
+    // Realtime state arrives over the socket, possibly before React hydrates, so this page
+    // renders on the client only; the server sends an empty dark shell.
+    if (!useHydrated()) return <main className="h-screen w-screen bg-[var(--background)]" />;
+    return <ControlPageContent />;
+}
+
+function ControlPageContent() {
     // `/control` models a handheld/operator endpoint:
     // - it sends intent (city, zoom, selection) into the websocket bus
     // - it does not render the heavy map visuals itself
@@ -30,7 +38,8 @@ function ControlPage() {
     const { operator } = Route.useSearch();
     const sliderValue = useControlStore((state) => state.sliderValue);
     const selectedCity = useControlStore((state) => state.selectedCity);
-    const selectedSegmentIndexes = useControlStore((state) => state.selectedSegmentIndexes);
+    const scene = useControlStore((state) => state.scene);
+    const connection = useControlStore((state) => state.connection);
     // Static city list is intentionally explicit for educational readability.
     const cities: Array<{ value: MapCity; label: string }> = [
         { value: 'london', label: 'London' },
@@ -55,6 +64,40 @@ function ControlPage() {
                         /control
                     </span>
                 </header>
+
+                <section className="mb-3 flex flex-col gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] p-2">
+                    <div className="flex items-center justify-between text-xs text-[var(--muted-foreground)]">
+                        <span>
+                            Scene{' '}
+                            {scene
+                                ? `${SCENE_META[scene.id].title} · step ${scene.step + 1}/${SCENE_META[scene.id].steps}`
+                                : '—'}
+                        </span>
+                        <span>{connection}</span>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {SCENE_IDS.map((id) => (
+                            <Button
+                                key={id}
+                                onClick={() => controlEngine.gotoScene(id)}
+                                variant={scene?.id === id ? 'highlight' : 'normal'}
+                            >
+                                {SCENE_META[id].title}
+                            </Button>
+                        ))}
+                    </div>
+                    <div className="flex gap-2">
+                        <Button onClick={() => controlEngine.stepScene(-1)}>Previous step</Button>
+                        <Button onClick={() => controlEngine.stepScene(1)}>Next step</Button>
+                        <Button
+                            onClick={() =>
+                                controlEngine.setScenePlaying(!(scene?.timeline.playing ?? true))
+                            }
+                        >
+                            {scene?.timeline.playing === false ? 'Play' : 'Pause'}
+                        </Button>
+                    </div>
+                </section>
 
                 <section className="flex gap-4">
                     <div className="grid grid-cols-2 gap-2">
@@ -84,14 +127,8 @@ function ControlPage() {
                             Zoom Level: {sliderValue.toFixed(0)}
                         </p>
                         <p className="text-xs text-[var(--muted-foreground)]">
-                            Selected Lines: {selectedSegmentIndexes.length}
+                            City and zoom drive the Map check scene.
                         </p>
-                        <Button
-                            onClick={() => void controlEngine.shuffleSegments()}
-                            variant="normal"
-                        >
-                            Shuffle Selection
-                        </Button>
                     </div>
                 </section>
             </div>
