@@ -38,4 +38,14 @@ Exit codes: `0` for a logged run (including a failed fetch, so an API outage doe
 | `snapshots/<date>/route-<line>.json.gz`      | `/Line/<line>/Route/Sequence/all`                       |
 | `snapshots/<date>/manifest.json`             | What was fetched, when, and the outcome of each request |
 
-Run it with the **Snapshot network data** workflow (Actions → Run workflow), which commits to the `data` branch. Unlike the lift logger, it exits `1` if any request fails, because a partial snapshot is not usable.
+The snapshot also downloads TfL's published step-free files: it reads the [open data page](https://tfl.gov.uk/info-for/open-data-users/our-open-data), keeps links that look like accessibility data (station topology GTFS/CSV, the data guide) into `accessibility/`, and fetches an independent research dataset ([Zenodo 18313509](https://zenodo.org/records/18313509)) into `crosscheck/` for validation.
+
+Run it with the **Snapshot network data** workflow (Actions → Run workflow), which commits to the `data` branch. Unlike the lift logger, it exits `1` if any API request fails, because a partial snapshot is not usable. The `accessibility/` and `crosscheck/` downloads are best effort: failures are recorded in the manifest and printed as warnings.
+
+## Network asset for the web app
+
+`mind_the_step.network` turns a snapshot into `apps/website/public/data/network.json`: the 11 tube lines (geometry from route sequences) and the 272 tube stations. `stepFree` is `null` until a step-free source is joined.
+
+```bash
+uv run python -m mind_the_step.network --snapshot <data-branch>/snapshots/<date> --out ../apps/website/public/data/network.json
+```
