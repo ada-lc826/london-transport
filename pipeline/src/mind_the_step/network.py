@@ -49,19 +49,33 @@ def _round(value: float) -> float:
     return round(value, COORD_DECIMALS)
 
 
-def _step_free(snapshot_dir: Path, naptan_id: str) -> dict:
+def _step_free(snapshot_dir: Path, naptan_id: str, all_stations: frozenset[str]) -> dict:
     """Street-to-platform status from the station's topology, or nulls when it is missing."""
     topology = snapshot_dir / "stopstructure" / f"{naptan_id}.json.gz"
     if not topology.exists():
         return {"stepFree": None, "stepFreePlatforms": None}
     with gzip.open(topology, "rb") as f:
-        access = stepfree.analyse_bytes(naptan_id, f.read())
+        access = stepfree.analyse_bytes(naptan_id, f.read(), all_stations - {naptan_id})
     reachable = sum(access.platforms.values())
     return {"stepFree": access.status, "stepFreePlatforms": [reachable, len(access.platforms)]}
 
 
+def _station_order(route: dict, station_ids: set[str]) -> list[str]:
+    """The line's stations, each once, following its longest route first and then branches."""
+    routes = sorted(
+        (r.get("naptanIds") or [] for r in route.get("orderedLineRoutes", [])),
+        key=len,
+        reverse=True,
+    )
+    ordered = dict.fromkeys(n for r in routes for n in r if n in station_ids)
+    return list(ordered)
+
+
 def build_network(snapshot_dir: Path) -> dict:
     stop_points = _load(snapshot_dir / "stoppoints-tube.json.gz")["stopPoints"]
+    all_stations = frozenset(
+        sp["naptanId"] for sp in stop_points if sp.get("stopType") == "NaptanMetroStation"
+    )
     stations = []
     for sp in stop_points:
         if sp.get("stopType") != "NaptanMetroStation":
@@ -79,11 +93,12 @@ def build_network(snapshot_dir: Path) -> dict:
                 "lon": _round(sp["lon"]),
                 "lat": _round(sp["lat"]),
                 "lines": tube_lines,
-                **_step_free(snapshot_dir, sp["naptanId"]),
+                **_step_free(snapshot_dir, sp["naptanId"], all_stations),
             }
         )
     stations.sort(key=lambda s: s["id"])
 
+    station_ids = {station["id"] for station in stations}
     lines = []
     for line_id, colour in LINE_COLOURS.items():
         route = _load(snapshot_dir / f"route-{line_id}.json.gz")
@@ -92,7 +107,15 @@ def build_network(snapshot_dir: Path) -> dict:
             # Each lineString is a JSON string holding a list of [lon, lat] paths.
             for path in json.loads(encoded):
                 paths.append([[_round(lon), _round(lat)] for lon, lat in path])
-        lines.append({"id": line_id, "name": route["lineName"], "colour": colour, "paths": paths})
+        lines.append(
+            {
+                "id": line_id,
+                "name": route["lineName"],
+                "colour": colour,
+                "paths": paths,
+                "stations": _station_order(route, station_ids),
+            }
+        )
 
     return {
         "source": {

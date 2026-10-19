@@ -39,6 +39,10 @@ def test_build_network(tmp_path):
         route = {"lineName": line_id.title(), "lineStrings": []}
         if line_id == "victoria":
             route["lineStrings"] = [json.dumps([[[-0.1447234, 51.4965123], [-0.1, 51.5]]])]
+            route["orderedLineRoutes"] = [
+                {"naptanIds": ["940GZZLUVIC"]},
+                {"naptanIds": ["940GZZLUBXN", "940GZZLUVIC", "940GZZNOTUBE"]},
+            ]
         write(tmp_path / f"route-{line_id}.json.gz", route)
 
     result = network.build_network(tmp_path)
@@ -57,6 +61,8 @@ def test_build_network(tmp_path):
     victoria = next(line for line in result["lines"] if line["id"] == "victoria")
     assert victoria["paths"] == [[[-0.14472, 51.49651], [-0.1, 51.5]]]
     assert victoria["colour"] == "#0098D4"
+    # Only stations in the asset, each once, longest route first.
+    assert victoria["stations"] == ["940GZZLUVIC"]
     assert len(result["lines"]) == 11
 
 

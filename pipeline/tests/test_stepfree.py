@@ -98,9 +98,41 @@ def test_platforms_are_tube_services_of_this_station_only():
         ],
         [path("e", "hall", ("LEVEL", 0)), path("hall", "p3", ("ELEVATOR", 0))],
     )
-    access = analyse(STATION, response)
+    access = analyse(STATION, response, other_stations=frozenset({"940GZZOTHER"}))
     assert access.platforms == {"NB": False, "SB": False, "VicNB": True}
     assert access.status == "partial"
+
+
+def test_interchange_platforms_filed_under_the_complex():
+    # As at Bank: tube platforms under the DLR stop id, Monument's under its own id.
+    dlr, monument = "940GZZDLTEST", "940GZZLUMMT"
+    response = station(
+        [
+            area("e", 36, parent=dlr),
+            platform("c1", "CenEB", parent=dlr),
+            platform("d1", "DLR1", parent=dlr, product=1),
+            platform("m1", "DisEB", parent=monument),
+        ],
+        [path("e", "c1", ("ELEVATOR", 0), parent=dlr)],
+    )
+    access = analyse(STATION, response, other_stations=frozenset({monument}))
+    assert access.platforms == {"CenEB": True}
+    assert access.status == "full"
+
+
+def test_own_platforms_win_over_the_complex():
+    # As at Euston Square: its own platforms, not Euston's filed under the rail station id.
+    rail = "910GTEST"
+    response = station(
+        [
+            area("e", 32),
+            platform("h1", "HamEB"),
+            platform("v1", "VicNB", parent=rail),
+        ],
+        [path("e", "v1", ("ELEVATOR", 0))],
+    )
+    access = analyse(STATION, response)
+    assert access.platforms == {"HamEB": False}
 
 
 def test_routes_through_other_stops_count():

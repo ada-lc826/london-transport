@@ -83,12 +83,19 @@ def _is_tube_platform(area: dict) -> bool:
     )
 
 
-def analyse(naptan_id: str, response: dict) -> StationAccess:
+def analyse(
+    naptan_id: str, response: dict, other_stations: frozenset[str] = frozenset()
+) -> StationAccess:
     """Step-free access to ``naptan_id``'s tube platforms.
 
-    The response may be for the station itself or for the interchange hub it belongs to.
+    The response may be for the station itself or for the interchange it belongs to.
     Entrances and footpaths of every stop in it count, since a shared entrance or a rail
-    concourse is a real route to the tube; only this station's tube platforms are assessed.
+    concourse is a real route to the tube. In interchange responses the tube platforms are
+    often filed under the complex's main stop (Bank's under the DLR station, Euston's and
+    Waterloo's under the rail station), and neighbouring tube stations appear too (Monument,
+    Euston Square). So the station's platforms are those filed under its own id if there are
+    any, and otherwise the complex's tube platforms that are not filed under one of
+    ``other_stations``, the other tube stations' NaPTAN ids.
     """
     stop = response.get("stop") or {}
     areas = {node: area for area in stop.get("areas", []) if (node := _node(area))}
@@ -109,13 +116,18 @@ def analyse(naptan_id: str, response: dict) -> StationAccess:
                 reached.add(nxt)
                 stack.append(nxt)
 
+    tube_platforms = {node: a for node, a in areas.items() if _is_tube_platform(a)}
+    own = [node for node in tube_platforms if node[0] == naptan_id]
+    # Prefer platforms filed under the station's own id; otherwise take the complex's, minus
+    # any belonging to another tube station.
+    chosen = own or [node for node in tube_platforms if node[0] not in other_stations]
     platforms = {
-        a.get("disassembledName") or node[1]: node in reached
-        for node, a in areas.items()
-        if node[0] == naptan_id and _is_tube_platform(a)
+        tube_platforms[node].get("disassembledName") or node[1]: node in reached for node in chosen
     }
     return StationAccess(naptan_id, platforms, len(entrances))
 
 
-def analyse_bytes(naptan_id: str, raw: bytes) -> StationAccess:
-    return analyse(naptan_id, json.loads(raw))
+def analyse_bytes(
+    naptan_id: str, raw: bytes, other_stations: frozenset[str] = frozenset()
+) -> StationAccess:
+    return analyse(naptan_id, json.loads(raw), other_stations)
