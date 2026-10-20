@@ -1,5 +1,6 @@
 import { loadJourneyTimes, summariseOrigin } from '../data/journeys';
 import { loadNetwork, summariseStepFree } from '../data/network';
+import { loadRaces } from '../data/races';
 import { nextNote, stepNote } from '../scenes/notes';
 import { SCENE_META, type SceneState } from '../scenes/scene-state';
 import { useAsset } from '../scenes/use-asset';
@@ -39,6 +40,7 @@ export function NotesCard({ scene }: { scene: SceneState }) {
 function LiveFigures({ scene }: { scene: SceneState }) {
     const network = useAsset(loadNetwork);
     const journeys = useAsset(loadJourneyTimes);
+    const races = useAsset(loadRaces);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -61,6 +63,14 @@ function LiveFigures({ scene }: { scene: SceneState }) {
                 : `${Math.round(s.shareAtLeastDouble * 100)}% at least twice as long`,
             `${s.noStepFreeRoute} with no step-free route`
         ].filter(Boolean);
+    } else if (scene.id === 'the-race') {
+        const race = races?.races.find((r) => r.id === scene.params.race);
+        if (race?.standard && race.stepFree) {
+            figures = [
+                `A standard ${race.standard.minutes} min · B step-free ${race.stepFree.minutes} min`,
+                `+${race.stepFree.minutes - race.standard.minutes} min for B`
+            ];
+        }
     }
     if (!figures.length) return null;
     return (

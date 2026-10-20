@@ -57,7 +57,13 @@ uv run python -m mind_the_step.network --snapshot <data-branch>/snapshots/<date>
 - `probe`: two pairs in four variants, raw responses in `journeys/probe/`, to confirm the parameters and response shape.
 - `batch`: the 12 S3 origins (6 at stations with step-free access, 6 without) to all 272 tube stations, both scenarios (about 6,500 requests at up to 420 a minute). One record per request in `journeys/<batch>-<date>-<time>/records.jsonl.gz`: status, fastest journey's minutes, walking minutes and legs. Re-running with the same date skips what is already recorded.
 
-Run either with the **Journey planner batch** workflow.
+- `experiment`: a hand-written request list (`experiments/*.json`), keeping every response body in `journeys/experiments/<spec>/`. `experiments/s6-races.json` holds S6's nine trips; `mind_the_step.races_export` turns their responses into `apps/website/public/data/races.json`:
+
+```bash
+uv run python -m mind_the_step.races_export --spec experiments/s6-races.json --responses <data-branch>/journeys/experiments/s6-races --date 2026-10-27 --out ../apps/website/public/data/races.json
+```
+
+Run any of these with the **Journey planner batch** workflow.
 
 ## Published station topology
 

@@ -6,6 +6,7 @@ export const SCENE_IDS = [
     'attract',
     'the-step',
     'two-londons',
+    'the-race',
     'calibration',
     'map-check'
 ] as const;
@@ -48,6 +49,28 @@ export const SCENE_META: Record<SceneId, SceneMeta> = {
                     { value: '940GZZLUCYF', label: 'Canary Wharf' },
                     { value: '940GZZLUEBY', label: 'Ealing Broadway' },
                     { value: '940GZZLUBXN', label: 'Brixton' }
+                ]
+            }
+        }
+    },
+    'the-race': {
+        title: 'S6 · The Race',
+        steps: 3,
+        params: {
+            race: {
+                label: 'The trip',
+                // Keep in step with pipeline/experiments/s6-races.json: races.json only has
+                // these.
+                options: [
+                    { value: 'sks-arc', label: 'South Kensington → Archway' },
+                    { value: 'ksx-lad', label: "King's Cross → Ladbroke Grove" },
+                    { value: 'asg-ods', label: 'Arnos Grove → Old Street' },
+                    { value: 'bxn-ktn', label: 'Brixton → Kentish Town' },
+                    { value: 'tby-oxc', label: 'Tooting Broadway → Oxford Circus' },
+                    { value: 'wwl-was', label: 'Walthamstow Central → Warren Street' },
+                    { value: 'std-snb', label: 'Stratford → Snaresbrook' },
+                    { value: 'cyf-sws', label: 'Canary Wharf → Swiss Cottage' },
+                    { value: 'ksx-gpk', label: "King's Cross → Green Park" }
                 ]
             }
         }
