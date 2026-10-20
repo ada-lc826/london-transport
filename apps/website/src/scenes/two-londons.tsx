@@ -282,7 +282,8 @@ function Headline({
             </ScreenText>
             <ScreenText col={left.col + 3} row={2} level="h2" align="left" className="tabular-nums">
                 <span style={fade}>
-                    {summary.noStepFreeRoute} stations
+                    {summary.noStepFreeRoute}{' '}
+                    {summary.noStepFreeRoute === 1 ? 'station' : 'stations'}
                     <br />
                     with no step-free route
                 </span>

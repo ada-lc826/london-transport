@@ -6,7 +6,7 @@ import httpx
 
 from mind_the_step import journeys
 
-STATIONS = {"A": (51.5, -0.1), "B": (51.6, -0.2), "C": (51.4, 0.0)}
+STATIONS = {"A": ["a0"], "B": ["b0", "b1"], "C": ["c0", "c1", "c2"]}
 DAY = date(2026, 10, 27)
 
 
@@ -83,7 +83,11 @@ def test_run_batch_records_and_resumes(tmp_path):
     def handler(request: httpx.Request):
         seen.append(request)
         step_free = request.url.params.get("accessibilityPreference") == "StepFreeToPlatform"
-        if request.url.path.endswith("/to/51.400000,0.000000") and step_free:
+        path = request.url.path
+        if path.endswith("/to/c0"):
+            # The first point for C finds nothing; the next one works.
+            return httpx.Response(404, json={"message": "No journey found for your inputs."})
+        if path.endswith("/to/c1") and step_free:
             return httpx.Response(500)
         minutes = 50 if step_free else 20
         return httpx.Response(200, json={"journeys": [journey(minutes, ("tube", "X", minutes))]})
@@ -101,6 +105,11 @@ def test_run_batch_records_and_resumes(tmp_path):
         )
         assert counts == {"planned": 4, "ok": 3, "failed": 1, "already_done": 0}
         first = seen[0]
+        assert {r.url.path for r in seen} == {
+            "/Journey/JourneyResults/a0/to/b0",
+            "/Journey/JourneyResults/a0/to/c0",
+            "/Journey/JourneyResults/a0/to/c1",
+        }
         assert first.url.params["date"] == "20261027"
         assert first.url.params["timeIs"] == "Departing"
         assert first.url.params["app_key"] == "k"
@@ -111,6 +120,10 @@ def test_run_batch_records_and_resumes(tmp_path):
         assert by_key[("B", "standard")]["minutes"] == 20
         assert by_key[("B", "step-free")]["minutes"] == 50
         assert by_key[("C", "step-free")]["status"] == 500
+        # C's standard trip succeeded on its second point, and says so.
+        assert by_key[("C", "standard")]["to"] == "c1"
+        assert by_key[("C", "standard")]["endpoint_try"] == 2
+        assert by_key[("B", "standard")]["endpoint_try"] == 1
 
         # A second run only retries the failure.
         seen.clear()
@@ -120,3 +133,50 @@ def test_run_batch_records_and_resumes(tmp_path):
         assert counts["planned"] == 1 and counts["already_done"] == 3
     finally:
         journeys.fetch = original_fetch
+
+
+def test_failure_message():
+    assert journeys.failure_message(b'{"message": "No journey found"}') == "No journey found"
+    assert journeys.failure_message(b"<html>oops") == "<html>oops"
+    assert journeys.failure_message(None) is None
+    assert journeys.failure_message(b'{"other": 1}') is None
+
+
+def test_experiment_keeps_failure_bodies(tmp_path):
+    def handler(request: httpx.Request):
+        if "940GZZLUWLO" in request.url.path:
+            return httpx.Response(404, json={"message": "Cannot find a route"})
+        return httpx.Response(200, json={"journeys": [journey(18, ("tube", "District", 18))]})
+
+    spec = tmp_path / "spec.json"
+    spec.write_text(
+        json.dumps(
+            [
+                {"name": "ok", "from": "51.5,-0.1", "to": "51.6,-0.2", "params": {}},
+                {
+                    "name": "fails",
+                    "from": "51.5,-0.1",
+                    "to": "940GZZLUWLO",
+                    "params": {"accessibilityPreference": "StepFreeToPlatform"},
+                },
+            ]
+        )
+    )
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    manifest = journeys.experiment(client, "k", spec, tmp_path / "out", DAY)
+    assert manifest["ok"]["minutes"] == 18
+    assert manifest["fails"]["status"] == 404
+    assert manifest["fails"]["message"] == "Cannot find a route"
+    assert "StepFreeToPlatform" in manifest["fails"]["url"]
+    saved = json.loads((tmp_path / "out" / "spec" / "fails.json").read_text())
+    assert saved == {"message": "Cannot find a route"}
+
+
+def test_endpoint_candidates_prefer_the_entrance():
+    station = {"lat": 51.5, "lon": -0.1, "entrance": [51.5002, -0.1001]}
+    candidates = journeys.endpoint_candidates(station)
+    assert candidates[:2] == ["51.500200,-0.100100", "51.500000,-0.100000"]
+    assert len(candidates) == 6
+    assert journeys.endpoint_candidates({"lat": 51.5, "lon": -0.1, "entrance": None})[0] == (
+        "51.500000,-0.100000"
+    )

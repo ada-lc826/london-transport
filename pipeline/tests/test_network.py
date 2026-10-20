@@ -22,6 +22,20 @@ def test_build_network(tmp_path):
                     "lat": 51.4965123,
                     "lon": -0.1447234,
                     "lines": [{"id": "victoria"}, {"id": "district"}, {"id": "some-bus"}],
+                    "children": [
+                        {"stopType": "NaptanMetroEntrance", "lat": 51.4969, "lon": -0.1440},
+                        {"stopType": "NaptanMetroAccessArea", "lat": 51.4965, "lon": -0.1447},
+                        {
+                            "stopType": "NaptanMetroAccessArea",
+                            "children": [
+                                {
+                                    "stopType": "NaptanMetroEntrance",
+                                    "lat": 51.49655,
+                                    "lon": -0.14465,
+                                }
+                            ],
+                        },
+                    ],
                 },
                 {"stopType": "NaptanMetroPlatform", "naptanId": "9400ZZLUVIC1"},
                 {
@@ -54,6 +68,8 @@ def test_build_network(tmp_path):
             "lon": -0.14472,
             "lat": 51.49651,
             "lines": ["district", "victoria"],
+            # The nearer of the two entrances, found below an access area.
+            "entrance": [51.49655, -0.14465],
             "stepFree": None,
             "stepFreePlatforms": None,
         }

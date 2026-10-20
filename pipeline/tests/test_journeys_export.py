@@ -3,8 +3,9 @@ from mind_the_step.journeys_export import build
 SKS, STD = "940GZZLUSKS", "940GZZLUSTD"
 
 
-def rec(origin, destination, scenario, status=200, minutes=None):
+def rec(origin, destination, scenario, status=200, minutes=None, message=None):
     return {
+        "message": message,
         "origin": origin,
         "destination": destination,
         "scenario": scenario,
@@ -24,12 +25,13 @@ def test_build_pairs_scenarios_and_keeps_latest():
             rec(SKS, "B", "standard", minutes=20),
             rec(SKS, "B", "step-free"),  # 200 but no journey
             rec(STD, "A", "standard", status=429),
+            rec(STD, "A", "step-free", status=404, message="No journey found for your inputs."),
         ]
     )
     assert asset["origins"] == [SKS, STD]
     assert asset["times"][SKS] == {"A": [10, 35], "B": [20, None]}
     assert asset["times"][STD] == {"A": [None, None]}
-    assert asset["source"]["requests"] == {"ok": 3, "no_route": 1, "failed": 1}
+    assert asset["source"]["requests"] == {"ok": 3, "no_route": 2, "failed": 1}
     assert asset["source"]["date"] == "2026-10-27"
 
 

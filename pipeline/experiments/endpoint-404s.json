@@ -1,0 +1,292 @@
+[
+    {
+        "name": "sks-wlo-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.503299,-0.114780",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wlo-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUWLO",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wlo-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000254",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wlo-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.504099,-0.114780",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wlo-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.503299,-0.114780",
+        "params": {}
+    },
+    {
+        "name": "sks-bst-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.522883,-0.157130",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-bst-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUBST",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-bst-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000011",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-bst-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.523683,-0.157130",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-bst-stepfree-entrance",
+        "from": "51.494094,-0.174138",
+        "to": "51.522460,-0.156950",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-bst-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.522883,-0.157130",
+        "params": {}
+    },
+    {
+        "name": "sks-mmt-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.510700,-0.085969",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-mmt-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUMMT",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-mmt-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000148",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-mmt-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.511500,-0.085969",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-mmt-stepfree-entrance",
+        "from": "51.494094,-0.174138",
+        "to": "51.510510,-0.085960",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-mmt-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.510700,-0.085969",
+        "params": {}
+    },
+    {
+        "name": "sks-upm-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.559063,0.250882",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-upm-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUUPM",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-upm-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000242",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-upm-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.559863,0.250882",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-upm-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.559063,0.250882",
+        "params": {}
+    },
+    {
+        "name": "sks-osy-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.481274,-0.352224",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-osy-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUOSY",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-osy-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000171",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-osy-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.482074,-0.352224",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-osy-stepfree-entrance",
+        "from": "51.494094,-0.174138",
+        "to": "51.480890,-0.351620",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-osy-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.481274,-0.352224",
+        "params": {}
+    },
+    {
+        "name": "sks-wsm-control-stepfree-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.501320,-0.124861",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wsm-control-stepfree-id",
+        "from": "51.494094,-0.174138",
+        "to": "940GZZLUWSM",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wsm-control-stepfree-ics",
+        "from": "51.494094,-0.174138",
+        "to": "1000266",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wsm-control-stepfree-offset90m",
+        "from": "51.494094,-0.174138",
+        "to": "51.502120,-0.124861",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wsm-control-stepfree-entrance",
+        "from": "51.494094,-0.174138",
+        "to": "51.501250,-0.123770",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "sks-wsm-control-standard-centroid",
+        "from": "51.494094,-0.174138",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    },
+    {
+        "name": "ctn-wsm-standard-centroid",
+        "from": "51.539292,-0.142740",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    },
+    {
+        "name": "ctn-wsm-standard-id",
+        "from": "940GZZLUCTN",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    },
+    {
+        "name": "ctn-wsm-standard-ics",
+        "from": "1000036",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    },
+    {
+        "name": "ctn-wsm-standard-offset90m",
+        "from": "51.540092,-0.142740",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    },
+    {
+        "name": "ctn-wsm-standard-entrance",
+        "from": "51.539300,-0.142490",
+        "to": "51.501320,-0.124861",
+        "params": {}
+    }
+]

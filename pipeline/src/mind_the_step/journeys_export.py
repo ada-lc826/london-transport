@@ -5,8 +5,9 @@ Reads ``journeys/<batch>/records.jsonl.gz`` and writes a compact JSON for the we
     {"source": {...}, "origins": [...], "times": {origin: {destination: [standard, step_free]}}}
 
 with minutes for the fastest journey in each scenario, or null when the planner found no
-route. Requests that failed (non-200) are also null, and counted in ``source`` so a reader can
-tell "no route" from "not fetched".
+route (an empty result, or the planner's 404 "No journey found for your inputs."). Requests
+that failed for other reasons are also null, and counted separately in ``source`` so a reader
+can tell "no route" from "not fetched".
 
     uv run python -m mind_the_step.journeys_export --records <records.jsonl.gz> --out <json>
 """
@@ -23,6 +24,7 @@ from pathlib import Path
 from .journeys import ORIGINS, SCENARIOS
 
 SCENARIO_ORDER = list(SCENARIOS)  # ["standard", "step-free"]
+NO_JOURNEY = "No journey found for your inputs."
 
 
 def build(records: list[dict]) -> dict:
@@ -36,6 +38,10 @@ def build(records: list[dict]) -> dict:
     days = Counter()
     for (origin, destination, scenario), record in latest.items():
         pair = times.setdefault(origin, {}).setdefault(destination, [None, None])
+        if record.get("status") == 404 and record.get("message") == NO_JOURNEY:
+            # The planner's explicit answer that there is no route, not a failed request.
+            outcome["no_route"] += 1
+            continue
         if record.get("status") != 200:
             outcome["failed"] += 1
             continue

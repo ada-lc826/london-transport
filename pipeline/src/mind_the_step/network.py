@@ -5,7 +5,7 @@ lines (geometry from route sequences) and the 272 tube stations. Each station's
 ``stepFree`` is ``"full"``, ``"partial"`` or ``"none"`` (street to platform, derived from its
 topology by ``stepfree.py``), or ``null`` when the topology is missing or unusable: the
 scenes show unknown as unknown rather than guessing. ``stepFreePlatforms`` is
-``[step-free platforms, platforms]``.
+``[step-free platforms, platforms]``. ``entrance`` is a street-level point, [lat, lon].
 
     uv run python -m mind_the_step.network --snapshot <dir> --out <network.json>
 """
@@ -71,6 +71,34 @@ def _station_order(route: dict, station_ids: set[str]) -> list[str]:
     return list(ordered)
 
 
+def _entrance(station: dict) -> list[float] | None:
+    """[lat, lon] of the station's entrance nearest its centre: a street-level point.
+
+    Journey Planner times are taken street to street from here (journeys.py); null when the
+    stop point data lists no entrances (about 50 stations).
+    """
+
+    def walk(node):
+        yield node
+        for child in node.get("children") or []:
+            yield from walk(child)
+
+    entrances = [
+        n
+        for n in walk(station)
+        if n.get("stopType") in ("NaptanMetroEntrance", "NaptanRailEntrance")
+        and isinstance(n.get("lat"), (int, float))
+        and isinstance(n.get("lon"), (int, float))
+    ]
+    if not entrances:
+        return None
+    nearest = min(
+        entrances,
+        key=lambda n: (n["lat"] - station["lat"]) ** 2 + (n["lon"] - station["lon"]) ** 2,
+    )
+    return [_round(nearest["lat"]), _round(nearest["lon"])]
+
+
 def build_network(snapshot_dir: Path) -> dict:
     stop_points = _load(snapshot_dir / "stoppoints-tube.json.gz")["stopPoints"]
     all_stations = frozenset(
@@ -93,6 +121,7 @@ def build_network(snapshot_dir: Path) -> dict:
                 "lon": _round(sp["lon"]),
                 "lat": _round(sp["lat"]),
                 "lines": tube_lines,
+                "entrance": _entrance(sp),
                 **_step_free(snapshot_dir, sp["naptanId"], all_stations),
             }
         )
