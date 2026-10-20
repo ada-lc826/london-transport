@@ -83,7 +83,7 @@ def test_run_batch_records_and_resumes(tmp_path):
     def handler(request: httpx.Request):
         seen.append(request)
         step_free = request.url.params.get("accessibilityPreference") == "StepFreeToPlatform"
-        if request.url.path.endswith("/to/51.400000,0.000000") and step_free:
+        if request.url.path.endswith("/to/C") and step_free:
             return httpx.Response(500)
         minutes = 50 if step_free else 20
         return httpx.Response(200, json={"journeys": [journey(minutes, ("tube", "X", minutes))]})
@@ -101,6 +101,11 @@ def test_run_batch_records_and_resumes(tmp_path):
         )
         assert counts == {"planned": 4, "ok": 3, "failed": 1, "already_done": 0}
         first = seen[0]
+        # Endpoints are stop ids, not coordinates.
+        assert {r.url.path for r in seen} == {
+            "/Journey/JourneyResults/A/to/B",
+            "/Journey/JourneyResults/A/to/C",
+        }
         assert first.url.params["date"] == "20261027"
         assert first.url.params["timeIs"] == "Departing"
         assert first.url.params["app_key"] == "k"

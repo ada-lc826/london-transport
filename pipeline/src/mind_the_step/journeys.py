@@ -4,17 +4,22 @@ For each (origin, destination) pair the planner is asked twice, once with no acc
 requirement and once requiring step-free access, both departing at the same time. The
 difference is the step-free "time tax" that S3 shows.
 
-Two modes:
+Modes:
 
 - ``probe``: one origin-destination pair in several parameter variants, raw responses kept,
   to confirm the undocumented parameter values and the response shape;
 - ``batch``: every origin in ``ORIGINS`` to every tube station, one compact record per
   request in ``journeys/<batch>/records.jsonl.gz``. Batches resume: requests already recorded
-  are skipped, so a failed or timed-out run can simply be run again.
+  are skipped, so a failed or timed-out run can simply be run again;
+- ``experiment``: a hand-written request list, every response body kept.
 
-Origins and destinations are given as coordinates (station positions), not stop ids, so the
-planner works out the access legs itself: a step-free journey from a station without step-free
-access starts by walking or taking a bus to one that has it.
+Batch endpoints are station NaPTAN ids: "the station as a place", which includes the bus
+stops outside it. Coordinates were tried first, but station centroids often lie over tracks
+or inside buildings and the planner then answers 404 "No journey found" for some of them (55
+destinations in step-free mode, and Camden Town as an origin in both modes); ids and ICS codes
+work everywhere (experiments/endpoint-404s.json). With ids the planner still applies the
+step-free requirement at both ends: from South Kensington, which has no step-free access, it
+takes a bus to Earl's Court rather than boarding there.
 """
 
 from __future__ import annotations
@@ -205,7 +210,7 @@ def run_batch(
 
     def one(request: tuple[str, str, str]) -> None:
         origin, destination, scenario = request
-        url = journey_url(stations[origin], stations[destination])
+        url = JOURNEY_URL.format(origin=origin, destination=destination)
         params = journey_params(scenario, day, time_hhmm)
         limiter.wait()
         result = fetch(client, app_key, url=str(httpx.URL(url, params=params)))
@@ -225,6 +230,12 @@ def run_batch(
             with gzip.open(records_path, "at", encoding="utf-8") as f:
                 f.write(json.dumps(record) + "\n")
             counts["ok" if result.status == 200 else "failed"] += 1
+            finished = counts["ok"] + counts["failed"]
+            if finished % 500 == 0:
+                print(
+                    f"{finished}/{counts['planned']} requests, {counts['failed']} failed",
+                    flush=True,
+                )
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
         list(pool.map(one, todo))
@@ -311,7 +322,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--spec", type=Path, help="request list (experiment mode)")
     parser.add_argument("--out", type=Path, required=True, help="data directory to write into")
     parser.add_argument("--network", type=Path, help="network.json (batch mode)")
-    parser.add_argument("--batch", default="s3-origins", help="batch name (batch mode)")
+    parser.add_argument("--batch", default="s3-ids", help="batch name (batch mode)")
     parser.add_argument("--date", help="travel date YYYY-MM-DD (default: a Tuesday ahead)")
     parser.add_argument("--time", default="0830", help="departure time HHMM")
     parser.add_argument("--max-requests", type=int, help="stop after this many (testing)")
