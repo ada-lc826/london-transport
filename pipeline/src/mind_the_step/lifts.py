@@ -47,6 +47,8 @@ class FetchResult:
     attempts: int
     elapsed_ms: int
     error: str | None = None
+    # The last error response's body, if any: APIs often explain a 4xx there.
+    failure_body: bytes | None = None
 
 
 def _retryable(status: int) -> bool:
@@ -66,6 +68,7 @@ def fetch(
     started = time.monotonic()
     status: int | None = None
     error: str | None = None
+    failure_body: bytes | None = None
     for attempt in range(1, attempts + 1):
         try:
             # Merge rather than replace any query string already in `url`.
@@ -77,13 +80,14 @@ def fetch(
             if response.is_success:
                 return FetchResult(status, response.content, attempt, _ms_since(started))
             error = f"HTTP {status}"
+            failure_body = response.content
             if not _retryable(status):
                 break
         if attempt < attempts:
             sleep(backoff * 2 ** (attempt - 1))
     # httpx error messages can include the request URL, which carries the key.
     error = (error or "unknown error").replace(app_key, "***")
-    return FetchResult(status, None, attempt, _ms_since(started), error)
+    return FetchResult(status, None, attempt, _ms_since(started), error, failure_body)
 
 
 def _key_params(url: str, app_key: str) -> dict[str, str] | None:

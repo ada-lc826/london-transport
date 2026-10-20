@@ -217,6 +217,7 @@ def run_batch(
             "time": time_hhmm,
             "status": result.status,
             "error": result.error,
+            "message": failure_message(result.failure_body),
             **summarise(result.body),
         }
         with write_lock:
@@ -228,6 +229,48 @@ def run_batch(
     with ThreadPoolExecutor(max_workers=workers) as pool:
         list(pool.map(one, todo))
     return counts
+
+
+def failure_message(body: bytes | None) -> str | None:
+    """The planner's explanation in an error response (its JSON ``message``), if any."""
+    if not body:
+        return None
+    try:
+        payload = json.loads(body)
+    except ValueError:
+        return body[:200].decode("utf-8", errors="replace")
+    message = payload.get("message") if isinstance(payload, dict) else None
+    return str(message)[:300] if message is not None else None
+
+
+def experiment(
+    client: httpx.Client, app_key: str, spec_path: Path, out_dir: Path, day: date
+) -> dict:
+    """Run a list of hand-written requests and keep every response body, failures included.
+
+    The spec is a JSON list of ``{"name", "from", "to", "params"}``, where ``from`` and ``to``
+    are anything the planner accepts in the path ("lat,lon", a stop id, ...). Used to work out
+    why some requests fail before changing how the batch asks.
+    """
+    out = out_dir / spec_path.stem
+    out.mkdir(parents=True, exist_ok=True)
+    manifest = {}
+    for item in json.loads(spec_path.read_text(encoding="utf-8")):
+        url = JOURNEY_URL.format(origin=item["from"], destination=item["to"])
+        params = {**journey_params("standard", day, "0830"), **item.get("params", {})}
+        full_url = str(httpx.URL(url, params=params))
+        result = fetch(client, app_key, url=full_url)
+        manifest[item["name"]] = {
+            "url": full_url,
+            "status": result.status,
+            "message": failure_message(result.failure_body),
+            **summarise(result.body),
+        }
+        body = result.body if result.body is not None else result.failure_body
+        if body is not None:
+            (out / f"{item['name']}.json").write_bytes(body)
+    (out / "manifest.json").write_text(json.dumps(manifest, indent=1) + "\n")
+    return manifest
 
 
 def probe(client: httpx.Client, app_key: str, out_dir: Path, day: date) -> None:
@@ -264,7 +307,8 @@ def probe(client: httpx.Client, app_key: str, out_dir: Path, day: date) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("mode", choices=["probe", "batch"])
+    parser.add_argument("mode", choices=["probe", "batch", "experiment"])
+    parser.add_argument("--spec", type=Path, help="request list (experiment mode)")
     parser.add_argument("--out", type=Path, required=True, help="data directory to write into")
     parser.add_argument("--network", type=Path, help="network.json (batch mode)")
     parser.add_argument("--batch", default="s3-origins", help="batch name (batch mode)")
@@ -283,6 +327,14 @@ def main(argv: list[str] | None = None) -> int:
         if args.mode == "probe":
             probe(client, app_key, args.out / "journeys" / "probe", day)
             print(f"probe written for {day}")
+            return 0
+        if args.mode == "experiment":
+            if not args.spec:
+                parser.error("--spec is required in experiment mode")
+            manifest = experiment(
+                client, app_key, args.spec, args.out / "journeys" / "experiments", day
+            )
+            print(json.dumps({k: (v["status"], v.get("minutes")) for k, v in manifest.items()}))
             return 0
         if not args.network:
             parser.error("--network is required in batch mode")

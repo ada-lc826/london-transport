@@ -120,3 +120,40 @@ def test_run_batch_records_and_resumes(tmp_path):
         assert counts["planned"] == 1 and counts["already_done"] == 3
     finally:
         journeys.fetch = original_fetch
+
+
+def test_failure_message():
+    assert journeys.failure_message(b'{"message": "No journey found"}') == "No journey found"
+    assert journeys.failure_message(b"<html>oops") == "<html>oops"
+    assert journeys.failure_message(None) is None
+    assert journeys.failure_message(b'{"other": 1}') is None
+
+
+def test_experiment_keeps_failure_bodies(tmp_path):
+    def handler(request: httpx.Request):
+        if "940GZZLUWLO" in request.url.path:
+            return httpx.Response(404, json={"message": "Cannot find a route"})
+        return httpx.Response(200, json={"journeys": [journey(18, ("tube", "District", 18))]})
+
+    spec = tmp_path / "spec.json"
+    spec.write_text(
+        json.dumps(
+            [
+                {"name": "ok", "from": "51.5,-0.1", "to": "51.6,-0.2", "params": {}},
+                {
+                    "name": "fails",
+                    "from": "51.5,-0.1",
+                    "to": "940GZZLUWLO",
+                    "params": {"accessibilityPreference": "StepFreeToPlatform"},
+                },
+            ]
+        )
+    )
+    client = httpx.Client(transport=httpx.MockTransport(handler))
+    manifest = journeys.experiment(client, "k", spec, tmp_path / "out", DAY)
+    assert manifest["ok"]["minutes"] == 18
+    assert manifest["fails"]["status"] == 404
+    assert manifest["fails"]["message"] == "Cannot find a route"
+    assert "StepFreeToPlatform" in manifest["fails"]["url"]
+    saved = json.loads((tmp_path / "out" / "spec" / "fails.json").read_text())
+    assert saved == {"message": "Cannot find a route"}
