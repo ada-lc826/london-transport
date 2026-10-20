@@ -1,0 +1,262 @@
+{
+ "sks-wsm-standard": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494090,-0.174140/to/51.501320,-0.124860?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "error": null,
+  "journeys": 3,
+  "minutes": 18,
+  "walk_minutes": 11,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 7
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ },
+ "sks-wsm-stepfree-platform": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494090,-0.174140/to/51.501320,-0.124860?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "error": null,
+  "journeys": 3,
+  "minutes": 44,
+  "walk_minutes": 14,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 16
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "87",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-wsm-stepfree-vehicle": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494090,-0.174140/to/51.501320,-0.124860?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToVehicle",
+  "status": 200,
+  "error": null,
+  "journeys": 3,
+  "minutes": 43,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 7
+   },
+   {
+    "mode": "bus",
+    "line": "52",
+    "minutes": 13
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 2
+   },
+   {
+    "mode": "bus",
+    "line": "11",
+    "minutes": 9
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-wsm-no-solid-stairs": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494090,-0.174140/to/51.501320,-0.124860?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs",
+  "status": 200,
+  "error": null,
+  "journeys": 3,
+  "minutes": 44,
+  "walk_minutes": 14,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 16
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "87",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "wsm-gpk-standard": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.501320,-0.124860/to/51.506950,-0.142790?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "error": null,
+  "journeys": 4,
+  "minutes": 24,
+  "walk_minutes": 16,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "Victoria",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "wsm-gpk-stepfree-platform": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.501320,-0.124860/to/51.506950,-0.142790?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "error": null,
+  "journeys": 4,
+  "minutes": 28,
+  "walk_minutes": 12,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 10
+   },
+   {
+    "mode": "bus",
+    "line": "453",
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "38",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 2
+   }
+  ]
+ },
+ "wsm-gpk-stepfree-vehicle": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.501320,-0.124860/to/51.506950,-0.142790?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToVehicle",
+  "status": 200,
+  "error": null,
+  "journeys": 4,
+  "minutes": 28,
+  "walk_minutes": 12,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 10
+   },
+   {
+    "mode": "bus",
+    "line": "453",
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "38",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 2
+   }
+  ]
+ },
+ "wsm-gpk-no-solid-stairs": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.501320,-0.124860/to/51.506950,-0.142790?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=NoSolidStairs",
+  "status": 200,
+  "error": null,
+  "journeys": 4,
+  "minutes": 26,
+  "walk_minutes": 24,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 14
+   },
+   {
+    "mode": "tube",
+    "line": "Jubilee",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 10
+   }
+  ]
+ }
+}
