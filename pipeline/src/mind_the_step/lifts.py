@@ -28,7 +28,8 @@ from pathlib import Path
 
 import httpx
 
-LIFTS_URL = "https://api.tfl.gov.uk/Disruptions/Lifts/v2/"
+API_HOST = "api.tfl.gov.uk"
+LIFTS_URL = f"https://{API_HOST}/Disruptions/Lifts/v2/"
 ATTEMPTS = 4
 BACKOFF_SECONDS = 2.0
 TIMEOUT_SECONDS = 20.0
@@ -67,7 +68,8 @@ def fetch(
     error: str | None = None
     for attempt in range(1, attempts + 1):
         try:
-            response = client.get(url, params={"app_key": app_key})
+            # Merge rather than replace any query string already in `url`.
+            response = client.get(httpx.URL(url).copy_merge_params(_key_params(url, app_key) or {}))
         except httpx.HTTPError as exc:
             status, error = None, f"{type(exc).__name__}: {exc}"
         else:
@@ -82,6 +84,11 @@ def fetch(
     # httpx error messages can include the request URL, which carries the key.
     error = (error or "unknown error").replace(app_key, "***")
     return FetchResult(status, None, attempt, _ms_since(started), error)
+
+
+def _key_params(url: str, app_key: str) -> dict[str, str] | None:
+    # The key is for the Unified API only; never send it to other hosts.
+    return {"app_key": app_key} if httpx.URL(url).host == API_HOST else None
 
 
 def _ms_since(started: float) -> int:

@@ -1,0 +1,269 @@
+{
+    "stop": {
+        "areas": [
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "MET1",
+                "properties": { "areaId": "1", "areaType": 1 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "JubNB",
+                "properties": { "areaId": "2", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "JubSB",
+                "properties": { "areaId": "3", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "MET6",
+                "properties": { "areaId": "4", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "E-STA",
+                "properties": { "areaId": "5", "areaType": 36 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "A-BRI",
+                "properties": { "areaId": "6", "areaType": 36 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "Met5",
+                "properties": { "areaId": "7", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "BookH",
+                "properties": { "areaId": "8", "areaType": 4096 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "D-BRI",
+                "properties": { "areaId": "9", "areaType": 36 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "MET",
+                "properties": { "areaId": "10", "areaType": 4096 }
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "Bus",
+                "properties": { "areaId": "11", "areaType": 97 },
+                "transportations": [{ "product": { "class": 5 } }, { "product": { "class": 11 } }]
+            },
+            {
+                "parent": { "id": "940GZZLUWYP" },
+                "disassembledName": "Met2",
+                "properties": { "areaId": "12", "areaType": 81 },
+                "transportations": [{ "product": { "class": 2 } }]
+            }
+        ],
+        "footpaths": [
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "1" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "4" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "4" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "5" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "6" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "6" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "1" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "3" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "4" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "4" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "5" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "5" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "6" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "7" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "9" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "9" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "9" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "6" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "11" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "9" } },
+                "pathDescription": [{ "type": "RAMP", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "2" } },
+                "pathDescription": [{ "type": "LEVEL", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "STAIRS", "attributes": { "numberSteps": 0 } }]
+            },
+            {
+                "from": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "12" } },
+                "to": { "parent": { "id": "940GZZLUWYP" }, "properties": { "areaId": "8" } },
+                "pathDescription": [{ "type": "ELEVATOR", "attributes": { "numberSteps": 0 } }]
+            }
+        ]
+    }
+}

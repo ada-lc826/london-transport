@@ -1,7 +1,13 @@
 import { WebMercatorViewport } from '@deck.gl/core';
 import { describe, expect, test } from 'vite-plus/test';
 
-import { cameraForRect, projectToWall, unprojectWallPoint, type MapCamera } from './camera';
+import {
+    cameraForRect,
+    fitCamera,
+    projectToWall,
+    unprojectWallPoint,
+    type MapCamera
+} from './camera';
 import { DO_LAYOUT, regionRect, tileRect, wallRect, zones, type WallRect } from './layout';
 
 // Central London, zoomed so the city fills the wall.
@@ -86,4 +92,22 @@ test('projectToWall inverts unprojectWallPoint', () => {
 test('pitch is forced to 0', () => {
     const frame = wallRect(DO_LAYOUT);
     expect(cameraForRect({ ...CAMERA, pitch: 45 }, frame, frame).pitch).toBe(0);
+});
+
+test('fitCamera puts the bounds inside the frame', () => {
+    const frame = regionRect(DO_LAYOUT, zones(DO_LAYOUT).centre);
+    const bounds: [number, number, number, number] = [-0.61, 51.4, 0.25, 51.71];
+    const camera = fitCamera(bounds, frame, 200);
+    const [x0, y0] = projectToWall(camera, frame, [bounds[0], bounds[3]]);
+    const [x1, y1] = projectToWall(camera, frame, [bounds[2], bounds[1]]);
+    for (const x of [x0, x1]) {
+        expect(x).toBeGreaterThanOrEqual(frame.x + 199);
+        expect(x).toBeLessThanOrEqual(frame.x + frame.width - 199);
+    }
+    for (const y of [y0, y1]) {
+        expect(y).toBeGreaterThanOrEqual(frame.y + 199);
+        expect(y).toBeLessThanOrEqual(frame.y + frame.height - 199);
+    }
+    // The tighter axis touches the padding.
+    expect(Math.min(x0 - frame.x, y0 - frame.y)).toBeCloseTo(200, 0);
 });

@@ -29,6 +29,15 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 - **Clock**: screens ping the bus every 2 s with binary frames that follow Vizzy Studio's opcodes (`CLOCK_PING 0x08`, `CLOCK_PONG 0x09`) and keep the offset from the fastest recent round trip.
 - **Scenes**: control tablets send intents (`scene/goto`, `scene/step`, `scene/play`); the bus applies them and broadcasts `scene/state` with a revision number and a timeline anchor (position, server time, rate). Each screen works out the current position from its synchronised clock, so animations line up with no per-frame messages. Scene changes are rare, so the anchor travels as JSON rather than a binary frame.
 
+## Scenes
+
+| Scene         | Steps | What it shows                                                                                                                                                                                                                        |
+| ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| S0 · Attract  | 1     | Title across the centre bezel                                                                                                                                                                                                        |
+| S2 · The Step | 3     | Every tube station by street-to-platform step-free access: the network, the reveal (95 of 272 fully step-free), then South Kensington. Method and validation: [`docs/methods/step-free-access.md`](docs/methods/step-free-access.md) |
+| Calibration   | 1     | Test card for checking a real wall                                                                                                                                                                                                   |
+| Map check     | 1     | Whole-wall basemap driven by the tablets                                                                                                                                                                                             |
+
 ## Data pipeline
 
 `pipeline/` is a Python ([uv](https://docs.astral.sh/uv/)) project. It has two jobs so far, both writing to the `data` branch: the lift-status logger, which records TfL's live lift disruptions every 15 minutes to build a lift-reliability dataset, and a network snapshot (stations, lines, route sequences) run by hand. See [`pipeline/README.md`](pipeline/README.md).

@@ -2,13 +2,14 @@ import type { TimelineAnchor } from '../lib/realtime/clock';
 
 // Scene ids are the only scene data on the bus; everything a scene draws is recomputed on each
 // screen from these ids plus static assets (BEST_PRACTICES §3).
-export const SCENE_IDS = ['attract', 'calibration', 'map-check'] as const;
+export const SCENE_IDS = ['attract', 'the-step', 'calibration', 'map-check'] as const;
 export type SceneId = (typeof SCENE_IDS)[number];
 
 // What the server and the control tablets need to know about each scene. The components that
 // draw them live in `./registry.tsx`, which the server never imports.
 export const SCENE_META: Record<SceneId, { title: string; steps: number }> = {
     attract: { title: 'S0 · Attract', steps: 1 },
+    'the-step': { title: 'S2 · The Step', steps: 3 },
     calibration: { title: 'Calibration', steps: 1 },
     'map-check': { title: 'Map check', steps: 1 }
 };
