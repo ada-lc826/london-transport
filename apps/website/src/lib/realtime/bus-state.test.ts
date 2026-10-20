@@ -80,3 +80,43 @@ test('map-view updates are kept for late joiners and relayed as-is', () => {
     expect(state).toMatchObject({ city: 'paris', zoom: 11 });
     expect(broadcast).toBeNull();
 });
+
+test('scene/param accepts only declared values and keeps the step', () => {
+    let state = initialBusState(T0);
+    // The attract scene declares no params.
+    expect(
+        reduceBusMessage(state, { type: 'scene/param', key: 'origin', value: 'x' }, T0).broadcast
+    ).toBeNull();
+
+    state = reduceBusMessage(state, { type: 'scene/goto', sceneId: 'two-londons' }, T0).state;
+    expect(state.scene.params.origin).toBe('940GZZLUSKS');
+    state = reduceBusMessage(state, { type: 'scene/step', delta: 1 }, T0).state;
+
+    const changed = reduceBusMessage(
+        state,
+        { type: 'scene/param', key: 'origin', value: '940GZZLUSTD' },
+        T0 + 1_000
+    );
+    expect(changed.state.scene.params.origin).toBe('940GZZLUSTD');
+    expect(changed.state.scene.step).toBe(1);
+    expect(changed.state.scene.timeline).toBe(state.scene.timeline);
+    expect(changed.broadcast).toEqual({ type: 'scene/state', scene: changed.state.scene });
+
+    for (const bad of [
+        { key: 'origin', value: 'not-an-origin' },
+        { key: 'other', value: '940GZZLUSTD' },
+        { key: 'origin', value: 7 }
+    ]) {
+        expect(
+            reduceBusMessage(changed.state, { type: 'scene/param', ...bad }, T0).broadcast
+        ).toBeNull();
+    }
+    // Setting the current value again is not a change.
+    expect(
+        reduceBusMessage(
+            changed.state,
+            { type: 'scene/param', key: 'origin', value: '940GZZLUSTD' },
+            T0
+        ).broadcast
+    ).toBeNull();
+});

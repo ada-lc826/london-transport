@@ -97,6 +97,32 @@ function ControlPageContent() {
                             {scene?.timeline.playing === false ? 'Play' : 'Pause'}
                         </Button>
                     </div>
+                    {scene
+                        ? Object.entries(SCENE_META[scene.id].params ?? {}).map(([key, spec]) => (
+                              <div key={key} className="flex flex-col gap-1">
+                                  <span className="text-xs text-[var(--muted-foreground)]">
+                                      {spec.label}
+                                  </span>
+                                  <div className="grid grid-cols-3 gap-1">
+                                      {spec.options.map((option) => (
+                                          <Button
+                                              key={option.value}
+                                              onClick={() =>
+                                                  controlEngine.setSceneParam(key, option.value)
+                                              }
+                                              variant={
+                                                  scene.params[key] === option.value
+                                                      ? 'highlight'
+                                                      : 'normal'
+                                              }
+                                          >
+                                              {option.label}
+                                          </Button>
+                                      ))}
+                                  </div>
+                              </div>
+                          ))
+                        : null}
                 </section>
 
                 <section className="flex gap-4">
