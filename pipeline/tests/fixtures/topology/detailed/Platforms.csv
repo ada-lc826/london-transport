@@ -1,0 +1,6 @@
+UniqueId,StationUniqueId,PlatformNumber,CardinalDirection,PlatformNaptanCode,FriendlyName,IsCustomerFacing,HasServiceInterchange,AccessibleEntranceName,HasStepFreeRouteInformation
+940GZZA-Plat1-NB-victoria,940GZZA,1,Northbound,,Northbound Platform 1,TRUE,FALSE,,TRUE
+940GZZA-Plat2-WB-jubilee,940GZZA,2,Westbound,,Westbound Platform 2,TRUE,FALSE,,TRUE
+940GZZA-Plat3-SB-victoria,940GZZA,3,Southbound,Platform not in use,Southbound Platform 3,FALSE,FALSE,,TRUE
+940GZZA-Plat4-EB-jubilee,940GZZA,4,Eastbound,,Eastbound Platform 4,TRUE,FALSE,,TRUE
+HUBB-Plat1-EB-central|national-rail,HUBB,1,Eastbound,,Eastbound Platform 1,TRUE,FALSE,,FALSE 

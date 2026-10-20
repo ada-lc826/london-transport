@@ -41,16 +41,16 @@ About 50 stations sharing an interchange (Bank, Euston, Stratford, …) return n
 - **TfL's 2024 priority list**: all twelve stations TfL named in August 2024 as the next to be made step-free (Alperton, Arnos Grove, Colliers Wood, Croxley, Eastcote, East Finchley, Neasden, North Acton, Northwood, Tooting Broadway, Turnham Green, West Hampstead) come out _none_, except Croxley (unknown).
 - **Lift counts**: StopPoint's separate "Lifts" facility count is broadly consistent: 145 of the 162 _none_ stations have no lifts recorded, and 58 of the 95 _full_ stations have lifts. The 34 _full_ stations with no lifts recorded would need level or ramped access throughout; that has not been checked station by station.
 - **Total**: 95 fully step-free against TfL's published ~93.
+- **TfL's station topology files** (feed of 2026-10-20, [`data/tfl-station-topology/`](../../data/tfl-station-topology/README.md)): an independent source for the same question, built from TfL's GTFS pathways rather than the Stop Structure API (`pipeline/src/mind_the_step/topology.py`). The two agree on all 271 stations both cover: 95 full, 14 partial, 162 none. Croxley, empty in the Stop Structure API, is "none" there. Two platforms marked not customer-facing (Morden 1, Chalfont & Latimer 3) have to be left out for those two stations to agree.
 
 ### Sources rejected
 
 - **StopPoint accessibility attributes** (Unified API): present for only 82 of 272 tube stations; Bond Street has none.
 - **Zenodo 18313509** (London Underground stations dataset, January 2026): marks South Kensington, Baker Street and Camden Town step-free and Wembley Park not, and four of TfL's 2024 priority stations as already step-free. Not used.
-- **TfL's published station topology files** (GTFS/CSV, replacing the unmaintained lrad-v2.xml): tfl.gov.uk refuses automated downloads (HTTP 403), so they could not be fetched by the pipeline. Their specification (above) shows what they would add: per-platform step and gap in mm and whether a manual boarding ramp is needed (step-free _to the train_, not just to the platform), and a lift list whose ids (e.g. `HUBLBG-Lift-3`) match the lift-disruption feed.
 
 ## Limitations
 
-- Street to **platform** only. The gap between platform and train, and whether a ramp or level boarding is needed, is not in the topology.
+- Street to **platform** only. The gap between platform and train, and whether a ramp or level boarding is needed, is not in the Stop Structure topology. TfL's topology files measure step and gap per platform and line (`PlatformServices.csv`); that is not used yet.
 - A snapshot: lifts out of service are not reflected here (that is the lift log's job, S5).
 - Terminus bay platforms with no services listed (a few, e.g. Brixton's second Victoria line platform) are not counted.
-- The interchange rules are heuristics checked on the cases above; individual interchange results (e.g. Euston Square partial, Bank 4 of 6) have not each been verified against TfL's step-free map.
+- The interchange rules are heuristics. Their results (e.g. Euston Square partial, Bank 4 of 6) agree with TfL's topology files, which file platforms by the stop area each line calls at and need no such rules.

@@ -1,0 +1,8 @@
+PlatformUniqueId,StopAreaNaptanCode,Line,DirectionTowards,MinGap,MaxGap,AverageGap,MinStep,MaxStep,AverageStep,DesignatedLevelAccessPoint,LocationOfLevelAccess,LevelAccessByManualRamp,AdditionalAccessibilityInformation,GroupName
+940GZZA-Plat1-NB-victoria,940GZZA,victoria,Walthamstow,,,,,,,False,,False,,
+940GZZA-Plat1-NB-victoria,940GZZA,victoria,Seven Sisters,,,,,,,False,,False,,
+940GZZA-Plat2-WB-jubilee,940GZZA,jubilee,Stanmore,,,,,,,False,,False,,
+940GZZA-Plat3-SB-victoria,940GZZA,victoria,Brixton,,,,,,,False,,False,,
+940GZZA-Plat4-EB-jubilee,940GZZA,jubilee,Stratford,,,,,,,False,,False,,
+HUBB-Plat1-EB-central|national-rail,940GZZB,central,Epping,,,,,,,False,,False,,
+HUBB-Plat1-EB-central|national-rail,910GB,national-rail,,,,,,,,False,,False,,

@@ -1,0 +1,350 @@
+{
+    "model": "network model v1 (tube + walking)",
+    "inputs": {
+        "journeys": "s3-street-2026-10-27-0830",
+        "snapshot": "2026-10-19",
+        "topology": "2026-10-20"
+    },
+    "params": {
+        "pace:bakerloo": 1.074,
+        "pace:central": 1.002,
+        "pace:circle": 1.699,
+        "pace:district": 0.974,
+        "pace:hammersmith-city": 0.942,
+        "pace:jubilee": 0.854,
+        "pace:metropolitan": 1.06,
+        "pace:northern": 0.984,
+        "pace:piccadilly": 1.117,
+        "pace:victoria": 0.906,
+        "pace:waterloo-city": 1.0,
+        "dwell": 0.846,
+        "access": 5.702,
+        "transfer": 3.893,
+        "walk_pace": 9.537,
+        "access_step_free": 8.263,
+        "transfer_step_free": 3.47
+    },
+    "journeys_per_line": {
+        "bakerloo": 73,
+        "central": 452,
+        "circle": 16,
+        "district": 363,
+        "hammersmith-city": 215,
+        "jubilee": 437,
+        "metropolitan": 369,
+        "northern": 639,
+        "piccadilly": 553,
+        "victoria": 774,
+        "waterloo-city": 2
+    },
+    "graph_edges": {
+        "standard": 3058,
+        "step-free": 2484
+    },
+    "calibration": {
+        "observations": {
+            "standard": 2078,
+            "step-free": 378
+        },
+        "in_sample": {
+            "standard": {
+                "n": 2078,
+                "unreachable": 0,
+                "mae": 2.7,
+                "mape": 7.8,
+                "bias": -0.12,
+                "within_5_min": 85.8
+            },
+            "step-free": {
+                "n": 378,
+                "unreachable": 8,
+                "mae": 4.2,
+                "mape": 9.5,
+                "bias": 0.06,
+                "within_5_min": 69.5
+            }
+        },
+        "leave_one_origin_out": {
+            "model": {
+                "standard": {
+                    "n": 2078,
+                    "unreachable": 0,
+                    "mae": 3.32,
+                    "mape": 9.2,
+                    "bias": -0.17,
+                    "within_5_min": 77.1
+                },
+                "step-free": {
+                    "n": 378,
+                    "unreachable": 8,
+                    "mae": 4.5,
+                    "mape": 10.1,
+                    "bias": 0.46,
+                    "within_5_min": 65.4
+                }
+            },
+            "baseline_crow_fly": {
+                "standard": {
+                    "n": 2078,
+                    "unreachable": 0,
+                    "mae": 5.44,
+                    "mape": 16.1,
+                    "bias": 0.03,
+                    "within_5_min": 57.0
+                },
+                "step-free": {
+                    "n": 378,
+                    "unreachable": 0,
+                    "mae": 7.4,
+                    "mape": 17.9,
+                    "bias": 0.08,
+                    "within_5_min": 38.4
+                }
+            },
+            "folds": {
+                "940GZZLUASG": {
+                    "standard": {
+                        "n": 163,
+                        "unreachable": 0,
+                        "mae": 3.8,
+                        "mape": 10.1,
+                        "bias": 3.59,
+                        "within_5_min": 69.3
+                    },
+                    "step-free": {
+                        "n": 0,
+                        "unreachable": 0
+                    }
+                },
+                "940GZZLUBXN": {
+                    "standard": {
+                        "n": 220,
+                        "unreachable": 0,
+                        "mae": 2.14,
+                        "mape": 6.2,
+                        "bias": 1.17,
+                        "within_5_min": 94.1
+                    },
+                    "step-free": {
+                        "n": 84,
+                        "unreachable": 2,
+                        "mae": 4.33,
+                        "mape": 9.5,
+                        "bias": 2.58,
+                        "within_5_min": 59.8
+                    }
+                },
+                "940GZZLUCTN": {
+                    "standard": {
+                        "n": 103,
+                        "unreachable": 0,
+                        "mae": 8.66,
+                        "mape": 20.3,
+                        "bias": -8.66,
+                        "within_5_min": 2.9
+                    },
+                    "step-free": {
+                        "n": 0,
+                        "unreachable": 0
+                    }
+                },
+                "940GZZLUCYF": {
+                    "standard": {
+                        "n": 190,
+                        "unreachable": 0,
+                        "mae": 2.6,
+                        "mape": 6.9,
+                        "bias": 1.2,
+                        "within_5_min": 88.4
+                    },
+                    "step-free": {
+                        "n": 60,
+                        "unreachable": 2,
+                        "mae": 4.25,
+                        "mape": 9.1,
+                        "bias": 1.92,
+                        "within_5_min": 69.0
+                    }
+                },
+                "940GZZLUEBY": {
+                    "standard": {
+                        "n": 65,
+                        "unreachable": 0,
+                        "mae": 4.19,
+                        "mape": 11.5,
+                        "bias": -3.45,
+                        "within_5_min": 66.2
+                    },
+                    "step-free": {
+                        "n": 23,
+                        "unreachable": 0,
+                        "mae": 7.26,
+                        "mape": 15.6,
+                        "bias": -3.82,
+                        "within_5_min": 47.8
+                    }
+                },
+                "940GZZLUHAI": {
+                    "standard": {
+                        "n": 157,
+                        "unreachable": 0,
+                        "mae": 2.34,
+                        "mape": 6.6,
+                        "bias": -1.58,
+                        "within_5_min": 94.9
+                    },
+                    "step-free": {
+                        "n": 7,
+                        "unreachable": 0,
+                        "mae": 5.47,
+                        "mape": 8.6,
+                        "bias": -5.47,
+                        "within_5_min": 28.6
+                    }
+                },
+                "940GZZLUKSX": {
+                    "standard": {
+                        "n": 221,
+                        "unreachable": 0,
+                        "mae": 2.2,
+                        "mape": 7.4,
+                        "bias": 0.14,
+                        "within_5_min": 95.0
+                    },
+                    "step-free": {
+                        "n": 82,
+                        "unreachable": 1,
+                        "mae": 4.12,
+                        "mape": 9.8,
+                        "bias": -0.9,
+                        "within_5_min": 70.4
+                    }
+                },
+                "940GZZLUSKS": {
+                    "standard": {
+                        "n": 233,
+                        "unreachable": 0,
+                        "mae": 2.97,
+                        "mape": 9.9,
+                        "bias": 1.59,
+                        "within_5_min": 84.5
+                    },
+                    "step-free": {
+                        "n": 0,
+                        "unreachable": 0
+                    }
+                },
+                "940GZZLUSTD": {
+                    "standard": {
+                        "n": 138,
+                        "unreachable": 0,
+                        "mae": 2.72,
+                        "mape": 8.3,
+                        "bias": -0.87,
+                        "within_5_min": 91.3
+                    },
+                    "step-free": {
+                        "n": 50,
+                        "unreachable": 1,
+                        "mae": 4.23,
+                        "mape": 9.0,
+                        "bias": 0.45,
+                        "within_5_min": 75.5
+                    }
+                },
+                "940GZZLUTBY": {
+                    "standard": {
+                        "n": 222,
+                        "unreachable": 0,
+                        "mae": 3.38,
+                        "mape": 8.5,
+                        "bias": 2.82,
+                        "within_5_min": 74.3
+                    },
+                    "step-free": {
+                        "n": 0,
+                        "unreachable": 0
+                    }
+                },
+                "940GZZLUWWL": {
+                    "standard": {
+                        "n": 180,
+                        "unreachable": 0,
+                        "mae": 5.09,
+                        "mape": 10.8,
+                        "bias": -4.8,
+                        "within_5_min": 45.6
+                    },
+                    "step-free": {
+                        "n": 0,
+                        "unreachable": 0
+                    }
+                },
+                "940GZZLUWYP": {
+                    "standard": {
+                        "n": 186,
+                        "unreachable": 0,
+                        "mae": 3.08,
+                        "mape": 10.6,
+                        "bias": -0.55,
+                        "within_5_min": 74.7
+                    },
+                    "step-free": {
+                        "n": 72,
+                        "unreachable": 2,
+                        "mae": 4.55,
+                        "mape": 11.2,
+                        "bias": 0.34,
+                        "within_5_min": 65.7
+                    }
+                }
+            }
+        }
+    },
+    "all_planner_journeys": {
+        "standard": {
+            "planner_journeys": 3252,
+            "planner_using_other_modes": 1174,
+            "other_modes": {
+                "bus": 502,
+                "elizabeth-line": 338,
+                "national-rail": 303,
+                "overground": 224,
+                "dlr": 19
+            },
+            "model_unreachable": 0,
+            "planner_10_min_faster": 144,
+            "scores_where_reachable": {
+                "n": 3252,
+                "unreachable": 0,
+                "mae": 3.8,
+                "mape": 10.6,
+                "bias": 1.13,
+                "within_5_min": 75.4
+            }
+        },
+        "step-free": {
+            "planner_journeys": 3240,
+            "planner_using_other_modes": 2862,
+            "other_modes": {
+                "bus": 2472,
+                "national-rail": 603,
+                "elizabeth-line": 541,
+                "overground": 501,
+                "dlr": 27,
+                "coach": 17,
+                "river-bus": 3
+            },
+            "model_unreachable": 767,
+            "planner_10_min_faster": 1004,
+            "scores_where_reachable": {
+                "n": 3240,
+                "unreachable": 767,
+                "mae": 12.45,
+                "mape": 25.4,
+                "bias": 10.52,
+                "within_5_min": 35.8
+            }
+        }
+    }
+}
