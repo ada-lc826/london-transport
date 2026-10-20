@@ -10,9 +10,10 @@ on:
 permissions:
     contents: write
 
-# Shares the lift logger's group so the two never push to `data` at the same time.
+# Its own group: the lift logger runs for hours at a time. Both push through
+# commit-data.sh, which rebases onto the other's commits.
 concurrency:
-    group: collect-lifts
+    group: snapshot-network
     cancel-in-progress: false
 
 jobs:
@@ -30,7 +31,7 @@ jobs:
               run: |
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-                  git fetch --depth=1 origin data
+                  git fetch --depth=50 origin data
                   git worktree add -B data data-branch FETCH_HEAD
 
             - name: Fetch network data
@@ -40,12 +41,5 @@ jobs:
               run: uv run --frozen python -m mind_the_step.snapshot --out ../data-branch
 
             - name: Commit and push
-              working-directory: data-branch
               run: |
-                  git add -A
-                  if git diff --cached --quiet; then
-                    echo "Nothing to commit"
-                    exit 0
-                  fi
-                  git commit -q -m "snapshot: $(date -u +%Y-%m-%dT%H:%MZ)"
-                  git push origin data
+                  .github/scripts/commit-data.sh data-branch "snapshot: $(date -u +%Y-%m-%dT%H:%MZ)"

@@ -1,0 +1,66 @@
+name: Journey planner batch
+
+# Samples TfL Journey Planner times, standard versus step-free (plan §5.3), and commits the
+# results to the `data` branch under journeys/. Run by hand. `probe` fetches one pair in a few
+# variants with raw responses; `batch` fetches every S3 origin to every tube station.
+# Batches resume: requests already recorded are skipped, so a run that fails or times out can
+# be started again with the same date.
+
+on:
+    workflow_dispatch:
+        inputs:
+            mode:
+                description: probe or batch
+                default: probe
+            date:
+                description: Travel date YYYY-MM-DD (default a Tuesday at least 3 days ahead)
+                default: ''
+            max_requests:
+                description: Stop after this many requests (blank for all)
+                default: ''
+
+permissions:
+    contents: write
+
+concurrency:
+    group: planner-batch
+    cancel-in-progress: false
+
+jobs:
+    run:
+        runs-on: ubuntu-latest
+        timeout-minutes: 300
+        steps:
+            - uses: actions/checkout@v7
+
+            - uses: astral-sh/setup-uv@v7
+              with:
+                  working-directory: pipeline
+
+            - name: Check out the data branch
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git fetch --depth=50 origin data
+                  git worktree add -B data data-branch FETCH_HEAD
+
+            - name: Query the journey planner
+              working-directory: pipeline
+              env:
+                  TFL_APP_KEY: ${{ secrets.TFL_APP_KEY }}
+                  MODE: ${{ inputs.mode }}
+                  TRAVEL_DATE: ${{ inputs.date }}
+                  MAX_REQUESTS: ${{ inputs.max_requests }}
+              run: |
+                  args=("$MODE" --out ../data-branch --network ../apps/website/public/data/network.json)
+                  if [ -n "$TRAVEL_DATE" ]; then args+=(--date "$TRAVEL_DATE"); fi
+                  if [ -n "$MAX_REQUESTS" ]; then args+=(--max-requests "$MAX_REQUESTS"); fi
+                  uv run --frozen python -m mind_the_step.journeys "${args[@]}"
+
+            - name: Commit and push
+              # Keep whatever was fetched, even if some requests failed.
+              if: always()
+              run: |
+                  .github/scripts/commit-data.sh data-branch "journeys ($MODE): $(date -u +%Y-%m-%dT%H:%MZ)"
+              env:
+                  MODE: ${{ inputs.mode }}

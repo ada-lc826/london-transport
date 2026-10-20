@@ -132,6 +132,10 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
         this.send({ type: 'scene/step', delta });
     }
 
+    setSceneParam(key: string, value: string) {
+        this.send({ type: 'scene/param', key, value });
+    }
+
     setScenePlaying(playing: boolean) {
         this.send({ type: 'scene/play', playing });
     }

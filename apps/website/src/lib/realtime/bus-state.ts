@@ -1,4 +1,10 @@
-import { isSceneId, SCENE_META, initialSceneState } from '../../scenes/scene-state';
+import {
+    defaultParams,
+    initialSceneState,
+    isSceneId,
+    isValidParam,
+    SCENE_META
+} from '../../scenes/scene-state';
 import { reanchor } from './clock';
 import { getCityMapView, isMapCity } from './map-cities';
 import type { BusMessage, BusSharedState, ScreenMapViewMessage } from './types';
@@ -44,6 +50,7 @@ export function reduceBusMessage(
             return withScene(state, {
                 id: message.sceneId,
                 step,
+                params: defaultParams(message.sceneId),
                 // A new scene, or a new step, starts its timeline from zero.
                 timeline: {
                     anchorTimelineMs: 0,
@@ -66,6 +73,13 @@ export function reduceBusMessage(
                     playing: true
                 }
             });
+        }
+        case 'scene/param': {
+            const { key, value } = message;
+            if (!isValidParam(state.scene.id, key, value)) return { state, broadcast: null };
+            if (state.scene.params[key] === value) return { state, broadcast: null };
+            // A new choice within the scene keeps its step and timeline.
+            return withScene(state, { params: { ...state.scene.params, [key]: value as string } });
         }
         case 'scene/play': {
             if (typeof message.playing !== 'boolean') return { state, broadcast: null };

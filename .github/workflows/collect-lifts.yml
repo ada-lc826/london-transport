@@ -1,15 +1,23 @@
 name: Collect lift status
 
-# Logs TfL's live lift disruptions every 15 minutes to the `data` branch,
-# building the lift-reliability dataset (plan §5.1). GitHub runs schedules
-# only from the default branch, and may delay or skip runs under load; the
-# log's `ts` field records when each run actually happened.
+# Logs TfL's live lift disruptions every 15 minutes to the `data` branch, building the
+# lift-reliability dataset (plan §5.1).
+#
+# GitHub's scheduler is best effort and throttles low-activity repositories (in practice it
+# fired about once every five hours), so a single run does the sampling: it stays alive for
+# ~5h45m and samples at :07, :22, :37 and :52 each hour. The schedule only has to start a new
+# run every so often; the concurrency group keeps one run active and at most one queued, so
+# the next run takes over as soon as the current one ends. The log's `ts` field records when
+# each sample was actually taken.
 
 on:
     schedule:
-        # Off the top of the hour, when GitHub's scheduler is busiest.
-        - cron: '7,22,37,52 * * * *'
+        - cron: '7 */2 * * *'
     workflow_dispatch:
+        inputs:
+            samples:
+                description: Number of 15-minute samples to take in this run
+                default: '23'
 
 permissions:
     contents: write
@@ -21,7 +29,10 @@ concurrency:
 jobs:
     collect:
         runs-on: ubuntu-latest
-        timeout-minutes: 5
+        # 23 samples span 5h30m; GitHub-hosted jobs may run for at most 6 hours.
+        timeout-minutes: 350
+        env:
+            SAMPLES: ${{ inputs.samples || '23' }}
         steps:
             - uses: actions/checkout@v7
 
@@ -34,25 +45,29 @@ jobs:
                   git config --global user.name "github-actions[bot]"
                   git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
                   if git ls-remote --exit-code --heads origin data > /dev/null; then
-                    git fetch --depth=1 origin data
+                    # Enough history for commit-data.sh to rebase onto concurrent pushes.
+                    git fetch --depth=50 origin data
                     git worktree add -B data data-branch FETCH_HEAD
                   else
                     git worktree add --orphan -b data data-branch
                   fi
 
-            - name: Fetch lift disruptions
-              working-directory: pipeline
+            - name: Sample every 15 minutes
               env:
                   TFL_APP_KEY: ${{ secrets.TFL_APP_KEY }}
-              run: uv run --frozen python -m mind_the_step.lifts --out ../data-branch
-
-            - name: Commit and push
-              working-directory: data-branch
               run: |
-                  git add -A
-                  if git diff --cached --quiet; then
-                    echo "Nothing to commit"
-                    exit 0
-                  fi
-                  git commit -q -m "lifts: $(date -u +%Y-%m-%dT%H:%MZ)"
-                  git push origin data
+                  for i in $(seq 1 "$SAMPLES"); do
+                    status=0
+                    (cd pipeline && uv run --frozen python -m mind_the_step.lifts --out ../data-branch) || status=$?
+                    if [ "$status" -ne 0 ]; then
+                      # Exit code 2: missing or rejected key. Nothing will work until it is fixed.
+                      exit "$status"
+                    fi
+                    .github/scripts/commit-data.sh data-branch "lifts: $(date -u +%Y-%m-%dT%H:%MZ)"
+                    if [ "$i" -lt "$SAMPLES" ]; then
+                      # Sleep to the next :07/:22/:37/:52 so samples stay on a regular grid.
+                      now=$(date +%s)
+                      next=$(( ((now - 420) / 900 + 1) * 900 + 420 ))
+                      sleep $(( next - now ))
+                    fi
+                  done

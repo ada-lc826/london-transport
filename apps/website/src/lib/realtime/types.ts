@@ -31,6 +31,7 @@ export type BusSharedState = {
 export type SceneGotoMessage = BusMessage & { type: 'scene/goto'; sceneId: SceneId; step?: number };
 export type SceneStepMessage = BusMessage & { type: 'scene/step'; delta: 1 | -1 };
 export type ScenePlayMessage = BusMessage & { type: 'scene/play'; playing: boolean };
+export type SceneParamMessage = BusMessage & { type: 'scene/param'; key: string; value: string };
 export type SceneStateMessage = BusMessage & { type: 'scene/state'; scene: SceneState };
 
 export type ScreenMapViewState = {

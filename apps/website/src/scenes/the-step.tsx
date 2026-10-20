@@ -1,18 +1,16 @@
-import { useEffect, useState } from 'react';
-
 import {
     loadNetwork,
-    stationBounds,
     summariseStepFree,
     type Network,
     type Station,
     type StepFree
 } from '../data/network';
-import { fitCamera, projectToWall, type MapCamera } from '../wall/camera';
-import { rectsIntersect, regionRect, zones, type WallRect } from '../wall/layout';
+import { projectToWall } from '../wall/camera';
+import { rectsIntersect, regionRect, zones } from '../wall/layout';
 import { useWallStage } from '../wall/stage';
 import { ScreenText } from '../wall/typography';
 import type { SceneProps } from './registry';
+import { networkCamera, useAsset } from './use-asset';
 
 // S2 · The Step (plan §4.2, §4.4). Every tube station, by whether you can get from the street
 // to its platforms without a step. Derived from TfL's station topology (pipeline/stepfree.py).
@@ -33,7 +31,7 @@ const CELL = 128;
 const FADE = 'opacity 1.2s ease-in-out';
 
 export function TheStepScene({ scene }: SceneProps) {
-    const network = useNetwork();
+    const network = useAsset(loadNetwork);
     const step = scene.step;
     if (!network) return null;
     return (
@@ -43,20 +41,6 @@ export function TheStepScene({ scene }: SceneProps) {
             <Numbers network={network} reveal={step >= 1} focus={step >= 2} />
         </>
     );
-}
-
-function useNetwork() {
-    const [network, setNetwork] = useState<Network | null>(null);
-    useEffect(() => {
-        let live = true;
-        void loadNetwork().then((loaded) => {
-            if (live) setNetwork(loaded);
-        });
-        return () => {
-            live = false;
-        };
-    }, []);
-    return network;
 }
 
 function NetworkMap({
@@ -70,7 +54,7 @@ function NetworkMap({
 }) {
     const { layout, view } = useWallStage();
     const frame = regionRect(layout, zones(layout).centre);
-    const camera = mapCamera(network, frame);
+    const camera = networkCamera(network, frame);
     if (!camera || !rectsIntersect(frame, view)) return null;
     const project = (lngLat: [number, number]) => projectToWall(camera, frame, lngLat);
     const here = network.stations.find((s) => s.id === HERE_ID);
@@ -114,12 +98,6 @@ function NetworkMap({
             {here ? <HereMarker station={here} project={project} visible={focus} /> : null}
         </svg>
     );
-}
-
-function mapCamera(network: Network, frame: WallRect): MapCamera | null {
-    const bounds = stationBounds(network.stations);
-    if (!bounds) return null;
-    return fitCamera([bounds.west, bounds.south, bounds.east, bounds.north], frame, 260);
 }
 
 function HereMarker({
