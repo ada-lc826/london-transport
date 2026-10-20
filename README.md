@@ -18,7 +18,8 @@ vp run dev        # http://localhost:5780
 | `/`                       | Simulator: the full 16×4 wall preview (or the 3×2 one-iframe-per-screen wall) plus two control tablets                             |
 | `/screen?c=<col>&r=<row>` | One physical screen; the URL Vizzy Studio loads per wall node. Coordinates outside the wall show an error instead of being clamped |
 | `/world`                  | The whole wall on one page and one WebGL context: preview, screen recording, Vizzy compatibility mode                              |
-| `/control?operator=A`     | A control tablet: scene, step, play/pause; city and zoom for the map-check scene                                                   |
+| `/control?operator=A`     | Presenter tablet: scene, step, play/pause, speaker notes with the figures on the wall, and wall health                             |
+| `/control?operator=B`     | Traveller tablet: only the current scene's choices (S3's origin)                                                                   |
 | `/bus`                    | WebSocket bus. Owns scene state; answers binary clock pings                                                                        |
 
 Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the debug overlay (bezels, 5|6|5 zones, eye-height band, and each screen's connection, clock offset and round trip); `bezels=0` hides the bezel lines in `/world`.
@@ -28,6 +29,7 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 - **Geometry** (`apps/website/src/wall/`): scenes lay out in wall pixels (30720 × 4320). Each screen draws only its own 1920 × 1080 rectangle and skips regions that do not touch it. Maps get a per-screen camera from one function, `cameraForRect`, which is unit-tested for continuity across every bezel and for agreement between `/screen` and `/world`. Text goes through `ScreenText`, which keeps it inside one screen.
 - **Clock**: screens ping the bus every 2 s with binary frames that follow Vizzy Studio's opcodes (`CLOCK_PING 0x08`, `CLOCK_PONG 0x09`) and keep the offset from the fastest recent round trip.
 - **Scenes**: control tablets send intents (`scene/goto`, `scene/step`, `scene/play`); the bus applies them and broadcasts `scene/state` with a revision number and a timeline anchor (position, server time, rate). Each screen works out the current position from its synchronised clock, so animations line up with no per-frame messages. Scene changes are rare, so the anchor travels as JSON rather than a binary frame.
+- **Wall health**: each `/screen` reports its tile, scene revision and clock round trip every 5 s and on every scene change (`screen/report`). The bus sends tablets a summary at most once a second (`wall/health`); the presenter tablet shows it as a 16×4 grid: connected, drawing the current revision, clock error within one frame (±17 ms), and tiles opened twice.
 
 ## Scenes
 

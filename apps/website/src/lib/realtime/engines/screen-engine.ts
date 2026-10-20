@@ -1,4 +1,5 @@
 import { isSceneId } from '../../../scenes/scene-state';
+import type { LayoutName, Tile } from '../../../wall/layout';
 import { ClockEstimator, decodePong, encodePing, sampleFromPong } from '../clock';
 import { getCityMapView, isMapCity } from '../map-cities';
 import { screenStore } from '../stores/screen-store';
@@ -14,10 +15,15 @@ import { BusEngine } from './bus-engine';
 
 // Vizzy pings every 2 s; the estimator keeps the best of the last 8 samples (~16 s window).
 const CLOCK_PING_INTERVAL_MS = 2_000;
+// Wall-health reports; also sent at once when the screen's scene changes.
+const REPORT_INTERVAL_MS = 5_000;
 
 export class ScreenEngine extends BusEngine<ScreenStoreState> {
     private readonly clock = new ClockEstimator();
     private pingTimer: ReturnType<typeof setInterval> | null = null;
+    private reportTimer: ReturnType<typeof setInterval> | null = null;
+    // Set by `/screen`; the full-wall preview has no tile and does not report.
+    private tile: (Tile & { layout: LayoutName }) | null = null;
 
     private constructor() {
         super('screen', screenStore);
@@ -46,6 +52,13 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
         }));
     }
 
+    setTile(layout: LayoutName, tile: Tile) {
+        const same =
+            this.tile?.layout === layout && this.tile.c === tile.c && this.tile.r === tile.r;
+        this.tile = { layout, ...tile };
+        if (!same) this.sendReport();
+    }
+
     /** Current server time, or null before the first clock sample arrives. */
     serverNow(): number | null {
         const offset = this.store.state.clockOffsetMs;
@@ -57,11 +70,14 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
         this.clock.reset();
         this.sendPing();
         this.pingTimer = setInterval(() => this.sendPing(), CLOCK_PING_INTERVAL_MS);
+        this.reportTimer = setInterval(() => this.sendReport(), REPORT_INTERVAL_MS);
     }
 
     protected override onClose() {
         if (this.pingTimer !== null) clearInterval(this.pingTimer);
+        if (this.reportTimer !== null) clearInterval(this.reportTimer);
         this.pingTimer = null;
+        this.reportTimer = null;
     }
 
     protected override onBinary(bytes: Uint8Array) {
@@ -101,18 +117,33 @@ export class ScreenEngine extends BusEngine<ScreenStoreState> {
         this.applySceneState(hello.state.scene, { force: true });
     }
 
+    private sendReport() {
+        if (!this.tile) return;
+        const { scene, clockRttMs } = this.store.state;
+        this.send({
+            type: 'screen/report',
+            layout: this.tile.layout,
+            c: this.tile.c,
+            r: this.tile.r,
+            revision: scene?.revision ?? null,
+            rttMs: clockRttMs
+        });
+    }
+
     private sendPing() {
         this.sendBinary(encodePing(localNow()));
     }
 
     private applySceneState(scene: SceneStateMessage['scene'] | undefined, { force = false } = {}) {
         if (!scene || !isSceneId(scene.id)) return;
+        const before = this.store.state.scene;
         this.store.setState((prev) => {
             // Revisions only grow within one server process; a hello may come from a restarted
             // server whose count began again, so it always wins.
             if (!force && prev.scene && scene.revision <= prev.scene.revision) return prev;
             return { ...prev, scene };
         });
+        if (this.store.state.scene !== before) this.sendReport();
     }
 
     private applyMapViewMessage(mapViewMessage: ScreenMapViewMessage) {

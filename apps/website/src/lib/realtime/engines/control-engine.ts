@@ -10,7 +10,8 @@ import type {
     HelloBusMessage,
     MapCity,
     SceneStateMessage,
-    ScreenMapViewMessage
+    ScreenMapViewMessage,
+    WallHealthMessage
 } from '../types';
 import { BusEngine } from './bus-engine';
 
@@ -140,7 +141,20 @@ export class ControlEngine extends BusEngine<ControlStoreState> {
         this.send({ type: 'scene/play', playing });
     }
 
+    protected override onOpen() {
+        // Ask the bus for wall health; it sends the summary now and whenever it changes.
+        this.send({ type: 'control/join' });
+    }
+
     protected override onMessage(message: BusMessage) {
+        if (message.type === 'wall/health') {
+            const { health } = message as WallHealthMessage;
+            if (health && typeof health === 'object') {
+                this.store.setState((prev) => ({ ...prev, wallHealth: health }));
+            }
+            return;
+        }
+
         if (message.type === 'control/slider') {
             const sliderMessage = message as ControlSliderMessage;
             if (typeof sliderMessage.value !== 'number') return;

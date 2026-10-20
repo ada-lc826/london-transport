@@ -1,4 +1,5 @@
 import type { SceneId, SceneState } from '../../scenes/scene-state';
+import type { WallHealth } from './wall-health';
 
 export type BusMessage = {
     // Keep message kinds namespaced (`control/*`, `screen/*`).
@@ -33,6 +34,9 @@ export type SceneStepMessage = BusMessage & { type: 'scene/step'; delta: 1 | -1 
 export type ScenePlayMessage = BusMessage & { type: 'scene/play'; playing: boolean };
 export type SceneParamMessage = BusMessage & { type: 'scene/param'; key: string; value: string };
 export type SceneStateMessage = BusMessage & { type: 'scene/state'; scene: SceneState };
+
+// Screen -> bus (`screen/report`, see wall-health.ts) and bus -> control tablets.
+export type WallHealthMessage = BusMessage & { type: 'wall/health'; health: WallHealth };
 
 export type ScreenMapViewState = {
     longitude: number;
@@ -77,6 +81,8 @@ export type ControlStoreState = EngineStoreState & {
     isSliderInteracting: boolean;
     selectedCity: MapCity;
     scene: SceneState | null;
+    // Latest summary from the bus; null until the first `wall/health` arrives.
+    wallHealth: WallHealth | null;
 };
 
 export type ScreenStoreState = EngineStoreState & {
@@ -92,7 +98,8 @@ export const createInitialControlStoreState = (): ControlStoreState => ({
     sliderValue: 25,
     isSliderInteracting: false,
     selectedCity: 'london',
-    scene: null
+    scene: null,
+    wallHealth: null
 });
 
 export const createInitialScreenStoreState = (): ScreenStoreState => ({

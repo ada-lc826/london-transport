@@ -26,14 +26,17 @@ function ScreenPage() {
 
 function ScreenPageContent() {
     const search = Route.useSearch();
-    const layout = resolveLayout(search.layout);
+    const layoutName = search.layout === 'mini' ? 'mini' : 'do';
+    const layout = resolveLayout(layoutName);
     const tile = parseTile(layout, search.c, search.r);
     const scene = useScreenStore((state) => state.scene);
 
     useEffect(() => {
-        // Touch the singleton so it connects on the client (its constructor is SSR-gated).
-        screenEngine.getRole();
-    }, []);
+        // Report which tile this is, for the presenter's wall-health panel. This also touches
+        // the singleton so it connects on the client (its constructor is SSR-gated).
+        if (tile) screenEngine.setTile(layoutName, tile);
+        else screenEngine.getRole();
+    }, [layoutName, tile?.c, tile?.r]);
 
     if (!tile) {
         return (
