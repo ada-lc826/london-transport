@@ -52,7 +52,7 @@ uv run python -m mind_the_step.network --snapshot <data-branch>/snapshots/<date>
 
 ## Journey planner sampling
 
-`mind_the_step.journeys` asks TfL's Journey Planner for the same trip twice, standard and with `accessibilityPreference=StepFreeToPlatform`, departing at the same time (default: 08:30 on a Tuesday at least three days ahead). Origins and destinations are station NaPTAN ids ("the station as a place", including its bus stops); station-centroid coordinates made the planner answer 404 for some stations (see `experiments/endpoint-404s.json`).
+`mind_the_step.journeys` asks TfL's Journey Planner for the same trip twice, standard and with `accessibilityPreference=StepFreeToPlatform`, departing at the same time (default: 08:30 on a Tuesday at least three days ahead). Both scenarios are timed street to street: endpoints are each station's entrance nearest its centre (or its centre), stepping to points about 55 m away when the planner answers 404 for a point. Stop ids were rejected because they time standard trips platform to platform but step-free trips from the street (see the module docstring).
 
 - `probe`: two pairs in four variants, raw responses in `journeys/probe/`, to confirm the parameters and response shape.
 - `batch`: the 12 S3 origins (6 at stations with step-free access, 6 without) to all 272 tube stations, both scenarios (about 6,500 requests at up to 420 a minute). One record per request in `journeys/<batch>-<date>-<time>/records.jsonl.gz`: status, fastest journey's minutes, walking minutes and legs. Re-running with the same date skips what is already recorded.

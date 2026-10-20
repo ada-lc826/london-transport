@@ -6,7 +6,7 @@ import httpx
 
 from mind_the_step import journeys
 
-STATIONS = {"A": (51.5, -0.1), "B": (51.6, -0.2), "C": (51.4, 0.0)}
+STATIONS = {"A": ["a0"], "B": ["b0", "b1"], "C": ["c0", "c1", "c2"]}
 DAY = date(2026, 10, 27)
 
 
@@ -83,7 +83,11 @@ def test_run_batch_records_and_resumes(tmp_path):
     def handler(request: httpx.Request):
         seen.append(request)
         step_free = request.url.params.get("accessibilityPreference") == "StepFreeToPlatform"
-        if request.url.path.endswith("/to/C") and step_free:
+        path = request.url.path
+        if path.endswith("/to/c0"):
+            # The first point for C finds nothing; the next one works.
+            return httpx.Response(404, json={"message": "No journey found for your inputs."})
+        if path.endswith("/to/c1") and step_free:
             return httpx.Response(500)
         minutes = 50 if step_free else 20
         return httpx.Response(200, json={"journeys": [journey(minutes, ("tube", "X", minutes))]})
@@ -101,10 +105,10 @@ def test_run_batch_records_and_resumes(tmp_path):
         )
         assert counts == {"planned": 4, "ok": 3, "failed": 1, "already_done": 0}
         first = seen[0]
-        # Endpoints are stop ids, not coordinates.
         assert {r.url.path for r in seen} == {
-            "/Journey/JourneyResults/A/to/B",
-            "/Journey/JourneyResults/A/to/C",
+            "/Journey/JourneyResults/a0/to/b0",
+            "/Journey/JourneyResults/a0/to/c0",
+            "/Journey/JourneyResults/a0/to/c1",
         }
         assert first.url.params["date"] == "20261027"
         assert first.url.params["timeIs"] == "Departing"
@@ -116,6 +120,10 @@ def test_run_batch_records_and_resumes(tmp_path):
         assert by_key[("B", "standard")]["minutes"] == 20
         assert by_key[("B", "step-free")]["minutes"] == 50
         assert by_key[("C", "step-free")]["status"] == 500
+        # C's standard trip succeeded on its second point, and says so.
+        assert by_key[("C", "standard")]["to"] == "c1"
+        assert by_key[("C", "standard")]["endpoint_try"] == 2
+        assert by_key[("B", "standard")]["endpoint_try"] == 1
 
         # A second run only retries the failure.
         seen.clear()
@@ -162,3 +170,13 @@ def test_experiment_keeps_failure_bodies(tmp_path):
     assert "StepFreeToPlatform" in manifest["fails"]["url"]
     saved = json.loads((tmp_path / "out" / "spec" / "fails.json").read_text())
     assert saved == {"message": "Cannot find a route"}
+
+
+def test_endpoint_candidates_prefer_the_entrance():
+    station = {"lat": 51.5, "lon": -0.1, "entrance": [51.5002, -0.1001]}
+    candidates = journeys.endpoint_candidates(station)
+    assert candidates[:2] == ["51.500200,-0.100100", "51.500000,-0.100000"]
+    assert len(candidates) == 6
+    assert journeys.endpoint_candidates({"lat": 51.5, "lon": -0.1, "entrance": None})[0] == (
+        "51.500000,-0.100000"
+    )

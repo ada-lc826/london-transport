@@ -2469,6 +2469,7 @@
             "lon": -0.14214,
             "lat": 51.47993,
             "lines": ["northern"],
+            "entrance": [51.47975, -0.14238],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2478,6 +2479,7 @@
             "lon": -0.28046,
             "lat": 51.50306,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.50301, -0.28042],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -2487,6 +2489,7 @@
             "lon": -0.13482,
             "lat": 51.56548,
             "lines": ["northern"],
+            "entrance": [51.56568, -0.13493],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2496,6 +2499,7 @@
             "lon": -0.07238,
             "lat": 51.51504,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.5153, -0.07208],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2505,6 +2509,7 @@
             "lon": -0.10635,
             "lat": 51.53184,
             "lines": ["northern"],
+            "entrance": [51.53184, -0.10635],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2514,6 +2519,7 @@
             "lon": -0.07569,
             "lat": 51.51425,
             "lines": ["circle", "metropolitan"],
+            "entrance": [51.51405, -0.07528],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -2523,6 +2529,7 @@
             "lon": -0.29961,
             "lat": 51.54063,
             "lines": ["piccadilly"],
+            "entrance": [51.54063, -0.29913],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2532,6 +2539,7 @@
             "lon": -0.60771,
             "lat": 51.67413,
             "lines": ["metropolitan"],
+            "entrance": [51.67421, -0.60736],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2541,6 +2549,7 @@
             "lon": -0.13306,
             "lat": 51.61645,
             "lines": ["piccadilly"],
+            "entrance": [51.61606, -0.1334],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2550,6 +2559,7 @@
             "lon": -0.10746,
             "lat": 51.55866,
             "lines": ["piccadilly"],
+            "entrance": [51.5584, -0.10568],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2559,6 +2569,7 @@
             "lon": -0.01154,
             "lat": 51.52484,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.52473, -0.01144],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2568,6 +2579,7 @@
             "lon": -0.09799,
             "lat": 51.52027,
             "lines": ["circle", "hammersmith-city", "metropolitan"],
+            "entrance": [51.52031, -0.09753],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -2577,6 +2589,7 @@
             "lon": -0.12423,
             "lat": 51.60703,
             "lines": ["piccadilly"],
+            "entrance": [51.60693, -0.1243],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2586,6 +2599,7 @@
             "lon": 0.12702,
             "lat": 51.54033,
             "lines": ["district"],
+            "entrance": [51.5404, 0.12751],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2595,6 +2609,7 @@
             "lon": 0.08858,
             "lat": 51.58569,
             "lines": ["central"],
+            "entrance": [51.58582, 0.08836],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -2604,6 +2619,7 @@
             "lon": -0.10366,
             "lat": 51.51158,
             "lines": ["circle", "district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2613,6 +2629,7 @@
             "lon": 0.08105,
             "lat": 51.53932,
             "lines": ["district", "hammersmith-city"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [3, 3]
         },
@@ -2622,6 +2639,7 @@
             "lon": 0.04676,
             "lat": 51.6266,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2631,6 +2649,7 @@
             "lon": -0.05551,
             "lat": 51.52722,
             "lines": ["central"],
+            "entrance": [51.52717, -0.05544],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2640,6 +2659,7 @@
             "lon": -0.153,
             "lat": 51.44329,
             "lines": ["northern"],
+            "entrance": [51.44328, -0.15307],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2649,6 +2669,7 @@
             "lon": -0.04115,
             "lat": 51.58692,
             "lines": ["victoria"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2658,6 +2679,7 @@
             "lon": -0.06399,
             "lat": 51.49775,
             "lines": ["jubilee"],
+            "entrance": [51.49814, -0.06363],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2667,6 +2689,7 @@
             "lon": -0.14972,
             "lat": 51.5143,
             "lines": ["central", "jubilee"],
+            "entrance": [51.51433, -0.14966],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -2676,6 +2699,7 @@
             "lon": -0.09005,
             "lat": 51.51313,
             "lines": ["central", "northern", "waterloo-city"],
+            "entrance": null,
             "stepFree": "partial",
             "stepFreePlatforms": [4, 6]
         },
@@ -2685,6 +2709,7 @@
             "lon": -0.09337,
             "lat": 51.5012,
             "lines": ["northern"],
+            "entrance": [51.50123, -0.0934],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -2694,6 +2719,7 @@
             "lon": -0.32494,
             "lat": 51.49564,
             "lines": ["piccadilly"],
+            "entrance": [51.49585, -0.32446],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2703,6 +2729,7 @@
             "lon": -0.21343,
             "lat": 51.49031,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.49037, -0.21355],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -2712,6 +2739,7 @@
             "lon": -0.15713,
             "lat": 51.52288,
             "lines": ["bakerloo", "circle", "hammersmith-city", "jubilee", "metropolitan"],
+            "entrance": [51.52246, -0.15695],
             "stepFree": "none",
             "stepFreePlatforms": [0, 8]
         },
@@ -2721,6 +2749,7 @@
             "lon": -0.26405,
             "lat": 51.60277,
             "lines": ["northern"],
+            "entrance": [51.60259, -0.26398],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2730,6 +2759,7 @@
             "lon": -0.21362,
             "lat": 51.57665,
             "lines": ["northern"],
+            "entrance": [51.57674, -0.21319],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2739,6 +2769,7 @@
             "lon": -0.02513,
             "lat": 51.52694,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.52712, -0.02501],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2748,6 +2779,7 @@
             "lon": -0.18794,
             "lat": 51.51228,
             "lines": ["circle", "district"],
+            "entrance": [51.51239, -0.18769],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2757,6 +2789,7 @@
             "lon": -0.11489,
             "lat": 51.46262,
             "lines": ["victoria"],
+            "entrance": [51.46265, -0.11496],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -2766,6 +2799,7 @@
             "lon": -0.16465,
             "lat": 51.55031,
             "lines": ["northern"],
+            "entrance": [51.55041, -0.16447],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2775,6 +2809,7 @@
             "lon": -0.56069,
             "lat": 51.66799,
             "lines": ["metropolitan"],
+            "entrance": [51.66792, -0.56062],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2784,6 +2819,7 @@
             "lon": -0.11849,
             "lat": 51.54852,
             "lines": ["piccadilly"],
+            "entrance": [51.54857, -0.11812],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2793,6 +2829,7 @@
             "lon": -0.15339,
             "lat": 51.54412,
             "lines": ["northern"],
+            "entrance": [51.54395, -0.15351],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2802,6 +2839,7 @@
             "lon": -0.12444,
             "lat": 51.51309,
             "lines": ["piccadilly"],
+            "entrance": [51.51307, -0.12423],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2811,6 +2849,7 @@
             "lon": 0.00832,
             "lat": 51.51358,
             "lines": ["jubilee"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2820,6 +2859,7 @@
             "lon": -0.11158,
             "lat": 51.51825,
             "lines": ["central"],
+            "entrance": [51.51823, -0.11147],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2829,6 +2869,7 @@
             "lon": -0.12728,
             "lat": 51.50741,
             "lines": ["bakerloo", "northern"],
+            "entrance": [51.50769, -0.12745],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -2838,6 +2879,7 @@
             "lon": -0.14917,
             "lat": 51.65152,
             "lines": ["piccadilly"],
+            "entrance": [51.6513, -0.14931],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -2847,6 +2889,7 @@
             "lon": -0.24992,
             "lat": 51.59542,
             "lines": ["northern"],
+            "entrance": [51.59533, -0.24992],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2856,6 +2899,7 @@
             "lon": -0.13832,
             "lat": 51.46174,
             "lines": ["northern"],
+            "entrance": [51.4617, -0.13833],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2865,6 +2909,7 @@
             "lon": -0.29469,
             "lat": 51.6077,
             "lines": ["jubilee"],
+            "entrance": [51.60754, -0.29476],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2874,6 +2919,7 @@
             "lon": -0.13002,
             "lat": 51.46513,
             "lines": ["northern"],
+            "entrance": [51.46518, -0.12955],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2883,6 +2929,7 @@
             "lon": -0.14758,
             "lat": 51.45265,
             "lines": ["northern"],
+            "entrance": [51.4529, -0.14767],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2892,6 +2939,7 @@
             "lon": -0.17809,
             "lat": 51.41816,
             "lines": ["northern"],
+            "entrance": [51.41826, -0.178],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2901,6 +2949,7 @@
             "lon": -0.61125,
             "lat": 51.70521,
             "lines": ["metropolitan"],
+            "entrance": [51.70523, -0.61111],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -2910,6 +2959,7 @@
             "lon": -0.09043,
             "lat": 51.51151,
             "lines": ["circle", "district"],
+            "entrance": [51.51127, -0.09028],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -2919,6 +2969,7 @@
             "lon": -0.14274,
             "lat": 51.53929,
             "lines": ["northern"],
+            "entrance": [51.53925, -0.14277],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -2928,6 +2979,7 @@
             "lon": 0.07504,
             "lat": 51.61792,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2937,6 +2989,7 @@
             "lon": -0.26797,
             "lat": 51.49463,
             "lines": ["district"],
+            "entrance": [51.49434, -0.26804],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -2946,6 +2999,7 @@
             "lon": -0.0494,
             "lat": 51.49793,
             "lines": ["jubilee"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2955,6 +3009,7 @@
             "lon": -0.44172,
             "lat": 51.64704,
             "lines": ["metropolitan"],
+            "entrance": [51.64707, -0.44175],
             "stepFree": null,
             "stepFreePlatforms": [0, 0]
         },
@@ -2964,6 +3019,7 @@
             "lon": -0.51846,
             "lat": 51.65436,
             "lines": ["metropolitan"],
+            "entrance": [51.65429, -0.51832],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2973,6 +3029,7 @@
             "lon": -0.01825,
             "lat": 51.50349,
             "lines": ["jubilee"],
+            "entrance": [51.50345, -0.01748],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2982,6 +3039,7 @@
             "lon": 0.08378,
             "lat": 51.64539,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -2991,6 +3049,7 @@
             "lon": 0.16602,
             "lat": 51.5441,
             "lines": ["district"],
+            "entrance": [51.54423, 0.16601],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3000,6 +3059,7 @@
             "lon": 0.14753,
             "lat": 51.54164,
             "lines": ["district"],
+            "entrance": [51.54176, 0.14778],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3009,6 +3069,7 @@
             "lon": -0.23907,
             "lat": 51.55195,
             "lines": ["jubilee"],
+            "entrance": [51.55151, -0.23917],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3018,6 +3079,7 @@
             "lon": -0.10061,
             "lat": 51.49454,
             "lines": ["bakerloo", "northern"],
+            "entrance": [51.49448, -0.10046],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 4]
         },
@@ -3027,6 +3089,7 @@
             "lon": -0.39737,
             "lat": 51.57651,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.57653, -0.39731],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3036,6 +3099,7 @@
             "lon": -0.24725,
             "lat": 51.51661,
             "lines": ["central"],
+            "entrance": [51.51659, -0.24749],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3045,6 +3109,7 @@
             "lon": -0.30146,
             "lat": 51.51502,
             "lines": ["central", "district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [3, 3]
         },
@@ -3054,6 +3119,7 @@
             "lon": -0.28826,
             "lat": 51.51014,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.51032, -0.28817],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3063,6 +3129,7 @@
             "lon": -0.19338,
             "lat": 51.49206,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.4922, -0.19319],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -3072,6 +3139,7 @@
             "lon": -0.16501,
             "lat": 51.58713,
             "lines": ["northern"],
+            "entrance": [51.58669, -0.16471],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3081,6 +3149,7 @@
             "lon": -0.27493,
             "lat": 51.61365,
             "lines": ["northern"],
+            "entrance": [51.61366, -0.27582],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3090,6 +3159,7 @@
             "lon": 0.05119,
             "lat": 51.53895,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.53896, 0.05139],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3099,6 +3169,7 @@
             "lon": -0.12267,
             "lat": 51.50706,
             "lines": ["bakerloo", "circle", "district", "northern"],
+            "entrance": [51.50738, -0.12257],
             "stepFree": "none",
             "stepFreePlatforms": [0, 6]
         },
@@ -3108,6 +3179,7 @@
             "lon": 0.11377,
             "lat": 51.69368,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3117,6 +3189,7 @@
             "lon": 0.19864,
             "lat": 51.54977,
             "lines": ["district"],
+            "entrance": [51.54992, 0.19922],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3126,6 +3199,7 @@
             "lon": -0.211,
             "lat": 51.4592,
             "lines": ["district"],
+            "entrance": [51.45916, -0.21074],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3135,6 +3209,7 @@
             "lon": -0.17015,
             "lat": 51.5203,
             "lines": ["bakerloo"],
+            "entrance": [51.52021, -0.17027],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3144,6 +3219,7 @@
             "lon": -0.16783,
             "lat": 51.51986,
             "lines": ["circle", "district", "hammersmith-city"],
+            "entrance": [51.51967, -0.16803],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3153,6 +3229,7 @@
             "lon": -0.13583,
             "lat": 51.5256,
             "lines": ["circle", "hammersmith-city", "metropolitan"],
+            "entrance": [51.52581, -0.13575],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -3162,6 +3239,7 @@
             "lon": -0.13378,
             "lat": 51.528,
             "lines": ["northern", "victoria"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 6]
         },
@@ -3171,6 +3249,7 @@
             "lon": -0.19542,
             "lat": 51.48008,
             "lines": ["district"],
+            "entrance": [51.4801, -0.19541],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3180,6 +3259,7 @@
             "lon": -0.10491,
             "lat": 51.52025,
             "lines": ["circle", "hammersmith-city", "metropolitan"],
+            "entrance": [51.5201, -0.1047],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3189,6 +3269,7 @@
             "lon": 0.091,
             "lat": 51.59562,
             "lines": ["central"],
+            "entrance": [51.59557, 0.09071],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3198,6 +3279,7 @@
             "lon": -0.10683,
             "lat": 51.56416,
             "lines": ["piccadilly", "victoria"],
+            "entrance": [51.56376, -0.10678],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -3207,6 +3289,7 @@
             "lon": -0.19253,
             "lat": 51.60092,
             "lines": ["northern"],
+            "entrance": [51.60109, -0.19235],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3216,6 +3299,7 @@
             "lon": -0.17985,
             "lat": 51.54682,
             "lines": ["jubilee", "metropolitan"],
+            "entrance": [51.54688, -0.17976],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3225,6 +3309,7 @@
             "lon": -0.27527,
             "lat": 51.4918,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3234,6 +3319,7 @@
             "lon": -0.13436,
             "lat": 51.5206,
             "lines": ["northern"],
+            "entrance": [51.52067, -0.1345],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3243,6 +3329,7 @@
             "lon": -0.34605,
             "lat": 51.54242,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3252,6 +3339,7 @@
             "lon": 0.09207,
             "lat": 51.61338,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3261,6 +3349,7 @@
             "lon": -0.19404,
             "lat": 51.57226,
             "lines": ["northern"],
+            "entrance": [51.57253, -0.194],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3270,6 +3359,7 @@
             "lon": -0.22671,
             "lat": 51.502,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.50197, -0.22647],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3279,6 +3369,7 @@
             "lon": -0.14279,
             "lat": 51.50695,
             "lines": ["jubilee", "piccadilly", "victoria"],
+            "entrance": [51.50684, -0.14283],
             "stepFree": "full",
             "stepFreePlatforms": [6, 6]
         },
@@ -3288,6 +3379,7 @@
             "lon": -0.14426,
             "lat": 51.52384,
             "lines": ["circle", "hammersmith-city", "metropolitan"],
+            "entrance": [51.52388, -0.1439],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3297,6 +3389,7 @@
             "lon": 0.06618,
             "lat": 51.57654,
             "lines": ["central"],
+            "entrance": [51.57695, 0.06633],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3306,6 +3399,7 @@
             "lon": -0.18266,
             "lat": 51.49432,
             "lines": ["circle", "district", "piccadilly"],
+            "entrance": [51.49433, -0.18258],
             "stepFree": "none",
             "stepFreePlatforms": [0, 5]
         },
@@ -3315,6 +3409,7 @@
             "lon": -0.10332,
             "lat": 51.54635,
             "lines": ["victoria"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3324,6 +3419,7 @@
             "lon": -0.33522,
             "lat": 51.59227,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3333,6 +3429,7 @@
             "lon": -0.12047,
             "lat": 51.51758,
             "lines": ["central", "piccadilly"],
+            "entrance": [51.51759, -0.11998],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3342,6 +3439,7 @@
             "lon": -0.1943,
             "lat": 51.65054,
             "lines": ["northern"],
+            "entrance": [51.65047, -0.19442],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3351,6 +3449,7 @@
             "lon": 0.21912,
             "lat": 51.55409,
             "lines": ["district"],
+            "entrance": [51.5541, 0.21925],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3360,6 +3459,7 @@
             "lon": -0.22642,
             "lat": 51.5833,
             "lines": ["northern"],
+            "entrance": [51.58298, -0.22694],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3369,6 +3469,7 @@
             "lon": -0.44983,
             "lat": 51.55371,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.55365, -0.44976],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3378,6 +3479,7 @@
             "lon": -0.2927,
             "lat": 51.53018,
             "lines": ["central"],
+            "entrance": [51.53013, -0.29275],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3387,6 +3489,7 @@
             "lon": -0.14586,
             "lat": 51.57753,
             "lines": ["northern"],
+            "entrance": [51.57759, -0.14598],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3396,6 +3499,7 @@
             "lon": 0.09348,
             "lat": 51.60366,
             "lines": ["central"],
+            "entrance": [51.60392, 0.09312],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3405,6 +3509,7 @@
             "lon": -0.42319,
             "lat": 51.46675,
             "lines": ["piccadilly"],
+            "entrance": [51.46653, -0.42297],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3414,6 +3519,7 @@
             "lon": -0.33722,
             "lat": 51.57919,
             "lines": ["metropolitan"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3423,6 +3529,7 @@
             "lon": -0.15244,
             "lat": 51.50303,
             "lines": ["piccadilly"],
+            "entrance": [51.50307, -0.15277],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3432,6 +3539,7 @@
             "lon": -0.20568,
             "lat": 51.50714,
             "lines": ["central"],
+            "entrance": [51.50728, -0.20562],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3441,6 +3549,7 @@
             "lon": -0.44577,
             "lat": 51.45852,
             "lines": ["piccadilly"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3450,6 +3559,7 @@
             "lon": -0.49056,
             "lat": 51.47005,
             "lines": ["piccadilly"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3459,6 +3569,7 @@
             "lon": -0.45226,
             "lat": 51.47124,
             "lines": ["piccadilly"],
+            "entrance": [51.47115, -0.45225],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3468,6 +3579,7 @@
             "lon": -0.22503,
             "lat": 51.49339,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.49339, -0.22503],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3477,6 +3589,7 @@
             "lon": -0.22362,
             "lat": 51.4923,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.49192, -0.22362],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -3486,6 +3599,7 @@
             "lon": -0.19279,
             "lat": 51.50106,
             "lines": ["circle", "district"],
+            "entrance": [51.50103, -0.19292],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3495,6 +3609,7 @@
             "lon": -0.25788,
             "lat": 51.53631,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3504,6 +3619,7 @@
             "lon": -0.17746,
             "lat": 51.55624,
             "lines": ["northern"],
+            "entrance": [51.55663, -0.17836],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3513,6 +3629,7 @@
             "lon": -0.36658,
             "lat": 51.47129,
             "lines": ["piccadilly"],
+            "entrance": [51.4712, -0.36701],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3522,6 +3639,7 @@
             "lon": -0.35647,
             "lat": 51.47321,
             "lines": ["piccadilly"],
+            "entrance": [51.47331, -0.3568],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3531,6 +3649,7 @@
             "lon": -0.38654,
             "lat": 51.47347,
             "lines": ["piccadilly"],
+            "entrance": [51.47305, -0.38564],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3540,6 +3659,7 @@
             "lon": -0.11324,
             "lat": 51.5527,
             "lines": ["piccadilly"],
+            "entrance": [51.5529, -0.11274],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3549,6 +3669,7 @@
             "lon": -0.44222,
             "lat": 51.56177,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.56202, -0.4419],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3558,6 +3679,7 @@
             "lon": -0.20425,
             "lat": 51.54718,
             "lines": ["jubilee"],
+            "entrance": [51.54693, -0.20409],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3567,6 +3689,7 @@
             "lon": -0.27879,
             "lat": 51.58485,
             "lines": ["jubilee"],
+            "entrance": [51.58498, -0.2787],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3576,6 +3699,7 @@
             "lon": -0.31691,
             "lat": 51.58176,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3585,6 +3709,7 @@
             "lon": -0.16051,
             "lat": 51.50167,
             "lines": ["piccadilly"],
+            "entrance": [51.50196, -0.16034],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3594,6 +3719,7 @@
             "lon": -0.10596,
             "lat": 51.48834,
             "lines": ["northern"],
+            "entrance": [51.48834, -0.1058],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3603,6 +3729,7 @@
             "lon": -0.21002,
             "lat": 51.49762,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3612,6 +3739,7 @@
             "lon": -0.19423,
             "lat": 51.53498,
             "lines": ["bakerloo"],
+            "entrance": [51.53505, -0.19358],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3621,6 +3749,7 @@
             "lon": -0.14073,
             "lat": 51.55031,
             "lines": ["northern"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3630,6 +3759,7 @@
             "lon": -0.22502,
             "lat": 51.53054,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3646,6 +3776,7 @@
                 "piccadilly",
                 "victoria"
             ],
+            "entrance": [51.53024, -0.12354],
             "stepFree": "full",
             "stepFreePlatforms": [8, 8]
         },
@@ -3655,6 +3786,7 @@
             "lon": -0.28524,
             "lat": 51.47706,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3664,6 +3796,7 @@
             "lon": -0.21039,
             "lat": 51.51745,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.51742, -0.21007],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3673,6 +3806,7 @@
             "lon": -0.11231,
             "lat": 51.49881,
             "lines": ["bakerloo"],
+            "entrance": [51.49885, -0.11221],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3682,6 +3816,7 @@
             "lon": 0.05548,
             "lat": 51.64144,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3691,6 +3826,7 @@
             "lon": -0.17549,
             "lat": 51.51172,
             "lines": ["central"],
+            "entrance": [51.51168, -0.17542],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3700,6 +3836,7 @@
             "lon": -0.08887,
             "lat": 51.50572,
             "lines": ["jubilee", "northern"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -3709,6 +3846,7 @@
             "lon": -0.2178,
             "lat": 51.51339,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.5137, -0.21763],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3718,6 +3856,7 @@
             "lon": -0.12843,
             "lat": 51.51139,
             "lines": ["northern", "piccadilly"],
+            "entrance": [51.5115, -0.12844],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3727,6 +3866,7 @@
             "lon": -0.08318,
             "lat": 51.51737,
             "lines": ["central", "circle", "hammersmith-city", "metropolitan"],
+            "entrance": [51.51741, -0.08291],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 4]
         },
@@ -3736,6 +3876,7 @@
             "lon": -0.00552,
             "lat": 51.55659,
             "lines": ["central"],
+            "entrance": [51.55649, -0.00582],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3745,6 +3886,7 @@
             "lon": 0.00819,
             "lat": 51.56832,
             "lines": ["central"],
+            "entrance": [51.56805, 0.00831],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3754,6 +3896,7 @@
             "lon": -0.15895,
             "lat": 51.51342,
             "lines": ["central"],
+            "entrance": [51.5135, -0.15845],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3763,6 +3906,7 @@
             "lon": -0.19484,
             "lat": 51.40214,
             "lines": ["northern"],
+            "entrance": [51.40203, -0.19469],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3772,6 +3916,7 @@
             "lon": -0.03364,
             "lat": 51.52512,
             "lines": ["central", "district", "hammersmith-city"],
+            "entrance": [51.52525, -0.0334],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3781,6 +3926,7 @@
             "lon": -0.08832,
             "lat": 51.51818,
             "lines": ["circle", "hammersmith-city", "metropolitan", "northern"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -3790,6 +3936,7 @@
             "lon": -0.20999,
             "lat": 51.60823,
             "lines": ["northern"],
+            "entrance": [51.60827, -0.20977],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -3799,6 +3946,7 @@
             "lon": -0.08597,
             "lat": 51.5107,
             "lines": ["circle", "district"],
+            "entrance": [51.51051, -0.08596],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3808,6 +3956,7 @@
             "lon": -0.43245,
             "lat": 51.62985,
             "lines": ["metropolitan"],
+            "entrance": [51.62969, -0.4327],
             "stepFree": "none",
             "stepFreePlatforms": [0, 3]
         },
@@ -3817,6 +3966,7 @@
             "lon": -0.09612,
             "lat": 51.57074,
             "lines": ["piccadilly"],
+            "entrance": [51.57046, -0.09614],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3826,6 +3976,7 @@
             "lon": -0.09401,
             "lat": 51.51212,
             "lines": ["circle", "district"],
+            "entrance": [51.51216, -0.09389],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3835,6 +3986,7 @@
             "lon": -0.13879,
             "lat": 51.53468,
             "lines": ["northern"],
+            "entrance": [51.53413, -0.13913],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3844,6 +3996,7 @@
             "lon": -0.18576,
             "lat": 51.52978,
             "lines": ["bakerloo"],
+            "entrance": [51.52981, -0.18587],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3853,6 +4006,7 @@
             "lon": -0.16321,
             "lat": 51.52232,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3862,6 +4016,7 @@
             "lon": -0.25976,
             "lat": 51.52352,
             "lines": ["central"],
+            "entrance": [51.52346, -0.25976],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3871,6 +4026,7 @@
             "lon": 0.09,
             "lat": 51.57573,
             "lines": ["central"],
+            "entrance": [51.57556, 0.09065],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3880,6 +4036,7 @@
             "lon": -0.24984,
             "lat": 51.55399,
             "lines": ["jubilee"],
+            "entrance": [51.55402, -0.24976],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3889,6 +4046,7 @@
             "lon": -0.28887,
             "lat": 51.5175,
             "lines": ["piccadilly"],
+            "entrance": [51.51755, -0.28915],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3898,6 +4056,7 @@
             "lon": -0.31472,
             "lat": 51.49932,
             "lines": ["piccadilly"],
+            "entrance": [51.49927, -0.31455],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3907,6 +4066,7 @@
             "lon": 0.00429,
             "lat": 51.50047,
             "lines": ["jubilee"],
+            "entrance": [51.50029, 0.00399],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3916,6 +4076,7 @@
             "lon": -0.36241,
             "lat": 51.58487,
             "lines": ["metropolitan"],
+            "entrance": [51.58476, -0.3622],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3925,6 +4086,7 @@
             "lon": -0.1961,
             "lat": 51.50913,
             "lines": ["central", "circle", "district"],
+            "entrance": [51.50919, -0.19612],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -3934,6 +4096,7 @@
             "lon": -0.3687,
             "lat": 51.54824,
             "lines": ["central"],
+            "entrance": [51.54819, -0.36807],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3943,6 +4106,7 @@
             "lon": -0.31806,
             "lat": 51.57848,
             "lines": ["metropolitan"],
+            "entrance": [51.57871, -0.31818],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3952,6 +4116,7 @@
             "lon": -0.42383,
             "lat": 51.61105,
             "lines": ["metropolitan"],
+            "entrance": [51.61116, -0.4237],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3961,6 +4126,7 @@
             "lon": -0.40946,
             "lat": 51.60057,
             "lines": ["metropolitan"],
+            "entrance": [51.60078, -0.40947],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3970,6 +4136,7 @@
             "lon": -0.304,
             "lat": 51.56255,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3979,6 +4146,7 @@
             "lon": -0.13218,
             "lat": 51.64773,
             "lines": ["piccadilly"],
+            "entrance": [51.64763, -0.13208],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -3988,6 +4156,7 @@
             "lon": -0.08777,
             "lat": 51.52586,
             "lines": ["northern"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -3997,6 +4166,7 @@
             "lon": -0.35222,
             "lat": 51.48127,
             "lines": ["piccadilly"],
+            "entrance": [51.48132, -0.35166],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4006,6 +4176,7 @@
             "lon": -0.11244,
             "lat": 51.48185,
             "lines": ["northern"],
+            "entrance": [51.48193, -0.11249],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4015,6 +4186,7 @@
             "lon": -0.1419,
             "lat": 51.51522,
             "lines": ["bakerloo", "central", "victoria"],
+            "entrance": [51.51512, -0.14192],
             "stepFree": "none",
             "stepFreePlatforms": [0, 6]
         },
@@ -4024,6 +4196,7 @@
             "lon": -0.17569,
             "lat": 51.51658,
             "lines": ["bakerloo", "circle", "district"],
+            "entrance": [51.51637, -0.17594],
             "stepFree": "partial",
             "stepFreePlatforms": [3, 4]
         },
@@ -4033,6 +4206,7 @@
             "lon": -0.17831,
             "lat": 51.51819,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.51821, -0.17763],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4042,6 +4216,7 @@
             "lon": -0.1338,
             "lat": 51.51005,
             "lines": ["bakerloo", "piccadilly"],
+            "entrance": [51.51015, -0.13397],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -4051,6 +4226,7 @@
             "lon": -0.13376,
             "lat": 51.4891,
             "lines": ["victoria"],
+            "entrance": [51.48896, -0.13372],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4060,6 +4236,7 @@
             "lon": -0.28434,
             "lat": 51.52712,
             "lines": ["piccadilly"],
+            "entrance": [51.52707, -0.28417],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4069,6 +4246,7 @@
             "lon": 0.01745,
             "lat": 51.53134,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.5314, 0.01771],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4078,6 +4256,7 @@
             "lon": -0.38116,
             "lat": 51.5929,
             "lines": ["metropolitan"],
+            "entrance": [51.59301, -0.3811],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4087,6 +4266,7 @@
             "lon": -0.29511,
             "lat": 51.57197,
             "lines": ["metropolitan"],
+            "entrance": [51.57178, -0.29487],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4096,6 +4276,7 @@
             "lon": -0.20117,
             "lat": 51.47528,
             "lines": ["district"],
+            "entrance": [51.47546, -0.20121],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4105,6 +4286,7 @@
             "lon": -0.32345,
             "lat": 51.53672,
             "lines": ["central"],
+            "entrance": [51.53647, -0.32337],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4114,6 +4296,7 @@
             "lon": -0.20873,
             "lat": 51.46826,
             "lines": ["district"],
+            "entrance": [51.46794, -0.20916],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4123,6 +4306,7 @@
             "lon": -0.28622,
             "lat": 51.59419,
             "lines": ["jubilee"],
+            "entrance": [51.5941, -0.28552],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4132,6 +4316,7 @@
             "lon": -0.20457,
             "lat": 51.53416,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4141,6 +4326,7 @@
             "lon": -0.18715,
             "lat": 51.51031,
             "lines": ["central"],
+            "entrance": [51.51025, -0.18713],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4150,6 +4336,7 @@
             "lon": 0.04536,
             "lat": 51.57624,
             "lines": ["central"],
+            "entrance": [51.57628, 0.04556],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4159,6 +4346,7 @@
             "lon": -0.14644,
             "lat": 51.52334,
             "lines": ["bakerloo"],
+            "entrance": [51.52359, -0.14671],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4168,6 +4356,7 @@
             "lon": -0.4737,
             "lat": 51.64021,
             "lines": ["metropolitan"],
+            "entrance": [51.64039, -0.47365],
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -4177,6 +4366,7 @@
             "lon": -0.30134,
             "lat": 51.46324,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -4186,6 +4376,7 @@
             "lon": -0.41071,
             "lat": 51.56074,
             "lines": ["central"],
+            "entrance": [51.56041, -0.41062],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4195,6 +4386,7 @@
             "lon": -0.41297,
             "lat": 51.5732,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.57315, -0.41292],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4204,6 +4396,7 @@
             "lon": -0.4219,
             "lat": 51.57135,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.57158, -0.42133],
             "stepFree": "partial",
             "stepFreePlatforms": [2, 4]
         },
@@ -4213,6 +4406,7 @@
             "lon": -0.12429,
             "lat": 51.52307,
             "lines": ["piccadilly"],
+            "entrance": [51.52318, -0.12435],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4222,6 +4416,7 @@
             "lon": -0.23588,
             "lat": 51.49412,
             "lines": ["district"],
+            "entrance": [51.49397, -0.23633],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4231,6 +4426,7 @@
             "lon": 0.04365,
             "lat": 51.6172,
             "lines": ["central"],
+            "entrance": [51.61734, 0.04355],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4240,6 +4436,7 @@
             "lon": -0.37113,
             "lat": 51.57515,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.57495, -0.37076],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4249,6 +4446,7 @@
             "lon": -0.18875,
             "lat": 51.51911,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.51911, -0.18878],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4258,6 +4456,7 @@
             "lon": -0.21881,
             "lat": 51.50438,
             "lines": ["central"],
+            "entrance": [51.50462, -0.21814],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4267,6 +4466,7 @@
             "lon": -0.22637,
             "lat": 51.50558,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.5057, -0.22627],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4276,6 +4476,7 @@
             "lon": -0.30742,
             "lat": 51.501,
             "lines": ["piccadilly"],
+            "entrance": [51.50138, -0.30685],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4285,6 +4486,7 @@
             "lon": -0.2457,
             "lat": 51.49492,
             "lines": ["district"],
+            "entrance": [51.49495, -0.24497],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4294,6 +4496,7 @@
             "lon": -0.2066,
             "lat": 51.44507,
             "lines": ["district"],
+            "entrance": [51.44486, -0.20654],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4303,6 +4506,7 @@
             "lon": -0.0466,
             "lat": 51.52186,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.5218, -0.04661],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4312,6 +4516,7 @@
             "lon": -0.27589,
             "lat": 51.54396,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4321,6 +4526,7 @@
             "lon": -0.12782,
             "lat": 51.63231,
             "lines": ["piccadilly"],
+            "entrance": [51.63255, -0.12786],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4330,6 +4536,7 @@
             "lon": -0.35249,
             "lat": 51.56489,
             "lines": ["piccadilly"],
+            "entrance": [51.56491, -0.35259],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4339,6 +4546,7 @@
             "lon": -0.13361,
             "lat": 51.49954,
             "lines": ["circle", "district"],
+            "entrance": [51.49964, -0.13365],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4348,6 +4556,7 @@
             "lon": -0.17395,
             "lat": 51.53452,
             "lines": ["jubilee"],
+            "entrance": [51.53454, -0.17415],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4357,6 +4566,7 @@
             "lon": -0.17414,
             "lat": 51.49409,
             "lines": ["circle", "district", "piccadilly"],
+            "entrance": [51.49407, -0.1741],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -4366,6 +4576,7 @@
             "lon": -0.30843,
             "lat": 51.57023,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4375,6 +4586,7 @@
             "lon": -0.12264,
             "lat": 51.47218,
             "lines": ["northern", "victoria"],
+            "entrance": [51.47225, -0.12266],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -4384,6 +4596,7 @@
             "lon": 0.02144,
             "lat": 51.58068,
             "lines": ["central"],
+            "entrance": [51.58103, 0.02143],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4393,6 +4606,7 @@
             "lon": -0.09757,
             "lat": 51.51494,
             "lines": ["central"],
+            "entrance": [51.51494, -0.09758],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4402,6 +4616,7 @@
             "lon": -0.39892,
             "lat": 51.55685,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4411,6 +4626,7 @@
             "lon": -0.15638,
             "lat": 51.49227,
             "lines": ["circle", "district"],
+            "entrance": [51.49217, -0.15625],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4420,6 +4636,7 @@
             "lon": -0.00346,
             "lat": 51.54181,
             "lines": ["central", "jubilee"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [3, 3]
         },
@@ -4429,6 +4646,7 @@
             "lon": -0.30327,
             "lat": 51.61984,
             "lines": ["jubilee"],
+            "entrance": [51.61973, -0.30317],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -4438,6 +4656,7 @@
             "lon": -0.33643,
             "lat": 51.55695,
             "lines": ["piccadilly"],
+            "entrance": [51.55701, -0.33607],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4447,6 +4666,7 @@
             "lon": -0.31574,
             "lat": 51.55082,
             "lines": ["piccadilly"],
+            "entrance": [51.55095, -0.31558],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4456,6 +4676,7 @@
             "lon": -0.07258,
             "lat": 51.58333,
             "lines": ["victoria"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4465,6 +4686,7 @@
             "lon": -0.17489,
             "lat": 51.54368,
             "lines": ["jubilee"],
+            "entrance": [51.54366, -0.17469],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4474,6 +4696,7 @@
             "lon": 0.02734,
             "lat": 51.59191,
             "lines": ["central"],
+            "entrance": [51.59218, 0.02725],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4483,6 +4706,7 @@
             "lon": -0.10533,
             "lat": 51.50427,
             "lines": ["jubilee"],
+            "entrance": [51.50375, -0.10469],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4492,6 +4716,7 @@
             "lon": -0.19201,
             "lat": 51.41531,
             "lines": ["northern"],
+            "entrance": [51.41527, -0.19251],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4501,6 +4726,7 @@
             "lon": -0.17921,
             "lat": 51.6306,
             "lines": ["northern"],
+            "entrance": [51.63018, -0.17928],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4510,6 +4736,7 @@
             "lon": -0.15974,
             "lat": 51.43568,
             "lines": ["northern"],
+            "entrance": [51.43576, -0.15972],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4519,6 +4746,7 @@
             "lon": -0.16837,
             "lat": 51.42763,
             "lines": ["northern"],
+            "entrance": [51.42793, -0.16809],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4528,6 +4756,7 @@
             "lon": -0.13041,
             "lat": 51.51643,
             "lines": ["central", "northern"],
+            "entrance": [51.51625, -0.13062],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -4537,6 +4766,7 @@
             "lon": -0.13843,
             "lat": 51.55682,
             "lines": ["northern"],
+            "entrance": [51.55672, -0.13816],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4546,6 +4776,7 @@
             "lon": 0.10308,
             "lat": 51.67176,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -4555,6 +4786,7 @@
             "lon": -0.06024,
             "lat": 51.58811,
             "lines": ["victoria"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4564,6 +4796,7 @@
             "lon": -0.11426,
             "lat": 51.51101,
             "lines": ["circle", "district"],
+            "entrance": [51.51101, -0.11397],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4573,6 +4806,7 @@
             "lon": -0.25455,
             "lat": 51.49515,
             "lines": ["district", "piccadilly"],
+            "entrance": [51.49538, -0.25521],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -4582,6 +4816,7 @@
             "lon": -0.10295,
             "lat": 51.59027,
             "lines": ["piccadilly"],
+            "entrance": [51.59048, -0.1029],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4591,6 +4826,7 @@
             "lon": -0.07655,
             "lat": 51.50997,
             "lines": ["circle", "district"],
+            "entrance": [51.50983, -0.07648],
             "stepFree": "full",
             "stepFreePlatforms": [3, 3]
         },
@@ -4600,6 +4836,7 @@
             "lon": 0.23581,
             "lat": 51.55856,
             "lines": ["district"],
+            "entrance": [51.55901, 0.23587],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4609,6 +4846,7 @@
             "lon": 0.03526,
             "lat": 51.53534,
             "lines": ["district", "hammersmith-city"],
+            "entrance": [51.53534, 0.03529],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4618,6 +4856,7 @@
             "lon": 0.25088,
             "lat": 51.55906,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4627,6 +4866,7 @@
             "lon": 0.10153,
             "lat": 51.53837,
             "lines": ["district"],
+            "entrance": [51.53849, 0.10156],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4636,6 +4876,7 @@
             "lon": -0.47795,
             "lat": 51.54657,
             "lines": ["metropolitan", "piccadilly"],
+            "entrance": [51.54642, -0.47876],
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -4645,6 +4886,7 @@
             "lon": -0.1431,
             "lat": 51.49636,
             "lines": ["circle", "district", "victoria"],
+            "entrance": [51.496, -0.14352],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -4654,6 +4896,7 @@
             "lon": -0.1242,
             "lat": 51.48574,
             "lines": ["victoria"],
+            "entrance": [51.4856, -0.12463],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4663,6 +4906,7 @@
             "lon": -0.41738,
             "lat": 51.65745,
             "lines": ["metropolitan"],
+            "entrance": [51.65753, -0.41716],
             "stepFree": "none",
             "stepFreePlatforms": [0, 1]
         },
@@ -4672,6 +4916,7 @@
             "lon": -0.1956,
             "lat": 51.48727,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "partial",
             "stepFreePlatforms": [1, 2]
         },
@@ -4681,6 +4926,7 @@
             "lon": -0.2243,
             "lat": 51.51196,
             "lines": ["central"],
+            "entrance": [51.51196, -0.22474],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4690,6 +4936,7 @@
             "lon": -0.18836,
             "lat": 51.60943,
             "lines": ["northern"],
+            "entrance": [51.60958, -0.18863],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4699,6 +4946,7 @@
             "lon": 0.00505,
             "lat": 51.52814,
             "lines": ["district", "hammersmith-city", "jubilee"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -4708,6 +4956,7 @@
             "lon": -0.19106,
             "lat": 51.54664,
             "lines": ["jubilee"],
+            "entrance": [51.54677, -0.19102],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4717,6 +4966,7 @@
             "lon": -0.3534,
             "lat": 51.57971,
             "lines": ["metropolitan"],
+            "entrance": [51.57991, -0.35299],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4726,6 +4976,7 @@
             "lon": -0.22154,
             "lat": 51.54915,
             "lines": ["jubilee", "metropolitan"],
+            "entrance": [51.54905, -0.22124],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4735,6 +4986,7 @@
             "lon": -0.20657,
             "lat": 51.42121,
             "lines": ["district"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [1, 1]
         },
@@ -4744,6 +4996,7 @@
             "lon": -0.19972,
             "lat": 51.43457,
             "lines": ["district"],
+            "entrance": [51.43462, -0.19962],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4753,6 +5006,7 @@
             "lon": -0.24428,
             "lat": 51.53226,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4762,6 +5016,7 @@
             "lon": -0.18378,
             "lat": 51.52326,
             "lines": ["bakerloo"],
+            "entrance": [51.52336, -0.18366],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4771,6 +5026,7 @@
             "lon": -0.20664,
             "lat": 51.49046,
             "lines": ["district"],
+            "entrance": [51.4907, -0.20686],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4780,6 +5036,7 @@
             "lon": -0.22453,
             "lat": 51.50967,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.50967, -0.2245],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4789,6 +5046,7 @@
             "lon": -0.11478,
             "lat": 51.5033,
             "lines": ["bakerloo", "jubilee", "northern", "waterloo-city"],
+            "entrance": null,
             "stepFree": "partial",
             "stepFreePlatforms": [5, 8]
         },
@@ -4798,6 +5056,7 @@
             "lon": 0.03397,
             "lat": 51.6069,
             "lines": ["central"],
+            "entrance": [51.60744, 0.03359],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4807,6 +5066,7 @@
             "lon": -0.10989,
             "lat": 51.59748,
             "lines": ["piccadilly"],
+            "entrance": [51.5973, -0.10997],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4816,6 +5076,7 @@
             "lon": -0.18542,
             "lat": 51.61801,
             "lines": ["northern"],
+            "entrance": [51.61795, -0.18516],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4825,6 +5086,7 @@
             "lon": -0.05997,
             "lat": 51.51952,
             "lines": ["district", "hammersmith-city"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4834,6 +5096,7 @@
             "lon": -0.43789,
             "lat": 51.56969,
             "lines": ["central"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 1]
         },
@@ -4843,6 +5106,7 @@
             "lon": -0.13832,
             "lat": 51.52495,
             "lines": ["northern", "victoria"],
+            "entrance": [51.52457, -0.13799],
             "stepFree": "none",
             "stepFreePlatforms": [0, 4]
         },
@@ -4852,6 +5116,7 @@
             "lon": 0.02853,
             "lat": 51.5755,
             "lines": ["central"],
+            "entrance": [51.57559, 0.02832],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4861,6 +5126,7 @@
             "lon": -0.12486,
             "lat": 51.50132,
             "lines": ["circle", "district", "jubilee"],
+            "entrance": [51.50095, -0.12495],
             "stepFree": "full",
             "stepFreePlatforms": [4, 4]
         },
@@ -4870,6 +5136,7 @@
             "lon": -0.20106,
             "lat": 51.52111,
             "lines": ["circle", "hammersmith-city"],
+            "entrance": [51.5209, -0.20067],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4879,6 +5146,7 @@
             "lon": -0.28098,
             "lat": 51.518,
             "lines": ["central"],
+            "entrance": [51.51789, -0.28108],
             "stepFree": "none",
             "stepFreePlatforms": [0, 2]
         },
@@ -4888,6 +5156,7 @@
             "lon": -0.01988,
             "lat": 51.58297,
             "lines": ["victoria"],
+            "entrance": null,
             "stepFree": "none",
             "stepFreePlatforms": [0, 1]
         },
@@ -4897,6 +5166,7 @@
             "lon": -0.29685,
             "lat": 51.5523,
             "lines": ["bakerloo"],
+            "entrance": null,
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         },
@@ -4906,6 +5176,7 @@
             "lon": -0.27926,
             "lat": 51.5632,
             "lines": ["jubilee", "metropolitan"],
+            "entrance": [51.56326, -0.2792],
             "stepFree": "full",
             "stepFreePlatforms": [5, 5]
         },
@@ -4915,6 +5186,7 @@
             "lon": -0.12848,
             "lat": 51.47991,
             "lines": ["northern"],
+            "entrance": [51.47992, -0.12835],
             "stepFree": "full",
             "stepFreePlatforms": [2, 2]
         }

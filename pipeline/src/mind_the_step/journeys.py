@@ -13,13 +13,16 @@ Modes:
   are skipped, so a failed or timed-out run can simply be run again;
 - ``experiment``: a hand-written request list, every response body kept.
 
-Batch endpoints are station NaPTAN ids: "the station as a place", which includes the bus
-stops outside it. Coordinates were tried first, but station centroids often lie over tracks
-or inside buildings and the planner then answers 404 "No journey found" for some of them (55
-destinations in step-free mode, and Camden Town as an origin in both modes); ids and ICS codes
-work everywhere (experiments/endpoint-404s.json). With ids the planner still applies the
-step-free requirement at both ends: from South Kensington, which has no step-free access, it
-takes a bus to Earl's Court rather than boarding there.
+Batch endpoints are street points, so both scenarios are timed street to street: each
+station's entrance nearest its centre, or its centre where no entrance is recorded. Two
+earlier attempts were biased:
+
+- station centres alone: the planner answers 404 "No journey found" for some (55 destinations
+  in step-free mode, Camden Town as an origin), so on a 404 the batch now steps to nearby
+  points and records which were used (``from``, ``to``, ``endpoint_try``);
+- stop ids: these work everywhere (experiments/endpoint-404s.json), but a standard trip is
+  then timed platform to platform while a step-free trip includes the walk from the street
+  through the lifts, which inflated the step-free penalty by around 15 minutes.
 """
 
 from __future__ import annotations
@@ -152,14 +155,39 @@ class RateLimiter:
             self.sleep(at - now)
 
 
-def load_stations(network_json: Path) -> dict[str, tuple[float, float]]:
-    """Station id -> (lat, lon) from the web app's network asset."""
+# About 55 m north/south and east/west at London's latitude.
+NUDGE_LAT = 0.0005
+NUDGE_LON = 0.0008
+
+
+def endpoint_candidates(station: dict) -> list[str]:
+    """Street points to try for a station, best first, as "lat,lon".
+
+    The entrance nearest the station's centre comes first (a real street point), then the
+    centre, then four points about 55 m away. The planner answers 404 for some points, e.g.
+    a centre over the tracks; the next candidate usually works.
+    """
+
+    def point(lat: float, lon: float) -> str:
+        return f"{lat:.6f},{lon:.6f}"
+
+    centre = (station["lat"], station["lon"])
+    primary = tuple(station["entrance"]) if station.get("entrance") else centre
+    candidates = [point(*primary), point(*centre)]
+    lat, lon = primary
+    for dlat, dlon in ((NUDGE_LAT, 0), (-NUDGE_LAT, 0), (0, NUDGE_LON), (0, -NUDGE_LON)):
+        candidates.append(point(lat + dlat, lon + dlon))
+    return list(dict.fromkeys(candidates))
+
+
+def load_stations(network_json: Path) -> dict[str, list[str]]:
+    """Station id -> endpoint candidates, from the web app's network asset."""
     network = json.loads(network_json.read_text(encoding="utf-8"))
-    return {s["id"]: (s["lat"], s["lon"]) for s in network["stations"]}
+    return {s["id"]: endpoint_candidates(s) for s in network["stations"]}
 
 
 def plan_requests(
-    stations: dict[str, tuple[float, float]], origins: Iterable[str]
+    stations: dict[str, list[str]], origins: Iterable[str]
 ) -> list[tuple[str, str, str]]:
     """Every (origin, destination, scenario) to fetch, origins first, in a stable order."""
     return [
@@ -188,7 +216,7 @@ def run_batch(
     client: httpx.Client,
     app_key: str,
     out_dir: Path,
-    stations: dict[str, tuple[float, float]],
+    stations: dict[str, list[str]],
     origins: Iterable[str],
     day: date,
     time_hhmm: str,
@@ -210,16 +238,27 @@ def run_batch(
 
     def one(request: tuple[str, str, str]) -> None:
         origin, destination, scenario = request
-        url = JOURNEY_URL.format(origin=origin, destination=destination)
         params = journey_params(scenario, day, time_hhmm)
-        limiter.wait()
-        result = fetch(client, app_key, url=str(httpx.URL(url, params=params)))
+        origins_, destinations_ = stations[origin], stations[destination]
+        # On "no journey found" for a point, step both ends to their next candidates.
+        tries = max(len(origins_), len(destinations_))
+        for i in range(tries):
+            source = origins_[min(i, len(origins_) - 1)]
+            target = destinations_[min(i, len(destinations_) - 1)]
+            url = JOURNEY_URL.format(origin=source, destination=target)
+            limiter.wait()
+            result = fetch(client, app_key, url=str(httpx.URL(url, params=params)))
+            if result.status != 404:
+                break
         record = {
             "origin": origin,
             "destination": destination,
             "scenario": scenario,
             "date": day.isoformat(),
             "time": time_hhmm,
+            "from": source,
+            "to": target,
+            "endpoint_try": i + 1,
             "status": result.status,
             "error": result.error,
             "message": failure_message(result.failure_body),
@@ -322,7 +361,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--spec", type=Path, help="request list (experiment mode)")
     parser.add_argument("--out", type=Path, required=True, help="data directory to write into")
     parser.add_argument("--network", type=Path, help="network.json (batch mode)")
-    parser.add_argument("--batch", default="s3-ids", help="batch name (batch mode)")
+    parser.add_argument("--batch", default="s3-street", help="batch name (batch mode)")
     parser.add_argument("--date", help="travel date YYYY-MM-DD (default: a Tuesday ahead)")
     parser.add_argument("--time", default="0830", help="departure time HHMM")
     parser.add_argument("--max-requests", type=int, help="stop after this many (testing)")
