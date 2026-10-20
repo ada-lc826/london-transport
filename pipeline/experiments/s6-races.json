@@ -1,0 +1,119 @@
+[
+    {
+        "name": "sks-arc-standard",
+        "from": "51.494070,-0.174100",
+        "to": "51.565680,-0.134930"
+    },
+    {
+        "name": "sks-arc-step-free",
+        "from": "51.494070,-0.174100",
+        "to": "51.565680,-0.134930",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "ksx-lad-standard",
+        "from": "51.530240,-0.123540",
+        "to": "51.517420,-0.210070"
+    },
+    {
+        "name": "ksx-lad-step-free",
+        "from": "51.530240,-0.123540",
+        "to": "51.517420,-0.210070",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "asg-ods-standard",
+        "from": "51.616060,-0.133400",
+        "to": "51.525860,-0.087770"
+    },
+    {
+        "name": "asg-ods-step-free",
+        "from": "51.616060,-0.133400",
+        "to": "51.525860,-0.087770",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "bxn-ktn-standard",
+        "from": "51.462650,-0.114960",
+        "to": "51.550310,-0.140730"
+    },
+    {
+        "name": "bxn-ktn-step-free",
+        "from": "51.462650,-0.114960",
+        "to": "51.550310,-0.140730",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "tby-oxc-standard",
+        "from": "51.427930,-0.168090",
+        "to": "51.515120,-0.141920"
+    },
+    {
+        "name": "tby-oxc-step-free",
+        "from": "51.427930,-0.168090",
+        "to": "51.515120,-0.141920",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "wwl-was-standard",
+        "from": "51.582970,-0.019880",
+        "to": "51.524570,-0.137990"
+    },
+    {
+        "name": "wwl-was-step-free",
+        "from": "51.582970,-0.019880",
+        "to": "51.524570,-0.137990",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "std-snb-standard",
+        "from": "51.541810,-0.003460",
+        "to": "51.581030,0.021430"
+    },
+    {
+        "name": "std-snb-step-free",
+        "from": "51.541810,-0.003460",
+        "to": "51.581030,0.021430",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "cyf-sws-standard",
+        "from": "51.503450,-0.017480",
+        "to": "51.543660,-0.174690"
+    },
+    {
+        "name": "cyf-sws-step-free",
+        "from": "51.503450,-0.017480",
+        "to": "51.543660,-0.174690",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "ksx-gpk-standard",
+        "from": "51.530240,-0.123540",
+        "to": "51.506840,-0.142830"
+    },
+    {
+        "name": "ksx-gpk-step-free",
+        "from": "51.530240,-0.123540",
+        "to": "51.506840,-0.142830",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    }
+]
