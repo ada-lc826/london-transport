@@ -73,3 +73,26 @@ export function projectToWall(
     const [x, y] = frameViewport(camera, frame).project(lngLat);
     return [x + frame.x, y + frame.y];
 }
+
+/** A camera that fits `bounds` ([west, south, east, north]) inside `frame` with `padding` px. */
+export function fitCamera(
+    bounds: [number, number, number, number],
+    frame: WallRect,
+    padding = 0
+): MapCamera {
+    const [west, south, east, north] = bounds;
+    const fitted = new WebMercatorViewport({ width: frame.width, height: frame.height }).fitBounds(
+        [
+            [west, south],
+            [east, north]
+        ],
+        { padding }
+    );
+    return {
+        longitude: fitted.longitude,
+        latitude: fitted.latitude,
+        zoom: fitted.zoom,
+        bearing: 0,
+        pitch: 0
+    };
+}

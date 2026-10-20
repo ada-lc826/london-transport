@@ -42,8 +42,16 @@ test('unknown scenes and malformed intents change nothing', () => {
 
 test('steps are clamped to the scene', () => {
     const initial = initialBusState(T0);
-    // Every current scene has one step, so stepping is a no-op.
+    // The attract scene has one step, so stepping is a no-op.
     expect(reduceBusMessage(initial, { type: 'scene/step', delta: 1 }, T0).broadcast).toBeNull();
+    // S2 has three: 0 -> 1 -> 2, then held at 2; back to 1.
+    let s2 = reduceBusMessage(initial, { type: 'scene/goto', sceneId: 'the-step' }, T0).state;
+    for (const expected of [1, 2, 2]) {
+        s2 = reduceBusMessage(s2, { type: 'scene/step', delta: 1 }, T0).state;
+        expect(s2.scene.step).toBe(expected);
+    }
+    s2 = reduceBusMessage(s2, { type: 'scene/step', delta: -1 }, T0).state;
+    expect(s2.scene.step).toBe(1);
     const { state } = reduceBusMessage(
         initial,
         { type: 'scene/goto', sceneId: 'attract', step: 99 },

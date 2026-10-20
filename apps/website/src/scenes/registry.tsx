@@ -4,6 +4,7 @@ import { AttractScene } from './attract';
 import { CalibrationScene } from './calibration';
 import { MapCheckScene } from './map-check';
 import type { SceneId, SceneState } from './scene-state';
+import { TheStepScene } from './the-step';
 
 export type SceneProps = { scene: SceneState };
 
@@ -11,6 +12,7 @@ export type SceneProps = { scene: SceneState };
 // `scene-state.ts`, which has no React dependency.
 export const SCENE_COMPONENTS: Record<SceneId, ComponentType<SceneProps>> = {
     attract: AttractScene,
+    'the-step': TheStepScene,
     calibration: CalibrationScene,
     'map-check': MapCheckScene
 };
