@@ -1,0 +1,4 @@
+pathway_id,from_stop_id,to_stop_id,pathway_mode,is_bidirectional
+p1,940GZZA-Outside,940GZZA-Ent,1,1
+p2,940GZZA-Ent,940GZZA-Plat1-NB-victoria,5,1
+p3,940GZZA-Plat1-NB-victoria,940GZZA-Plat4-EB-jubilee,1,0

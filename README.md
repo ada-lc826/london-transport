@@ -43,7 +43,13 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 
 ## Data pipeline
 
-`pipeline/` is a Python ([uv](https://docs.astral.sh/uv/)) project. It has two jobs so far, both writing to the `data` branch: the lift-status logger, which records TfL's live lift disruptions every 15 minutes to build a lift-reliability dataset, and a network snapshot (stations, lines, route sequences) run by hand. See [`pipeline/README.md`](pipeline/README.md).
+`pipeline/` is a Python ([uv](https://docs.astral.sh/uv/)) project. Jobs that call the TfL API write to the `data` branch: the lift-status logger (every 15 minutes, building a lift-reliability dataset), the network snapshot, and the Journey Planner batches. See [`pipeline/README.md`](pipeline/README.md).
+
+Method notes, with results and limitations:
+
+- [Step-free access](docs/methods/step-free-access.md): street to platform for every tube station, from TfL's topology, checked against TfL's published topology files.
+- [Travel times](docs/methods/travel-times.md): standard and step-free Journey Planner times from 12 origins.
+- [Network model](docs/methods/network-model.md): a tube-and-walk graph model calibrated to those times (leave-one-origin-out MAE 3.3 min standard, 4.5 min step-free).
 
 Powered by TfL Open Data.
 

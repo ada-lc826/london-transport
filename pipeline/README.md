@@ -58,3 +58,26 @@ uv run python -m mind_the_step.network --snapshot <data-branch>/snapshots/<date>
 - `batch`: the 12 S3 origins (6 at stations with step-free access, 6 without) to all 272 tube stations, both scenarios (about 6,500 requests at up to 420 a minute). One record per request in `journeys/<batch>-<date>-<time>/records.jsonl.gz`: status, fastest journey's minutes, walking minutes and legs. Re-running with the same date skips what is already recorded.
 
 Run either with the **Journey planner batch** workflow.
+
+## Published station topology
+
+`mind_the_step.topology` reads TfL's step-free station topology files ([`data/tfl-station-topology/`](../data/tfl-station-topology/), committed by hand because tfl.gov.uk refuses automated downloads): which lines call at each platform, whether each platform can be reached step-free from outside the station, and which line changes are step-free. Run on its own, it compares the result with `network.json`:
+
+```bash
+uv run python -m mind_the_step.topology --topology ../data/tfl-station-topology/2026-10-20 --network ../apps/website/public/data/network.json
+```
+
+## Network model and calibration
+
+`mind_the_step.model` is a graph of tube travel time (street and platform nodes; ride, enter, exit, change and walk edges), standard and step-free. `mind_the_step.calibrate` fits its parameters to the street-to-street Journey Planner batch and scores them by leave-one-origin-out cross-validation; the report is committed as [`data/model/network-model-v1.json`](../data/model/network-model-v1.json). Method and results: [`docs/methods/network-model.md`](../docs/methods/network-model.md).
+
+```bash
+uv run python -m mind_the_step.calibrate \
+  --network ../apps/website/public/data/network.json \
+  --snapshot <data-branch>/snapshots/2026-10-19 \
+  --topology ../data/tfl-station-topology/2026-10-20 \
+  --records <data-branch>/journeys/s3-street-2026-10-27-0830/records.jsonl.gz \
+  --out ../data/model/network-model-v1.json
+```
+
+It runs in about 30 seconds and needs no API key.
