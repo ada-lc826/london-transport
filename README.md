@@ -31,12 +31,13 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 
 ## Scenes
 
-| Scene         | Steps | What it shows                                                                                                                                                                                                                        |
-| ------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| S0 · Attract  | 1     | Title across the centre bezel                                                                                                                                                                                                        |
-| S2 · The Step | 3     | Every tube station by street-to-platform step-free access: the network, the reveal (95 of 272 fully step-free), then South Kensington. Method and validation: [`docs/methods/step-free-access.md`](docs/methods/step-free-access.md) |
-| Calibration   | 1     | Test card for checking a real wall                                                                                                                                                                                                   |
-| Map check     | 1     | Whole-wall basemap driven by the tablets                                                                                                                                                                                             |
+| Scene            | Steps | What it shows                                                                                                                                                                                                                                           |
+| ---------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| S0 · Attract     | 1     | Title across the centre bezel                                                                                                                                                                                                                           |
+| S2 · The Step    | 3     | Every tube station by street-to-platform step-free access: the network, the reveal (95 of 272 fully step-free), then South Kensington. Method and validation: [`docs/methods/step-free-access.md`](docs/methods/step-free-access.md)                    |
+| S3 · Two Londons | 2     | From one of 12 origins (chosen on the tablet), every tube station by Journey Planner travel time, standard beside step-free, then the median extra minutes and the biggest gaps. Method: [`docs/methods/travel-times.md`](docs/methods/travel-times.md) |
+| Calibration      | 1     | Test card for checking a real wall                                                                                                                                                                                                                      |
+| Map check        | 1     | Whole-wall basemap driven by the tablets                                                                                                                                                                                                                |
 
 ## Data pipeline
 
