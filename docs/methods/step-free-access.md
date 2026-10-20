@@ -29,6 +29,8 @@ The request parameters (`sSStopNr`, `sSInclSP`, `sSFEA`, …) are not documented
 3. **Platform** nodes: the station's areas where the topology lists a tube service (product class 2). Area type is not reliable (Pimlico's platforms are type 65; type 81 also marks National Rail platforms).
 4. A platform is step-free if it is reachable from any street node. The station is _full_, _partial_ or _none_ by how many of its platforms are.
 
+This is the same rule TfL applies to its own data. The [step-free station topology data specification](https://content.tfl.gov.uk/step-free-access-and-toilet-data-guide.pdf) (v1.0, July 2021) describes stations as points joined by same-level, ramp and lift pathways, and states: "If there is a sequence of pathways from an outside station point to a platform, then we consider that platform to have 'Full' step-free status." Our street nodes play the part of its "outside station point".
+
 ### Interchanges
 
 About 50 stations sharing an interchange (Bank, Euston, Stratford, …) return nothing for their own NaPTAN id. The fetch retries with the station's hub code, then its ICS code. In those merged responses the tube platforms are often filed under the complex's main stop (Bank's under the DLR stop, Euston's and Waterloo's under the rail station), and neighbouring tube stations appear too. A station's platforms are therefore those under its own id if there are any, otherwise the complex's tube platforms not filed under another tube station.
@@ -44,7 +46,7 @@ About 50 stations sharing an interchange (Bank, Euston, Stratford, …) return n
 
 - **StopPoint accessibility attributes** (Unified API): present for only 82 of 272 tube stations; Bond Street has none.
 - **Zenodo 18313509** (London Underground stations dataset, January 2026): marks South Kensington, Baker Street and Camden Town step-free and Wembley Park not, and four of TfL's 2024 priority stations as already step-free. Not used.
-- **TfL's published station topology files** (GTFS/CSV, replacing the unmaintained lrad-v2.xml): tfl.gov.uk refuses automated downloads (HTTP 403), so they could not be fetched by the pipeline.
+- **TfL's published station topology files** (GTFS/CSV, replacing the unmaintained lrad-v2.xml): tfl.gov.uk refuses automated downloads (HTTP 403), so they could not be fetched by the pipeline. Their specification (above) shows what they would add: per-platform step and gap in mm and whether a manual boarding ramp is needed (step-free _to the train_, not just to the platform), and a lift list whose ids (e.g. `HUBLBG-Lift-3`) match the lift-disruption feed.
 
 ## Limitations
 
