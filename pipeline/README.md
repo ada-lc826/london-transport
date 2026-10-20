@@ -49,3 +49,12 @@ Run it with the **Snapshot network data** workflow (Actions → Run workflow), w
 ```bash
 uv run python -m mind_the_step.network --snapshot <data-branch>/snapshots/<date> --out ../apps/website/public/data/network.json
 ```
+
+## Journey planner sampling
+
+`mind_the_step.journeys` asks TfL's Journey Planner for the same trip twice, standard and with `accessibilityPreference=StepFreeToPlatform`, departing at the same time (default: 08:30 on a Tuesday at least three days ahead). Origins and destinations are coordinates, so the planner chooses the access legs itself.
+
+- `probe`: two pairs in four variants, raw responses in `journeys/probe/`, to confirm the parameters and response shape.
+- `batch`: the 12 S3 origins (6 at stations with step-free access, 6 without) to all 272 tube stations, both scenarios (about 6,500 requests at up to 420 a minute). One record per request in `journeys/<batch>-<date>-<time>/records.jsonl.gz`: status, fastest journey's minutes, walking minutes and legs. Re-running with the same date skips what is already recorded.
+
+Run either with the **Journey planner batch** workflow.
