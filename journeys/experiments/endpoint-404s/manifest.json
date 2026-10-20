@@ -1,0 +1,1049 @@
+{
+ "sks-wlo-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.503299,-0.114780?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-wlo-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUWLO?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 42,
+  "walk_minutes": 1,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "360",
+    "minutes": 24
+   },
+   {
+    "mode": "bus",
+    "line": "C10",
+    "minutes": 15
+   }
+  ]
+ },
+ "sks-wlo-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000254?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 42,
+  "walk_minutes": 1,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "360",
+    "minutes": 24
+   },
+   {
+    "mode": "bus",
+    "line": "C10",
+    "minutes": 15
+   }
+  ]
+ },
+ "sks-wlo-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.504099,-0.114780?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-wlo-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.503299,-0.114780?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 27,
+  "walk_minutes": 13,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "148",
+    "minutes": 0
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 10
+   }
+  ]
+ },
+ "sks-bst-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.522883,-0.157130?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-bst-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUBST?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 28,
+  "walk_minutes": 1,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 27
+   }
+  ]
+ },
+ "sks-bst-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000011?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 28,
+  "walk_minutes": 1,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 27
+   }
+  ]
+ },
+ "sks-bst-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.523683,-0.157130?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 33,
+  "walk_minutes": 6,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 27
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-bst-stepfree-entrance": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.522460,-0.156950?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 29,
+  "walk_minutes": 4,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 25
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   }
+  ]
+ },
+ "sks-bst-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.522883,-0.157130?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 28,
+  "walk_minutes": 10,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 4
+   },
+   {
+    "mode": "tube",
+    "line": "Victoria",
+    "minutes": 4
+   },
+   {
+    "mode": "tube",
+    "line": "Bakerloo",
+    "minutes": 4
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-mmt-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.510700,-0.085969?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-mmt-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUMMT?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 50,
+  "walk_minutes": 10,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Jubilee",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "344",
+    "minutes": 2
+   }
+  ]
+ },
+ "sks-mmt-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000148?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 50,
+  "walk_minutes": 10,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Jubilee",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "344",
+    "minutes": 2
+   }
+  ]
+ },
+ "sks-mmt-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.511500,-0.085969?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 53,
+  "walk_minutes": 11,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Jubilee",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "344",
+    "minutes": 4
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   }
+  ]
+ },
+ "sks-mmt-stepfree-entrance": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.510510,-0.085960?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 57,
+  "walk_minutes": 17,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Jubilee",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   },
+   {
+    "mode": "bus",
+    "line": "344",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-mmt-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.510700,-0.085969?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 26,
+  "walk_minutes": 9,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 17
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   }
+  ]
+ },
+ "sks-upm-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.559063,0.250882?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-upm-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUUPM?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 85,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 46
+   },
+   {
+    "mode": "national-rail",
+    "line": "c2c",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-upm-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000242?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 85,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 46
+   },
+   {
+    "mode": "national-rail",
+    "line": "c2c",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-upm-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.559863,0.250882?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 87,
+  "walk_minutes": 10,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 46
+   },
+   {
+    "mode": "national-rail",
+    "line": "c2c",
+    "minutes": 8
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   }
+  ]
+ },
+ "sks-upm-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.559063,0.250882?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 60,
+  "walk_minutes": 9,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 32
+   },
+   {
+    "mode": "national-rail",
+    "line": "c2c",
+    "minutes": 13
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   }
+  ]
+ },
+ "sks-osy-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.481274,-0.352224?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "sks-osy-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUOSY?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 53,
+  "walk_minutes": 6,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 14
+   },
+   {
+    "mode": "tube",
+    "line": "Piccadilly",
+    "minutes": 23
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-osy-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000171?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 53,
+  "walk_minutes": 6,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 14
+   },
+   {
+    "mode": "tube",
+    "line": "Piccadilly",
+    "minutes": 23
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-osy-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.482074,-0.352224?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 57,
+  "walk_minutes": 10,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 14
+   },
+   {
+    "mode": "tube",
+    "line": "Piccadilly",
+    "minutes": 23
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 9
+   }
+  ]
+ },
+ "sks-osy-stepfree-entrance": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.480890,-0.351620?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 53,
+  "walk_minutes": 6,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 14
+   },
+   {
+    "mode": "tube",
+    "line": "Piccadilly",
+    "minutes": 23
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-osy-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.481274,-0.352224?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 37,
+  "walk_minutes": 11,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   },
+   {
+    "mode": "tube",
+    "line": "Piccadilly",
+    "minutes": 26
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   }
+  ]
+ },
+ "sks-wsm-control-stepfree-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 44,
+  "walk_minutes": 14,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 16
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "87",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-wsm-control-stepfree-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/940GZZLUWSM?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 37,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 11
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-wsm-control-stepfree-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/1000266?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 37,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 11
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 7
+   }
+  ]
+ },
+ "sks-wsm-control-stepfree-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.502120,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 39,
+  "walk_minutes": 9,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "C1",
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "9",
+    "minutes": 16
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 6
+   },
+   {
+    "mode": "bus",
+    "line": "87",
+    "minutes": 2
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 2
+   }
+  ]
+ },
+ "sks-wsm-control-stepfree-entrance": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.501250,-0.123770?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime&accessibilityPreference=StepFreeToPlatform",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 42,
+  "walk_minutes": 7,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 1
+   },
+   {
+    "mode": "bus",
+    "line": "74",
+    "minutes": 7
+   },
+   {
+    "mode": "bus",
+    "line": "52",
+    "minutes": 13
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 2
+   },
+   {
+    "mode": "bus",
+    "line": "11",
+    "minutes": 9
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 4
+   }
+  ]
+ },
+ "sks-wsm-control-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.494094,-0.174138/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 18,
+  "walk_minutes": 11,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 3
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 7
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ },
+ "ctn-wsm-standard-centroid": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.539292,-0.142740/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 404,
+  "message": "No journey found for your inputs.",
+  "journeys": 0
+ },
+ "ctn-wsm-standard-id": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/940GZZLUCTN/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 25,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "tube",
+    "line": "Northern",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 1
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ },
+ "ctn-wsm-standard-ics": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/1000036/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 25,
+  "walk_minutes": 8,
+  "legs": [
+   {
+    "mode": "tube",
+    "line": "Northern",
+    "minutes": 11
+   },
+   {
+    "mode": "tube",
+    "line": "District",
+    "minutes": 1
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ },
+ "ctn-wsm-standard-offset90m": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.540092,-0.142740/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 39,
+  "walk_minutes": 13,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 5
+   },
+   {
+    "mode": "bus",
+    "line": "24",
+    "minutes": 4
+   },
+   {
+    "mode": "tube",
+    "line": "Northern",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Circle",
+    "minutes": 1
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ },
+ "ctn-wsm-standard-entrance": {
+  "url": "https://api.tfl.gov.uk/Journey/JourneyResults/51.539300,-0.142490/to/51.501320,-0.124861?date=20261027&time=0830&timeIs=Departing&journeyPreference=LeastTime",
+  "status": 200,
+  "message": null,
+  "journeys": 3,
+  "minutes": 38,
+  "walk_minutes": 12,
+  "legs": [
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 4
+   },
+   {
+    "mode": "bus",
+    "line": "24",
+    "minutes": 4
+   },
+   {
+    "mode": "tube",
+    "line": "Northern",
+    "minutes": 9
+   },
+   {
+    "mode": "tube",
+    "line": "Circle",
+    "minutes": 1
+   },
+   {
+    "mode": "walking",
+    "line": null,
+    "minutes": 8
+   }
+  ]
+ }
+}
