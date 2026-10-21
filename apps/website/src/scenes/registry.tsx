@@ -25,5 +25,16 @@ export function SceneHost({ scene }: { scene: SceneState | null }) {
     if (!scene) return null;
     const Scene = SCENE_COMPONENTS[scene.id];
     // Keying on id remounts on scene change, so no state leaks from one scene to the next.
-    return <Scene key={scene.id} scene={scene} />;
+    return (
+        <>
+            <Scene key={scene.id} scene={scene} />
+            {/* What this page is showing, for the end-to-end tests (e2e/). */}
+            <div
+                hidden
+                data-scene={scene.id}
+                data-step={scene.step}
+                data-revision={scene.revision}
+            />
+        </>
+    );
 }

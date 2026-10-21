@@ -72,6 +72,11 @@ export function WallStage({ layout, view, debug = false, children }: WallStagePr
             >
                 <div ref={setMapLayer} className="absolute inset-0" />
                 <div
+                    // Wall-pixel origin and scale, for the end-to-end checks.
+                    data-wall=""
+                    data-scale={scale}
+                    data-view-x={view.x}
+                    data-view-y={view.y}
                     className="absolute top-0 left-0 origin-top-left"
                     style={{
                         width: wall.width,

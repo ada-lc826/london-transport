@@ -59,6 +59,8 @@ export function ScreenText({
     return (
         <div
             ref={boxRef}
+            // Marks wall text for the end-to-end bezel checks (e2e/wall-text.spec.ts).
+            data-wall-text=""
             className={`absolute flex flex-col justify-center overflow-hidden leading-[1.05] ${className ?? ''}`}
             style={{
                 left: rect.x,

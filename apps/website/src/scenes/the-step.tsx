@@ -225,6 +225,7 @@ function LineBarcodes({ network, reveal }: { network: Network; reveal: boolean }
                             fill={line.colour === '#000000' ? '#8a8a8a' : line.colour}
                         />
                         <text
+                            data-wall-text=""
                             x={band.x + 140}
                             y={cy}
                             dominantBaseline="central"

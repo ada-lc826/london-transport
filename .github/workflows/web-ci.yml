@@ -19,3 +19,28 @@ jobs:
             - run: vp check
             - run: vp run test -r
             - run: vp run build -r
+
+    e2e:
+        # Browser tests against the production server build: text never crosses a bezel or
+        # gets cut off, in any scene, step or tablet choice; tablets drive screens; late
+        # screens catch up; wall health reports connected screens (apps/website/e2e/).
+        runs-on: ubuntu-latest
+        timeout-minutes: 20
+        steps:
+            - uses: actions/checkout@v7
+            - uses: voidzero-dev/setup-vp@v1
+              with:
+                  cache: true
+            - run: vp run build -r
+            - name: Install Chromium
+              working-directory: apps/website
+              run: npx playwright install --with-deps chromium
+            - name: Run the end-to-end tests
+              working-directory: apps/website
+              run: npx playwright test
+            - name: Keep the report if anything failed
+              if: failure()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: playwright-results
+                  path: apps/website/test-results/

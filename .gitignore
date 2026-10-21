@@ -26,3 +26,6 @@ dist-ssr
 # Dependency directories and files
 node_modules
 .vite*/
+# Playwright output
+test-results/
+playwright-report/
