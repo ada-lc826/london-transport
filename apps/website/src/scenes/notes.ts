@@ -17,6 +17,16 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: "Mind the Step. Every map of the Tube shows the same London to everyone. This one asks what London looks like if you can't use stairs."
         }
     ],
+    'the-pulse': [
+        {
+            cue: 'One weekday plays in 48 seconds: the top row is the day, each line on its own screen on the left, the map swells at the peaks.',
+            say: "This is London's railway on an ordinary weekday, from TfL's own demand model. Watch the morning peak arrive: more than two hundred thousand people on the network at once."
+        },
+        {
+            cue: 'Rings appear on stations with no step-free access, sized by the people entering them; the share of journeys starting there, bottom right.',
+            say: 'A network built for everyone? Two in five tube journeys start at a station with no step-free way to the platform.'
+        }
+    ],
     'the-step': [
         {
             cue: 'Every tube station, all drawn alike: the network as the map shows it.',

@@ -4,6 +4,7 @@ import { AttractScene } from './attract';
 import { CalibrationScene } from './calibration';
 import { MapCheckScene } from './map-check';
 import type { SceneId, SceneState } from './scene-state';
+import { ThePulseScene } from './the-pulse';
 import { TheRaceScene } from './the-race';
 import { TheStepScene } from './the-step';
 import { TwoLondonsScene } from './two-londons';
@@ -14,6 +15,7 @@ export type SceneProps = { scene: SceneState };
 // `scene-state.ts`, which has no React dependency.
 export const SCENE_COMPONENTS: Record<SceneId, ComponentType<SceneProps>> = {
     attract: AttractScene,
+    'the-pulse': ThePulseScene,
     'the-step': TheStepScene,
     'two-londons': TwoLondonsScene,
     'the-race': TheRaceScene,
