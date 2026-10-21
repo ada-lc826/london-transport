@@ -21,6 +21,7 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import quote
 
 import httpx
 
@@ -80,7 +81,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("mode", choices=["list", "fetch"])
     parser.add_argument("--out", type=Path, required=True, help="data directory to write into")
     parser.add_argument("--prefix", default="", help="listing prefix (list mode)")
-    parser.add_argument("--keys", nargs="*", default=[], help="keys to download (fetch mode)")
+    # Comma-separated: keys contain spaces ("NUMBAT/NUMBAT 2025/...").
+    parser.add_argument("--keys", default="", help="comma-separated keys to fetch (fetch mode)")
     args = parser.parse_args(argv)
 
     out = args.out / "numbat"
@@ -92,12 +94,13 @@ def main(argv: list[str] | None = None) -> int:
             for item in keys:
                 print(f"{item['size']:>12}  {item['key']}")
             return 0
-        if not args.keys:
+        keys = [k.strip() for k in args.keys.split(",") if k.strip()]
+        if not keys:
             parser.error("fetch needs --keys")
-        for key in args.keys:
+        for key in keys:
             target = out / "raw" / key
             target.parent.mkdir(parents=True, exist_ok=True)
-            response = _get(client, BUCKET + key)
+            response = _get(client, BUCKET + quote(key))
             target.write_bytes(response.content)
             print(f"{len(response.content):>12}  {key}")
     return 0
