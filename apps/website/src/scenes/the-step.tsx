@@ -130,7 +130,7 @@ function HereMarker({
  * One station mark. Shape carries the status: filled disc = every platform step-free,
  * half disc = some platforms, ring = none, dashed ring = unknown.
  */
-function StatusMark({
+export function StatusMark({
     x,
     y,
     r,

@@ -65,6 +65,16 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: 'A has long since arrived. This is the same trip, step-free. Tablet B can pick another one.'
         }
     ],
+    'the-lifts': [
+        {
+            cue: 'The latest sample of our lift log: step-free stations on paper, how many are in practice, and which are not, with TfL’s own message.',
+            say: 'On paper, 95 tube stations are fully step-free. But a step-free route is only as good as its lifts. Since the start of this project we have logged every lift outage, every 15 minutes, and recomputed each station without the broken lifts.'
+        },
+        {
+            cue: 'The whole log replays: the top row counts stations cut off, the map flickers, the right zone sums it up.',
+            say: 'Every red ring is a station someone was told was step-free, that was not at that moment. Some of them are not even a broken lift: the station had no staff to run it.'
+        }
+    ],
     calibration: [
         {
             cue: 'Test card: coordinates on every screen; rings and diagonals cross every bezel.',

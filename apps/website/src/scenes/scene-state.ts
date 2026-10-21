@@ -8,6 +8,7 @@ export const SCENE_IDS = [
     'the-step',
     'two-londons',
     'the-race',
+    'the-lifts',
     'calibration',
     'map-check'
 ] as const;
@@ -77,6 +78,7 @@ export const SCENE_META: Record<SceneId, SceneMeta> = {
             }
         }
     },
+    'the-lifts': { title: 'S5 · On Paper', steps: 2 },
     calibration: { title: 'Calibration', steps: 1 },
     'map-check': { title: 'Map check', steps: 1 }
 };

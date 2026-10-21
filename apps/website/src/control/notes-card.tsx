@@ -1,4 +1,5 @@
 import { loadJourneyTimes, summariseOrigin } from '../data/journeys';
+import { downgradedAt, loadLiftRecord } from '../data/lifts';
 import { loadNetwork, summariseStepFree } from '../data/network';
 import { loadPulse, shareWithoutStepFree } from '../data/pulse';
 import { loadRaces } from '../data/races';
@@ -43,6 +44,7 @@ function LiveFigures({ scene }: { scene: SceneState }) {
     const journeys = useAsset(loadJourneyTimes);
     const races = useAsset(loadRaces);
     const pulse = useAsset(loadPulse);
+    const lifts = useAsset(loadLiftRecord);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -73,6 +75,14 @@ function LiveFigures({ scene }: { scene: SceneState }) {
                 ? ''
                 : `${Math.round(share * 100)}% of tube entries at stations with no step-free access`
         ].filter(Boolean);
+    } else if (scene.id === 'the-lifts' && lifts) {
+        const last = lifts.times.length - 1;
+        figures = [
+            `On paper ${lifts.paper.full} · latest sample ${lifts.paper.full - lifts.fullDowngraded[last]}`,
+            `Cut off now: ${downgradedAt(lifts, last)
+                .map((s) => s.name)
+                .join(', ')}`
+        ];
     } else if (scene.id === 'the-race') {
         const race = races?.races.find((r) => r.id === scene.params.race);
         if (race?.standard && race.stepFree) {

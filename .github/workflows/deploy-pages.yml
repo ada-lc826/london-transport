@@ -2,13 +2,16 @@ name: Deploy demo to GitHub Pages
 
 # Builds the static demo (no server: the in-browser bus in src/lib/realtime/local-bus.ts
 # stands in for the WebSocket one) and publishes it at https://<owner>.github.io/<repo>/.
-# Needs Settings → Pages → Source: "GitHub Actions" once.
+# Needs Settings → Pages → Source: "GitHub Actions" once. Runs daily too, so S5 shows the
+# lift log up to that morning: lifts.json is rebuilt from the `data` branch before building.
 
 on:
     push:
         branches: [main]
         paths: ['apps/website/**', '.github/workflows/deploy-pages.yml']
     workflow_dispatch:
+    schedule:
+        - cron: '17 6 * * *'
 
 permissions:
     contents: read
@@ -28,6 +31,18 @@ jobs:
             - uses: voidzero-dev/setup-vp@v1
               with:
                   cache: true
+            - uses: astral-sh/setup-uv@v7
+              with:
+                  working-directory: pipeline
+            - name: Bring S5's lift record up to date
+              run: |
+                  git fetch --depth=1 origin data
+                  git worktree add data-branch FETCH_HEAD
+                  cd pipeline
+                  uv run --frozen python -m mind_the_step.lift_outages --log ../data-branch \
+                    --topology ../data/tfl-station-topology/2026-10-20 \
+                    --network ../apps/website/public/data/network.json \
+                    --out ../apps/website/public/data/lifts.json
             - name: Build the static demo
               working-directory: apps/website
               env:

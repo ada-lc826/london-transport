@@ -66,10 +66,22 @@ class Topology:
     transfers: set[tuple[str, str, str]]
 
 
-def read_topology(topology_dir: Path, lines: frozenset[str] = TUBE_LINES) -> Topology:
-    """Customer-facing platforms of `lines` (one entry per platform and line), and transfers."""
+def read_topology(
+    topology_dir: Path,
+    lines: frozenset[str] = TUBE_LINES,
+    lifts_out: frozenset[str] = frozenset(),
+) -> Topology:
+    """Customer-facing platforms of `lines` (one entry per platform and line), and transfers.
+
+    `lifts_out` are lift ids (``940GZZLUWYP-Lift-5``, as in Lifts.csv and TfL's lift
+    disruption feed) to treat as out of service: their pathways, whose GTFS ids end in
+    ``-lift-<id>``, are left out.
+    """
     adjacency: dict[str, set[str]] = defaultdict(set)
     for p in _rows(topology_dir / "gtfs" / "pathways.txt"):
+        lift = p["pathway_id"].rpartition("-lift-")[2] if "-lift-" in p["pathway_id"] else None
+        if lift in lifts_out:
+            continue
         adjacency[p["from_stop_id"]].add(p["to_stop_id"])
         if p["is_bidirectional"] == "1":
             adjacency[p["to_stop_id"]].add(p["from_stop_id"])
