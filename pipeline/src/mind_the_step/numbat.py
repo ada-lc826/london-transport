@@ -83,8 +83,16 @@ def main(argv: list[str] | None = None) -> int:
     out = args.out / "numbat"
     with httpx.Client(timeout=120, headers={"User-Agent": "mind-the-step"}) as client:
         if args.mode == "list":
-            keys = list_keys(client, args.prefix)
             out.mkdir(parents=True, exist_ok=True)
+            first = _get(client, BUCKET, {"prefix": args.prefix})
+            if b"ListBucketResult" not in first.content[:500]:
+                # Not a bucket listing: the site may be a page that loads one with
+                # JavaScript. Keep it, to find where the listing really comes from.
+                (out / "index.html").write_bytes(first.content)
+                print(first.text[:3000])
+                print(f"not a bucket listing; saved numbat/index.html ({len(first.content)} bytes)")
+                return 0
+            keys = list_keys(client, args.prefix)
             (out / "listing.json").write_text(json.dumps(keys, indent=1) + "\n")
             for item in keys:
                 print(f"{item['size']:>12}  {item['key']}")
