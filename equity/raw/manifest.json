@@ -1,0 +1,226 @@
+{
+  "census": {
+    "ts038": "https://www.nomisweb.co.uk/output/census/2021/census2021-ts038.zip",
+    "ts007a": "https://www.nomisweb.co.uk/output/census/2021/census2021-ts007a.zip"
+  },
+  "iod": {
+    "attachments": [
+      {
+        "title": "English indices of deprivation 2025: statistical release",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-statistical-release"
+      },
+      {
+        "title": "English indices of deprivation 2025: frequently asked questions",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-frequently-asked-questions"
+      },
+      {
+        "title": "File 1: Index of Multiple Deprivation ",
+        "url": "https://assets.publishing.service.gov.uk/media/691dece32c6b98ecdbc500d5/File_1_IoD2025_Index_of_Multiple_Deprivation.xlsx"
+      },
+      {
+        "title": "File 2: Domains of deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691decfae39a085bda43efcd/File_2_IoD2025_Domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 3: Supplementary indices - Income Deprivation Affecting Children Index and Income Deprivation Affecting Older People Index",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded0a21ef5aaa6543efe9/File_3_IoD2025_Supplementary_Indices_IDACI_and_IDAOPI.xlsx"
+      },
+      {
+        "title": "File 4: Sub-domains of deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded1b0dcbf6343e9a2a67/File_4_IoD2025_Sub-domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 5: Scores for the Indices of Deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded34513046b952c500bd/File_5_IoD2025_Scores_for_the_Indices_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 6: Population denominators",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded46513046b952c500be/File_6_IoD2025_Population_Denominators.xlsx"
+      },
+      {
+        "title": "File 7: All ranks, scores, deciles and population denominators for the Indices of Deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv"
+      },
+      {
+        "title": "File 8: Underlying indicators",
+        "url": "https://assets.publishing.service.gov.uk/media/691dec012c6b98ecdbc500d4/File_8_IoD2025_Underlying_Indicators.xlsx"
+      },
+      {
+        "title": "File 9: Transformed domain scores",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded670dcbf6343e9a2a6c/File_9_IoD2025_Transformed_Domain_Scores.xlsx"
+      },
+      {
+        "title": "File 10: Local Authority District summaries - lower tier",
+        "url": "https://assets.publishing.service.gov.uk/media/6917412ebc34c86ce4e6e7fc/File_10_-_IoD2025_Local_Authority_District_Summaries__lower-tier__v2.xlsx"
+      },
+      {
+        "title": "File 11: Local Authority District summaries - upper tier",
+        "url": "https://assets.publishing.service.gov.uk/media/6917414ab49cc44345161802/File_11_-_IoD2025_Local_Authority_District_Summaries__upper-tier__v2.xlsx"
+      },
+      {
+        "title": "File 12: Local Enterprise Partnership summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ea5d81972ecd2df5db2/File_12_-_IoD2025_Local_Enterprise_Partnership__LEP__Summaries.xlsx"
+      },
+      {
+        "title": "File 13: Integrated Care Board summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ed00f801e57b5bef928/File_13_-_IoD2025_Integrated_Care_Board__ICB__Summaries.xlsx"
+      },
+      {
+        "title": "File 14: Local Resilience Forum summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/6917413eb49cc44345161801/File_14_-_IoD2025_Local_Resilience_Forum__LRG__Summaries_v2.xlsx"
+      },
+      {
+        "title": "File 15: Built Up Area summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7f340f801e57b5bef929/File_15_-_IoD2025_Built_Up_Area__BUA__Summaries.xlsx"
+      },
+      {
+        "title": "",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-statistical-release"
+      },
+      {
+        "title": "English indices of deprivation 2025: statistical release",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-statistical-release"
+      },
+      {
+        "title": "",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-frequently-asked-questions"
+      },
+      {
+        "title": "English indices of deprivation 2025: frequently asked questions",
+        "url": "/government/statistics/english-indices-of-deprivation-2025/english-indices-of-deprivation-2025-frequently-asked-questions"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691dece32c6b98ecdbc500d5/File_1_IoD2025_Index_of_Multiple_Deprivation.xlsx"
+      },
+      {
+        "title": "File 1: Index of Multiple Deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691dece32c6b98ecdbc500d5/File_1_IoD2025_Index_of_Multiple_Deprivation.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691decfae39a085bda43efcd/File_2_IoD2025_Domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 2: Domains of deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691decfae39a085bda43efcd/File_2_IoD2025_Domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded0a21ef5aaa6543efe9/File_3_IoD2025_Supplementary_Indices_IDACI_and_IDAOPI.xlsx"
+      },
+      {
+        "title": "File 3: Supplementary indices - Income Deprivation Affecting Children Index and Income Deprivation Affecting Older People Index",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded0a21ef5aaa6543efe9/File_3_IoD2025_Supplementary_Indices_IDACI_and_IDAOPI.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded1b0dcbf6343e9a2a67/File_4_IoD2025_Sub-domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 4: Sub-domains of deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded1b0dcbf6343e9a2a67/File_4_IoD2025_Sub-domains_of_Deprivation.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded34513046b952c500bd/File_5_IoD2025_Scores_for_the_Indices_of_Deprivation.xlsx"
+      },
+      {
+        "title": "File 5: Scores for the Indices of Deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded34513046b952c500bd/File_5_IoD2025_Scores_for_the_Indices_of_Deprivation.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded46513046b952c500be/File_6_IoD2025_Population_Denominators.xlsx"
+      },
+      {
+        "title": "File 6: Population denominators",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded46513046b952c500be/File_6_IoD2025_Population_Denominators.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv"
+      },
+      {
+        "title": "File 7: All ranks, scores, deciles and population denominators for the Indices of Deprivation",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv"
+      },
+      {
+        "title": "View online",
+        "url": "/csv-preview/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691dec012c6b98ecdbc500d4/File_8_IoD2025_Underlying_Indicators.xlsx"
+      },
+      {
+        "title": "File 8: Underlying indicators",
+        "url": "https://assets.publishing.service.gov.uk/media/691dec012c6b98ecdbc500d4/File_8_IoD2025_Underlying_Indicators.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded670dcbf6343e9a2a6c/File_9_IoD2025_Transformed_Domain_Scores.xlsx"
+      },
+      {
+        "title": "File 9: Transformed domain scores",
+        "url": "https://assets.publishing.service.gov.uk/media/691ded670dcbf6343e9a2a6c/File_9_IoD2025_Transformed_Domain_Scores.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/6917412ebc34c86ce4e6e7fc/File_10_-_IoD2025_Local_Authority_District_Summaries__lower-tier__v2.xlsx"
+      },
+      {
+        "title": "File 10: Local Authority District summaries - lower tier",
+        "url": "https://assets.publishing.service.gov.uk/media/6917412ebc34c86ce4e6e7fc/File_10_-_IoD2025_Local_Authority_District_Summaries__lower-tier__v2.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/6917414ab49cc44345161802/File_11_-_IoD2025_Local_Authority_District_Summaries__upper-tier__v2.xlsx"
+      },
+      {
+        "title": "File 11: Local Authority District summaries - upper tier",
+        "url": "https://assets.publishing.service.gov.uk/media/6917414ab49cc44345161802/File_11_-_IoD2025_Local_Authority_District_Summaries__upper-tier__v2.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ea5d81972ecd2df5db2/File_12_-_IoD2025_Local_Enterprise_Partnership__LEP__Summaries.xlsx"
+      },
+      {
+        "title": "File 12: Local Enterprise Partnership summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ea5d81972ecd2df5db2/File_12_-_IoD2025_Local_Enterprise_Partnership__LEP__Summaries.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ed00f801e57b5bef928/File_13_-_IoD2025_Integrated_Care_Board__ICB__Summaries.xlsx"
+      },
+      {
+        "title": "File 13: Integrated Care Board summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7ed00f801e57b5bef928/File_13_-_IoD2025_Integrated_Care_Board__ICB__Summaries.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/6917413eb49cc44345161801/File_14_-_IoD2025_Local_Resilience_Forum__LRG__Summaries_v2.xlsx"
+      },
+      {
+        "title": "File 14: Local Resilience Forum summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/6917413eb49cc44345161801/File_14_-_IoD2025_Local_Resilience_Forum__LRG__Summaries_v2.xlsx"
+      },
+      {
+        "title": "",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7f340f801e57b5bef929/File_15_-_IoD2025_Built_Up_Area__BUA__Summaries.xlsx"
+      },
+      {
+        "title": "File 15: Built Up Area summaries",
+        "url": "https://assets.publishing.service.gov.uk/media/68ff7f340f801e57b5bef929/File_15_-_IoD2025_Built_Up_Area__BUA__Summaries.xlsx"
+      }
+    ],
+    "chosen": {
+      "title": "File 7: All ranks, scores, deciles and population denominators for the Indices of Deprivation",
+      "url": "https://assets.publishing.service.gov.uk/media/691ded56d140bbbaa59a2a7d/File_7_IoD2025_All_Ranks_Scores_Deciles_Population_Denominators.csv"
+    }
+  },
+  "centroids": {
+    "service": "MSOA_December_2021_EW_PWC_V2",
+    "features": 7264
+  }
+}
