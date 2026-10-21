@@ -1,0 +1,56 @@
+name: Fetch NUMBAT demand data
+
+# TfL's modelled demand on a typical weekday (pipeline/src/mind_the_step/numbat.py), for S1.
+# `list` saves the bucket listing to numbat/listing.json on the `data` branch; `fetch`
+# downloads the keys given (space-separated) to numbat/raw/. Run by hand.
+
+on:
+    workflow_dispatch:
+        inputs:
+            mode:
+                description: list or fetch
+                default: list
+            keys:
+                description: Keys to fetch (fetch mode), space-separated
+                default: ''
+
+permissions:
+    contents: write
+
+concurrency:
+    group: fetch-numbat
+    cancel-in-progress: false
+
+jobs:
+    fetch:
+        runs-on: ubuntu-latest
+        timeout-minutes: 30
+        steps:
+            - uses: actions/checkout@v7
+
+            - uses: astral-sh/setup-uv@v7
+              with:
+                  working-directory: pipeline
+
+            - name: Check out the data branch
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git fetch --depth=50 origin data
+                  git worktree add -B data data-branch FETCH_HEAD
+
+            - name: Fetch
+              working-directory: pipeline
+              env:
+                  MODE: ${{ inputs.mode }}
+                  KEYS: ${{ inputs.keys }}
+              run: |
+                  # Keys are split on spaces on purpose: one input, several files.
+                  # shellcheck disable=SC2086
+                  uv run --frozen python -m mind_the_step.numbat "$MODE" --out ../data-branch ${KEYS:+--keys $KEYS}
+
+            - name: Commit and push
+              run: |
+                  .github/scripts/commit-data.sh data-branch "numbat ($MODE): $(date -u +%Y-%m-%dT%H:%MZ)"
+              env:
+                  MODE: ${{ inputs.mode }}
