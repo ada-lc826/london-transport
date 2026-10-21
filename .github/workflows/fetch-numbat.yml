@@ -2,7 +2,7 @@ name: Fetch NUMBAT demand data
 
 # TfL's modelled demand on a typical weekday (pipeline/src/mind_the_step/numbat.py), for S1.
 # `list` saves the bucket listing to numbat/listing.json on the `data` branch; `fetch`
-# downloads the keys given (space-separated) to numbat/raw/. Run by hand.
+# downloads the keys given (comma-separated; keys contain spaces) to numbat/raw/. Run by hand.
 
 on:
     workflow_dispatch:
@@ -11,7 +11,7 @@ on:
                 description: list or fetch
                 default: list
             keys:
-                description: Keys to fetch (fetch mode), space-separated
+                description: Keys to fetch (fetch mode), comma-separated
                 default: ''
 
 permissions:
@@ -44,10 +44,7 @@ jobs:
               env:
                   MODE: ${{ inputs.mode }}
                   KEYS: ${{ inputs.keys }}
-              run: |
-                  # Keys are split on spaces on purpose: one input, several files.
-                  # shellcheck disable=SC2086
-                  uv run --frozen python -m mind_the_step.numbat "$MODE" --out ../data-branch ${KEYS:+--keys $KEYS}
+              run: uv run --frozen python -m mind_the_step.numbat "$MODE" --out ../data-branch --keys "$KEYS"
 
             - name: Commit and push
               run: |

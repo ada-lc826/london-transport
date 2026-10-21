@@ -2,10 +2,12 @@
 
 NUMBAT models passenger demand on a typical autumn weekday: entries and exits per station and
 the load on every link between consecutive stations, in 15-minute intervals. TfL publishes it
-on its crowding data site, an S3-style bucket (https://crowding.data.tfl.gov.uk/).
+on its crowding data site (https://crowding.data.tfl.gov.uk/). That page is a viewer: it lists
+the S3 bucket of the same name with the S3 v2 API and links each file at
+``https://crowding.data.tfl.gov.uk/<key>``. We do the same.
 
-- `list`: page through the bucket listing and save every key under NUMBAT to
-  ``numbat/listing.json``, to choose which files to fetch.
+- `list`: page through the bucket listing and save every key (under `--prefix`, all by
+  default) to ``numbat/listing.json``, to choose which files to fetch.
 - `fetch`: download the given keys verbatim to ``numbat/raw/<key>``.
 
 No API key: the site is public and is not the Unified API.
@@ -19,10 +21,12 @@ import sys
 import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from urllib.parse import quote
 
 import httpx
 
 BUCKET = "https://crowding.data.tfl.gov.uk/"
+LISTING = "https://s3-eu-west-1.amazonaws.com/crowding.data.tfl.gov.uk/"
 S3 = "{http://s3.amazonaws.com/doc/2006-03-01/}"
 ATTEMPTS = 4
 
@@ -44,7 +48,7 @@ def _get(client: httpx.Client, url: str, params: dict | None = None) -> httpx.Re
 
 
 def parse_listing(xml: bytes) -> tuple[list[dict], str | None]:
-    """Objects in one ListBucketResult page, and the marker for the next page (None if last)."""
+    """Objects in one ListBucketResult (v2) page, and the token for the next (None if last)."""
     root = ET.fromstring(xml)
     # Some buckets answer without the S3 namespace.
     ns = S3 if root.tag.startswith(S3) else ""
@@ -57,17 +61,17 @@ def parse_listing(xml: bytes) -> tuple[list[dict], str | None]:
         for c in root.iter(f"{ns}Contents")
     ]
     truncated = (root.findtext(f"{ns}IsTruncated") or "").lower() == "true"
-    if not truncated:
-        return items, None
-    return items, root.findtext(f"{ns}NextMarker") or (items[-1]["key"] if items else None)
+    return items, root.findtext(f"{ns}NextContinuationToken") if truncated else None
 
 
 def list_keys(client: httpx.Client, prefix: str) -> list[dict]:
     keys: list[dict] = []
-    marker: str | None = ""
-    while marker is not None:
-        params = {"prefix": prefix, **({"marker": marker} if marker else {})}
-        page, marker = parse_listing(_get(client, BUCKET, params).content)
+    token: str | None = ""
+    while token is not None:
+        params = {"list-type": "2", "prefix": prefix}
+        if token:
+            params["continuation-token"] = token
+        page, token = parse_listing(_get(client, LISTING, params).content)
         keys.extend(page)
     return keys
 
@@ -76,25 +80,27 @@ def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("mode", choices=["list", "fetch"])
     parser.add_argument("--out", type=Path, required=True, help="data directory to write into")
-    parser.add_argument("--prefix", default="NUMBAT", help="listing prefix (list mode)")
-    parser.add_argument("--keys", nargs="*", default=[], help="keys to download (fetch mode)")
+    parser.add_argument("--prefix", default="", help="listing prefix (list mode)")
+    # Comma-separated: keys contain spaces ("NUMBAT/NUMBAT 2025/...").
+    parser.add_argument("--keys", default="", help="comma-separated keys to fetch (fetch mode)")
     args = parser.parse_args(argv)
 
     out = args.out / "numbat"
     with httpx.Client(timeout=120, headers={"User-Agent": "mind-the-step"}) as client:
         if args.mode == "list":
-            keys = list_keys(client, args.prefix)
             out.mkdir(parents=True, exist_ok=True)
+            keys = list_keys(client, args.prefix)
             (out / "listing.json").write_text(json.dumps(keys, indent=1) + "\n")
             for item in keys:
                 print(f"{item['size']:>12}  {item['key']}")
             return 0
-        if not args.keys:
+        keys = [k.strip() for k in args.keys.split(",") if k.strip()]
+        if not keys:
             parser.error("fetch needs --keys")
-        for key in args.keys:
+        for key in keys:
             target = out / "raw" / key
             target.parent.mkdir(parents=True, exist_ok=True)
-            response = _get(client, BUCKET + key)
+            response = _get(client, BUCKET + quote(key))
             target.write_bytes(response.content)
             print(f"{len(response.content):>12}  {key}")
     return 0

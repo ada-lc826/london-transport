@@ -87,3 +87,15 @@ uv run python -m mind_the_step.calibrate \
 ```
 
 It runs in about 30 seconds and needs no API key.
+
+## NUMBAT demand (S1)
+
+`mind_the_step.numbat` reads TfL's crowding data bucket: `list` saves every key to `numbat/listing.json`; `fetch --keys "a,b"` downloads files verbatim to `numbat/raw/` (run both with the **Fetch NUMBAT demand data** workflow; the cloud sandbox cannot reach the site). `mind_the_step.pulse_export` turns an outputs workbook into S1's asset:
+
+```bash
+uv run python -m mind_the_step.pulse_export --outputs "<data-branch>/numbat/raw/NUMBAT/NUMBAT 2025/NBT25TWT_Outputs.xlsx" \
+  --network ../apps/website/public/data/network.json \
+  --source "NUMBAT 2025, typical autumn Tuesday to Thursday" --out ../apps/website/public/data/pulse.json
+```
+
+Method: [`docs/methods/demand.md`](../docs/methods/demand.md).

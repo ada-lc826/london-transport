@@ -4,6 +4,7 @@ import type { TimelineAnchor } from '../lib/realtime/clock';
 // screen from these ids plus static assets (BEST_PRACTICES §3).
 export const SCENE_IDS = [
     'attract',
+    'the-pulse',
     'the-step',
     'two-londons',
     'the-race',
@@ -27,6 +28,7 @@ export type SceneMeta = {
 // draw them live in `./registry.tsx`, which the server never imports.
 export const SCENE_META: Record<SceneId, SceneMeta> = {
     attract: { title: 'S0 · Attract', steps: 1 },
+    'the-pulse': { title: 'S1 · The Pulse', steps: 2 },
     'the-step': { title: 'S2 · The Step', steps: 3 },
     'two-londons': {
         title: 'S3 · Two Londons',

@@ -1,5 +1,6 @@
 import { loadJourneyTimes, summariseOrigin } from '../data/journeys';
 import { loadNetwork, summariseStepFree } from '../data/network';
+import { loadPulse, shareWithoutStepFree } from '../data/pulse';
 import { loadRaces } from '../data/races';
 import { nextNote, stepNote } from '../scenes/notes';
 import { SCENE_META, type SceneState } from '../scenes/scene-state';
@@ -41,6 +42,7 @@ function LiveFigures({ scene }: { scene: SceneState }) {
     const network = useAsset(loadNetwork);
     const journeys = useAsset(loadJourneyTimes);
     const races = useAsset(loadRaces);
+    const pulse = useAsset(loadPulse);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -62,6 +64,14 @@ function LiveFigures({ scene }: { scene: SceneState }) {
                 ? ''
                 : `${Math.round(s.shareAtLeastDouble * 100)}% at least twice as long`,
             `${s.noStepFreeRoute} with no step-free route`
+        ].filter(Boolean);
+    } else if (scene.id === 'the-pulse' && pulse) {
+        const share = shareWithoutStepFree(pulse.stepFree);
+        figures = [
+            `Peak ${Math.max(...pulse.network.onNetwork).toLocaleString('en-GB')} people on the network`,
+            share === null
+                ? ''
+                : `${Math.round(share * 100)}% of tube entries at stations with no step-free access`
         ].filter(Boolean);
     } else if (scene.id === 'the-race') {
         const race = races?.races.find((r) => r.id === scene.params.race);
