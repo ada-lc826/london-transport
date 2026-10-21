@@ -99,3 +99,15 @@ uv run python -m mind_the_step.pulse_export --outputs "<data-branch>/numbat/raw/
 ```
 
 Method: [`docs/methods/demand.md`](../docs/methods/demand.md).
+
+## Lift outages (S5)
+
+`mind_the_step.lift_outages` reads the lift log from a checkout of the `data` branch and, for each distinct set of lifts out, recomputes every tube station's step-free status on TfL's topology without those lifts. It writes `apps/website/public/data/lifts.json`; the demo's deploy workflow reruns it daily.
+
+```bash
+uv run python -m mind_the_step.lift_outages --log <data-branch> \
+  --topology ../data/tfl-station-topology/2026-10-20 \
+  --network ../apps/website/public/data/network.json --out ../apps/website/public/data/lifts.json
+```
+
+Method: [`docs/methods/lifts.md`](../docs/methods/lifts.md).

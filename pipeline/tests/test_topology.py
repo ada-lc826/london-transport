@@ -37,3 +37,9 @@ def test_platforms_not_facing_customers_do_not_count():
 def test_transfers_need_a_step_free_path_from_every_platform_of_the_line():
     # Victoria -> Jubilee: Plat1 reaches Plat4. Jubilee -> Victoria: Plat2 reaches nothing.
     assert read_topology(TOPOLOGY).transfers == {("940GZZA", "victoria", "jubilee")}
+
+
+def test_a_lift_out_of_service_cuts_its_pathways():
+    # Plat1 is reached from the street only by the lift p2.
+    platforms = read_topology(TOPOLOGY, lifts_out=frozenset({"940GZZA-Lift-1"})).platforms
+    assert station_status(platforms)["940GZZA"] == "none"

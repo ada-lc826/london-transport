@@ -48,6 +48,7 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 | S2 · The Step    | 3     | Every tube station by street-to-platform step-free access: the network, the reveal (95 of 272 fully step-free), then South Kensington. Method and validation: [`docs/methods/step-free-access.md`](docs/methods/step-free-access.md)                                                                                |
 | S3 · Two Londons | 2     | From one of 12 origins (chosen on the tablet), every tube station by Journey Planner travel time, standard beside step-free, then the median extra minutes and the biggest gaps. Method: [`docs/methods/travel-times.md`](docs/methods/travel-times.md)                                                             |
 | S6 · The Race    | 3     | One of 9 trips (chosen on the tablet), raced leg by leg along the wall at 5 minutes a column: A on the fastest route, B on the fastest step-free one, then the gap. Journeys: [`docs/methods/travel-times.md`](docs/methods/travel-times.md#s6-the-race)                                                            |
+| S5 · On Paper    | 2     | Step-free on paper against step-free in practice: the 95 fully step-free stations against those still step-free at the latest sample of our lift log, the stations cut off and TfL's message for each; then the whole log replayed. Method: [`docs/methods/lifts.md`](docs/methods/lifts.md)                        |
 | Calibration      | 1     | Test card for checking a real wall                                                                                                                                                                                                                                                                                  |
 | Map check        | 1     | Whole-wall basemap driven by the tablets                                                                                                                                                                                                                                                                            |
 
@@ -60,6 +61,7 @@ Method notes, with results and limitations:
 - [Step-free access](docs/methods/step-free-access.md): street to platform for every tube station, from TfL's topology, checked against TfL's published topology files.
 - [Travel times](docs/methods/travel-times.md): standard and step-free Journey Planner times from 12 origins.
 - [Demand](docs/methods/demand.md): a typical weekday from TfL's NUMBAT model (S1).
+- [Lifts](docs/methods/lifts.md): stations cut off by lift outages, from our 15-minute lift log (S5).
 - [Network model](docs/methods/network-model.md): a tube-and-walk graph model calibrated to those times (leave-one-origin-out MAE 3.3 min standard, 4.5 min step-free).
 
 Powered by TfL Open Data.
