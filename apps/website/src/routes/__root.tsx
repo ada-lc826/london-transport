@@ -1,11 +1,11 @@
 import {
     createRootRouteWithContext,
     HeadContent,
-    Outlet,
     ScriptOnce,
     Scripts
 } from '@tanstack/react-router';
 
+import { withBase } from '../lib/base-path';
 import { ThemeProvider } from '../lib/theme-provider';
 
 import appCss from '../style.css?url';
@@ -31,22 +31,16 @@ export const Route = createRootRouteWithContext()({
         links: [
             {
                 rel: 'icon',
-                href: '/favicon.ico'
+                href: withBase('/favicon.svg'),
+                type: 'image/svg+xml'
             },
             { rel: 'stylesheet', href: appCss }
         ]
     }),
-    component: RootComponent
+    // The document is a shell: prerendered as-is in the static demo (SPA mode), with the
+    // route rendered into it on the client; server-rendered together otherwise.
+    shellComponent: RootDocument
 });
-
-function RootComponent() {
-    // Route outlet is wrapped by the root document shell to share theme/scripts/head.
-    return (
-        <RootDocument>
-            <Outlet />
-        </RootDocument>
-    );
-}
 
 function RootDocument({ children }: { readonly children: React.ReactNode }) {
     return (

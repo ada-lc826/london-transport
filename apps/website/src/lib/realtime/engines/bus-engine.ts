@@ -1,6 +1,7 @@
 import type { Store } from '@tanstack/react-store';
 
 import { isBinaryFrame } from '../clock';
+import { LocalBusSocket, USE_LOCAL_BUS } from '../local-bus';
 import type { BusMessage, EngineRole, EngineStoreState, HelloBusMessage } from '../types';
 
 // Exponential backoff with full jitter, so 64 screens that lose the server together do not
@@ -47,10 +48,13 @@ export abstract class BusEngine<TStoreState extends EngineStoreState = EngineSto
             lastError: null
         }));
 
-        // Match ws/wss to current page protocol.
+        // Match ws/wss to current page protocol. The static demo has no server: it uses the
+        // in-browser bus, which behaves like a socket to this engine.
         const protocol = window.location.protocol === 'https:' ? 'wss' : 'ws';
         const url = `${protocol}://${window.location.host}/bus`;
-        const socket = new WebSocket(url);
+        const socket = USE_LOCAL_BUS
+            ? (new LocalBusSocket() as unknown as WebSocket)
+            : new WebSocket(url);
         // Binary frames (clock sync) arrive as ArrayBuffer rather than Blob, so they can be read
         // synchronously.
         socket.binaryType = 'arraybuffer';

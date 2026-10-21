@@ -10,7 +10,15 @@ import { defineConfig } from 'vite-plus';
 // server and fail to start under the test runner.
 const isTest = process.env.VITEST === 'true';
 
+// `STATIC_DEMO=1` builds the static demo for GitHub Pages: a single-page app with no server,
+// served from BASE_PATH (e.g. /london-transport/), using the in-browser bus
+// (src/lib/realtime/local-bus.ts) instead of the WebSocket one.
+const staticDemo = process.env.STATIC_DEMO === '1';
+const base = staticDemo ? (process.env.BASE_PATH ?? '/') : '/';
+if (staticDemo) process.env.VITE_LOCAL_BUS = '1';
+
 export default defineConfig({
+    base,
     resolve: {
         tsconfigPaths: true
     },
@@ -36,11 +44,11 @@ export default defineConfig({
               devtools({
                   consolePiping: { enabled: false }
               }),
-              tanstackStart(),
+              tanstackStart(
+                  staticDemo ? { spa: { enabled: true }, router: { basepath: base } } : undefined
+              ),
               // https://tanstack.com/start/latest/docs/framework/react/guide/hosting
-              nitro({
-                  features: { websocket: true }
-              }),
+              nitro({ features: { websocket: true } }),
               viteReact(),
               // https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#react-compiler
               babel({

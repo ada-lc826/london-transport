@@ -1,3 +1,5 @@
+import { withBase } from '../lib/base-path';
+
 // The tube network asset (`public/data/network.json`, built by `pipeline/.../network.py`):
 // lines with geometry and station order, stations with street-to-platform step-free status.
 
@@ -28,7 +30,7 @@ export type Network = {
     stations: Station[];
 };
 
-const NETWORK_URL = '/data/network.json';
+const NETWORK_URL = withBase('/data/network.json');
 const STEP_FREE_VALUES = new Set(['full', 'partial', 'none']);
 
 let request: Promise<Network | null> | null = null;
