@@ -1,0 +1,2527 @@
+[
+ {
+  "key": "Annual Station Counts/",
+  "size": 0,
+  "modified": "2020-06-02T09:57:57.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2017/",
+  "size": 0,
+  "modified": "2020-06-02T09:58:13.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2017/AnnualisedEntryExit_2017.xlsx",
+  "size": 62599,
+  "modified": "2020-09-23T17:36:24.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2017/ByQhrEntryExit_2017.xlsx",
+  "size": 1480666,
+  "modified": "2020-09-23T17:36:24.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2018/",
+  "size": 0,
+  "modified": "2020-06-02T09:58:19.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2018/AnnualisedEntryExit_2018.xlsx",
+  "size": 65303,
+  "modified": "2020-09-23T17:36:44.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2018/ByQhrEntryExit_2018.xlsx",
+  "size": 2032342,
+  "modified": "2020-09-23T17:36:45.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2019/",
+  "size": 0,
+  "modified": "2020-06-02T09:58:23.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2019/AnnualisedEntryExit_2019.xlsx",
+  "size": 65524,
+  "modified": "2020-09-23T17:37:03.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2019/ByQhrEntryExit_2019.xlsx",
+  "size": 2036736,
+  "modified": "2020-09-23T17:37:04.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2020/",
+  "size": 0,
+  "modified": "2021-04-16T16:01:11.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2020/AC2020_AnnualisedEntryExit.xlsx",
+  "size": 89254,
+  "modified": "2021-04-16T16:01:43.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2020/AC2020_ByQhrEntryExit.xlsx",
+  "size": 3353569,
+  "modified": "2021-04-16T16:01:44.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2021/",
+  "size": 0,
+  "modified": "2022-05-17T14:38:55.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2021/AC2021_AnnualisedEntryExit.xlsx",
+  "size": 91725,
+  "modified": "2022-07-12T11:46:34.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2021/AC2021_ByQhrEntryExit.xlsx",
+  "size": 3607339,
+  "modified": "2022-06-16T14:21:15.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2022/",
+  "size": 0,
+  "modified": "2023-10-04T09:48:03.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2022/AC2022_AnnualisedEntryExit.xlsx",
+  "size": 107605,
+  "modified": "2023-10-04T09:50:06.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2023/",
+  "size": 0,
+  "modified": "2024-08-08T11:56:10.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2023/AC2023_AnnualisedEntryExit.xlsx",
+  "size": 88115,
+  "modified": "2024-08-08T11:56:42.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2024/",
+  "size": 0,
+  "modified": "2025-10-08T14:03:45.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2024/AC2024_AnnualisedEntryExit_Public.xlsx",
+  "size": 105953,
+  "modified": "2026-01-30T14:47:08.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2025/",
+  "size": 0,
+  "modified": "2026-04-13T16:02:15.000Z"
+ },
+ {
+  "key": "Annual Station Counts/2025/AC2025_AnnualisedEntryExit_public.xlsx",
+  "size": 106485,
+  "modified": "2026-08-14T07:49:08.000Z"
+ },
+ {
+  "key": "BUSTO/",
+  "size": 0,
+  "modified": "2024-07-09T13:45:06.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/",
+  "size": 0,
+  "modified": "2025-09-22T11:54:24.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 MAX DEMAND HOUR BY ROUTE BY TIMEBAND All Routes.csv",
+  "size": 93687941,
+  "modified": "2025-09-22T11:55:04.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 62196450,
+  "modified": "2025-09-22T11:55:04.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 112830934,
+  "modified": "2025-09-22T11:55:04.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 106425639,
+  "modified": "2025-09-22T11:55:04.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-549.csv",
+  "size": 86089340,
+  "modified": "2025-09-22T11:55:03.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 52618004,
+  "modified": "2025-09-22T11:55:06.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 105960839,
+  "modified": "2025-09-22T11:55:06.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 96388554,
+  "modified": "2025-09-22T11:55:06.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-549.csv",
+  "size": 73638640,
+  "modified": "2025-09-22T11:55:07.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 71952205,
+  "modified": "2025-09-22T11:55:06.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 119638699,
+  "modified": "2025-09-22T11:55:09.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 115576682,
+  "modified": "2025-09-22T11:55:09.000Z"
+ },
+ {
+  "key": "BUSTO/2023-2024/2023_24 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-549.csv",
+  "size": 95982632,
+  "modified": "2025-09-22T11:55:09.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/",
+  "size": 0,
+  "modified": "2025-09-22T11:54:30.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 MAX DEMAND HOUR BY ROUTE BY TIMEBAND All Routes.csv",
+  "size": 90998737,
+  "modified": "2025-09-22T11:56:56.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 64462513,
+  "modified": "2025-09-22T11:56:56.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 112461734,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 106593893,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 85166213,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 54825007,
+  "modified": "2025-09-22T11:56:56.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 105565225,
+  "modified": "2025-09-22T11:56:56.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 96799026,
+  "modified": "2025-09-22T11:56:56.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 74374412,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 71070539,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 115289857,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 111372248,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2024-2025/2024_25 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 91228909,
+  "modified": "2025-09-22T11:56:55.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/",
+  "size": 0,
+  "modified": "2026-03-11T17:10:45.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 MAX DEMAND HOUR BY ROUTE BY TIMEBAND All Routes.csv",
+  "size": 97972037,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 73012992,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 121056264,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 115702367,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Saturday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 94889325,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 63437784,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 115324357,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 107048823,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Sunday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 84405052,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Letter Prefix Routes.csv",
+  "size": 79937941,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 1-149.csv",
+  "size": 124714481,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 150-299.csv",
+  "size": 121583244,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/2025-2026/2025_26 Weekday TOTAL DEMAND BY ROUTE BY QUARTER HOUR Routes 300-533.csv",
+  "size": 101542856,
+  "modified": "2026-03-11T17:11:23.000Z"
+ },
+ {
+  "key": "BUSTO/BUSTO User Guide and Data Dictionary v1.2.pdf",
+  "size": 2091812,
+  "modified": "2026-03-11T17:11:49.000Z"
+ },
+ {
+  "key": "Crowding/",
+  "size": 0,
+  "modified": "2017-01-13T11:28:04.000Z"
+ },
+ {
+  "key": "Crowding/LUTrainLoadingData.csv",
+  "size": 177450,
+  "modified": "2017-06-29T09:20:02.000Z"
+ },
+ {
+  "key": "Crowding/StationNodesDescription.csv",
+  "size": 104651,
+  "modified": "2017-04-04T12:14:40.000Z"
+ },
+ {
+  "key": "Crowding/StationPassengerLinkFlows.csv",
+  "size": 871763,
+  "modified": "2017-06-29T09:19:19.000Z"
+ },
+ {
+  "key": "NUMBAT/",
+  "size": 0,
+  "modified": "2019-08-20T12:37:25.000Z"
+ },
+ {
+  "key": "NUMBAT/Intro_to_NUMBAT.pdf",
+  "size": 180103,
+  "modified": "2020-12-18T15:39:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NBT16-25_AnnualisedBoarders_Outputs.xlsx",
+  "size": 24241,
+  "modified": "2026-08-14T08:04:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2016/",
+  "size": 0,
+  "modified": "2022-12-23T22:09:53.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2016/NBT16MTT_Outputs.xlsx",
+  "size": 11130960,
+  "modified": "2022-12-23T23:34:09.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2016/NBT16SAT_Outputs.xlsx",
+  "size": 10988693,
+  "modified": "2022-12-23T23:34:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2016/NBT16SUN_Outputs.xlsx",
+  "size": 10296204,
+  "modified": "2022-12-23T23:34:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2017/",
+  "size": 0,
+  "modified": "2022-12-23T22:10:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2017/NBT17MTT_Outputs.xlsx",
+  "size": 11143953,
+  "modified": "2022-12-23T23:33:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2017/NBT17SAT_Outputs.xlsx",
+  "size": 11083797,
+  "modified": "2022-12-23T23:33:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2017/NBT17SUN_Outputs.xlsx",
+  "size": 10349997,
+  "modified": "2022-12-23T23:33:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2018/",
+  "size": 0,
+  "modified": "2022-12-23T22:10:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2018/NBT18FRI_Outputs.xlsx",
+  "size": 11275596,
+  "modified": "2022-12-23T23:03:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2018/NBT18MTT_Outputs.xlsx",
+  "size": 9852314,
+  "modified": "2022-12-23T23:03:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2018/NBT18SAT_Outputs.xlsx",
+  "size": 11221617,
+  "modified": "2022-12-23T23:03:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2018/NBT18SUN_Outputs.xlsx",
+  "size": 10570423,
+  "modified": "2022-12-23T23:03:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/",
+  "size": 0,
+  "modified": "2020-12-18T15:23:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19FRI_Outputs.xlsx",
+  "size": 9872434,
+  "modified": "2022-12-23T23:31:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19MTT_Outputs.xlsx",
+  "size": 9759881,
+  "modified": "2022-12-23T23:31:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19SAT_Outputs.xlsx",
+  "size": 9752980,
+  "modified": "2022-12-23T23:31:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19SUN_Outputs.xlsx",
+  "size": 9167342,
+  "modified": "2022-12-23T23:31:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_Definitions_Published.xlsx",
+  "size": 395894,
+  "modified": "2022-12-23T22:49:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/",
+  "size": 0,
+  "modified": "2021-02-18T13:26:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI2a_od__network_qhr_wf.csv",
+  "size": 70231967,
+  "modified": "2021-02-18T13:29:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI2b_od__DLR_tb_wf.csv",
+  "size": 86623,
+  "modified": "2021-02-18T13:29:53.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI2b_od__EZL_tb_wf.csv",
+  "size": 16138,
+  "modified": "2021-02-18T13:29:53.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI2b_od__LO_tb_wf.csv",
+  "size": 276526,
+  "modified": "2021-02-18T13:29:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI2b_od__LU_tb_wf.csv",
+  "size": 3047879,
+  "modified": "2021-02-18T13:29:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19FRI4a_jt__network_tb_wf.csv",
+  "size": 15207072,
+  "modified": "2021-04-16T16:11:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT2a_od__network_qhr_wf.csv",
+  "size": 80628173,
+  "modified": "2021-02-18T13:29:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT2b_od__DLR_tb_wf.csv",
+  "size": 90483,
+  "modified": "2021-02-18T13:29:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT2b_od__EZL_tb_wf.csv",
+  "size": 16201,
+  "modified": "2021-02-18T13:29:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT2b_od__LO_tb_wf.csv",
+  "size": 284038,
+  "modified": "2021-02-18T13:29:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT2b_od__LU_tb_wf.csv",
+  "size": 3185895,
+  "modified": "2021-02-18T13:29:59.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT3a_routechoice_tb_wf.csv",
+  "size": 95310901,
+  "modified": "2021-04-16T16:11:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19MTT4a_jt__network_tb_wf.csv",
+  "size": 17070524,
+  "modified": "2021-04-16T16:11:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT2a_od__network_qhr_wf.csv",
+  "size": 74362195,
+  "modified": "2021-02-18T13:29:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT2b_od__DLR_tb_wf.csv",
+  "size": 92858,
+  "modified": "2021-02-18T13:29:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT2b_od__EZL_tb_wf.csv",
+  "size": 16081,
+  "modified": "2021-02-18T13:29:49.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT2b_od__LO_tb_wf.csv",
+  "size": 280847,
+  "modified": "2021-02-18T13:29:50.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT2b_od__LU_tb_wf.csv",
+  "size": 3149604,
+  "modified": "2021-02-18T13:29:51.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SAT4a_jt__network_tb_wf.csv",
+  "size": 15252463,
+  "modified": "2021-04-16T16:11:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN2a_od__network_qhr_wf.csv",
+  "size": 58003353,
+  "modified": "2021-02-18T13:29:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN2b_od__DLR_tb_wf.csv",
+  "size": 80217,
+  "modified": "2021-02-18T13:29:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN2b_od__EZL_tb_wf.csv",
+  "size": 13535,
+  "modified": "2021-02-18T13:29:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN2b_od__LO_tb_wf.csv",
+  "size": 231872,
+  "modified": "2021-02-18T13:29:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN2b_od__LU_tb_wf.csv",
+  "size": 2626019,
+  "modified": "2021-02-18T13:29:47.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/NBT19SUN4a_jt__network_tb_wf.csv",
+  "size": 11455343,
+  "modified": "2021-04-16T16:11:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2019/NBT19_OD_data/_Readme_OD Data.xlsx",
+  "size": 18914,
+  "modified": "2023-07-24T13:52:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/",
+  "size": 0,
+  "modified": "2021-12-08T10:01:52.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/NBT20FRI_Outputs.xlsx",
+  "size": 11184525,
+  "modified": "2022-12-23T22:29:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/NBT20MTT_Outputs.xlsx",
+  "size": 11262227,
+  "modified": "2022-12-23T22:29:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/NBT20SAT_Outputs.xlsx",
+  "size": 10910970,
+  "modified": "2022-12-23T22:29:05.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/NBT20SUN_Outputs.xlsx",
+  "size": 10309370,
+  "modified": "2022-12-23T22:29:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2020/NBT20_Definitions_Published.xlsx",
+  "size": 667754,
+  "modified": "2022-12-23T22:29:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/",
+  "size": 0,
+  "modified": "2022-12-23T17:15:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/NBT21FRI_Outputs.xlsx",
+  "size": 11269404,
+  "modified": "2022-12-23T18:16:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/NBT21MTT_Outputs.xlsx",
+  "size": 11297974,
+  "modified": "2022-12-23T18:16:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/NBT21SAT_Outputs.xlsx",
+  "size": 11229687,
+  "modified": "2022-12-23T18:16:00.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/NBT21SUN_Outputs.xlsx",
+  "size": 10573745,
+  "modified": "2022-12-23T18:15:59.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2021/NBT21_Definitions_Published.xlsx",
+  "size": 640089,
+  "modified": "2022-12-23T18:16:05.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/",
+  "size": 0,
+  "modified": "2023-06-21T10:22:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22FRI_Outputs.xlsx",
+  "size": 12051175,
+  "modified": "2023-06-22T13:45:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22MON_Outputs.xlsx",
+  "size": 11747386,
+  "modified": "2023-06-22T13:47:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22SAT_Outputs.xlsx",
+  "size": 11960519,
+  "modified": "2023-06-22T13:44:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22SUN_Outputs.xlsx",
+  "size": 11280651,
+  "modified": "2023-06-22T13:43:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22TWT_Outputs.xlsx",
+  "size": 11782613,
+  "modified": "2023-06-22T13:46:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/NBT22_Definitions_Published.xlsm",
+  "size": 721688,
+  "modified": "2023-06-21T10:40:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/",
+  "size": 0,
+  "modified": "2025-11-18T15:10:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1917349,
+  "modified": "2025-11-18T15:15:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__BAK_qhr_lf.csv",
+  "size": 1125257,
+  "modified": "2025-11-18T15:15:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__CEN_qhr_lf.csv",
+  "size": 4005556,
+  "modified": "2025-11-18T15:15:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__DIS_qhr_lf.csv",
+  "size": 5204172,
+  "modified": "2025-11-18T15:15:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__DLR_qhr_lf.csv",
+  "size": 2502613,
+  "modified": "2025-11-18T15:15:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__EZL_qhr_lf.csv",
+  "size": 2270016,
+  "modified": "2025-11-18T15:15:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__HAM_qhr_lf.csv",
+  "size": 3066489,
+  "modified": "2025-11-18T15:15:31.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__JUB_qhr_lf.csv",
+  "size": 1690360,
+  "modified": "2025-11-18T15:15:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LOA_qhr_lf.csv",
+  "size": 777628,
+  "modified": "2025-11-18T15:15:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LOE_qhr_lf.csv",
+  "size": 1420853,
+  "modified": "2025-11-18T15:15:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LOG_qhr_lf.csv",
+  "size": 309901,
+  "modified": "2025-11-18T15:15:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LON_qhr_lf.csv",
+  "size": 1389777,
+  "modified": "2025-11-18T15:15:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LOR_qhr_lf.csv",
+  "size": 5416,
+  "modified": "2025-11-18T15:15:37.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__LOW_qhr_lf.csv",
+  "size": 584993,
+  "modified": "2025-11-18T15:15:37.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__MET_qhr_lf.csv",
+  "size": 1848011,
+  "modified": "2025-11-18T15:15:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__NOR_qhr_lf.csv",
+  "size": 5310211,
+  "modified": "2025-11-18T15:15:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__PIC_qhr_lf.csv",
+  "size": 4796974,
+  "modified": "2025-11-18T15:15:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__SSL_qhr_lf.csv",
+  "size": 11652282,
+  "modified": "2025-11-18T15:15:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__SSP_qhr_lf.csv",
+  "size": 22616504,
+  "modified": "2025-11-18T15:13:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__VIC_qhr_lf.csv",
+  "size": 596757,
+  "modified": "2025-11-18T15:15:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22FRI4c_od__WAT_qhr_lf.csv",
+  "size": 3986,
+  "modified": "2025-11-18T15:15:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1867694,
+  "modified": "2025-11-18T15:13:14.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__BAK_qhr_lf.csv",
+  "size": 1117608,
+  "modified": "2025-11-18T15:13:13.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__CEN_qhr_lf.csv",
+  "size": 3425275,
+  "modified": "2025-11-18T15:13:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__DIS_qhr_lf.csv",
+  "size": 5028865,
+  "modified": "2025-11-18T15:13:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__DLR_qhr_lf.csv",
+  "size": 2351684,
+  "modified": "2025-11-18T15:13:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__EZL_qhr_lf.csv",
+  "size": 2114155,
+  "modified": "2025-11-18T15:13:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__HAM_qhr_lf.csv",
+  "size": 2939352,
+  "modified": "2025-11-18T15:13:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__JUB_qhr_lf.csv",
+  "size": 1423679,
+  "modified": "2025-11-18T15:13:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LOA_qhr_lf.csv",
+  "size": 751325,
+  "modified": "2025-11-18T15:13:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LOE_qhr_lf.csv",
+  "size": 1277453,
+  "modified": "2025-11-18T15:13:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LOG_qhr_lf.csv",
+  "size": 307957,
+  "modified": "2025-11-18T15:13:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LON_qhr_lf.csv",
+  "size": 1363349,
+  "modified": "2025-11-18T15:13:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LOR_qhr_lf.csv",
+  "size": 5422,
+  "modified": "2025-11-18T15:13:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__LOW_qhr_lf.csv",
+  "size": 586109,
+  "modified": "2025-11-18T15:13:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__MET_qhr_lf.csv",
+  "size": 1791095,
+  "modified": "2025-11-18T15:13:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__NOR_qhr_lf.csv",
+  "size": 4575301,
+  "modified": "2025-11-18T15:13:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__PIC_qhr_lf.csv",
+  "size": 4214231,
+  "modified": "2025-11-18T15:13:05.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__SSL_qhr_lf.csv",
+  "size": 10956198,
+  "modified": "2025-11-18T15:13:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__SSP_qhr_lf.csv",
+  "size": 20469582,
+  "modified": "2025-11-18T15:13:03.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__VIC_qhr_lf.csv",
+  "size": 492104,
+  "modified": "2025-11-18T15:13:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22MON4c_od__WAT_qhr_lf.csv",
+  "size": 3997,
+  "modified": "2025-11-18T15:13:12.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1803935,
+  "modified": "2025-11-18T15:14:37.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__BAK_qhr_lf.csv",
+  "size": 1043834,
+  "modified": "2025-11-18T15:14:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__CEN_qhr_lf.csv",
+  "size": 3453796,
+  "modified": "2025-11-18T15:14:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__DIS_qhr_lf.csv",
+  "size": 4751450,
+  "modified": "2025-11-18T15:14:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__DLR_qhr_lf.csv",
+  "size": 1926567,
+  "modified": "2025-11-18T15:14:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__EZL_qhr_lf.csv",
+  "size": 1968716,
+  "modified": "2025-11-18T15:14:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__HAM_qhr_lf.csv",
+  "size": 2815264,
+  "modified": "2025-11-18T15:14:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__JUB_qhr_lf.csv",
+  "size": 1480680,
+  "modified": "2025-11-18T15:14:47.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LOA_qhr_lf.csv",
+  "size": 647153,
+  "modified": "2025-11-18T15:14:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LOE_qhr_lf.csv",
+  "size": 1314105,
+  "modified": "2025-11-18T15:14:49.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LOG_qhr_lf.csv",
+  "size": 301647,
+  "modified": "2025-11-18T15:14:49.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LON_qhr_lf.csv",
+  "size": 1254964,
+  "modified": "2025-11-18T15:14:51.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LOR_qhr_lf.csv",
+  "size": 5442,
+  "modified": "2025-11-18T15:14:51.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__LOW_qhr_lf.csv",
+  "size": 559640,
+  "modified": "2025-11-18T15:14:52.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__MET_qhr_lf.csv",
+  "size": 1584297,
+  "modified": "2025-11-18T15:14:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__NOR_qhr_lf.csv",
+  "size": 4522825,
+  "modified": "2025-11-18T15:15:00.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__PIC_qhr_lf.csv",
+  "size": 3904261,
+  "modified": "2025-11-18T15:14:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__SSL_qhr_lf.csv",
+  "size": 9903240,
+  "modified": "2025-11-18T15:14:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__SSP_qhr_lf.csv",
+  "size": 18605871,
+  "modified": "2025-11-18T15:13:13.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__VIC_qhr_lf.csv",
+  "size": 546419,
+  "modified": "2025-11-18T15:14:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SAT4c_od__WAT_qhr_lf.csv",
+  "size": 3555,
+  "modified": "2025-11-18T15:14:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1705303,
+  "modified": "2025-11-18T15:13:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__BAK_qhr_lf.csv",
+  "size": 965620,
+  "modified": "2025-11-18T15:13:47.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__CEN_qhr_lf.csv",
+  "size": 3367339,
+  "modified": "2025-11-18T15:14:08.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__DIS_qhr_lf.csv",
+  "size": 4552277,
+  "modified": "2025-11-18T15:14:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__DLR_qhr_lf.csv",
+  "size": 1871366,
+  "modified": "2025-11-18T15:14:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__EZL_qhr_lf.csv",
+  "size": 1758781,
+  "modified": "2025-11-18T15:14:13.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__HAM_qhr_lf.csv",
+  "size": 2662250,
+  "modified": "2025-11-18T15:14:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__JUB_qhr_lf.csv",
+  "size": 1486295,
+  "modified": "2025-11-18T15:14:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LOA_qhr_lf.csv",
+  "size": 565877,
+  "modified": "2025-11-18T15:14:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LOE_qhr_lf.csv",
+  "size": 1194401,
+  "modified": "2025-11-18T15:14:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LOG_qhr_lf.csv",
+  "size": 234993,
+  "modified": "2025-11-18T15:13:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LON_qhr_lf.csv",
+  "size": 1030058,
+  "modified": "2025-11-18T15:13:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LOR_qhr_lf.csv",
+  "size": 3924,
+  "modified": "2025-11-18T15:13:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__LOW_qhr_lf.csv",
+  "size": 540701,
+  "modified": "2025-11-18T15:13:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__MET_qhr_lf.csv",
+  "size": 1483461,
+  "modified": "2025-11-18T15:13:38.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__NOR_qhr_lf.csv",
+  "size": 4279104,
+  "modified": "2025-11-18T15:13:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__PIC_qhr_lf.csv",
+  "size": 3832243,
+  "modified": "2025-11-18T15:13:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__SSL_qhr_lf.csv",
+  "size": 9546667,
+  "modified": "2025-11-18T15:13:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__SSP_qhr_lf.csv",
+  "size": 18081772,
+  "modified": "2025-11-18T15:13:03.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22SUN4c_od__VIC_qhr_lf.csv",
+  "size": 533245,
+  "modified": "2025-11-18T15:13:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1930553,
+  "modified": "2025-11-18T15:11:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__BAK_qhr_lf.csv",
+  "size": 1128277,
+  "modified": "2025-11-18T15:11:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__CEN_qhr_lf.csv",
+  "size": 3540530,
+  "modified": "2025-11-18T15:11:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__DIS_qhr_lf.csv",
+  "size": 5235085,
+  "modified": "2025-11-18T15:11:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__DLR_qhr_lf.csv",
+  "size": 2482141,
+  "modified": "2025-11-18T15:11:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__EZL_qhr_lf.csv",
+  "size": 2232824,
+  "modified": "2025-11-18T15:11:37.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__HAM_qhr_lf.csv",
+  "size": 3068126,
+  "modified": "2025-11-18T15:11:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__JUB_qhr_lf.csv",
+  "size": 1429190,
+  "modified": "2025-11-18T15:11:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LOA_qhr_lf.csv",
+  "size": 766500,
+  "modified": "2025-11-18T15:11:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LOE_qhr_lf.csv",
+  "size": 1326219,
+  "modified": "2025-11-18T15:11:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LOG_qhr_lf.csv",
+  "size": 310529,
+  "modified": "2025-11-18T15:11:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LON_qhr_lf.csv",
+  "size": 1387131,
+  "modified": "2025-11-18T15:11:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LOR_qhr_lf.csv",
+  "size": 5426,
+  "modified": "2025-11-18T15:11:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__LOW_qhr_lf.csv",
+  "size": 596643,
+  "modified": "2025-11-18T15:11:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__MET_qhr_lf.csv",
+  "size": 1843897,
+  "modified": "2025-11-18T15:11:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__NOR_qhr_lf.csv",
+  "size": 4695574,
+  "modified": "2025-11-18T15:11:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__PIC_qhr_lf.csv",
+  "size": 4341622,
+  "modified": "2025-11-18T15:11:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__SSL_qhr_lf.csv",
+  "size": 11763382,
+  "modified": "2025-11-18T15:11:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__SSP_qhr_lf.csv",
+  "size": 22156346,
+  "modified": "2025-11-18T15:11:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__VIC_qhr_lf.csv",
+  "size": 492006,
+  "modified": "2025-11-18T15:11:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2022/OD Data/NBT22TWT4c_od__WAT_qhr_lf.csv",
+  "size": 3990,
+  "modified": "2025-11-18T15:11:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/",
+  "size": 0,
+  "modified": "2024-07-29T15:08:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/NBT23FRI_outputs.xlsx",
+  "size": 12083296,
+  "modified": "2024-08-22T14:42:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/NBT23MON_outputs.xlsx",
+  "size": 11777911,
+  "modified": "2024-08-22T14:35:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/NBT23SAT_outputs.xlsx",
+  "size": 11992793,
+  "modified": "2024-08-22T14:44:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/NBT23SUN_outputs.xlsx",
+  "size": 11173981,
+  "modified": "2024-08-22T14:45:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/NBT23TWT_outputs.xlsx",
+  "size": 11804317,
+  "modified": "2024-08-22T14:40:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/",
+  "size": 0,
+  "modified": "2025-11-18T15:09:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1939848,
+  "modified": "2025-11-18T15:15:00.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__BAK_qhr_lf.csv",
+  "size": 1132809,
+  "modified": "2025-11-18T15:14:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__CEN_qhr_lf.csv",
+  "size": 3941731,
+  "modified": "2025-11-18T15:15:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__DIS_qhr_lf.csv",
+  "size": 5224781,
+  "modified": "2025-11-18T15:15:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__DLR_qhr_lf.csv",
+  "size": 2495192,
+  "modified": "2025-11-18T15:15:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__EZL_qhr_lf.csv",
+  "size": 2554166,
+  "modified": "2025-11-18T15:15:08.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__HAM_qhr_lf.csv",
+  "size": 3104929,
+  "modified": "2025-11-18T15:15:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__JUB_qhr_lf.csv",
+  "size": 1681095,
+  "modified": "2025-11-18T15:15:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LOA_qhr_lf.csv",
+  "size": 806039,
+  "modified": "2025-11-18T15:15:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LOE_qhr_lf.csv",
+  "size": 1417632,
+  "modified": "2025-11-18T15:15:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LOG_qhr_lf.csv",
+  "size": 310988,
+  "modified": "2025-11-18T15:15:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LON_qhr_lf.csv",
+  "size": 1400009,
+  "modified": "2025-11-18T15:15:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LOR_qhr_lf.csv",
+  "size": 5409,
+  "modified": "2025-11-18T15:15:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__LOW_qhr_lf.csv",
+  "size": 604515,
+  "modified": "2025-11-18T15:15:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__METPIC_qhr_lf.csv",
+  "size": 9075958,
+  "modified": "2025-11-18T15:15:51.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__MET_qhr_lf.csv",
+  "size": 1870472,
+  "modified": "2025-11-18T15:15:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__NOR_qhr_lf.csv",
+  "size": 5248085,
+  "modified": "2025-11-18T15:15:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__PIC_qhr_lf.csv",
+  "size": 4752931,
+  "modified": "2025-11-18T15:14:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__SSL_qhr_lf.csv",
+  "size": 11743695,
+  "modified": "2025-11-18T15:14:52.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__SSP_qhr_lf.csv",
+  "size": 22522125,
+  "modified": "2025-11-18T15:13:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__VIC_qhr_lf.csv",
+  "size": 595606,
+  "modified": "2025-11-18T15:14:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23FRI4c_od__WAT_qhr_lf.csv",
+  "size": 3997,
+  "modified": "2025-11-18T15:14:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1832820,
+  "modified": "2025-11-18T15:16:14.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__BAK_qhr_lf.csv",
+  "size": 1102105,
+  "modified": "2025-11-18T15:16:12.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__CEN_qhr_lf.csv",
+  "size": 3361878,
+  "modified": "2025-11-18T15:16:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__DIS_qhr_lf.csv",
+  "size": 5027611,
+  "modified": "2025-11-18T15:16:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__DLR_qhr_lf.csv",
+  "size": 2370035,
+  "modified": "2025-11-18T15:16:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__EZL_qhr_lf.csv",
+  "size": 2389312,
+  "modified": "2025-11-18T15:16:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__HAM_qhr_lf.csv",
+  "size": 2970384,
+  "modified": "2025-11-18T15:16:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__JUB_qhr_lf.csv",
+  "size": 1428841,
+  "modified": "2025-11-18T15:16:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LOA_qhr_lf.csv",
+  "size": 752014,
+  "modified": "2025-11-18T15:16:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LOE_qhr_lf.csv",
+  "size": 1278889,
+  "modified": "2025-11-18T15:16:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LOG_qhr_lf.csv",
+  "size": 308951,
+  "modified": "2025-11-18T15:16:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LON_qhr_lf.csv",
+  "size": 1376787,
+  "modified": "2025-11-18T15:16:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LOR_qhr_lf.csv",
+  "size": 5422,
+  "modified": "2025-11-18T15:15:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__LOW_qhr_lf.csv",
+  "size": 581784,
+  "modified": "2025-11-18T15:15:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__METPIC_qhr_lf.csv",
+  "size": 8010570,
+  "modified": "2025-11-18T15:16:00.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__MET_qhr_lf.csv",
+  "size": 1812947,
+  "modified": "2025-11-18T15:15:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__NOR_qhr_lf.csv",
+  "size": 4520741,
+  "modified": "2025-11-18T15:16:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__PIC_qhr_lf.csv",
+  "size": 4137079,
+  "modified": "2025-11-18T15:16:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__SSL_qhr_lf.csv",
+  "size": 10990596,
+  "modified": "2025-11-18T15:16:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__SSP_qhr_lf.csv",
+  "size": 20248784,
+  "modified": "2025-11-18T15:13:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__VIC_qhr_lf.csv",
+  "size": 492417,
+  "modified": "2025-11-18T15:16:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23MON4c_od__WAT_qhr_lf.csv",
+  "size": 3989,
+  "modified": "2025-11-18T15:16:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1929531,
+  "modified": "2025-11-18T15:14:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__BAK_qhr_lf.csv",
+  "size": 1115163,
+  "modified": "2025-11-18T15:14:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__CEN_qhr_lf.csv",
+  "size": 3901070,
+  "modified": "2025-11-18T15:14:31.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__DIS_qhr_lf.csv",
+  "size": 5015098,
+  "modified": "2025-11-18T15:14:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__DLR_qhr_lf.csv",
+  "size": 2091870,
+  "modified": "2025-11-18T15:14:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__EZL_qhr_lf.csv",
+  "size": 2415402,
+  "modified": "2025-11-18T15:14:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__HAM_qhr_lf.csv",
+  "size": 2930564,
+  "modified": "2025-11-18T15:14:37.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__JUB_qhr_lf.csv",
+  "size": 1712228,
+  "modified": "2025-11-18T15:14:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LOA_qhr_lf.csv",
+  "size": 718677,
+  "modified": "2025-11-18T15:14:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LOE_qhr_lf.csv",
+  "size": 1333036,
+  "modified": "2025-11-18T15:14:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LOG_qhr_lf.csv",
+  "size": 300519,
+  "modified": "2025-11-18T15:14:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LON_qhr_lf.csv",
+  "size": 1348668,
+  "modified": "2025-11-18T15:14:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LOR_qhr_lf.csv",
+  "size": 5430,
+  "modified": "2025-11-18T15:14:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__LOW_qhr_lf.csv",
+  "size": 601827,
+  "modified": "2025-11-18T15:14:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__METPIC_qhr_lf.csv",
+  "size": 8143192,
+  "modified": "2025-11-18T15:14:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__MET_qhr_lf.csv",
+  "size": 1638587,
+  "modified": "2025-11-18T15:14:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__NOR_qhr_lf.csv",
+  "size": 5128714,
+  "modified": "2025-11-18T15:14:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__PIC_qhr_lf.csv",
+  "size": 4536674,
+  "modified": "2025-11-18T15:14:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__SSL_qhr_lf.csv",
+  "size": 10451882,
+  "modified": "2025-11-18T15:14:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__SSP_qhr_lf.csv",
+  "size": 20190223,
+  "modified": "2025-11-18T15:13:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SAT4c_od__VIC_qhr_lf.csv",
+  "size": 610425,
+  "modified": "2025-11-18T15:14:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1768782,
+  "modified": "2025-11-18T15:13:57.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__BAK_qhr_lf.csv",
+  "size": 986631,
+  "modified": "2025-11-18T15:13:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__CEN_qhr_lf.csv",
+  "size": 3355043,
+  "modified": "2025-11-18T15:13:59.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__DIS_qhr_lf.csv",
+  "size": 4648814,
+  "modified": "2025-11-18T15:14:01.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__DLR_qhr_lf.csv",
+  "size": 1989815,
+  "modified": "2025-11-18T15:14:03.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__EZL_qhr_lf.csv",
+  "size": 1962178,
+  "modified": "2025-11-18T15:14:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__HAM_qhr_lf.csv",
+  "size": 2739394,
+  "modified": "2025-11-18T15:14:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__JUB_qhr_lf.csv",
+  "size": 1402210,
+  "modified": "2025-11-18T15:14:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LOA_qhr_lf.csv",
+  "size": 644077,
+  "modified": "2025-11-18T15:14:08.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LOE_qhr_lf.csv",
+  "size": 1188767,
+  "modified": "2025-11-18T15:14:09.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LOG_qhr_lf.csv",
+  "size": 252516,
+  "modified": "2025-11-18T15:14:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LON_qhr_lf.csv",
+  "size": 1045394,
+  "modified": "2025-11-18T15:14:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LOR_qhr_lf.csv",
+  "size": 3918,
+  "modified": "2025-11-18T15:14:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__LOW_qhr_lf.csv",
+  "size": 554344,
+  "modified": "2025-11-18T15:13:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__METPIC_qhr_lf.csv",
+  "size": 7164322,
+  "modified": "2025-11-18T15:13:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__MET_qhr_lf.csv",
+  "size": 1520496,
+  "modified": "2025-11-18T15:13:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__NOR_qhr_lf.csv",
+  "size": 4251658,
+  "modified": "2025-11-18T15:13:47.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__PIC_qhr_lf.csv",
+  "size": 3831287,
+  "modified": "2025-11-18T15:13:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__SSL_qhr_lf.csv",
+  "size": 9873212,
+  "modified": "2025-11-18T15:13:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__SSP_qhr_lf.csv",
+  "size": 18616380,
+  "modified": "2025-11-18T15:13:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23SUN4c_od__VIC_qhr_lf.csv",
+  "size": 490696,
+  "modified": "2025-11-18T15:13:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1927873,
+  "modified": "2025-11-18T15:10:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__BAK_qhr_lf.csv",
+  "size": 1129513,
+  "modified": "2025-11-18T15:10:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__CEN_qhr_lf.csv",
+  "size": 3548374,
+  "modified": "2025-11-18T15:10:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__DIS_qhr_lf.csv",
+  "size": 5186319,
+  "modified": "2025-11-18T15:10:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__DLR_qhr_lf.csv",
+  "size": 2473668,
+  "modified": "2025-11-18T15:10:50.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__EZL_qhr_lf.csv",
+  "size": 2461769,
+  "modified": "2025-11-18T15:10:52.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__HAM_qhr_lf.csv",
+  "size": 3092704,
+  "modified": "2025-11-18T15:10:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__JUB_qhr_lf.csv",
+  "size": 1437963,
+  "modified": "2025-11-18T15:10:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LOA_qhr_lf.csv",
+  "size": 783029,
+  "modified": "2025-11-18T15:10:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LOE_qhr_lf.csv",
+  "size": 1336787,
+  "modified": "2025-11-18T15:10:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LOG_qhr_lf.csv",
+  "size": 310142,
+  "modified": "2025-11-18T15:10:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LON_qhr_lf.csv",
+  "size": 1392252,
+  "modified": "2025-11-18T15:10:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LOR_qhr_lf.csv",
+  "size": 5433,
+  "modified": "2025-11-18T15:10:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__LOW_qhr_lf.csv",
+  "size": 600970,
+  "modified": "2025-11-18T15:10:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__METPIC_qhr_lf.csv",
+  "size": 8437976,
+  "modified": "2025-11-18T15:10:31.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__MET_qhr_lf.csv",
+  "size": 1864320,
+  "modified": "2025-11-18T15:10:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__NOR_qhr_lf.csv",
+  "size": 4674930,
+  "modified": "2025-11-18T15:10:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__PIC_qhr_lf.csv",
+  "size": 4252243,
+  "modified": "2025-11-18T15:10:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__SSL_qhr_lf.csv",
+  "size": 11661166,
+  "modified": "2025-11-18T15:10:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__SSP_qhr_lf.csv",
+  "size": 21689094,
+  "modified": "2025-11-18T15:10:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__VIC_qhr_lf.csv",
+  "size": 491875,
+  "modified": "2025-11-18T15:10:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2023/OD Data/NBT23TWT4c_od__WAT_qhr_lf.csv",
+  "size": 3992,
+  "modified": "2025-11-18T15:10:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/",
+  "size": 0,
+  "modified": "2025-09-25T12:52:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/NBT24FRI_outputs.xlsx",
+  "size": 12429671,
+  "modified": "2025-11-10T15:20:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/NBT24MON_outputs.xlsx",
+  "size": 12088689,
+  "modified": "2025-11-10T15:20:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/NBT24SAT_outputs.xlsx",
+  "size": 12305174,
+  "modified": "2025-11-10T15:20:13.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/NBT24SUN_outputs.xlsx",
+  "size": 11607441,
+  "modified": "2025-11-10T15:20:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/NBT24TWT_outputs.xlsx",
+  "size": 12135500,
+  "modified": "2025-11-10T15:20:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/",
+  "size": 0,
+  "modified": "2025-11-18T15:07:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1977542,
+  "modified": "2025-11-18T15:15:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__BAK_qhr_lf.csv",
+  "size": 1146987,
+  "modified": "2025-11-18T15:15:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__CEN_qhr_lf.csv",
+  "size": 4101976,
+  "modified": "2025-11-18T15:15:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__DIS_qhr_lf.csv",
+  "size": 5360521,
+  "modified": "2025-11-18T15:15:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__DLR_qhr_lf.csv",
+  "size": 2589109,
+  "modified": "2025-11-18T15:15:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__EZL_qhr_lf.csv",
+  "size": 2592579,
+  "modified": "2025-11-18T15:15:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__HAM_qhr_lf.csv",
+  "size": 3172600,
+  "modified": "2025-11-18T15:15:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__JUB_qhr_lf.csv",
+  "size": 1693437,
+  "modified": "2025-11-18T15:15:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LOA_qhr_lf.csv",
+  "size": 815775,
+  "modified": "2025-11-18T15:15:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LOE_qhr_lf.csv",
+  "size": 1475703,
+  "modified": "2025-11-18T15:15:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LOG_qhr_lf.csv",
+  "size": 309990,
+  "modified": "2025-11-18T15:15:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LON_qhr_lf.csv",
+  "size": 1401999,
+  "modified": "2025-11-18T15:15:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LOR_qhr_lf.csv",
+  "size": 5409,
+  "modified": "2025-11-18T15:15:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__LOW_qhr_lf.csv",
+  "size": 627552,
+  "modified": "2025-11-18T15:15:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__METPIC_qhr_lf.csv",
+  "size": 9370842,
+  "modified": "2025-11-18T15:15:58.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__MET_qhr_lf.csv",
+  "size": 1898183,
+  "modified": "2025-11-18T15:15:53.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__NOR_qhr_lf.csv",
+  "size": 5235151,
+  "modified": "2025-11-18T15:16:00.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__PIC_qhr_lf.csv",
+  "size": 4858458,
+  "modified": "2025-11-18T15:16:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__SSL_qhr_lf.csv",
+  "size": 12199346,
+  "modified": "2025-11-18T15:16:06.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__SSP_qhr_lf.csv",
+  "size": 23547286,
+  "modified": "2025-11-18T15:14:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__VIC_qhr_lf.csv",
+  "size": 607735,
+  "modified": "2025-11-18T15:15:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI4c_od__WAT_qhr_lf.csv",
+  "size": 3988,
+  "modified": "2025-11-18T15:15:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24FRI5d_od_network_tb_lf_o.csv",
+  "size": 26667181,
+  "modified": "2025-11-25T12:21:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1871288,
+  "modified": "2025-11-18T15:16:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__BAK_qhr_lf.csv",
+  "size": 1117088,
+  "modified": "2025-11-18T15:16:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__CEN_qhr_lf.csv",
+  "size": 3420118,
+  "modified": "2025-11-18T15:16:19.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__DIS_qhr_lf.csv",
+  "size": 5085639,
+  "modified": "2025-11-18T15:16:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__DLR_qhr_lf.csv",
+  "size": 2404552,
+  "modified": "2025-11-18T15:16:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__EZL_qhr_lf.csv",
+  "size": 2432400,
+  "modified": "2025-11-18T15:16:26.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__HAM_qhr_lf.csv",
+  "size": 3013555,
+  "modified": "2025-11-18T15:16:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__JUB_qhr_lf.csv",
+  "size": 1433294,
+  "modified": "2025-11-18T15:16:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LOA_qhr_lf.csv",
+  "size": 751219,
+  "modified": "2025-11-18T15:16:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LOE_qhr_lf.csv",
+  "size": 1306304,
+  "modified": "2025-11-18T15:16:31.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LOG_qhr_lf.csv",
+  "size": 308726,
+  "modified": "2025-11-18T15:16:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LON_qhr_lf.csv",
+  "size": 1377435,
+  "modified": "2025-11-18T15:16:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LOR_qhr_lf.csv",
+  "size": 5438,
+  "modified": "2025-11-18T15:16:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__LOW_qhr_lf.csv",
+  "size": 613987,
+  "modified": "2025-11-18T15:16:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__METPIC_qhr_lf.csv",
+  "size": 8021629,
+  "modified": "2025-11-18T15:16:38.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__MET_qhr_lf.csv",
+  "size": 1795304,
+  "modified": "2025-11-18T15:16:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__NOR_qhr_lf.csv",
+  "size": 4604429,
+  "modified": "2025-11-18T15:16:08.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__PIC_qhr_lf.csv",
+  "size": 4161971,
+  "modified": "2025-11-18T15:16:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__SSL_qhr_lf.csv",
+  "size": 11139709,
+  "modified": "2025-11-18T15:16:14.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__SSP_qhr_lf.csv",
+  "size": 20573325,
+  "modified": "2025-11-18T15:14:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__VIC_qhr_lf.csv",
+  "size": 491924,
+  "modified": "2025-11-18T15:16:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON4c_od__WAT_qhr_lf.csv",
+  "size": 3990,
+  "modified": "2025-11-18T15:16:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24MON5d_od_network_tb_lf_o.csv",
+  "size": 17999882,
+  "modified": "2025-11-25T12:21:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1897478,
+  "modified": "2025-11-18T15:15:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__BAK_qhr_lf.csv",
+  "size": 1119340,
+  "modified": "2025-11-18T15:15:03.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__CEN_qhr_lf.csv",
+  "size": 4042731,
+  "modified": "2025-11-18T15:15:05.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__DIS_qhr_lf.csv",
+  "size": 5208487,
+  "modified": "2025-11-18T15:15:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__DLR_qhr_lf.csv",
+  "size": 2120485,
+  "modified": "2025-11-18T15:15:08.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__EZL_qhr_lf.csv",
+  "size": 2480296,
+  "modified": "2025-11-18T15:15:10.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__HAM_qhr_lf.csv",
+  "size": 3044624,
+  "modified": "2025-11-18T15:15:11.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__JUB_qhr_lf.csv",
+  "size": 1692775,
+  "modified": "2025-11-18T15:15:12.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LOA_qhr_lf.csv",
+  "size": 744320,
+  "modified": "2025-11-18T15:15:13.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LOE_qhr_lf.csv",
+  "size": 1447898,
+  "modified": "2025-11-18T15:15:14.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LOG_qhr_lf.csv",
+  "size": 307767,
+  "modified": "2025-11-18T15:15:15.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LON_qhr_lf.csv",
+  "size": 1389111,
+  "modified": "2025-11-18T15:15:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LOR_qhr_lf.csv",
+  "size": 5451,
+  "modified": "2025-11-18T15:15:16.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__LOW_qhr_lf.csv",
+  "size": 606606,
+  "modified": "2025-11-18T15:15:17.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__METPIC_qhr_lf.csv",
+  "size": 8145077,
+  "modified": "2025-11-18T15:15:20.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__MET_qhr_lf.csv",
+  "size": 1698582,
+  "modified": "2025-11-18T15:15:18.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__NOR_qhr_lf.csv",
+  "size": 5017314,
+  "modified": "2025-11-18T15:15:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__PIC_qhr_lf.csv",
+  "size": 4403262,
+  "modified": "2025-11-18T15:15:24.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__SSL_qhr_lf.csv",
+  "size": 11063590,
+  "modified": "2025-11-18T15:15:01.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__SSP_qhr_lf.csv",
+  "size": 20967863,
+  "modified": "2025-11-18T15:14:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT4c_od__VIC_qhr_lf.csv",
+  "size": 614731,
+  "modified": "2025-11-18T15:15:02.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SAT5d_od_network_tb_lf_o.csv",
+  "size": 24070554,
+  "modified": "2025-11-25T12:21:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__BAKWDC_qhr_lf.csv",
+  "size": 1730057,
+  "modified": "2025-11-18T15:14:36.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__BAK_qhr_lf.csv",
+  "size": 984119,
+  "modified": "2025-11-18T15:14:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__CEN_qhr_lf.csv",
+  "size": 3379552,
+  "modified": "2025-11-18T15:14:38.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__DIS_qhr_lf.csv",
+  "size": 4548736,
+  "modified": "2025-11-18T15:14:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__DLR_qhr_lf.csv",
+  "size": 1819128,
+  "modified": "2025-11-18T15:14:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__EZL_qhr_lf.csv",
+  "size": 1929221,
+  "modified": "2025-11-18T15:14:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__HAM_qhr_lf.csv",
+  "size": 2670803,
+  "modified": "2025-11-18T15:14:44.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__JUB_qhr_lf.csv",
+  "size": 1417084,
+  "modified": "2025-11-18T15:14:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LOA_qhr_lf.csv",
+  "size": 624680,
+  "modified": "2025-11-18T15:14:46.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LOE_qhr_lf.csv",
+  "size": 1266132,
+  "modified": "2025-11-18T15:14:47.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LOG_qhr_lf.csv",
+  "size": 244260,
+  "modified": "2025-11-18T15:14:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LON_qhr_lf.csv",
+  "size": 921791,
+  "modified": "2025-11-18T15:14:48.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LOR_qhr_lf.csv",
+  "size": 3897,
+  "modified": "2025-11-18T15:14:49.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__LOW_qhr_lf.csv",
+  "size": 544072,
+  "modified": "2025-11-18T15:14:49.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__METPIC_qhr_lf.csv",
+  "size": 6780081,
+  "modified": "2025-11-18T15:14:53.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__MET_qhr_lf.csv",
+  "size": 1450796,
+  "modified": "2025-11-18T15:14:50.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__NOR_qhr_lf.csv",
+  "size": 4246410,
+  "modified": "2025-11-18T15:14:56.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__PIC_qhr_lf.csv",
+  "size": 3664845,
+  "modified": "2025-11-18T15:14:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__SSL_qhr_lf.csv",
+  "size": 9453623,
+  "modified": "2025-11-18T15:14:33.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__SSP_qhr_lf.csv",
+  "size": 17571622,
+  "modified": "2025-11-18T15:14:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN4c_od__VIC_qhr_lf.csv",
+  "size": 503648,
+  "modified": "2025-11-18T15:14:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24SUN5d_od_network_tb_lf_o.csv",
+  "size": 17609256,
+  "modified": "2025-11-25T12:21:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_bak_qhr_lf_o.csv",
+  "size": 1089112,
+  "modified": "2025-11-18T15:08:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_bakwdc_qhr_lf_o.csv",
+  "size": 1847357,
+  "modified": "2025-11-18T15:08:35.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_cen_qhr_lf_o.csv",
+  "size": 3430694,
+  "modified": "2025-11-18T15:08:32.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_dis_qhr_lf_o.csv",
+  "size": 5078071,
+  "modified": "2025-11-18T15:08:25.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_dlr_qhr_lf_o.csv",
+  "size": 2437631,
+  "modified": "2025-11-18T15:08:45.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_ezl_qhr_lf_o.csv",
+  "size": 2423376,
+  "modified": "2025-11-18T15:08:34.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_ham_qhr_lf_o.csv",
+  "size": 3007699,
+  "modified": "2025-11-18T15:08:22.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_jub_qhr_lf_o.csv",
+  "size": 1382939,
+  "modified": "2025-11-18T15:08:29.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_loa_qhr_lf_o.csv",
+  "size": 765204,
+  "modified": "2025-11-18T15:08:43.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_loe_qhr_lf_o.csv",
+  "size": 1311033,
+  "modified": "2025-11-18T15:08:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_log_qhr_lf_o.csv",
+  "size": 298470,
+  "modified": "2025-11-18T15:08:42.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_lon_qhr_lf_o.csv",
+  "size": 1348838,
+  "modified": "2025-11-18T15:08:41.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_lor_qhr_lf_o.csv",
+  "size": 5214,
+  "modified": "2025-11-18T15:08:40.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_met_qhr_lf_o.csv",
+  "size": 1784978,
+  "modified": "2025-11-18T15:08:23.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_nor_qhr_lf_o.csv",
+  "size": 4547939,
+  "modified": "2025-11-18T15:08:28.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_pic_qhr_lf_o.csv",
+  "size": 4174861,
+  "modified": "2025-11-18T15:08:27.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_ssl_qhr_lf_o.csv",
+  "size": 11423685,
+  "modified": "2025-11-18T15:08:39.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_ssp_qhr_lf_o.csv",
+  "size": 21449543,
+  "modified": "2025-11-18T15:08:21.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_vic_qhr_lf_o.csv",
+  "size": 473633,
+  "modified": "2025-11-18T15:08:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT4c_od_wat_qhr_lf_o.csv",
+  "size": 3841,
+  "modified": "2025-11-18T15:08:30.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/OD Data/NBT24TWT5d_od_network_tb_lf_o.csv",
+  "size": 22540190,
+  "modified": "2025-11-25T12:21:07.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2024/PTSP Oasis for NUMBAT definitions.xlsx",
+  "size": 6237807,
+  "modified": "2025-11-10T15:23:04.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/",
+  "size": 0,
+  "modified": "2026-08-10T10:28:31.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/NBT25FRI_Outputs.xlsx",
+  "size": 12479228,
+  "modified": "2026-08-10T10:28:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/NBT25MON_Outputs.xlsx",
+  "size": 12136790,
+  "modified": "2026-08-10T10:28:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/NBT25SAT_Outputs.xlsx",
+  "size": 12391866,
+  "modified": "2026-08-10T10:28:54.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/NBT25SUN_Outputs.xlsx",
+  "size": 11625053,
+  "modified": "2026-08-10T10:28:55.000Z"
+ },
+ {
+  "key": "NUMBAT/NUMBAT 2025/NBT25TWT_Outputs.xlsx",
+  "size": 12185436,
+  "modified": "2026-08-10T10:28:55.000Z"
+ },
+ {
+  "key": "Network Demand/",
+  "size": 0,
+  "modified": "2023-12-19T12:58:19.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2019.csv",
+  "size": 12511,
+  "modified": "2024-04-26T13:48:10.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2020.csv",
+  "size": 12228,
+  "modified": "2024-04-26T13:47:04.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2021.csv",
+  "size": 12418,
+  "modified": "2024-04-26T13:46:06.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2022.csv",
+  "size": 12505,
+  "modified": "2024-04-26T13:46:45.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2023.csv",
+  "size": 12506,
+  "modified": "2025-06-10T14:29:21.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2024.csv",
+  "size": 12541,
+  "modified": "2026-04-15T06:03:42.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2024_2025 .csv",
+  "size": 24856,
+  "modified": "2025-12-31T07:03:33.000Z"
+ },
+ {
+  "key": "Network Demand/Journeys_2025_2026 .csv",
+  "size": 22408,
+  "modified": "2026-10-21T06:00:15.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2019.csv",
+  "size": 6318172,
+  "modified": "2024-05-14T11:32:01.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2020.csv",
+  "size": 6085851,
+  "modified": "2024-05-14T11:32:07.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2021.csv",
+  "size": 6303035,
+  "modified": "2024-05-14T11:32:13.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2022.csv",
+  "size": 6409862,
+  "modified": "2024-05-14T11:32:19.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2023.csv",
+  "size": 6500306,
+  "modified": "2025-06-10T14:29:20.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2024.csv",
+  "size": 6525587,
+  "modified": "2026-04-15T06:03:40.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2024_2025 .csv",
+  "size": 12954099,
+  "modified": "2025-12-31T07:03:32.000Z"
+ },
+ {
+  "key": "Network Demand/StationFootfall_2025_2026 .csv",
+  "size": 11693784,
+  "modified": "2026-10-21T06:00:14.000Z"
+ },
+ {
+  "key": "RODS/",
+  "size": 0,
+  "modified": "2019-02-21T12:05:19.000Z"
+ },
+ {
+  "key": "RODS/rods.zip",
+  "size": 7052838,
+  "modified": "2019-02-21T12:05:53.000Z"
+ },
+ {
+  "key": "index.html",
+  "size": 8139,
+  "modified": "2025-11-28T15:21:40.000Z"
+ }
+]
