@@ -39,3 +39,21 @@ Even between two step-free stations the step-free trip is usually longer: King's
 - **The planner is a model**: real step-free trips can be longer (lift outages, waiting for ramps, crowded buses). In a 2023 trial by Bolt Burdon Kemp, five wheelchair users' real journeys took 49% longer overall, and one was 83% slower than TfL's own step-free estimate ([Able Magazine](https://ablemagazine.co.uk/london-transport-nightmare-new-travel-experiment-reveals-dire-commutes-for-wheelchair-users/)).
 - **Search noise**: in 33 pairs the step-free answer is up to 7 minutes _faster_ than the standard one, because the "least time" search settles on different routes. These are kept as returned; they do not move the medians.
 - **Endpoints**: points tens of metres apart can give different answers; 4% of requests needed a fallback point.
+
+## S6: the race
+
+S6 replays nine of these trips leg by leg. The same requests were sent again for the nine pairs (spec: `pipeline/experiments/s6-races.json`, same endpoints, 08:30 on Tuesday 27 October 2026), keeping the planner's full answers (`journeys/experiments/s6-races/` on the `data` branch). `races_export.py` takes the fastest journey of each and keeps every leg's mode, line, departure and arrival time, stops and route. The durations match the batch above for all 18 requests.
+
+| Trip                                | Standard | Step-free | How the step-free journey goes                                          |
+| ----------------------------------- | -------- | --------- | ----------------------------------------------------------------------- |
+| South Kensington → Archway          | 32       | 69        | 29 minutes on foot to Knightsbridge, Piccadilly line, bus 17            |
+| King's Cross → Ladbroke Grove       | 23       | 58        | four buses                                                              |
+| Arnos Grove → Old Street            | 32       | 75        | two buses, 49 minutes on the 141                                        |
+| Brixton → Kentish Town              | 30       | 56        | Victoria line, 14 minutes on foot, bus 214                              |
+| Tooting Broadway → Oxford Circus    | 33       | 65        | bus 270, South Western Railway train, bus 139                           |
+| Walthamstow Central → Warren Street | 29       | 59        | Weaver line, Elizabeth line, bus 73                                     |
+| Stratford → Snaresbrook             | 15       | 38        | buses 257 and 66                                                        |
+| Canary Wharf → Swiss Cottage        | 31       | 59        | Jubilee line, 18 minutes on foot, bus 113                               |
+| King's Cross → Green Park           | 18       | 28        | the Victoria line too; 7 more minutes getting in and 3 more getting out |
+
+The first eight were picked for large gaps among trips of at most 35 minutes standard, one each from eight of the twelve origins; the last is a fair comparison between two step-free stations. Each scenario's journey starts at the time the planner chose (08:30 to 08:44), and the race starts both at zero, so it compares durations, not arrival times.

@@ -1,0 +1,173 @@
+[
+    {
+        "name": "sks-arc-standard",
+        "race": "sks-arc",
+        "origin": "940GZZLUSKS",
+        "destination": "940GZZLUACY",
+        "from": "51.494070,-0.174100",
+        "to": "51.565680,-0.134930"
+    },
+    {
+        "name": "sks-arc-step-free",
+        "race": "sks-arc",
+        "origin": "940GZZLUSKS",
+        "destination": "940GZZLUACY",
+        "from": "51.494070,-0.174100",
+        "to": "51.565680,-0.134930",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "ksx-lad-standard",
+        "race": "ksx-lad",
+        "origin": "940GZZLUKSX",
+        "destination": "940GZZLULAD",
+        "from": "51.530240,-0.123540",
+        "to": "51.517420,-0.210070"
+    },
+    {
+        "name": "ksx-lad-step-free",
+        "race": "ksx-lad",
+        "origin": "940GZZLUKSX",
+        "destination": "940GZZLULAD",
+        "from": "51.530240,-0.123540",
+        "to": "51.517420,-0.210070",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "asg-ods-standard",
+        "race": "asg-ods",
+        "origin": "940GZZLUASG",
+        "destination": "940GZZLUODS",
+        "from": "51.616060,-0.133400",
+        "to": "51.525860,-0.087770"
+    },
+    {
+        "name": "asg-ods-step-free",
+        "race": "asg-ods",
+        "origin": "940GZZLUASG",
+        "destination": "940GZZLUODS",
+        "from": "51.616060,-0.133400",
+        "to": "51.525860,-0.087770",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "bxn-ktn-standard",
+        "race": "bxn-ktn",
+        "origin": "940GZZLUBXN",
+        "destination": "940GZZLUKSH",
+        "from": "51.462650,-0.114960",
+        "to": "51.550310,-0.140730"
+    },
+    {
+        "name": "bxn-ktn-step-free",
+        "race": "bxn-ktn",
+        "origin": "940GZZLUBXN",
+        "destination": "940GZZLUKSH",
+        "from": "51.462650,-0.114960",
+        "to": "51.550310,-0.140730",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "tby-oxc-standard",
+        "race": "tby-oxc",
+        "origin": "940GZZLUTBY",
+        "destination": "940GZZLUOXC",
+        "from": "51.427930,-0.168090",
+        "to": "51.515120,-0.141920"
+    },
+    {
+        "name": "tby-oxc-step-free",
+        "race": "tby-oxc",
+        "origin": "940GZZLUTBY",
+        "destination": "940GZZLUOXC",
+        "from": "51.427930,-0.168090",
+        "to": "51.515120,-0.141920",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "wwl-was-standard",
+        "race": "wwl-was",
+        "origin": "940GZZLUWWL",
+        "destination": "940GZZLUWRR",
+        "from": "51.582970,-0.019880",
+        "to": "51.524570,-0.137990"
+    },
+    {
+        "name": "wwl-was-step-free",
+        "race": "wwl-was",
+        "origin": "940GZZLUWWL",
+        "destination": "940GZZLUWRR",
+        "from": "51.582970,-0.019880",
+        "to": "51.524570,-0.137990",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "std-snb-standard",
+        "race": "std-snb",
+        "origin": "940GZZLUSTD",
+        "destination": "940GZZLUSNB",
+        "from": "51.541810,-0.003460",
+        "to": "51.581030,0.021430"
+    },
+    {
+        "name": "std-snb-step-free",
+        "race": "std-snb",
+        "origin": "940GZZLUSTD",
+        "destination": "940GZZLUSNB",
+        "from": "51.541810,-0.003460",
+        "to": "51.581030,0.021430",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "cyf-sws-standard",
+        "race": "cyf-sws",
+        "origin": "940GZZLUCYF",
+        "destination": "940GZZLUSWC",
+        "from": "51.503450,-0.017480",
+        "to": "51.543660,-0.174690"
+    },
+    {
+        "name": "cyf-sws-step-free",
+        "race": "cyf-sws",
+        "origin": "940GZZLUCYF",
+        "destination": "940GZZLUSWC",
+        "from": "51.503450,-0.017480",
+        "to": "51.543660,-0.174690",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    },
+    {
+        "name": "ksx-gpk-standard",
+        "race": "ksx-gpk",
+        "origin": "940GZZLUKSX",
+        "destination": "940GZZLUGPK",
+        "from": "51.530240,-0.123540",
+        "to": "51.506840,-0.142830"
+    },
+    {
+        "name": "ksx-gpk-step-free",
+        "race": "ksx-gpk",
+        "origin": "940GZZLUKSX",
+        "destination": "940GZZLUGPK",
+        "from": "51.530240,-0.123540",
+        "to": "51.506840,-0.142830",
+        "params": {
+            "accessibilityPreference": "StepFreeToPlatform"
+        }
+    }
+]

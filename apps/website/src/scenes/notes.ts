@@ -41,6 +41,20 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: 'Same city, same departure time, but every step of the way must be step-free. The map dims, and some stations drop out entirely. Tablet B can pick a different starting point.'
         }
     ],
+    'the-race': [
+        {
+            cue: 'Line-up: the trip in the top-left corner; A and B at the start, the finish lines dashed.',
+            say: 'Two people leave the same door at the same moment, for the same place. A can take the stairs. B uses a wheelchair. Time runs along the wall: every screen is five minutes.'
+        },
+        {
+            cue: 'The race runs, one minute of journey per second. Each traveller’s clock moves along with them.',
+            say: "Watch where B goes first. The Journey Planner's fastest step-free route is often not the tube at all."
+        },
+        {
+            cue: 'Both journeys complete; the gap, and how B got there, next to A’s finish.',
+            say: 'A has long since arrived. This is the same trip, step-free. Tablet B can pick another one.'
+        }
+    ],
     calibration: [
         {
             cue: 'Test card: coordinates on every screen; rings and diagonals cross every bezel.',
