@@ -9,6 +9,7 @@ catalog:
   "@deck.gl/layers": ^9.1.12
   "@deck.gl/react": ^9.1.12
   "@phosphor-icons/react": "^2.1.10"
+  "@playwright/test": 1.56.1
   "@rolldown/plugin-babel": ^0.2.2
   "@tailwindcss/vite": ^4.2.2
   "@tanstack/devtools-vite": ^0.6.0

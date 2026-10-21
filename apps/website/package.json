@@ -7,7 +7,8 @@
         "dev": "vp dev",
         "build": "tsc && vp build",
         "preview": "vp preview",
-        "test": "vp test run"
+        "test": "vp test run",
+        "e2e": "playwright test"
     },
     "dependencies": {
         "@base-ui/react": "catalog:",
@@ -26,6 +27,7 @@
         "react-dom": "catalog:"
     },
     "devDependencies": {
+        "@playwright/test": "catalog:",
         "@rolldown/plugin-babel": "catalog:",
         "@tailwindcss/vite": "catalog:",
         "@tanstack/devtools-vite": "catalog:",

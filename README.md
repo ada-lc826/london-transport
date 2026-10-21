@@ -106,6 +106,12 @@ vp run ready
 vp run test -r
 ```
 
+- Run the browser tests (Playwright, against the production build): every scene, step and tablet choice drawn on the 16×4 wall with no text crossing a bezel or cut off, and the realtime path from tablets to screens:
+
+```bash
+cd apps/website && vp build && npx playwright test
+```
+
 - Build the monorepo:
 
 ```bash

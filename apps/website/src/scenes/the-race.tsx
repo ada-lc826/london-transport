@@ -280,6 +280,7 @@ function SegmentLabel({ label, row }: { label: LabelPlacement; row: number }) {
     const pad = Math.round(layout.screenHeight * 0.06);
     return (
         <div
+            data-wall-text=""
             className="absolute overflow-hidden text-white"
             style={{
                 left: label.x,
@@ -358,6 +359,7 @@ function Ticks() {
             {Array.from({ length: layout.columns - 1 }, (_, i) => i + 1).map((col) => (
                 <div
                     key={col}
+                    data-wall-text=""
                     className="absolute text-white/50 tabular-nums"
                     style={{
                         left: col * layout.screenWidth + pad / 2,
