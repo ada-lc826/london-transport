@@ -1,3 +1,5 @@
+import { withBase } from '../lib/base-path';
+
 // S6's races (`public/data/races.json`, built by `pipeline/.../races_export.py`): for a few
 // station pairs, the fastest standard and the fastest step-free Journey Planner journey, leg by
 // leg, departing together.
@@ -32,7 +34,7 @@ export type Races = {
     races: Race[];
 };
 
-const URL_PATH = '/data/races.json';
+const URL_PATH = withBase('/data/races.json');
 let request: Promise<Races | null> | null = null;
 
 export function loadRaces(): Promise<Races | null> {

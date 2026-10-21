@@ -9,6 +9,8 @@ import {
 import { createFileRoute } from '@tanstack/react-router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
+import { withBase } from '../lib/base-path';
+import { USE_LOCAL_BUS } from '../lib/realtime/local-bus';
 import { useTheme } from '../lib/theme-provider';
 
 type WallScreen = {
@@ -53,8 +55,8 @@ function HomePage() {
 
     const controlPanels = [
         // Distinct operator identities simulate simultaneous collaboration.
-        { id: 'a', label: 'Tablet #1', src: '/control?operator=A' },
-        { id: 'b', label: 'Tablet #2', src: '/control?operator=B' }
+        { id: 'a', label: 'Tablet #1', src: withBase('/control?operator=A') },
+        { id: 'b', label: 'Tablet #2', src: withBase('/control?operator=B') }
     ];
 
     const toggleDisconnect = (id: string) => {
@@ -76,8 +78,8 @@ function HomePage() {
         const disconnected = disconnectedById[screen.id] ?? false;
 
         return disconnected
-            ? `/noop?v=${nonce}`
-            : `/screen?c=${screen.c}&r=${screen.r}&layout=mini${devParam}&v=${nonce}`;
+            ? withBase(`/noop?v=${nonce}`)
+            : withBase(`/screen?c=${screen.c}&r=${screen.r}&layout=mini${devParam}&v=${nonce}`);
     };
 
     const toggleControlDisconnect = (id: string) => {
@@ -98,7 +100,7 @@ function HomePage() {
         const nonce = refreshControlNonceById[panel.id] ?? 0;
         const disconnected = disconnectedControlById[panel.id] ?? false;
         // Nonce query param forces iframe reload when "refresh" is pressed.
-        return disconnected ? `/noop?v=${nonce}` : `${panel.src}&v=${nonce}`;
+        return disconnected ? withBase(`/noop?v=${nonce}`) : `${panel.src}&v=${nonce}`;
     };
 
     return (
@@ -121,6 +123,21 @@ function HomePage() {
                     )}
                 </button>
             </section>
+            {USE_LOCAL_BUS ? (
+                <p className="-mt-2 text-xs text-[var(--muted-foreground)]">
+                    Static demo for the Imperial Data Observatory's 64-screen wall: the wall (scaled
+                    down) and both control tablets run in this page. Try Tablet #1 → S6 · The Race →
+                    Next step, and pick a trip on Tablet #2.{' '}
+                    <a
+                        className="underline"
+                        href="https://github.com/ada-lc826/london-transport"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Code and methods
+                    </a>
+                </p>
+            ) : null}
 
             <section className="flex min-h-0 flex-col rounded-xl border border-[var(--border)] bg-[var(--muted)] p-3">
                 <div className="mb-2 flex items-center justify-between gap-2">
@@ -151,7 +168,7 @@ function HomePage() {
                 {wallMode === 'world' ? (
                     <div className="aspect-[64/9] w-full overflow-hidden bg-black shadow-lg">
                         <iframe
-                            src={`/world?bezels=1${devParam}`}
+                            src={withBase(`/world?bezels=1${devParam}`)}
                             title="Full wall preview"
                             scrolling="no"
                             className="h-full w-full border-0"

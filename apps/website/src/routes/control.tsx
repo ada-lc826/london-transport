@@ -41,7 +41,7 @@ function ControlPageContent() {
 
     return (
         <main className="h-screen w-screen overflow-hidden bg-[var(--background)] text-[var(--foreground)]">
-            <div className="flex h-full w-full flex-col gap-3 overflow-y-auto p-3">
+            <div className="flex h-full w-full flex-col gap-3 overflow-y-auto p-3 [&>*]:shrink-0">
                 <header className="flex items-center justify-between rounded-lg border border-[var(--border)] bg-[var(--card)] px-3 py-2">
                     <div>
                         <p className="text-[10px] tracking-[0.2em] text-[var(--muted-foreground)] uppercase">

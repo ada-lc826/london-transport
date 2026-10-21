@@ -6,6 +6,14 @@ A Data Observatory (16×4 screens) demo built on TfL Open Data, measuring how mu
 
 This repository is built on [`dsi-icl/do-starter-playground`](https://github.com/dsi-icl/do-starter-playground), with its upstream history kept: `git diff upstream/main...` shows everything added on top of it.
 
+## Online demo
+
+**https://ada-lc826.github.io/london-transport/** is a static build of the app, published by the [`deploy-pages`](.github/workflows/deploy-pages.yml) workflow on every change to `apps/website/` on `main`. GitHub Pages has no server, so the demo uses an in-browser bus ([`local-bus.ts`](apps/website/src/lib/realtime/local-bus.ts)) in place of the WebSocket one: pages in the same browser (the simulator's iframes, or `/world` and `/control` in separate tabs) stay in sync, but other devices do not. To build it locally:
+
+```bash
+cd apps/website && STATIC_DEMO=1 BASE_PATH=/london-transport/ vp build   # .output/public
+```
+
 ## Running it
 
 ```bash
@@ -19,7 +27,7 @@ vp run dev        # http://localhost:5780
 | `/screen?c=<col>&r=<row>` | One physical screen; the URL Vizzy Studio loads per wall node. Coordinates outside the wall show an error instead of being clamped |
 | `/world`                  | The whole wall on one page and one WebGL context: preview, screen recording, Vizzy compatibility mode                              |
 | `/control?operator=A`     | Presenter tablet: scene, step, play/pause, speaker notes with the figures on the wall, and wall health                             |
-| `/control?operator=B`     | Traveller tablet: only the current scene's choices (S3's origin)                                                                   |
+| `/control?operator=B`     | Traveller tablet: only the current scene's choices (S3's origin, S6's trip)                                                        |
 | `/bus`                    | WebSocket bus. Owns scene state; answers binary clock pings                                                                        |
 
 Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the debug overlay (bezels, 5|6|5 zones, eye-height band, and each screen's connection, clock offset and round trip); `bezels=0` hides the bezel lines in `/world`.

@@ -13,7 +13,7 @@ export function NotesCard({ scene }: { scene: SceneState }) {
     const note = stepNote(scene.id, scene.step);
     const next = nextNote(scene.id, scene.step);
     return (
-        <section className="flex min-h-0 flex-col gap-2 overflow-y-auto rounded-lg border border-[var(--border)] bg-[var(--card)] p-3">
+        <section className="flex flex-col gap-2 rounded-lg border border-[var(--border)] bg-[var(--card)] p-3">
             <h2 className="text-[10px] tracking-[0.2em] text-[var(--muted-foreground)] uppercase">
                 {meta.title} · step {scene.step + 1}/{meta.steps}
             </h2>

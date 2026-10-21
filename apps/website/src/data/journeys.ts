@@ -1,3 +1,5 @@
+import { withBase } from '../lib/base-path';
+
 // Journey Planner travel times for S3 (`public/data/journeys-s3.json`, built by
 // `pipeline/.../journeys_export.py`): for each origin, minutes to each tube station by the
 // fastest standard route and the fastest step-free route, departing together.
@@ -11,7 +13,7 @@ export type JourneyTimes = {
     times: Record<string, Record<string, TimePair>>;
 };
 
-const URL_PATH = '/data/journeys-s3.json';
+const URL_PATH = withBase('/data/journeys-s3.json');
 let request: Promise<JourneyTimes | null> | null = null;
 
 export function loadJourneyTimes(): Promise<JourneyTimes | null> {

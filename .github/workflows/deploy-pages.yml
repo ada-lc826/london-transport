@@ -1,0 +1,57 @@
+name: Deploy demo to GitHub Pages
+
+# Builds the static demo (no server: the in-browser bus in src/lib/realtime/local-bus.ts
+# stands in for the WebSocket one) and publishes it at https://<owner>.github.io/<repo>/.
+# Needs Settings → Pages → Source: "GitHub Actions" once.
+
+on:
+    push:
+        branches: [main]
+        paths: ['apps/website/**', '.github/workflows/deploy-pages.yml']
+    workflow_dispatch:
+
+permissions:
+    contents: read
+    pages: write
+    id-token: write
+
+concurrency:
+    group: pages
+    cancel-in-progress: true
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        timeout-minutes: 15
+        steps:
+            - uses: actions/checkout@v7
+            - uses: voidzero-dev/setup-vp@v1
+              with:
+                  cache: true
+            - name: Build the static demo
+              working-directory: apps/website
+              env:
+                  STATIC_DEMO: '1'
+                  BASE_PATH: /${{ github.event.repository.name }}/
+              run: vp build
+            - name: Add the entry points Pages serves
+              working-directory: apps/website/.output/public
+              # index.html for the site root; 404.html for every other path (/world, /control,
+              # /screen), which the app then routes on the client.
+              run: |
+                  cp _shell.html index.html
+                  cp _shell.html 404.html
+                  touch .nojekyll
+            - uses: actions/upload-pages-artifact@v4
+              with:
+                  path: apps/website/.output/public
+
+    deploy:
+        needs: build
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - id: deployment
+              uses: actions/deploy-pages@v4
