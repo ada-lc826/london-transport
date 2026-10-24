@@ -57,3 +57,4 @@
 {"ts": "2026-10-24T13:37:00+00:00", "ok": true, "status": 200, "attempts": 1, "elapsed_ms": 422, "sha256": "5f8eb4e791a18bc2e7462d7ec9bb300c6d3f28d7c07b034c06a5ceebabc5128d", "n_records": 18, "error": null}
 {"ts": "2026-10-24T13:52:01+00:00", "ok": true, "status": 200, "attempts": 1, "elapsed_ms": 323, "sha256": "5f8eb4e791a18bc2e7462d7ec9bb300c6d3f28d7c07b034c06a5ceebabc5128d", "n_records": 18, "error": null}
 {"ts": "2026-10-24T14:07:00+00:00", "ok": true, "status": 200, "attempts": 1, "elapsed_ms": 299, "sha256": "5f8eb4e791a18bc2e7462d7ec9bb300c6d3f28d7c07b034c06a5ceebabc5128d", "n_records": 18, "error": null}
+{"ts": "2026-10-24T14:22:01+00:00", "ok": true, "status": 200, "attempts": 1, "elapsed_ms": 459, "sha256": "bcf64965c8a22cce694d6c413a94c9d0184924072b491b8a124f209d10f4f2e5", "n_records": 17, "error": null}
