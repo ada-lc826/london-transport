@@ -129,3 +129,7 @@ uv run python -m mind_the_step.equity --raw <data-branch>/equity/raw \
 ## Upgrades (S7)
 
 `mind_the_step.upgrades` chooses, greedily and with each pick re-evaluated on the network model, the stations whose upgrade to full step-free access most lowers S4's penalty, for three neighbourhood weightings, and evaluates TfL's own list the same way. It takes the same arguments as `mind_the_step.equity` (`--check` adds a comparison with exhaustive search) and writes `apps/website/public/data/upgrades.json`. Method: [`docs/methods/upgrades.md`](../docs/methods/upgrades.md).
+
+## Bus fallback model
+
+`mind_the_step.residuals` trains LightGBM on the network model's step-free residual against TfL's Journey Planner (how much buses and other rail save over the tube alone), validates it leaving one origin and one 5 km destination block out, and writes `data/model/bus-fallback-v1.json` with TreeSHAP importances and a per-station index. Bus stops come from NaPTAN via `mind_the_step.equity_sources`. Method: [`docs/methods/bus-fallback.md`](../docs/methods/bus-fallback.md).
