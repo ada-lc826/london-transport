@@ -7,6 +7,7 @@ export const SCENE_IDS = [
     'the-pulse',
     'the-step',
     'two-londons',
+    'who-pays',
     'the-race',
     'the-lifts',
     'calibration',
@@ -52,6 +53,19 @@ export const SCENE_META: Record<SceneId, SceneMeta> = {
                     { value: '940GZZLUCYF', label: 'Canary Wharf' },
                     { value: '940GZZLUEBY', label: 'Ealing Broadway' },
                     { value: '940GZZLUBXN', label: 'Brixton' }
+                ]
+            }
+        }
+    },
+    'who-pays': {
+        title: 'S4 · Who Pays',
+        steps: 3,
+        params: {
+            metric: {
+                label: 'Penalty as',
+                options: [
+                    { value: 'extra', label: 'Extra minutes' },
+                    { value: 'gap', label: 'Share of the tube lost' }
                 ]
             }
         }
