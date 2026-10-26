@@ -8,6 +8,9 @@
   there, else File 1 (the IMD).
 - MSOA (December 2021) population weighted centroids, ONS Open Geography Portal: the ArcGIS
   service is found by name in ONS's service directory, then paged out as GeoJSON.
+- London's bus stops from NaPTAN, the Department for Transport's stop register (for the
+  bus fallback model, residuals.py): on-street stops of ATCO area 490 that are active,
+  with their coordinates, as ``naptan-london-bus.csv``.
 
 Every source is attempted; what was found (attachment titles, service names) is written to
 ``equity/raw/manifest.json`` either way, so a failed run says where to look.
@@ -18,6 +21,8 @@ Every source is attempted; what was found (attachment titles, service names) is 
 from __future__ import annotations
 
 import argparse
+import csv
+import io
 import json
 import re
 import sys
@@ -33,6 +38,9 @@ IOD_PAGE = (
 )
 ONS_SERVICES = "https://services1.arcgis.com/ESMARspQHYMw9BZ9/arcgis/rest/services"
 MSOA_PWC = re.compile(r"^(MSOA|MLSOA).*(Dec|December)_?2021.*PWC", re.IGNORECASE)
+NAPTAN = "https://naptan.api.dft.gov.uk/v1/access-nodes"
+# On-street bus stops (BCT), and bus/coach station bays and entrances.
+BUS_STOP_TYPES = {"BCT", "BCS", "BCQ"}
 PAGE = 2000
 ATTEMPTS = 4
 
@@ -133,6 +141,35 @@ def fetch_centroids(client: httpx.Client, raw: Path) -> dict:
     return {"service": name, "features": len(features)}
 
 
+def london_bus_stops(text: str) -> list[dict]:
+    """Active London bus stops with coordinates, from NaPTAN's CSV."""
+    rows = []
+    for row in csv.DictReader(io.StringIO(text)):
+        code = row.get("ATCOCode") or ""
+        if not code.startswith("490") or row.get("StopType") not in BUS_STOP_TYPES:
+            continue
+        if (row.get("Status") or "active").lower() not in ("active", "act"):
+            continue
+        try:
+            lat, lon = float(row["Latitude"]), float(row["Longitude"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        rows.append({"atco": code, "type": row["StopType"], "lat": lat, "lon": lon})
+    return rows
+
+
+def fetch_naptan(client: httpx.Client, raw: Path) -> dict:
+    params = {"dataFormat": "csv", "atcoAreaCodes": "490"}
+    stops = london_bus_stops(_get(client, NAPTAN, params).text)
+    if not stops:
+        return {"error": "no London bus stops in the NaPTAN response"}
+    with (raw / "naptan-london-bus.csv").open("w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=["atco", "type", "lat", "lon"])
+        writer.writeheader()
+        writer.writerows(stops)
+    return {"url": NAPTAN, "stops": len(stops)}
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--out", type=Path, required=True, help="data branch worktree")
@@ -147,6 +184,7 @@ def main(argv: list[str] | None = None) -> int:
             ("census", fetch_census),
             ("iod", fetch_iod),
             ("centroids", fetch_centroids),
+            ("naptan", fetch_naptan),
         ):
             try:
                 manifest[source] = fetch(client, raw)

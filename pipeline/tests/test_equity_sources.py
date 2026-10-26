@@ -29,3 +29,19 @@ def test_pick_service_prefers_latest_version():
     ]
     assert pick_service(services) == "MSOA_December_2021_EW_PWC_V2"
     assert pick_service([{"name": "Wards_2024"}]) is None
+
+
+def test_london_bus_stops_keeps_active_london_bus_stops():
+    from mind_the_step.equity_sources import london_bus_stops
+
+    text = (
+        "ATCOCode,StopType,Latitude,Longitude,Status\n"
+        "490000001A,BCT,51.5,-0.1,active\n"
+        "490000002B,BCT,51.6,-0.2,inactive\n"
+        "490000003C,RSE,51.5,-0.1,active\n"
+        "1800SB01,BCT,53.4,-2.2,active\n"
+        "490000004D,BCT,,,active\n"
+    )
+    assert london_bus_stops(text) == [
+        {"atco": "490000001A", "type": "BCT", "lat": 51.5, "lon": -0.1}
+    ]
