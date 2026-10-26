@@ -1,0 +1,3407 @@
+{
+    "source": {
+        "description": "Greedy station upgrades against the S4 step-free penalty",
+        "attribution": "Contains National Statistics data \u00a9 Crown copyright and database right 2025; Powered by TfL Open Data"
+    },
+    "params": { "kMax": 20, "helpedMinutes": 5.0, "shownK": [5, 10, 12, 20] },
+    "now": { "everyone": 18.92, "disabled": 18.91 },
+    "candidates": 177,
+    "strategies": {
+        "people": [
+            {
+                "station": "940GZZLUWOG",
+                "name": "Wood Green",
+                "savedEveryone": 1.122,
+                "savedDisabled": 1.152,
+                "savedDeprived": 1.643,
+                "helped": 126069,
+                "helpedDisabled": 17131
+            },
+            {
+                "station": "940GZZLUTBC",
+                "name": "Tooting Bec",
+                "savedEveryone": 2.051,
+                "savedDisabled": 2.037,
+                "savedDeprived": 2.082,
+                "helped": 267424,
+                "helpedDisabled": 33303
+            },
+            {
+                "station": "940GZZLUWWL",
+                "name": "Walthamstow Central",
+                "savedEveryone": 2.727,
+                "savedDisabled": 2.718,
+                "savedDeprived": 2.812,
+                "helped": 405063,
+                "helpedDisabled": 50762
+            },
+            {
+                "station": "940GZZLUCFM",
+                "name": "Chalk Farm",
+                "savedEveryone": 3.147,
+                "savedDisabled": 3.159,
+                "savedDeprived": 3.298,
+                "helped": 471999,
+                "helpedDisabled": 60368
+            },
+            {
+                "station": "940GZZLUBST",
+                "name": "Baker Street",
+                "savedEveryone": 3.498,
+                "savedDisabled": 3.514,
+                "savedDeprived": 3.679,
+                "helped": 492947,
+                "helpedDisabled": 62690
+            },
+            {
+                "station": "940GZZLULYN",
+                "name": "Leyton",
+                "savedEveryone": 3.816,
+                "savedDisabled": 3.833,
+                "savedDeprived": 3.898,
+                "helped": 543471,
+                "helpedDisabled": 69146
+            },
+            {
+                "station": "940GZZLUEFY",
+                "name": "East Finchley",
+                "savedEveryone": 4.08,
+                "savedDisabled": 4.095,
+                "savedDeprived": 4.029,
+                "helped": 594701,
+                "helpedDisabled": 75480
+            },
+            {
+                "station": "940GZZLUFYR",
+                "name": "Finchley Road",
+                "savedEveryone": 4.322,
+                "savedDisabled": 4.327,
+                "savedDeprived": 4.213,
+                "helped": 635661,
+                "helpedDisabled": 81141
+            },
+            {
+                "station": "940GZZLUNHG",
+                "name": "Notting Hill Gate",
+                "savedEveryone": 4.563,
+                "savedDisabled": 4.565,
+                "savedDeprived": 4.461,
+                "helped": 687375,
+                "helpedDisabled": 88155
+            },
+            {
+                "station": "940GZZLUEUS",
+                "name": "Euston",
+                "savedEveryone": 4.788,
+                "savedDisabled": 4.79,
+                "savedDeprived": 4.649,
+                "helped": 694555,
+                "helpedDisabled": 89351
+            },
+            {
+                "station": "940GZZLULVT",
+                "name": "Liverpool Street",
+                "savedEveryone": 5.011,
+                "savedDisabled": 5.012,
+                "savedDeprived": 4.906,
+                "helped": 701946,
+                "helpedDisabled": 90947
+            },
+            {
+                "station": "940GZZLUCPS",
+                "name": "Clapham South",
+                "savedEveryone": 5.234,
+                "savedDisabled": 5.2,
+                "savedDeprived": 5.002,
+                "helped": 752573,
+                "helpedDisabled": 96834
+            },
+            {
+                "station": "940GZZLUMED",
+                "name": "Mile End",
+                "savedEveryone": 5.457,
+                "savedDisabled": 5.436,
+                "savedDeprived": 5.317,
+                "helped": 836331,
+                "helpedDisabled": 108848
+            },
+            {
+                "station": "940GZZLUGTH",
+                "name": "Gants Hill",
+                "savedEveryone": 5.689,
+                "savedDisabled": 5.662,
+                "savedDeprived": 5.479,
+                "helped": 901492,
+                "helpedDisabled": 116726
+            },
+            {
+                "station": "940GZZLUOXC",
+                "name": "Oxford Circus",
+                "savedEveryone": 5.897,
+                "savedDisabled": 5.872,
+                "savedDeprived": 5.699,
+                "helped": 950648,
+                "helpedDisabled": 123439
+            },
+            {
+                "station": "940GZZLUDOH",
+                "name": "Dollis Hill",
+                "savedEveryone": 6.102,
+                "savedDisabled": 6.082,
+                "savedDeprived": 6.293,
+                "helped": 1062309,
+                "helpedDisabled": 138619
+            },
+            {
+                "station": "940GZZLUEAE",
+                "name": "Eastcote",
+                "savedEveryone": 6.307,
+                "savedDisabled": 6.285,
+                "savedDeprived": 6.357,
+                "helped": 1122962,
+                "helpedDisabled": 146339
+            },
+            {
+                "station": "940GZZLULYS",
+                "name": "Leytonstone",
+                "savedEveryone": 6.511,
+                "savedDisabled": 6.493,
+                "savedDeprived": 6.524,
+                "helped": 1134752,
+                "helpedDisabled": 148312
+            },
+            {
+                "station": "940GZZLUACY",
+                "name": "Archway",
+                "savedEveryone": 6.705,
+                "savedDisabled": 6.707,
+                "savedDeprived": 6.631,
+                "helped": 1196766,
+                "helpedDisabled": 156966
+            },
+            {
+                "station": "940GZZLUSKS",
+                "name": "South Kensington",
+                "savedEveryone": 6.899,
+                "savedDisabled": 6.897,
+                "savedDeprived": 6.812,
+                "helped": 1278634,
+                "helpedDisabled": 168082
+            }
+        ],
+        "disability": [
+            {
+                "station": "940GZZLUWOG",
+                "name": "Wood Green",
+                "savedEveryone": 1.122,
+                "savedDisabled": 1.152,
+                "savedDeprived": 1.643,
+                "helped": 126069,
+                "helpedDisabled": 17131
+            },
+            {
+                "station": "940GZZLUTBC",
+                "name": "Tooting Bec",
+                "savedEveryone": 2.051,
+                "savedDisabled": 2.037,
+                "savedDeprived": 2.082,
+                "helped": 267424,
+                "helpedDisabled": 33303
+            },
+            {
+                "station": "940GZZLUWWL",
+                "name": "Walthamstow Central",
+                "savedEveryone": 2.727,
+                "savedDisabled": 2.718,
+                "savedDeprived": 2.812,
+                "helped": 405063,
+                "helpedDisabled": 50762
+            },
+            {
+                "station": "940GZZLUCFM",
+                "name": "Chalk Farm",
+                "savedEveryone": 3.147,
+                "savedDisabled": 3.159,
+                "savedDeprived": 3.298,
+                "helped": 471999,
+                "helpedDisabled": 60368
+            },
+            {
+                "station": "940GZZLUBST",
+                "name": "Baker Street",
+                "savedEveryone": 3.498,
+                "savedDisabled": 3.514,
+                "savedDeprived": 3.679,
+                "helped": 492947,
+                "helpedDisabled": 62690
+            },
+            {
+                "station": "940GZZLULYN",
+                "name": "Leyton",
+                "savedEveryone": 3.816,
+                "savedDisabled": 3.833,
+                "savedDeprived": 3.898,
+                "helped": 543471,
+                "helpedDisabled": 69146
+            },
+            {
+                "station": "940GZZLUEFY",
+                "name": "East Finchley",
+                "savedEveryone": 4.08,
+                "savedDisabled": 4.095,
+                "savedDeprived": 4.029,
+                "helped": 594701,
+                "helpedDisabled": 75480
+            },
+            {
+                "station": "940GZZLUMED",
+                "name": "Mile End",
+                "savedEveryone": 4.303,
+                "savedDisabled": 4.33,
+                "savedDeprived": 4.344,
+                "helped": 679165,
+                "helpedDisabled": 87841
+            },
+            {
+                "station": "940GZZLUNHG",
+                "name": "Notting Hill Gate",
+                "savedEveryone": 4.545,
+                "savedDisabled": 4.569,
+                "savedDeprived": 4.595,
+                "helped": 730879,
+                "helpedDisabled": 94855
+            },
+            {
+                "station": "940GZZLUEUS",
+                "name": "Euston",
+                "savedEveryone": 4.773,
+                "savedDisabled": 4.797,
+                "savedDeprived": 4.783,
+                "helped": 738059,
+                "helpedDisabled": 96051
+            },
+            {
+                "station": "940GZZLUFYR",
+                "name": "Finchley Road",
+                "savedEveryone": 5.011,
+                "savedDisabled": 5.027,
+                "savedDeprived": 4.966,
+                "helped": 778669,
+                "helpedDisabled": 101972
+            },
+            {
+                "station": "940GZZLULVT",
+                "name": "Liverpool Street",
+                "savedEveryone": 5.234,
+                "savedDisabled": 5.248,
+                "savedDeprived": 5.22,
+                "helped": 802182,
+                "helpedDisabled": 105417
+            },
+            {
+                "station": "940GZZLUACY",
+                "name": "Archway",
+                "savedEveryone": 5.43,
+                "savedDisabled": 5.464,
+                "savedDeprived": 5.33,
+                "helped": 840989,
+                "helpedDisabled": 111243
+            },
+            {
+                "station": "940GZZLUDOH",
+                "name": "Dollis Hill",
+                "savedEveryone": 5.636,
+                "savedDisabled": 5.676,
+                "savedDeprived": 5.93,
+                "helped": 917728,
+                "helpedDisabled": 121677
+            },
+            {
+                "station": "940GZZLUHAI",
+                "name": "Highbury & Islington",
+                "savedEveryone": 5.82,
+                "savedDisabled": 5.882,
+                "savedDeprived": 6.007,
+                "helped": 1000866,
+                "helpedDisabled": 134352
+            },
+            {
+                "station": "940GZZLUGTH",
+                "name": "Gants Hill",
+                "savedEveryone": 6.053,
+                "savedDisabled": 6.109,
+                "savedDeprived": 6.171,
+                "helped": 1090431,
+                "helpedDisabled": 145592
+            },
+            {
+                "station": "940GZZLULYS",
+                "name": "Leytonstone",
+                "savedEveryone": 6.256,
+                "savedDisabled": 6.317,
+                "savedDeprived": 6.338,
+                "helped": 1118877,
+                "helpedDisabled": 149865
+            },
+            {
+                "station": "940GZZLUOXC",
+                "name": "Oxford Circus",
+                "savedEveryone": 6.464,
+                "savedDisabled": 6.526,
+                "savedDeprived": 6.548,
+                "helped": 1171528,
+                "helpedDisabled": 156795
+            },
+            {
+                "station": "940GZZLUEAE",
+                "name": "Eastcote",
+                "savedEveryone": 6.67,
+                "savedDisabled": 6.729,
+                "savedDeprived": 6.612,
+                "helped": 1269272,
+                "helpedDisabled": 169315
+            },
+            {
+                "station": "940GZZLUSVS",
+                "name": "Seven Sisters",
+                "savedEveryone": 6.852,
+                "savedDisabled": 6.911,
+                "savedDeprived": 7.236,
+                "helped": 1377869,
+                "helpedDisabled": 184634
+            }
+        ],
+        "deprivation": [
+            {
+                "station": "940GZZLUWOG",
+                "name": "Wood Green",
+                "savedEveryone": 1.122,
+                "savedDisabled": 1.152,
+                "savedDeprived": 1.643,
+                "helped": 126069,
+                "helpedDisabled": 17131
+            },
+            {
+                "station": "940GZZLUTBC",
+                "name": "Tooting Bec",
+                "savedEveryone": 2.051,
+                "savedDisabled": 2.037,
+                "savedDeprived": 2.082,
+                "helped": 267424,
+                "helpedDisabled": 33303
+            },
+            {
+                "station": "940GZZLUWWL",
+                "name": "Walthamstow Central",
+                "savedEveryone": 2.727,
+                "savedDisabled": 2.718,
+                "savedDeprived": 2.812,
+                "helped": 405063,
+                "helpedDisabled": 50762
+            },
+            {
+                "station": "940GZZLUCFM",
+                "name": "Chalk Farm",
+                "savedEveryone": 3.147,
+                "savedDisabled": 3.159,
+                "savedDeprived": 3.298,
+                "helped": 471999,
+                "helpedDisabled": 60368
+            },
+            {
+                "station": "940GZZLUBST",
+                "name": "Baker Street",
+                "savedEveryone": 3.498,
+                "savedDisabled": 3.514,
+                "savedDeprived": 3.679,
+                "helped": 492947,
+                "helpedDisabled": 62690
+            },
+            {
+                "station": "940GZZLULYN",
+                "name": "Leyton",
+                "savedEveryone": 3.816,
+                "savedDisabled": 3.833,
+                "savedDeprived": 3.898,
+                "helped": 543471,
+                "helpedDisabled": 69146
+            },
+            {
+                "station": "940GZZLUDOH",
+                "name": "Dollis Hill",
+                "savedEveryone": 4.021,
+                "savedDisabled": 4.044,
+                "savedDeprived": 4.499,
+                "helped": 620210,
+                "helpedDisabled": 79580
+            },
+            {
+                "station": "940GZZLUMED",
+                "name": "Mile End",
+                "savedEveryone": 4.244,
+                "savedDisabled": 4.279,
+                "savedDeprived": 4.813,
+                "helped": 712150,
+                "helpedDisabled": 92735
+            },
+            {
+                "station": "940GZZLUSVS",
+                "name": "Seven Sisters",
+                "savedEveryone": 4.424,
+                "savedDisabled": 4.459,
+                "savedDeprived": 5.43,
+                "helped": 792678,
+                "helpedDisabled": 103240
+            },
+            {
+                "station": "940GZZLUNHG",
+                "name": "Notting Hill Gate",
+                "savedEveryone": 4.666,
+                "savedDisabled": 4.698,
+                "savedDeprived": 5.68,
+                "helped": 844392,
+                "helpedDisabled": 110254
+            },
+            {
+                "station": "940GZZLUEFY",
+                "name": "East Finchley",
+                "savedEveryone": 4.931,
+                "savedDisabled": 4.961,
+                "savedDeprived": 5.815,
+                "helped": 877624,
+                "helpedDisabled": 114325
+            },
+            {
+                "station": "940GZZLULVT",
+                "name": "Liverpool Street",
+                "savedEveryone": 5.152,
+                "savedDisabled": 5.18,
+                "savedDeprived": 6.064,
+                "helped": 894008,
+                "helpedDisabled": 117327
+            },
+            {
+                "station": "940GZZLUEUS",
+                "name": "Euston",
+                "savedEveryone": 5.378,
+                "savedDisabled": 5.406,
+                "savedDeprived": 6.247,
+                "helped": 901188,
+                "helpedDisabled": 118523
+            },
+            {
+                "station": "940GZZLUFYR",
+                "name": "Finchley Road",
+                "savedEveryone": 5.62,
+                "savedDisabled": 5.64,
+                "savedDeprived": 6.439,
+                "helped": 948927,
+                "helpedDisabled": 124887
+            },
+            {
+                "station": "940GZZLUOXC",
+                "name": "Oxford Circus",
+                "savedEveryone": 5.827,
+                "savedDisabled": 5.848,
+                "savedDeprived": 6.649,
+                "helped": 964619,
+                "helpedDisabled": 127192
+            },
+            {
+                "station": "940GZZLUUPK",
+                "name": "Upton Park",
+                "savedEveryone": 6.01,
+                "savedDisabled": 6.023,
+                "savedDeprived": 7.039,
+                "helped": 1065965,
+                "helpedDisabled": 139233
+            },
+            {
+                "station": "940GZZLUGTH",
+                "name": "Gants Hill",
+                "savedEveryone": 6.244,
+                "savedDisabled": 6.25,
+                "savedDeprived": 7.207,
+                "helped": 1175882,
+                "helpedDisabled": 153439
+            },
+            {
+                "station": "940GZZLULYS",
+                "name": "Leytonstone",
+                "savedEveryone": 6.447,
+                "savedDisabled": 6.458,
+                "savedDeprived": 7.376,
+                "helped": 1187672,
+                "helpedDisabled": 155412
+            },
+            {
+                "station": "940GZZLUACY",
+                "name": "Archway",
+                "savedEveryone": 6.642,
+                "savedDisabled": 6.672,
+                "savedDeprived": 7.483,
+                "helped": 1253090,
+                "helpedDisabled": 164575
+            },
+            {
+                "station": "940GZZLUHAI",
+                "name": "Highbury & Islington",
+                "savedEveryone": 6.83,
+                "savedDisabled": 6.883,
+                "savedDeprived": 7.563,
+                "helped": 1379320,
+                "helpedDisabled": 184112
+            }
+        ]
+    },
+    "tfl": [
+        {
+            "station": "940GZZLUASG",
+            "name": "Arnos Grove",
+            "savedEveryone": 0.828,
+            "savedDisabled": 0.833,
+            "savedDeprived": 0.679,
+            "helped": 128450,
+            "helpedDisabled": 16650
+        },
+        {
+            "station": "940GZZLUTBY",
+            "name": "Tooting Broadway",
+            "savedEveryone": 1.646,
+            "savedDisabled": 1.627,
+            "savedDeprived": 1.074,
+            "helped": 254113,
+            "helpedDisabled": 31698
+        },
+        {
+            "station": "940GZZLUEFY",
+            "name": "East Finchley",
+            "savedEveryone": 1.919,
+            "savedDisabled": 1.897,
+            "savedDeprived": 1.201,
+            "helped": 287345,
+            "helpedDisabled": 35769
+        },
+        {
+            "station": "940GZZLUWHP",
+            "name": "West Hampstead",
+            "savedEveryone": 2.167,
+            "savedDisabled": 2.138,
+            "savedDeprived": 1.389,
+            "helped": 348285,
+            "helpedDisabled": 43162
+        },
+        {
+            "station": "940GZZLUEAE",
+            "name": "Eastcote",
+            "savedEveryone": 2.368,
+            "savedDisabled": 2.337,
+            "savedDeprived": 1.448,
+            "helped": 389721,
+            "helpedDisabled": 48267
+        },
+        {
+            "station": "940GZZLUNDN",
+            "name": "Neasden",
+            "savedEveryone": 2.551,
+            "savedDisabled": 2.525,
+            "savedDeprived": 2.085,
+            "helped": 449289,
+            "helpedDisabled": 56492
+        },
+        {
+            "station": "940GZZLUTNG",
+            "name": "Turnham Green",
+            "savedEveryone": 2.703,
+            "savedDisabled": 2.663,
+            "savedDeprived": 2.148,
+            "helped": 497804,
+            "helpedDisabled": 61767
+        },
+        {
+            "station": "940GZZLUNAN",
+            "name": "North Acton",
+            "savedEveryone": 2.839,
+            "savedDisabled": 2.797,
+            "savedDeprived": 2.246,
+            "helped": 510042,
+            "helpedDisabled": 63269
+        },
+        {
+            "station": "940GZZLUNOW",
+            "name": "Northwood",
+            "savedEveryone": 2.975,
+            "savedDisabled": 2.938,
+            "savedDeprived": 2.281,
+            "helped": 534164,
+            "helpedDisabled": 66489
+        },
+        {
+            "station": "940GZZLUCSD",
+            "name": "Colliers Wood",
+            "savedEveryone": 3.07,
+            "savedDisabled": 3.031,
+            "savedDeprived": 2.32,
+            "helped": 561963,
+            "helpedDisabled": 70086
+        },
+        {
+            "station": "940GZZLUALP",
+            "name": "Alperton",
+            "savedEveryone": 3.136,
+            "savedDisabled": 3.085,
+            "savedDeprived": 2.342,
+            "helped": 581088,
+            "helpedDisabled": 71916
+        },
+        {
+            "station": "940GZZLUCXY",
+            "name": "Croxley",
+            "savedEveryone": 3.15,
+            "savedDisabled": 3.099,
+            "savedDeprived": 2.355,
+            "helped": 581088,
+            "helpedDisabled": 71916
+        }
+    ],
+    "tflWithSouthKensington": {
+        "savedEveryone": 3.343,
+        "savedDisabled": 3.288,
+        "savedDeprived": 2.534,
+        "helped": 611642,
+        "helpedDisabled": 75325
+    },
+    "sweeps": {
+        "disability": [
+            {
+                "alpha": 0.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUFYR",
+                    "940GZZLUNHG",
+                    "940GZZLUEUS"
+                ],
+                "savedEveryone": 4.788,
+                "savedDisabled": 4.79,
+                "savedDeprived": 4.649,
+                "helped": 694555,
+                "helpedDisabled": 89351
+            },
+            {
+                "alpha": 0.5,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUNHG",
+                    "940GZZLUFYR",
+                    "940GZZLUMED"
+                ],
+                "savedEveryone": 4.787,
+                "savedDisabled": 4.802,
+                "savedDeprived": 4.778,
+                "helped": 764098,
+                "helpedDisabled": 99180
+            },
+            {
+                "alpha": 1.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUMED",
+                    "940GZZLUNHG",
+                    "940GZZLUFYR"
+                ],
+                "savedEveryone": 4.787,
+                "savedDisabled": 4.802,
+                "savedDeprived": 4.778,
+                "helped": 764098,
+                "helpedDisabled": 99180
+            },
+            {
+                "alpha": 2.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUMED",
+                    "940GZZLUNHG",
+                    "940GZZLUEUS"
+                ],
+                "savedEveryone": 4.773,
+                "savedDisabled": 4.797,
+                "savedDeprived": 4.783,
+                "helped": 738059,
+                "helpedDisabled": 96051
+            },
+            {
+                "alpha": 4.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUMED",
+                    "940GZZLUEUS",
+                    "940GZZLUOXC"
+                ],
+                "savedEveryone": 4.76,
+                "savedDisabled": 4.786,
+                "savedDeprived": 4.751,
+                "helped": 692348,
+                "helpedDisabled": 89858
+            },
+            {
+                "alpha": 8.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUMED",
+                    "940GZZLUACY",
+                    "940GZZLUHAI"
+                ],
+                "savedEveryone": 4.679,
+                "savedDisabled": 4.747,
+                "savedDeprived": 4.53,
+                "helped": 793297,
+                "helpedDisabled": 105128
+            },
+            {
+                "alpha": 16.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUMED",
+                    "940GZZLUEFY",
+                    "940GZZLUHAI",
+                    "940GZZLUACY"
+                ],
+                "savedEveryone": 4.679,
+                "savedDisabled": 4.747,
+                "savedDeprived": 4.53,
+                "helped": 793297,
+                "helpedDisabled": 105128
+            }
+        ],
+        "deprivation": [
+            {
+                "beta": 0.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUFYR",
+                    "940GZZLUNHG",
+                    "940GZZLUEUS"
+                ],
+                "savedEveryone": 4.788,
+                "savedDisabled": 4.79,
+                "savedDeprived": 4.649,
+                "helped": 694555,
+                "helpedDisabled": 89351
+            },
+            {
+                "beta": 0.5,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUEFY",
+                    "940GZZLUNHG",
+                    "940GZZLUFYR",
+                    "940GZZLUMED"
+                ],
+                "savedEveryone": 4.787,
+                "savedDisabled": 4.802,
+                "savedDeprived": 4.778,
+                "helped": 764098,
+                "helpedDisabled": 99180
+            },
+            {
+                "beta": 1.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUDOH",
+                    "940GZZLUEFY",
+                    "940GZZLUMED",
+                    "940GZZLUNHG"
+                ],
+                "savedEveryone": 4.751,
+                "savedDisabled": 4.781,
+                "savedDeprived": 5.196,
+                "helped": 807618,
+                "helpedDisabled": 105289
+            },
+            {
+                "beta": 2.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUDOH",
+                    "940GZZLUMED",
+                    "940GZZLUSVS",
+                    "940GZZLUNHG"
+                ],
+                "savedEveryone": 4.666,
+                "savedDisabled": 4.698,
+                "savedDeprived": 5.68,
+                "helped": 844392,
+                "helpedDisabled": 110254
+            },
+            {
+                "beta": 4.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUDOH",
+                    "940GZZLUMED",
+                    "940GZZLUSVS",
+                    "940GZZLUOXC"
+                ],
+                "savedEveryone": 4.651,
+                "savedDisabled": 4.684,
+                "savedDeprived": 5.64,
+                "helped": 798681,
+                "helpedDisabled": 104061
+            },
+            {
+                "beta": 8.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUTBC",
+                    "940GZZLUWWL",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUDOH",
+                    "940GZZLUMED",
+                    "940GZZLUSVS",
+                    "940GZZLUUPK"
+                ],
+                "savedEveryone": 4.609,
+                "savedDisabled": 4.635,
+                "savedDeprived": 5.824,
+                "helped": 863487,
+                "helpedDisabled": 111537
+            },
+            {
+                "beta": 16.0,
+                "stations": [
+                    "940GZZLUWOG",
+                    "940GZZLUWWL",
+                    "940GZZLUTBC",
+                    "940GZZLUCFM",
+                    "940GZZLUBST",
+                    "940GZZLULYN",
+                    "940GZZLUDOH",
+                    "940GZZLUSVS",
+                    "940GZZLUMED",
+                    "940GZZLUUPK"
+                ],
+                "savedEveryone": 4.609,
+                "savedDisabled": 4.635,
+                "savedDeprived": 5.824,
+                "helped": 863487,
+                "helpedDisabled": 111537
+            }
+        ]
+    },
+    "areas": [
+        { "code": "E02000001", "lon": -0.0947, "lat": 51.5192 },
+        { "code": "E02000004", "lon": 0.1773, "lat": 51.5605 },
+        { "code": "E02000007", "lon": 0.155, "lat": 51.5558 },
+        { "code": "E02000008", "lon": 0.1351, "lat": 51.5527 },
+        { "code": "E02000009", "lon": 0.1166, "lat": 51.5512 },
+        { "code": "E02000010", "lon": 0.1497, "lat": 51.5473 },
+        { "code": "E02000011", "lon": 0.1654, "lat": 51.5445 },
+        { "code": "E02000012", "lon": 0.1, "lat": 51.544 },
+        { "code": "E02000013", "lon": 0.1215, "lat": 51.5425 },
+        { "code": "E02000014", "lon": 0.1458, "lat": 51.5396 },
+        { "code": "E02000015", "lon": 0.1605, "lat": 51.5393 },
+        { "code": "E02000016", "lon": 0.0761, "lat": 51.54 },
+        { "code": "E02000017", "lon": 0.0869, "lat": 51.5398 },
+        { "code": "E02000018", "lon": 0.1148, "lat": 51.5379 },
+        { "code": "E02000019", "lon": 0.1323, "lat": 51.5356 },
+        { "code": "E02000020", "lon": 0.0963, "lat": 51.5312 },
+        { "code": "E02000021", "lon": 0.1551, "lat": 51.5317 },
+        { "code": "E02000022", "lon": 0.0804, "lat": 51.5319 },
+        { "code": "E02000023", "lon": 0.1108, "lat": 51.528 },
+        { "code": "E02000024", "lon": -0.2034, "lat": 51.6542 },
+        { "code": "E02000025", "lon": -0.1809, "lat": 51.6519 },
+        { "code": "E02000026", "lon": -0.1582, "lat": 51.6496 },
+        { "code": "E02000027", "lon": -0.2046, "lat": 51.6453 },
+        { "code": "E02000028", "lon": -0.1775, "lat": 51.6449 },
+        { "code": "E02000029", "lon": -0.1648, "lat": 51.6431 },
+        { "code": "E02000030", "lon": -0.2213, "lat": 51.6451 },
+        { "code": "E02000031", "lon": -0.1737, "lat": 51.632 },
+        { "code": "E02000032", "lon": -0.1403, "lat": 51.6319 },
+        { "code": "E02000033", "lon": -0.1495, "lat": 51.6273 },
+        { "code": "E02000034", "lon": -0.1638, "lat": 51.6231 },
+        { "code": "E02000035", "lon": -0.1821, "lat": 51.621 },
+        { "code": "E02000036", "lon": -0.264, "lat": 51.623 },
+        { "code": "E02000037", "lon": -0.2809, "lat": 51.6222 },
+        { "code": "E02000038", "lon": -0.1549, "lat": 51.6146 },
+        { "code": "E02000039", "lon": -0.2443, "lat": 51.6157 },
+        { "code": "E02000040", "lon": -0.2155, "lat": 51.6125 },
+        { "code": "E02000041", "lon": -0.272, "lat": 51.6136 },
+        { "code": "E02000042", "lon": -0.1777, "lat": 51.6124 },
+        { "code": "E02000043", "lon": -0.193, "lat": 51.6113 },
+        { "code": "E02000044", "lon": -0.2544, "lat": 51.6092 },
+        { "code": "E02000045", "lon": -0.1487, "lat": 51.6051 },
+        { "code": "E02000046", "lon": -0.189, "lat": 51.6023 },
+        { "code": "E02000047", "lon": -0.2637, "lat": 51.6035 },
+        { "code": "E02000048", "lon": -0.2134, "lat": 51.6022 },
+        { "code": "E02000049", "lon": -0.246, "lat": 51.6023 },
+        { "code": "E02000050", "lon": -0.1759, "lat": 51.6003 },
+        { "code": "E02000051", "lon": -0.1984, "lat": 51.5949 },
+        { "code": "E02000052", "lon": -0.1701, "lat": 51.5923 },
+        { "code": "E02000054", "lon": -0.232, "lat": 51.5923 },
+        { "code": "E02000055", "lon": -0.2228, "lat": 51.5881 },
+        { "code": "E02000056", "lon": -0.1778, "lat": 51.5848 },
+        { "code": "E02000057", "lon": -0.2163, "lat": 51.5836 },
+        { "code": "E02000058", "lon": -0.1979, "lat": 51.5825 },
+        { "code": "E02000059", "lon": -0.2413, "lat": 51.5795 },
+        { "code": "E02000060", "lon": -0.2082, "lat": 51.5775 },
+        { "code": "E02000061", "lon": -0.1964, "lat": 51.5709 },
+        { "code": "E02000062", "lon": -0.2203, "lat": 51.5681 },
+        { "code": "E02000063", "lon": -0.2111, "lat": 51.565 },
+        { "code": "E02000064", "lon": -0.2007, "lat": 51.5621 },
+        { "code": "E02000093", "lon": -0.2744, "lat": 51.5938 },
+        { "code": "E02000094", "lon": -0.2589, "lat": 51.5881 },
+        { "code": "E02000095", "lon": -0.2811, "lat": 51.5846 },
+        { "code": "E02000096", "lon": -0.3034, "lat": 51.5808 },
+        { "code": "E02000097", "lon": -0.2616, "lat": 51.5757 },
+        { "code": "E02000098", "lon": -0.2873, "lat": 51.5742 },
+        { "code": "E02000099", "lon": -0.3007, "lat": 51.5689 },
+        { "code": "E02000100", "lon": -0.3167, "lat": 51.5685 },
+        { "code": "E02000101", "lon": -0.2695, "lat": 51.5654 },
+        { "code": "E02000102", "lon": -0.2482, "lat": 51.565 },
+        { "code": "E02000103", "lon": -0.2335, "lat": 51.5632 },
+        { "code": "E02000104", "lon": -0.292, "lat": 51.5626 },
+        { "code": "E02000105", "lon": -0.3123, "lat": 51.5587 },
+        { "code": "E02000106", "lon": -0.25, "lat": 51.5583 },
+        { "code": "E02000107", "lon": -0.2191, "lat": 51.5561 },
+        { "code": "E02000108", "lon": -0.3248, "lat": 51.5569 },
+        { "code": "E02000110", "lon": -0.2311, "lat": 51.5528 },
+        { "code": "E02000111", "lon": -0.3028, "lat": 51.5516 },
+        { "code": "E02000112", "lon": -0.2889, "lat": 51.5528 },
+        { "code": "E02000113", "lon": -0.2633, "lat": 51.5489 },
+        { "code": "E02000114", "lon": -0.229, "lat": 51.5474 },
+        { "code": "E02000115", "lon": -0.2107, "lat": 51.5468 },
+        { "code": "E02000116", "lon": -0.2374, "lat": 51.5481 },
+        { "code": "E02000117", "lon": -0.2501, "lat": 51.5444 },
+        { "code": "E02000118", "lon": -0.2901, "lat": 51.5443 },
+        { "code": "E02000119", "lon": -0.2618, "lat": 51.5407 },
+        { "code": "E02000120", "lon": -0.2001, "lat": 51.5401 },
+        { "code": "E02000121", "lon": -0.2978, "lat": 51.5412 },
+        { "code": "E02000122", "lon": -0.2219, "lat": 51.5402 },
+        { "code": "E02000123", "lon": -0.2461, "lat": 51.5365 },
+        { "code": "E02000124", "lon": -0.2133, "lat": 51.5338 },
+        { "code": "E02000125", "lon": -0.2284, "lat": 51.5337 },
+        { "code": "E02000126", "lon": -0.1971, "lat": 51.5327 },
+        { "code": "E02000166", "lon": -0.1467, "lat": 51.5629 },
+        { "code": "E02000167", "lon": -0.1735, "lat": 51.5573 },
+        { "code": "E02000168", "lon": -0.1414, "lat": 51.5555 },
+        { "code": "E02000169", "lon": -0.1871, "lat": 51.5561 },
+        { "code": "E02000170", "lon": -0.1998, "lat": 51.5535 },
+        { "code": "E02000171", "lon": -0.1593, "lat": 51.5529 },
+        { "code": "E02000172", "lon": -0.1491, "lat": 51.5499 },
+        { "code": "E02000173", "lon": -0.1736, "lat": 51.55 },
+        { "code": "E02000174", "lon": -0.1358, "lat": 51.5492 },
+        { "code": "E02000175", "lon": -0.1917, "lat": 51.5496 },
+        { "code": "E02000176", "lon": -0.1683, "lat": 51.5477 },
+        { "code": "E02000177", "lon": -0.1529, "lat": 51.5463 },
+        { "code": "E02000178", "lon": -0.2, "lat": 51.5467 },
+        { "code": "E02000179", "lon": -0.1648, "lat": 51.5444 },
+        { "code": "E02000180", "lon": -0.1305, "lat": 51.5442 },
+        { "code": "E02000181", "lon": -0.1873, "lat": 51.5438 },
+        { "code": "E02000182", "lon": -0.1754, "lat": 51.5422 },
+        { "code": "E02000183", "lon": -0.1528, "lat": 51.5405 },
+        { "code": "E02000184", "lon": -0.1363, "lat": 51.5389 },
+        { "code": "E02000185", "lon": -0.1878, "lat": 51.5389 },
+        { "code": "E02000186", "lon": -0.1418, "lat": 51.535 },
+        { "code": "E02000187", "lon": -0.1326, "lat": 51.5325 },
+        { "code": "E02000188", "lon": -0.1412, "lat": 51.5287 },
+        { "code": "E02000191", "lon": -0.134, "lat": 51.5222 },
+        { "code": "E02000192", "lon": -0.1133, "lat": 51.5218 },
+        { "code": "E02000193", "lon": -0.1242, "lat": 51.5179 },
+        { "code": "E02000238", "lon": -0.3485, "lat": 51.5539 },
+        { "code": "E02000239", "lon": -0.3294, "lat": 51.5522 },
+        { "code": "E02000240", "lon": -0.3713, "lat": 51.5511 },
+        { "code": "E02000241", "lon": -0.3637, "lat": 51.5476 },
+        { "code": "E02000242", "lon": -0.3115, "lat": 51.5403 },
+        { "code": "E02000243", "lon": -0.3471, "lat": 51.5381 },
+        { "code": "E02000244", "lon": -0.3274, "lat": 51.5365 },
+        { "code": "E02000245", "lon": -0.3821, "lat": 51.5351 },
+        { "code": "E02000247", "lon": -0.3696, "lat": 51.5338 },
+        { "code": "E02000248", "lon": -0.2919, "lat": 51.5292 },
+        { "code": "E02000249", "lon": -0.3523, "lat": 51.5283 },
+        { "code": "E02000250", "lon": -0.3092, "lat": 51.5259 },
+        { "code": "E02000252", "lon": -0.2611, "lat": 51.5223 },
+        { "code": "E02000253", "lon": -0.337, "lat": 51.5228 },
+        { "code": "E02000255", "lon": -0.3254, "lat": 51.5198 },
+        { "code": "E02000256", "lon": -0.3152, "lat": 51.5161 },
+        { "code": "E02000258", "lon": -0.2713, "lat": 51.515 },
+        { "code": "E02000261", "lon": -0.2516, "lat": 51.5099 },
+        { "code": "E02000262", "lon": -0.2687, "lat": 51.5092 },
+        { "code": "E02000264", "lon": -0.2848, "lat": 51.509 },
+        { "code": "E02000265", "lon": -0.3249, "lat": 51.5089 },
+        { "code": "E02000267", "lon": -0.3377, "lat": 51.5067 },
+        { "code": "E02000268", "lon": -0.301, "lat": 51.5046 },
+        { "code": "E02000269", "lon": -0.316, "lat": 51.5044 },
+        { "code": "E02000270", "lon": -0.2721, "lat": 51.5031 },
+        { "code": "E02000271", "lon": -0.2583, "lat": 51.5009 },
+        { "code": "E02000272", "lon": -0.3251, "lat": 51.5012 },
+        { "code": "E02000276", "lon": -0.3092, "lat": 51.4965 },
+        { "code": "E02000287", "lon": -0.1505, "lat": 51.6513 },
+        { "code": "E02000289", "lon": -0.1178, "lat": 51.649 },
+        { "code": "E02000295", "lon": -0.1187, "lat": 51.6393 },
+        { "code": "E02000296", "lon": -0.1337, "lat": 51.639 },
+        { "code": "E02000298", "lon": -0.1013, "lat": 51.6336 },
+        { "code": "E02000304", "lon": -0.1227, "lat": 51.6239 },
+        { "code": "E02000305", "lon": -0.1065, "lat": 51.622 },
+        { "code": "E02000308", "lon": -0.1344, "lat": 51.6144 },
+        { "code": "E02000311", "lon": -0.0984, "lat": 51.6127 },
+        { "code": "E02000312", "lon": -0.1157, "lat": 51.6121 },
+        { "code": "E02000345", "lon": -0.0702, "lat": 51.5742 },
+        { "code": "E02000346", "lon": -0.0915, "lat": 51.5715 },
+        { "code": "E02000347", "lon": -0.0809, "lat": 51.5703 },
+        { "code": "E02000348", "lon": -0.0692, "lat": 51.5694 },
+        { "code": "E02000351", "lon": -0.0972, "lat": 51.5643 },
+        { "code": "E02000352", "lon": -0.0842, "lat": 51.5637 },
+        { "code": "E02000353", "lon": -0.0754, "lat": 51.5607 },
+        { "code": "E02000356", "lon": -0.0854, "lat": 51.5559 },
+        { "code": "E02000366", "lon": -0.0446, "lat": 51.5406 },
+        { "code": "E02000367", "lon": -0.0546, "lat": 51.5387 },
+        { "code": "E02000368", "lon": -0.0676, "lat": 51.5365 },
+        { "code": "E02000369", "lon": -0.0796, "lat": 51.5364 },
+        { "code": "E02000370", "lon": -0.0911, "lat": 51.5318 },
+        { "code": "E02000372", "lon": -0.2377, "lat": 51.517 },
+        { "code": "E02000373", "lon": -0.2332, "lat": 51.5127 },
+        { "code": "E02000374", "lon": -0.2407, "lat": 51.5094 },
+        { "code": "E02000375", "lon": -0.2262, "lat": 51.5076 },
+        { "code": "E02000376", "lon": -0.2312, "lat": 51.5039 },
+        { "code": "E02000377", "lon": -0.2404, "lat": 51.5038 },
+        { "code": "E02000378", "lon": -0.2204, "lat": 51.5018 },
+        { "code": "E02000379", "lon": -0.2483, "lat": 51.5017 },
+        { "code": "E02000380", "lon": -0.2305, "lat": 51.4987 },
+        { "code": "E02000381", "lon": -0.2172, "lat": 51.4981 },
+        { "code": "E02000382", "lon": -0.2401, "lat": 51.494 },
+        { "code": "E02000383", "lon": -0.2098, "lat": 51.4931 },
+        { "code": "E02000384", "lon": -0.2276, "lat": 51.492 },
+        { "code": "E02000385", "lon": -0.2108, "lat": 51.4888 },
+        { "code": "E02000386", "lon": -0.2049, "lat": 51.4871 },
+        { "code": "E02000387", "lon": -0.2151, "lat": 51.485 },
+        { "code": "E02000388", "lon": -0.1993, "lat": 51.4831 },
+        { "code": "E02000389", "lon": -0.2215, "lat": 51.4816 },
+        { "code": "E02000390", "lon": -0.2092, "lat": 51.4804 },
+        { "code": "E02000391", "lon": -0.1927, "lat": 51.4769 },
+        { "code": "E02000392", "lon": -0.2032, "lat": 51.4765 },
+        { "code": "E02000393", "lon": -0.2122, "lat": 51.4762 },
+        { "code": "E02000394", "lon": -0.1855, "lat": 51.4724 },
+        { "code": "E02000395", "lon": -0.2084, "lat": 51.4708 },
+        { "code": "E02000396", "lon": -0.1932, "lat": 51.4693 },
+        { "code": "E02000397", "lon": -0.1162, "lat": 51.6055 },
+        { "code": "E02000398", "lon": -0.0588, "lat": 51.6035 },
+        { "code": "E02000400", "lon": -0.1263, "lat": 51.6045 },
+        { "code": "E02000401", "lon": -0.0897, "lat": 51.6035 },
+        { "code": "E02000403", "lon": -0.1097, "lat": 51.6024 },
+        { "code": "E02000404", "lon": -0.0998, "lat": 51.6008 },
+        { "code": "E02000405", "lon": -0.1317, "lat": 51.599 },
+        { "code": "E02000406", "lon": -0.1004, "lat": 51.5965 },
+        { "code": "E02000407", "lon": -0.0739, "lat": 51.5953 },
+        { "code": "E02000408", "lon": -0.0655, "lat": 51.5955 },
+        { "code": "E02000409", "lon": -0.0842, "lat": 51.5947 },
+        { "code": "E02000410", "lon": -0.1435, "lat": 51.5952 },
+        { "code": "E02000411", "lon": -0.0588, "lat": 51.5901 },
+        { "code": "E02000412", "lon": -0.1079, "lat": 51.5933 },
+        { "code": "E02000413", "lon": -0.1532, "lat": 51.5926 },
+        { "code": "E02000414", "lon": -0.0791, "lat": 51.5911 },
+        { "code": "E02000415", "lon": -0.0965, "lat": 51.5897 },
+        { "code": "E02000416", "lon": -0.1186, "lat": 51.5886 },
+        { "code": "E02000417", "lon": -0.1428, "lat": 51.5876 },
+        { "code": "E02000418", "lon": -0.1285, "lat": 51.5865 },
+        { "code": "E02000419", "lon": -0.1039, "lat": 51.5858 },
+        { "code": "E02000420", "lon": -0.079, "lat": 51.5855 },
+        { "code": "E02000421", "lon": -0.068, "lat": 51.5855 },
+        { "code": "E02000422", "lon": -0.0864, "lat": 51.5833 },
+        { "code": "E02000423", "lon": -0.0965, "lat": 51.5818 },
+        { "code": "E02000424", "lon": -0.1148, "lat": 51.581 },
+        { "code": "E02000425", "lon": -0.0692, "lat": 51.5782 },
+        { "code": "E02000426", "lon": -0.1537, "lat": 51.5787 },
+        { "code": "E02000427", "lon": -0.1013, "lat": 51.578 },
+        { "code": "E02000428", "lon": -0.0832, "lat": 51.5772 },
+        { "code": "E02000429", "lon": -0.131, "lat": 51.5778 },
+        { "code": "E02000430", "lon": -0.1194, "lat": 51.5775 },
+        { "code": "E02000431", "lon": -0.1407, "lat": 51.5734 },
+        { "code": "E02000432", "lon": -0.1091, "lat": 51.5719 },
+        { "code": "E02000433", "lon": -0.3103, "lat": 51.6193 },
+        { "code": "E02000434", "lon": -0.2935, "lat": 51.6109 },
+        { "code": "E02000435", "lon": -0.3231, "lat": 51.6134 },
+        { "code": "E02000437", "lon": -0.3389, "lat": 51.6064 },
+        { "code": "E02000438", "lon": -0.3645, "lat": 51.6074 },
+        { "code": "E02000439", "lon": -0.279, "lat": 51.6045 },
+        { "code": "E02000440", "lon": -0.3128, "lat": 51.6035 },
+        { "code": "E02000441", "lon": -0.3951, "lat": 51.6013 },
+        { "code": "E02000442", "lon": -0.2847, "lat": 51.5986 },
+        { "code": "E02000443", "lon": -0.3388, "lat": 51.5993 },
+        { "code": "E02000444", "lon": -0.3013, "lat": 51.5971 },
+        { "code": "E02000445", "lon": -0.3308, "lat": 51.5953 },
+        { "code": "E02000447", "lon": -0.3523, "lat": 51.5939 },
+        { "code": "E02000448", "lon": -0.3817, "lat": 51.5932 },
+        { "code": "E02000449", "lon": -0.2927, "lat": 51.5907 },
+        { "code": "E02000451", "lon": -0.368, "lat": 51.5868 },
+        { "code": "E02000452", "lon": -0.337, "lat": 51.5865 },
+        { "code": "E02000453", "lon": -0.3515, "lat": 51.5849 },
+        { "code": "E02000454", "lon": -0.384, "lat": 51.5833 },
+        { "code": "E02000455", "lon": -0.3311, "lat": 51.581 },
+        { "code": "E02000456", "lon": -0.3506, "lat": 51.5786 },
+        { "code": "E02000457", "lon": -0.3685, "lat": 51.5766 },
+        { "code": "E02000459", "lon": -0.3536, "lat": 51.5686 },
+        { "code": "E02000460", "lon": -0.3661, "lat": 51.5674 },
+        { "code": "E02000461", "lon": -0.3397, "lat": 51.567 },
+        { "code": "E02000462", "lon": -0.359, "lat": 51.561 },
+        { "code": "E02000463", "lon": -0.3746, "lat": 51.5601 },
+        { "code": "E02000478", "lon": 0.23, "lat": 51.5718 },
+        { "code": "E02000481", "lon": 0.2715, "lat": 51.5665 },
+        { "code": "E02000482", "lon": 0.2582, "lat": 51.5629 },
+        { "code": "E02000483", "lon": 0.2185, "lat": 51.5622 },
+        { "code": "E02000484", "lon": 0.1957, "lat": 51.5618 },
+        { "code": "E02000485", "lon": 0.236, "lat": 51.5574 },
+        { "code": "E02000486", "lon": 0.2073, "lat": 51.553 },
+        { "code": "E02000487", "lon": 0.2486, "lat": 51.5493 },
+        { "code": "E02000488", "lon": 0.2123, "lat": 51.5471 },
+        { "code": "E02000489", "lon": 0.196, "lat": 51.5467 },
+        { "code": "E02000490", "lon": 0.1936, "lat": 51.5365 },
+        { "code": "E02000494", "lon": -0.4291, "lat": 51.6131 },
+        { "code": "E02000495", "lon": -0.4157, "lat": 51.6054 },
+        { "code": "E02000497", "lon": -0.4083, "lat": 51.5894 },
+        { "code": "E02000498", "lon": -0.4375, "lat": 51.5805 },
+        { "code": "E02000499", "lon": -0.3945, "lat": 51.5778 },
+        { "code": "E02000500", "lon": -0.42, "lat": 51.5761 },
+        { "code": "E02000501", "lon": -0.401, "lat": 51.5709 },
+        { "code": "E02000502", "lon": -0.4239, "lat": 51.5663 },
+        { "code": "E02000503", "lon": -0.406, "lat": 51.565 },
+        { "code": "E02000504", "lon": -0.4497, "lat": 51.5646 },
+        { "code": "E02000506", "lon": -0.4593, "lat": 51.5531 },
+        { "code": "E02000507", "lon": -0.443, "lat": 51.5453 },
+        { "code": "E02000508", "lon": -0.4721, "lat": 51.5415 },
+        { "code": "E02000509", "lon": -0.4831, "lat": 51.5384 },
+        { "code": "E02000526", "lon": -0.2507, "lat": 51.4928 },
+        { "code": "E02000529", "lon": -0.3764, "lat": 51.4889 },
+        { "code": "E02000530", "lon": -0.3952, "lat": 51.4874 },
+        { "code": "E02000531", "lon": -0.3104, "lat": 51.4876 },
+        { "code": "E02000532", "lon": -0.2613, "lat": 51.4859 },
+        { "code": "E02000533", "lon": -0.2764, "lat": 51.486 },
+        { "code": "E02000534", "lon": -0.3361, "lat": 51.4812 },
+        { "code": "E02000535", "lon": -0.3886, "lat": 51.4809 },
+        { "code": "E02000536", "lon": -0.3739, "lat": 51.4789 },
+        { "code": "E02000537", "lon": -0.3563, "lat": 51.4772 },
+        { "code": "E02000538", "lon": -0.4075, "lat": 51.4767 },
+        { "code": "E02000539", "lon": -0.3314, "lat": 51.4733 },
+        { "code": "E02000540", "lon": -0.3505, "lat": 51.4716 },
+        { "code": "E02000541", "lon": -0.3925, "lat": 51.4715 },
+        { "code": "E02000542", "lon": -0.3763, "lat": 51.468 },
+        { "code": "E02000543", "lon": -0.3646, "lat": 51.466 },
+        { "code": "E02000544", "lon": -0.351, "lat": 51.4628 },
+        { "code": "E02000546", "lon": -0.3793, "lat": 51.4615 },
+        { "code": "E02000547", "lon": -0.4191, "lat": 51.4552 },
+        { "code": "E02000548", "lon": -0.4347, "lat": 51.4511 },
+        { "code": "E02000554", "lon": -0.1222, "lat": 51.5707 },
+        { "code": "E02000555", "lon": -0.1306, "lat": 51.5685 },
+        { "code": "E02000556", "lon": -0.1173, "lat": 51.5658 },
+        { "code": "E02000557", "lon": -0.1364, "lat": 51.5632 },
+        { "code": "E02000558", "lon": -0.1119, "lat": 51.5624 },
+        { "code": "E02000559", "lon": -0.1016, "lat": 51.5593 },
+        { "code": "E02000560", "lon": -0.1177, "lat": 51.5597 },
+        { "code": "E02000561", "lon": -0.1304, "lat": 51.5579 },
+        { "code": "E02000562", "lon": -0.0957, "lat": 51.5553 },
+        { "code": "E02000563", "lon": -0.1268, "lat": 51.5532 },
+        { "code": "E02000564", "lon": -0.1135, "lat": 51.5523 },
+        { "code": "E02000565", "lon": -0.0839, "lat": 51.5502 },
+        { "code": "E02000566", "lon": -0.1057, "lat": 51.5494 },
+        { "code": "E02000567", "lon": -0.0877, "lat": 51.5459 },
+        { "code": "E02000568", "lon": -0.1187, "lat": 51.5461 },
+        { "code": "E02000569", "lon": -0.0981, "lat": 51.5431 },
+        { "code": "E02000570", "lon": -0.1094, "lat": 51.5414 },
+        { "code": "E02000571", "lon": -0.094, "lat": 51.5379 },
+        { "code": "E02000572", "lon": -0.1172, "lat": 51.5368 },
+        { "code": "E02000573", "lon": -0.1014, "lat": 51.5342 },
+        { "code": "E02000574", "lon": -0.1134, "lat": 51.531 },
+        { "code": "E02000575", "lon": -0.1039, "lat": 51.526 },
+        { "code": "E02000576", "lon": -0.0941, "lat": 51.5259 },
+        { "code": "E02000577", "lon": -0.209, "lat": 51.5234 },
+        { "code": "E02000578", "lon": -0.2211, "lat": 51.523 },
+        { "code": "E02000579", "lon": -0.2183, "lat": 51.5178 },
+        { "code": "E02000580", "lon": -0.2047, "lat": 51.5172 },
+        { "code": "E02000581", "lon": -0.214, "lat": 51.5127 },
+        { "code": "E02000582", "lon": -0.1983, "lat": 51.5114 },
+        { "code": "E02000583", "lon": -0.209, "lat": 51.5107 },
+        { "code": "E02000584", "lon": -0.1957, "lat": 51.5055 },
+        { "code": "E02000585", "lon": -0.2098, "lat": 51.501 },
+        { "code": "E02000586", "lon": -0.1848, "lat": 51.4989 },
+        { "code": "E02000587", "lon": -0.1963, "lat": 51.4978 },
+        { "code": "E02000588", "lon": -0.1621, "lat": 51.4959 },
+        { "code": "E02000589", "lon": -0.1894, "lat": 51.4943 },
+        { "code": "E02000590", "lon": -0.1673, "lat": 51.4922 },
+        { "code": "E02000591", "lon": -0.1984, "lat": 51.4926 },
+        { "code": "E02000592", "lon": -0.1801, "lat": 51.4921 },
+        { "code": "E02000593", "lon": -0.1907, "lat": 51.489 },
+        { "code": "E02000594", "lon": -0.1627, "lat": 51.4868 },
+        { "code": "E02000595", "lon": -0.1738, "lat": 51.486 },
+        { "code": "E02000596", "lon": -0.1838, "lat": 51.4857 },
+        { "code": "E02000597", "lon": -0.1809, "lat": 51.4811 },
+        { "code": "E02000619", "lon": -0.1119, "lat": 51.4922 },
+        { "code": "E02000620", "lon": -0.1144, "lat": 51.4885 },
+        { "code": "E02000621", "lon": -0.1236, "lat": 51.4814 },
+        { "code": "E02000622", "lon": -0.112, "lat": 51.4796 },
+        { "code": "E02000623", "lon": -0.1251, "lat": 51.4767 },
+        { "code": "E02000624", "lon": -0.1126, "lat": 51.4755 },
+        { "code": "E02000625", "lon": -0.1315, "lat": 51.4717 },
+        { "code": "E02000626", "lon": -0.1044, "lat": 51.4698 },
+        { "code": "E02000627", "lon": -0.1222, "lat": 51.4687 },
+        { "code": "E02000628", "lon": -0.1132, "lat": 51.4675 },
+        { "code": "E02000629", "lon": -0.1339, "lat": 51.4669 },
+        { "code": "E02000630", "lon": -0.1452, "lat": 51.4655 },
+        { "code": "E02000631", "lon": -0.0985, "lat": 51.4644 },
+        { "code": "E02000632", "lon": -0.1256, "lat": 51.4614 },
+        { "code": "E02000633", "lon": -0.1152, "lat": 51.4594 },
+        { "code": "E02000634", "lon": -0.1332, "lat": 51.46 },
+        { "code": "E02000635", "lon": -0.1071, "lat": 51.4578 },
+        { "code": "E02000636", "lon": -0.1395, "lat": 51.4549 },
+        { "code": "E02000637", "lon": -0.1177, "lat": 51.4524 },
+        { "code": "E02000638", "lon": -0.1247, "lat": 51.4496 },
+        { "code": "E02000639", "lon": -0.1298, "lat": 51.4474 },
+        { "code": "E02000640", "lon": -0.1391, "lat": 51.4462 },
+        { "code": "E02000641", "lon": -0.1139, "lat": 51.4455 },
+        { "code": "E02000643", "lon": -0.1253, "lat": 51.4392 },
+        { "code": "E02000646", "lon": -0.1297, "lat": 51.4344 },
+        { "code": "E02000653", "lon": -0.0384, "lat": 51.4901 },
+        { "code": "E02000689", "lon": -0.1978, "lat": 51.4352 },
+        { "code": "E02000690", "lon": -0.2221, "lat": 51.4267 },
+        { "code": "E02000691", "lon": -0.198, "lat": 51.4252 },
+        { "code": "E02000692", "lon": -0.2141, "lat": 51.4212 },
+        { "code": "E02000693", "lon": -0.1764, "lat": 51.4202 },
+        { "code": "E02000694", "lon": -0.1885, "lat": 51.4197 },
+        { "code": "E02000695", "lon": -0.1534, "lat": 51.4173 },
+        { "code": "E02000696", "lon": -0.1676, "lat": 51.4162 },
+        { "code": "E02000697", "lon": -0.1993, "lat": 51.4161 },
+        { "code": "E02000699", "lon": -0.2162, "lat": 51.4115 },
+        { "code": "E02000700", "lon": -0.1807, "lat": 51.4093 },
+        { "code": "E02000701", "lon": -0.1593, "lat": 51.4093 },
+        { "code": "E02000703", "lon": -0.2025, "lat": 51.4068 },
+        { "code": "E02000706", "lon": -0.1703, "lat": 51.4057 },
+        { "code": "E02000709", "lon": -0.2155, "lat": 51.3978 },
+        { "code": "E02000710", "lon": -0.1733, "lat": 51.3971 },
+        { "code": "E02000711", "lon": -0.1911, "lat": 51.397 },
+        { "code": "E02000712", "lon": -0.196, "lat": 51.3898 },
+        { "code": "E02000715", "lon": 0.0602, "lat": 51.5516 },
+        { "code": "E02000716", "lon": 0.0441, "lat": 51.5511 },
+        { "code": "E02000717", "lon": 0.0508, "lat": 51.5497 },
+        { "code": "E02000718", "lon": 0.0625, "lat": 51.5476 },
+        { "code": "E02000719", "lon": 0.0123, "lat": 51.5489 },
+        { "code": "E02000720", "lon": 0.0336, "lat": 51.5476 },
+        { "code": "E02000721", "lon": 0.0274, "lat": 51.5444 },
+        { "code": "E02000722", "lon": 0.0131, "lat": 51.5439 },
+        { "code": "E02000723", "lon": 0.0524, "lat": 51.543 },
+        { "code": "E02000724", "lon": 0.0417, "lat": 51.5431 },
+        { "code": "E02000725", "lon": 0.0033, "lat": 51.543 },
+        { "code": "E02000727", "lon": 0.037, "lat": 51.5394 },
+        { "code": "E02000728", "lon": 0.059, "lat": 51.5386 },
+        { "code": "E02000729", "lon": 0.0214, "lat": 51.5367 },
+        { "code": "E02000730", "lon": 0.0299, "lat": 51.5378 },
+        { "code": "E02000731", "lon": 0.0506, "lat": 51.5344 },
+        { "code": "E02000732", "lon": 0.0421, "lat": 51.5338 },
+        { "code": "E02000733", "lon": 0.0082, "lat": 51.534 },
+        { "code": "E02000734", "lon": 0.0174, "lat": 51.5338 },
+        { "code": "E02000735", "lon": 0.0318, "lat": 51.5312 },
+        { "code": "E02000736", "lon": 0.0638, "lat": 51.5317 },
+        { "code": "E02000737", "lon": 0.0572, "lat": 51.5287 },
+        { "code": "E02000738", "lon": 0.0427, "lat": 51.5286 },
+        { "code": "E02000739", "lon": 0.0243, "lat": 51.5275 },
+        { "code": "E02000740", "lon": 0.0114, "lat": 51.5255 },
+        { "code": "E02000741", "lon": 0.0347, "lat": 51.5259 },
+        { "code": "E02000742", "lon": 0.0525, "lat": 51.5223 },
+        { "code": "E02000743", "lon": 0.0146, "lat": 51.5203 },
+        { "code": "E02000744", "lon": 0.0231, "lat": 51.5191 },
+        { "code": "E02000747", "lon": 0.0157, "lat": 51.5122 },
+        { "code": "E02000749", "lon": 0.0278, "lat": 51.513 },
+        { "code": "E02000751", "lon": 0.0285, "lat": 51.6119 },
+        { "code": "E02000752", "lon": 0.1154, "lat": 51.6111 },
+        { "code": "E02000753", "lon": 0.0996, "lat": 51.6099 },
+        { "code": "E02000754", "lon": 0.0402, "lat": 51.6083 },
+        { "code": "E02000755", "lon": 0.0529, "lat": 51.6046 },
+        { "code": "E02000756", "lon": 0.084, "lat": 51.6014 },
+        { "code": "E02000757", "lon": 0.0222, "lat": 51.5976 },
+        { "code": "E02000759", "lon": 0.0352, "lat": 51.5949 },
+        { "code": "E02000760", "lon": 0.0751, "lat": 51.5932 },
+        { "code": "E02000762", "lon": 0.0645, "lat": 51.5821 },
+        { "code": "E02000763", "lon": 0.0953, "lat": 51.5806 },
+        { "code": "E02000764", "lon": 0.0231, "lat": 51.5822 },
+        { "code": "E02000765", "lon": 0.0715, "lat": 51.5796 },
+        { "code": "E02000767", "lon": 0.0823, "lat": 51.5785 },
+        { "code": "E02000768", "lon": 0.0319, "lat": 51.5764 },
+        { "code": "E02000770", "lon": 0.0928, "lat": 51.5719 },
+        { "code": "E02000772", "lon": 0.1119, "lat": 51.5706 },
+        { "code": "E02000773", "lon": 0.0823, "lat": 51.5691 },
+        { "code": "E02000774", "lon": 0.0998, "lat": 51.5682 },
+        { "code": "E02000776", "lon": 0.0758, "lat": 51.5655 },
+        { "code": "E02000777", "lon": 0.0341, "lat": 51.5637 },
+        { "code": "E02000779", "lon": 0.0648, "lat": 51.5621 },
+        { "code": "E02000781", "lon": 0.0974, "lat": 51.5541 },
+        { "code": "E02000782", "lon": 0.0718, "lat": 51.5517 },
+        { "code": "E02000783", "lon": 0.0776, "lat": 51.5468 },
+        { "code": "E02000784", "lon": -0.2392, "lat": 51.4809 },
+        { "code": "E02000785", "lon": -0.2877, "lat": 51.4758 },
+        { "code": "E02000787", "lon": -0.2846, "lat": 51.4685 },
+        { "code": "E02000788", "lon": -0.2681, "lat": 51.4652 },
+        { "code": "E02000789", "lon": -0.2938, "lat": 51.46 },
+        { "code": "E02000790", "lon": -0.3224, "lat": 51.4577 },
+        { "code": "E02000791", "lon": -0.3001, "lat": 51.4569 },
+        { "code": "E02000792", "lon": -0.3133, "lat": 51.4542 },
+        { "code": "E02000793", "lon": -0.3602, "lat": 51.4539 },
+        { "code": "E02000807", "lon": -0.0439, "lat": 51.5034 },
+        { "code": "E02000808", "lon": -0.0966, "lat": 51.5026 },
+        { "code": "E02000810", "lon": -0.07, "lat": 51.4976 },
+        { "code": "E02000812", "lon": -0.0861, "lat": 51.4975 },
+        { "code": "E02000813", "lon": -0.0514, "lat": 51.4979 },
+        { "code": "E02000814", "lon": -0.0376, "lat": 51.4968 },
+        { "code": "E02000815", "lon": -0.0955, "lat": 51.496 },
+        { "code": "E02000816", "lon": -0.0646, "lat": 51.4908 },
+        { "code": "E02000817", "lon": -0.056, "lat": 51.4909 },
+        { "code": "E02000818", "lon": -0.0921, "lat": 51.4913 },
+        { "code": "E02000819", "lon": -0.0727, "lat": 51.4892 },
+        { "code": "E02000820", "lon": -0.1024, "lat": 51.4885 },
+        { "code": "E02000821", "lon": -0.0818, "lat": 51.4874 },
+        { "code": "E02000822", "lon": -0.0904, "lat": 51.4876 },
+        { "code": "E02000823", "lon": -0.0981, "lat": 51.4831 },
+        { "code": "E02000824", "lon": -0.0666, "lat": 51.4807 },
+        { "code": "E02000826", "lon": -0.0866, "lat": 51.477 },
+        { "code": "E02000827", "lon": -0.0965, "lat": 51.4767 },
+        { "code": "E02000837", "lon": -0.0925, "lat": 51.4532 },
+        { "code": "E02000864", "lon": -0.0288, "lat": 51.5355 },
+        { "code": "E02000865", "lon": -0.0546, "lat": 51.532 },
+        { "code": "E02000866", "lon": -0.0362, "lat": 51.5313 },
+        { "code": "E02000867", "lon": -0.0237, "lat": 51.5308 },
+        { "code": "E02000868", "lon": -0.0626, "lat": 51.5303 },
+        { "code": "E02000869", "lon": -0.0722, "lat": 51.5285 },
+        { "code": "E02000870", "lon": -0.0487, "lat": 51.5279 },
+        { "code": "E02000871", "lon": -0.0148, "lat": 51.5254 },
+        { "code": "E02000872", "lon": -0.0689, "lat": 51.5252 },
+        { "code": "E02000873", "lon": -0.042, "lat": 51.5264 },
+        { "code": "E02000874", "lon": -0.0529, "lat": 51.5244 },
+        { "code": "E02000875", "lon": -0.0206, "lat": 51.5213 },
+        { "code": "E02000876", "lon": -0.0588, "lat": 51.5223 },
+        { "code": "E02000877", "lon": -0.0288, "lat": 51.5197 },
+        { "code": "E02000878", "lon": -0.0708, "lat": 51.5188 },
+        { "code": "E02000879", "lon": -0.0487, "lat": 51.5169 },
+        { "code": "E02000880", "lon": -0.0547, "lat": 51.5171 },
+        { "code": "E02000881", "lon": -0.0103, "lat": 51.5165 },
+        { "code": "E02000882", "lon": -0.0388, "lat": 51.5172 },
+        { "code": "E02000883", "lon": -0.0146, "lat": 51.5135 },
+        { "code": "E02000884", "lon": -0.0666, "lat": 51.514 },
+        { "code": "E02000885", "lon": -0.0533, "lat": 51.5124 },
+        { "code": "E02000886", "lon": -0.0324, "lat": 51.5122 },
+        { "code": "E02000887", "lon": -0.0224, "lat": 51.512 },
+        { "code": "E02000888", "lon": -0.0477, "lat": 51.511 },
+        { "code": "E02000889", "lon": -0.0635, "lat": 51.5087 },
+        { "code": "E02000890", "lon": -0.0591, "lat": 51.505 },
+        { "code": "E02000893", "lon": -0.0068, "lat": 51.4919 },
+        { "code": "E02000894", "lon": -0.02, "lat": 51.49 },
+        { "code": "E02000903", "lon": -0.0325, "lat": 51.5981 },
+        { "code": "E02000904", "lon": -0.0038, "lat": 51.5954 },
+        { "code": "E02000905", "lon": -0.0187, "lat": 51.5932 },
+        { "code": "E02000906", "lon": -0.0278, "lat": 51.5906 },
+        { "code": "E02000907", "lon": -0.0053, "lat": 51.5883 },
+        { "code": "E02000908", "lon": -0.0379, "lat": 51.5892 },
+        { "code": "E02000909", "lon": -0.0043, "lat": 51.5826 },
+        { "code": "E02000910", "lon": -0.0184, "lat": 51.5819 },
+        { "code": "E02000911", "lon": -0.031, "lat": 51.5814 },
+        { "code": "E02000912", "lon": -0.0276, "lat": 51.5755 },
+        { "code": "E02000913", "lon": -0.0035, "lat": 51.5741 },
+        { "code": "E02000914", "lon": -0.0133, "lat": 51.5739 },
+        { "code": "E02000915", "lon": 0.0057, "lat": 51.5713 },
+        { "code": "E02000916", "lon": -0.0281, "lat": 51.5692 },
+        { "code": "E02000917", "lon": -0.0081, "lat": 51.5664 },
+        { "code": "E02000918", "lon": 0.0118, "lat": 51.565 },
+        { "code": "E02000919", "lon": -0.0042, "lat": 51.5618 },
+        { "code": "E02000920", "lon": -0.014, "lat": 51.5615 },
+        { "code": "E02000921", "lon": 0.0019, "lat": 51.5564 },
+        { "code": "E02000922", "lon": 0.0117, "lat": 51.5558 },
+        { "code": "E02000923", "lon": -0.1646, "lat": 51.4772 },
+        { "code": "E02000925", "lon": -0.1634, "lat": 51.4734 },
+        { "code": "E02000926", "lon": -0.1747, "lat": 51.4714 },
+        { "code": "E02000927", "lon": -0.1538, "lat": 51.4677 },
+        { "code": "E02000928", "lon": -0.2226, "lat": 51.4669 },
+        { "code": "E02000930", "lon": -0.1658, "lat": 51.4652 },
+        { "code": "E02000931", "lon": -0.1584, "lat": 51.462 },
+        { "code": "E02000932", "lon": -0.202, "lat": 51.4608 },
+        { "code": "E02000933", "lon": -0.2295, "lat": 51.4615 },
+        { "code": "E02000936", "lon": -0.2151, "lat": 51.4564 },
+        { "code": "E02000937", "lon": -0.1659, "lat": 51.455 },
+        { "code": "E02000938", "lon": -0.2327, "lat": 51.4545 },
+        { "code": "E02000939", "lon": -0.1574, "lat": 51.4533 },
+        { "code": "E02000940", "lon": -0.1935, "lat": 51.4536 },
+        { "code": "E02000941", "lon": -0.1845, "lat": 51.4515 },
+        { "code": "E02000942", "lon": -0.205, "lat": 51.4501 },
+        { "code": "E02000943", "lon": -0.1527, "lat": 51.4478 },
+        { "code": "E02000944", "lon": -0.2158, "lat": 51.4478 },
+        { "code": "E02000946", "lon": -0.1838, "lat": 51.4436 },
+        { "code": "E02000947", "lon": -0.1989, "lat": 51.4436 },
+        { "code": "E02000948", "lon": -0.1468, "lat": 51.4419 },
+        { "code": "E02000949", "lon": -0.1624, "lat": 51.4411 },
+        { "code": "E02000950", "lon": -0.2165, "lat": 51.4418 },
+        { "code": "E02000951", "lon": -0.1582, "lat": 51.4379 },
+        { "code": "E02000952", "lon": -0.1521, "lat": 51.4363 },
+        { "code": "E02000953", "lon": -0.1827, "lat": 51.4359 },
+        { "code": "E02000954", "lon": -0.1622, "lat": 51.4327 },
+        { "code": "E02000955", "lon": -0.1634, "lat": 51.4298 },
+        { "code": "E02000956", "lon": -0.1749, "lat": 51.4286 },
+        { "code": "E02000957", "lon": -0.1646, "lat": 51.4243 },
+        { "code": "E02000958", "lon": -0.1492, "lat": 51.424 },
+        { "code": "E02000959", "lon": -0.1422, "lat": 51.4226 },
+        { "code": "E02000960", "lon": -0.1691, "lat": 51.5344 },
+        { "code": "E02000961", "lon": -0.1851, "lat": 51.5335 },
+        { "code": "E02000962", "lon": -0.1756, "lat": 51.5289 },
+        { "code": "E02000963", "lon": -0.2085, "lat": 51.5293 },
+        { "code": "E02000964", "lon": -0.2007, "lat": 51.5276 },
+        { "code": "E02000965", "lon": -0.192, "lat": 51.5265 },
+        { "code": "E02000966", "lon": -0.1836, "lat": 51.5257 },
+        { "code": "E02000967", "lon": -0.1596, "lat": 51.5233 },
+        { "code": "E02000968", "lon": -0.1702, "lat": 51.5239 },
+        { "code": "E02000969", "lon": -0.1938, "lat": 51.5217 },
+        { "code": "E02000970", "lon": -0.1512, "lat": 51.5187 },
+        { "code": "E02000971", "lon": -0.1624, "lat": 51.5185 },
+        { "code": "E02000972", "lon": -0.1398, "lat": 51.5186 },
+        { "code": "E02000973", "lon": -0.1946, "lat": 51.5169 },
+        { "code": "E02000974", "lon": -0.1698, "lat": 51.5161 },
+        { "code": "E02000975", "lon": -0.18, "lat": 51.5142 },
+        { "code": "E02000976", "lon": -0.1877, "lat": 51.5139 },
+        { "code": "E02000977", "lon": -0.128, "lat": 51.5108 },
+        { "code": "E02000978", "lon": -0.1632, "lat": 51.5 },
+        { "code": "E02000979", "lon": -0.1347, "lat": 51.4964 },
+        { "code": "E02000980", "lon": -0.1318, "lat": 51.4924 },
+        { "code": "E02000981", "lon": -0.1414, "lat": 51.4899 },
+        { "code": "E02000982", "lon": -0.148, "lat": 51.4886 },
+        { "code": "E02000983", "lon": -0.1369, "lat": 51.4869 },
+        { "code": "E02006791", "lon": -0.2668, "lat": 51.4986 },
+        { "code": "E02006792", "lon": -0.2703, "lat": 51.492 },
+        { "code": "E02006794", "lon": -0.0698, "lat": 51.6043 },
+        { "code": "E02006795", "lon": -0.3761, "lat": 51.5709 },
+        { "code": "E02006796", "lon": -0.3934, "lat": 51.5583 },
+        { "code": "E02006800", "lon": 0.108, "lat": 51.5624 },
+        { "code": "E02006801", "lon": -0.1123, "lat": 51.5011 },
+        { "code": "E02006802", "lon": -0.1045, "lat": 51.4988 },
+        { "code": "E02006853", "lon": -0.0205, "lat": 51.4981 },
+        { "code": "E02006854", "lon": -0.0246, "lat": 51.5016 },
+        { "code": "E02006882", "lon": -0.3131, "lat": 51.5911 },
+        { "code": "E02006924", "lon": 0.0583, "lat": 51.5708 },
+        { "code": "E02006925", "lon": 0.0535, "lat": 51.5835 },
+        { "code": "E02006930", "lon": 0.0095, "lat": 51.4857 },
+        { "code": "E02006941", "lon": -0.0737, "lat": 51.5023 },
+        { "code": "E02006942", "lon": -0.0792, "lat": 51.4995 },
+        { "code": "E02006953", "lon": -0.2423, "lat": 51.5954 },
+        { "code": "E02006954", "lon": -0.2519, "lat": 51.5931 },
+        { "code": "E02006955", "lon": -0.2838, "lat": 51.5592 },
+        { "code": "E02006956", "lon": -0.2761, "lat": 51.5529 },
+        { "code": "E02006968", "lon": -0.2944, "lat": 51.5189 },
+        { "code": "E02006969", "lon": -0.3012, "lat": 51.5124 },
+        { "code": "E02006972", "lon": -0.2938, "lat": 51.4893 },
+        { "code": "E02006973", "lon": -0.301, "lat": 51.4889 },
+        { "code": "E02006992", "lon": 0.0045, "lat": 51.4889 },
+        { "code": "E02006993", "lon": 0.0137, "lat": 51.4954 },
+        { "code": "E02006995", "lon": -0.0096, "lat": 51.5475 },
+        { "code": "E02006996", "lon": -0.002, "lat": 51.5459 },
+        { "code": "E02006997", "lon": -0.0073, "lat": 51.5337 },
+        { "code": "E02006999", "lon": 0.0289, "lat": 51.5013 },
+        { "code": "E02007019", "lon": 0.0804, "lat": 51.5597 },
+        { "code": "E02007020", "lon": 0.0818, "lat": 51.5544 },
+        { "code": "E02007083", "lon": -0.1386, "lat": 51.4816 },
+        { "code": "E02007084", "lon": -0.1464, "lat": 51.4747 },
+        { "code": "E02007108", "lon": -0.0753, "lat": 51.5456 },
+        { "code": "E02007109", "lon": -0.0758, "lat": 51.5416 },
+        { "code": "E02007110", "lon": -0.0854, "lat": 51.5294 },
+        { "code": "E02007111", "lon": -0.0781, "lat": 51.5287 },
+        { "code": "E02007112", "lon": 0.0022, "lat": 51.5102 },
+        { "code": "E02007113", "lon": -0.008, "lat": 51.5072 },
+        { "code": "E02007114", "lon": -0.0137, "lat": 51.4972 },
+        { "code": "E02007115", "lon": -0.122, "lat": 51.5272 }
+    ],
+    "areaSaved": {
+        "people": {
+            "5": [
+                2.2, 0.6, 0.9, 1.0, 1.0, 1.3, 1.1, 1.5, 1.2, 1.4, 1.2, 1.8, 1.8, 1.4, 1.1, 1.4, 1.1,
+                1.6, 1.2, 1.9, 2.0, 1.9, 1.9, 1.9, 1.7, 1.4, 1.9, 1.0, 1.2, 1.5, 2.1, 1.8, 1.8, 1.4,
+                1.7, 2.1, 2.2, 2.1, 2.2, 1.9, 4.7, 2.2, 1.9, 2.1, 2.1, 2.0, 2.1, 1.8, 2.2, 2.3, 2.1,
+                2.3, 2.2, 2.1, 2.2, 2.1, 1.7, 1.8, 1.8, 1.8, 2.0, 1.9, 1.4, 2.0, 2.2, 1.9, 1.6, 2.4,
+                2.1, 1.5, 2.2, 1.3, 1.8, 1.7, 1.2, 1.5, 1.9, 1.6, 1.6, 1.5, 1.8, 1.2, 1.8, 1.7, 1.8,
+                1.6, 1.7, 1.5, 2.1, 1.3, 1.7, 1.1, 4.8, 6.1, 3.6, 1.5, 1.7, 17.3, 14.1, 9.5, 2.0,
+                1.7, 15.4, 18.6, 1.8, 16.2, 1.6, 1.5, 7.9, 12.8, 1.6, 1.4, 1.8, 1.6, 2.3, 1.6, 1.8,
+                1.8, 1.1, 1.2, 1.5, 1.5, 1.5, 1.5, 1.1, 1.0, 1.0, 1.1, 1.1, 1.2, 1.8, 0.8, 1.1, 1.3,
+                1.3, 3.1, 1.3, 1.4, 1.1, 0.8, 1.2, 1.1, 1.4, 1.3, 0.9, 1.0, 2.1, 1.9, 1.3, 1.4, 0.9,
+                3.1, 32.4, 35.0, 42.8, 45.0, 1.4, 1.4, 1.3, 1.8, 1.4, 2.0, 1.8, 2.0, 1.7, 1.8, 1.8,
+                1.8, 1.9, 3.8, 4.1, 3.8, 4.1, 3.0, 2.5, 1.9, 1.7, 1.6, 1.7, 1.5, 1.8, 1.7, 1.6, 1.6,
+                1.5, 1.8, 1.5, 1.6, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 53.2, 1.9, 48.8, 10.0, 58.5, 30.6,
+                47.3, 23.3, 1.4, 1.5, 1.4, 37.5, 1.7, 29.4, 1.3, 1.4, 11.6, 12.0, 29.2, 5.4, 5.0,
+                1.4, 1.5, 1.3, 1.3, 1.1, 1.4, 1.0, 1.3, 1.3, 1.0, 1.1, 1.4, 1.3, 1.7, 1.9, 1.3, 1.3,
+                1.7, 1.8, 1.2, 2.0, 1.7, 1.6, 1.5, 1.7, 1.5, 2.4, 1.6, 2.1, 2.0, 2.1, 2.1, 2.4, 2.3,
+                1.8, 1.9, 1.4, 1.9, 1.0, 1.1, 0.4, 0.5, 0.9, 0.6, 0.9, 0.8, 1.2, 0.8, 1.0, 1.2, 0.8,
+                0.0, 1.5, 1.8, 1.4, 1.8, 1.3, 1.4, 1.6, 1.2, 1.9, 1.8, 1.7, 1.7, 1.6, 1.4, 0.9, 0.8,
+                1.1, 1.2, 1.4, 1.1, 1.0, 1.0, 1.3, 0.8, 1.0, 1.3, 1.2, 1.1, 1.1, 1.0, 0.9, 0.4, 0.7,
+                1.1, 1.7, 1.3, 1.7, 2.0, 2.0, 1.8, 1.7, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.7,
+                1.7, 1.7, 1.7, 1.8, 2.1, 2.1, 1.7, 3.3, 3.7, 1.7, 3.1, 1.6, 1.8, 1.2, 1.8, 1.3, 1.6,
+                1.6, 1.7, 1.5, 1.7, 1.5, 1.7, 1.6, 1.3, 1.6, 1.7, 1.8, 1.9, 1.8, 1.6, 1.7, 1.5, 1.4,
+                1.6, 1.5, 1.6, 1.3, 1.2, 1.6, 1.4, 1.6, 1.3, 1.5, 1.2, 1.3, 1.2, 1.2, 2.6, 1.1, 1.0,
+                28.4, 1.8, 1.4, 1.2, 1.3, 1.3, 7.3, 1.1, 24.6, 8.8, 1.3, 1.3, 1.0, 3.6, 1.3, 0.9,
+                1.2, 1.1, 1.5, 1.4, 1.5, 1.5, 1.6, 1.6, 1.5, 1.5, 1.3, 1.6, 1.8, 1.7, 1.7, 1.7, 1.8,
+                1.6, 1.4, 1.8, 1.7, 1.8, 1.7, 1.4, 1.6, 1.6, 1.6, 1.6, 1.8, 1.4, 1.4, 1.7, 1.7, 1.8,
+                1.7, 1.4, 0.7, 1.1, 1.5, 1.1, 1.2, 1.4, 1.5, 0.7, 0.8, 1.3, 1.5, 1.1, 1.3, 1.0, 1.4,
+                1.0, 1.2, 1.2, 1.0, 0.9, 1.0, 1.2, 1.4, 1.6, 1.4, 1.6, 1.4, 1.2, 1.4, 1.2, 1.4, 1.3,
+                0.7, 1.9, 2.1, 2.0, 2.0, 2.0, 1.9, 1.9, 1.9, 1.9, 1.7, 1.9, 1.7, 1.7, 1.6, 1.5, 1.7,
+                1.3, 1.4, 1.5, 1.7, 2.0, 1.8, 1.9, 2.0, 2.0, 2.0, 2.0, 2.1, 2.0, 2.1, 2.0, 2.2, 1.7,
+                2.1, 2.1, 2.2, 1.8, 2.0, 1.8, 2.0, 2.1, 1.7, 1.8, 1.8, 1.8, 1.9, 1.8, 1.7, 1.3,
+                11.7, 18.0, 12.0, 19.0, 1.5, 21.3, 29.6, 13.4, 16.8, 21.5, 25.8, 13.7, 18.6, 7.6,
+                2.0, 1.8, 2.4, 1.4, 1.3, 1.2, 1.2, 1.2, 1.2, 1.3, 1.1, 1.1, 1.3, 1.1, 1.3, 11.9,
+                1.2, 10.0, 1.4, 1.8, 1.5, 17.9, 1.5, 3.3, 1.4, 25.0, 27.6, 1.5, 34.1, 40.6, 3.6,
+                29.8, 25.6, 11.5, 19.9, 35.5, 34.5, 6.5, 1.9, 2.8, 1.0, 1.9, 2.1, 2.2, 9.8, 3.6,
+                2.1, 2.6, 4.6, 1.7, 1.9, 1.5, 1.6, 1.8, 1.8, 1.7, 1.9, 1.9, 1.9, 1.8, 1.7, 1.3, 1.3,
+                1.3, 1.3, 0.9, 0.8, 2.0, 2.0, 1.9, 1.9, 1.2, 0.7, 0.9, 1.6, 1.9, 2.0, 2.2, 2.2, 2.4,
+                2.1, 1.3, 1.4, 1.2, 1.2, 1.7, 1.8, 1.7, 1.7, 1.7, 1.6, 1.0, 1.3, 1.7, 1.5, 1.6, 1.7,
+                2.0, 2.1, 1.8, 1.9, 1.9, 1.8
+            ],
+            "10": [
+                3.1, 1.2, 1.6, 1.6, 1.7, 2.0, 1.7, 2.2, 1.8, 2.2, 1.9, 2.5, 2.5, 2.1, 1.7, 2.1, 1.8,
+                2.3, 1.9, 3.3, 3.4, 2.7, 3.2, 3.3, 2.4, 2.7, 3.2, 1.7, 2.4, 2.8, 3.6, 3.1, 3.1, 2.7,
+                2.9, 3.6, 3.6, 3.3, 3.7, 3.2, 12.9, 3.5, 3.2, 3.5, 3.5, 3.2, 3.3, 19.1, 3.5, 3.7,
+                11.2, 3.6, 3.4, 3.5, 3.6, 3.3, 2.8, 2.8, 2.6, 2.6, 3.2, 2.6, 2.0, 2.7, 2.9, 2.6,
+                2.2, 3.1, 2.8, 2.2, 3.0, 1.9, 2.4, 2.2, 2.0, 1.9, 2.6, 2.2, 2.3, 1.9, 2.3, 1.6, 2.3,
+                2.4, 2.4, 2.0, 2.3, 1.9, 2.8, 1.9, 2.2, 1.7, 6.0, 16.4, 4.6, 10.3, 2.3, 19.1, 15.3,
+                22.1, 2.5, 6.3, 20.8, 19.8, 2.4, 18.3, 2.1, 11.9, 18.1, 13.9, 2.7, 8.9, 4.5, 3.2,
+                6.7, 4.0, 2.5, 3.0, 2.1, 2.0, 3.5, 3.5, 2.1, 3.6, 2.5, 3.0, 3.0, 2.1, 3.1, 2.3, 2.4,
+                1.8, 2.2, 2.4, 2.1, 3.6, 2.2, 2.3, 2.2, 1.8, 2.4, 2.3, 2.4, 2.0, 2.0, 1.8, 2.8, 2.6,
+                2.0, 2.1, 1.4, 3.6, 33.0, 35.7, 43.4, 45.7, 2.1, 2.2, 2.1, 2.5, 2.3, 2.8, 2.6, 2.8,
+                2.3, 2.5, 2.5, 2.4, 2.5, 4.4, 4.7, 4.4, 4.7, 3.6, 3.1, 2.8, 2.3, 2.4, 3.0, 2.3, 3.0,
+                2.6, 2.6, 2.5, 2.4, 3.1, 2.4, 2.9, 3.2, 3.1, 2.9, 3.0, 2.9, 3.0, 54.0, 2.6, 49.5,
+                10.7, 59.3, 31.4, 48.0, 24.1, 2.2, 2.3, 2.1, 47.8, 2.6, 30.1, 27.1, 2.2, 12.3, 12.7,
+                43.9, 6.2, 5.7, 2.2, 2.3, 2.1, 2.1, 1.9, 2.2, 19.9, 2.0, 2.1, 1.7, 1.9, 2.3, 2.1,
+                2.3, 2.8, 1.9, 1.9, 2.3, 3.1, 1.8, 2.7, 2.4, 2.3, 2.1, 2.4, 2.1, 3.2, 2.3, 2.7, 2.7,
+                2.9, 2.8, 3.2, 3.0, 2.4, 2.5, 2.3, 2.6, 2.1, 3.1, 0.9, 1.1, 1.6, 1.2, 1.5, 1.4, 1.8,
+                1.4, 1.7, 1.9, 1.4, 0.0, 2.0, 2.4, 1.9, 2.4, 1.8, 2.0, 2.2, 1.7, 2.5, 2.4, 2.3, 2.3,
+                2.2, 2.1, 1.6, 1.5, 2.2, 1.9, 2.5, 2.0, 1.8, 1.8, 2.1, 1.6, 1.7, 2.1, 2.0, 1.9, 1.9,
+                1.8, 1.7, 1.0, 1.4, 1.9, 2.4, 2.1, 2.1, 2.9, 2.9, 2.6, 2.2, 2.7, 2.3, 2.7, 2.5, 2.6,
+                2.3, 2.6, 2.4, 2.3, 2.3, 2.4, 2.3, 2.5, 2.8, 2.8, 5.5, 4.3, 4.7, 8.9, 4.9, 13.8,
+                7.8, 12.4, 3.0, 2.4, 2.5, 2.4, 2.7, 2.2, 2.7, 2.4, 2.7, 2.3, 2.2, 2.5, 2.9, 2.8,
+                2.8, 2.8, 2.6, 2.6, 2.4, 2.3, 2.5, 2.5, 2.6, 2.2, 2.0, 2.5, 2.4, 2.6, 2.2, 2.5, 2.0,
+                2.2, 2.1, 2.0, 3.4, 2.0, 1.9, 29.2, 2.7, 2.8, 2.4, 2.6, 2.7, 8.1, 2.4, 25.4, 9.6,
+                2.6, 2.5, 1.8, 4.3, 2.2, 1.7, 2.0, 1.8, 2.2, 2.1, 2.1, 2.2, 2.3, 2.3, 2.1, 1.9, 1.8,
+                2.1, 2.5, 2.4, 2.3, 2.4, 2.5, 2.0, 2.1, 2.5, 2.4, 2.2, 2.2, 2.1, 2.3, 2.3, 2.2, 2.3,
+                2.6, 2.1, 2.0, 2.6, 2.6, 2.8, 2.5, 2.3, 1.5, 1.9, 2.3, 1.9, 2.0, 2.3, 2.4, 1.5, 1.6,
+                2.2, 2.3, 1.8, 2.2, 1.8, 2.3, 1.8, 2.1, 2.0, 1.8, 5.1, 1.6, 1.8, 2.1, 2.3, 2.3, 2.8,
+                2.6, 2.3, 2.6, 2.3, 2.6, 2.4, 1.4, 2.8, 3.0, 2.9, 2.9, 3.0, 2.8, 2.8, 2.8, 2.8, 2.6,
+                2.7, 2.6, 2.5, 2.4, 2.5, 2.5, 2.2, 2.3, 2.3, 2.2, 2.7, 2.5, 2.6, 2.8, 2.9, 2.8, 2.8,
+                2.8, 2.7, 2.9, 2.7, 3.0, 2.5, 3.0, 2.9, 3.0, 2.6, 2.7, 2.6, 2.8, 2.8, 2.5, 2.7, 2.5,
+                2.6, 2.8, 2.7, 2.6, 2.1, 12.6, 18.8, 12.8, 19.9, 2.3, 22.0, 30.4, 14.2, 18.5, 24.2,
+                28.2, 20.1, 22.2, 18.0, 13.0, 17.6, 16.5, 12.1, 6.5, 1.9, 1.9, 2.3, 2.0, 2.5, 1.9,
+                1.8, 2.6, 2.3, 2.7, 12.6, 2.4, 10.7, 2.7, 2.9, 2.9, 18.7, 2.8, 4.3, 2.7, 25.8, 28.5,
+                2.8, 35.0, 41.4, 4.6, 30.7, 26.4, 12.4, 20.7, 36.3, 35.3, 7.1, 4.1, 3.2, 2.2, 3.0,
+                2.7, 2.7, 10.5, 4.1, 3.3, 3.3, 5.1, 2.6, 5.2, 2.0, 2.2, 3.6, 2.6, 2.5, 2.9, 2.9,
+                2.9, 2.8, 2.7, 2.2, 2.1, 2.1, 2.4, 2.8, 1.6, 3.0, 2.9, 2.8, 2.9, 1.8, 1.4, 1.7, 2.5,
+                2.8, 2.9, 3.6, 3.6, 3.1, 2.8, 2.5, 2.6, 2.2, 2.3, 2.6, 2.7, 2.3, 2.3, 2.2, 2.5, 1.7,
+                2.0, 2.6, 2.3, 2.1, 2.2, 2.7, 2.9, 2.8, 2.8, 2.8, 2.5
+            ],
+            "12": [
+                3.2, 1.6, 1.9, 2.0, 2.1, 2.4, 2.1, 2.6, 2.2, 2.5, 2.3, 2.8, 2.8, 2.4, 2.1, 2.5, 2.1,
+                2.7, 2.3, 3.4, 3.5, 2.9, 3.4, 3.4, 2.7, 2.9, 3.4, 2.0, 2.6, 3.0, 3.7, 3.2, 3.3, 2.8,
+                3.1, 3.7, 3.7, 3.4, 3.8, 3.4, 13.0, 3.7, 3.3, 3.7, 3.6, 3.4, 3.5, 19.3, 3.7, 3.8,
+                11.4, 3.8, 3.6, 3.6, 3.8, 3.4, 3.0, 2.9, 2.8, 2.8, 3.3, 2.9, 2.3, 3.1, 3.3, 3.0,
+                2.6, 3.5, 3.2, 2.3, 3.4, 2.2, 2.8, 2.4, 2.2, 2.1, 2.9, 2.6, 2.7, 2.2, 2.6, 1.8, 2.6,
+                2.7, 2.7, 2.3, 2.6, 2.1, 3.1, 2.1, 2.5, 2.0, 6.1, 16.7, 4.8, 10.6, 2.5, 19.3, 15.4,
+                22.4, 2.8, 6.6, 21.1, 20.0, 2.6, 18.4, 2.4, 12.2, 18.4, 14.1, 3.0, 9.2, 4.7, 3.5,
+                6.9, 4.2, 2.7, 3.4, 2.6, 2.2, 4.2, 4.2, 2.4, 4.2, 3.2, 3.6, 3.7, 2.6, 3.7, 2.9, 2.7,
+                2.4, 2.7, 3.0, 2.3, 3.9, 2.4, 2.5, 2.7, 2.4, 2.9, 2.8, 2.6, 2.2, 2.5, 2.2, 3.1, 2.9,
+                2.3, 2.4, 1.7, 3.9, 33.3, 36.0, 43.7, 46.0, 2.4, 2.5, 2.4, 2.8, 2.6, 3.1, 2.9, 3.1,
+                2.8, 2.9, 3.0, 3.0, 2.9, 4.6, 5.0, 4.7, 5.0, 3.9, 3.4, 3.0, 2.6, 2.6, 3.2, 2.6, 3.2,
+                2.9, 2.8, 2.7, 2.6, 3.3, 2.6, 3.1, 3.4, 3.3, 3.1, 3.2, 3.1, 3.2, 54.3, 2.9, 49.8,
+                11.0, 59.6, 31.7, 48.3, 24.4, 2.5, 2.6, 2.4, 47.9, 2.9, 30.4, 27.3, 2.5, 12.6, 13.0,
+                44.0, 6.5, 6.0, 2.5, 2.6, 2.4, 2.4, 2.2, 2.5, 20.0, 2.3, 2.4, 2.0, 2.2, 2.6, 2.4,
+                2.6, 2.9, 2.2, 2.2, 2.7, 3.3, 2.1, 3.1, 2.7, 2.6, 2.3, 2.7, 2.5, 3.6, 2.5, 3.1, 3.1,
+                3.2, 3.2, 3.6, 3.4, 2.8, 2.9, 2.5, 3.0, 2.6, 3.7, 1.2, 1.4, 1.9, 1.6, 1.9, 1.8, 2.2,
+                1.7, 2.1, 2.3, 1.8, 0.0, 2.4, 2.8, 2.2, 2.8, 2.2, 2.3, 2.6, 2.0, 2.9, 2.8, 2.6, 2.7,
+                2.6, 2.4, 1.8, 1.7, 2.4, 2.1, 2.7, 2.1, 2.0, 2.0, 2.3, 1.7, 1.9, 2.3, 2.2, 2.0, 2.1,
+                2.0, 1.8, 1.2, 1.6, 2.2, 2.6, 2.4, 2.4, 3.2, 3.2, 2.9, 2.5, 3.0, 2.6, 3.0, 2.6, 2.9,
+                2.6, 2.9, 2.5, 2.4, 2.6, 2.7, 2.4, 2.7, 3.0, 3.0, 5.9, 4.6, 5.0, 9.3, 5.1, 14.2,
+                8.2, 12.8, 3.3, 2.6, 2.7, 2.6, 2.9, 2.4, 2.9, 2.6, 2.9, 2.4, 2.3, 2.7, 3.1, 2.8,
+                2.9, 2.9, 2.6, 2.7, 2.5, 2.3, 2.5, 2.5, 2.6, 2.3, 2.6, 2.6, 2.4, 2.6, 2.4, 2.5,
+                13.3, 2.3, 2.2, 5.2, 15.9, 2.1, 4.3, 29.2, 2.8, 3.0, 2.7, 2.8, 2.9, 8.2, 2.6, 25.4,
+                9.7, 2.8, 2.7, 1.9, 4.4, 2.3, 1.8, 2.2, 2.0, 2.4, 2.3, 2.5, 2.5, 2.6, 2.6, 3.2, 2.2,
+                2.5, 3.2, 2.9, 2.7, 3.4, 2.7, 2.8, 2.3, 2.4, 2.8, 2.7, 2.6, 2.5, 2.5, 2.6, 2.6, 2.6,
+                2.7, 2.9, 2.4, 2.3, 2.9, 2.9, 3.1, 2.8, 3.4, 2.5, 3.0, 3.5, 3.1, 3.1, 3.5, 3.5, 2.5,
+                2.7, 3.3, 3.4, 3.0, 3.3, 3.0, 3.4, 2.9, 3.2, 3.2, 2.9, 6.2, 1.9, 2.1, 2.4, 2.6, 2.5,
+                3.0, 2.8, 2.5, 2.8, 2.5, 2.8, 2.6, 1.6, 3.0, 3.1, 3.1, 3.0, 3.1, 2.9, 2.9, 3.0, 2.9,
+                2.7, 2.8, 2.7, 2.6, 2.5, 2.5, 2.6, 2.2, 2.3, 2.4, 2.5, 3.1, 2.9, 2.9, 3.2, 3.8, 3.2,
+                3.2, 3.5, 3.1, 3.3, 3.0, 3.4, 2.7, 4.6, 3.3, 3.4, 2.9, 3.1, 2.9, 3.3, 3.3, 2.6, 2.9,
+                2.8, 2.9, 3.0, 2.8, 2.7, 2.3, 12.8, 19.1, 13.1, 20.1, 2.5, 22.2, 30.6, 14.5, 18.7,
+                24.7, 28.6, 21.0, 22.7, 19.0, 14.1, 18.7, 17.5, 13.3, 7.6, 1.9, 1.9, 2.4, 2.2, 2.7,
+                3.1, 10.9, 2.8, 2.5, 2.9, 26.6, 2.7, 29.1, 2.9, 3.3, 3.1, 31.1, 3.1, 4.3, 2.9, 28.1,
+                28.5, 3.0, 35.0, 41.4, 4.6, 30.7, 26.5, 12.5, 20.8, 36.3, 35.3, 7.3, 4.4, 3.5, 2.4,
+                3.3, 3.0, 3.0, 10.7, 4.4, 3.5, 3.6, 5.4, 3.1, 5.5, 2.3, 2.5, 3.8, 3.1, 2.7, 3.0,
+                2.9, 3.1, 2.9, 2.8, 2.4, 2.3, 2.4, 2.6, 3.4, 2.7, 3.1, 3.0, 2.9, 3.0, 2.2, 2.5, 2.8,
+                2.7, 3.0, 3.0, 3.8, 3.8, 3.5, 3.2, 3.1, 3.2, 2.4, 2.5, 2.8, 2.9, 3.3, 3.4, 2.7, 2.6,
+                2.1, 2.3, 2.7, 2.4, 2.3, 2.7, 3.3, 3.8, 3.1, 2.9, 2.9, 2.8
+            ],
+            "20": [
+                4.3, 2.4, 2.8, 2.9, 3.0, 3.4, 3.0, 3.6, 3.2, 3.6, 3.2, 3.9, 3.8, 3.4, 3.0, 3.4, 3.1,
+                3.7, 3.2, 4.3, 4.4, 4.0, 4.3, 4.3, 3.7, 3.7, 4.2, 2.9, 3.3, 3.8, 4.7, 4.1, 4.1, 3.6,
+                3.8, 4.7, 4.7, 4.4, 4.8, 4.2, 13.9, 4.7, 4.2, 4.6, 4.6, 4.3, 4.4, 20.2, 4.5, 4.7,
+                12.3, 4.7, 4.5, 4.4, 4.7, 4.3, 4.1, 3.8, 3.6, 3.7, 4.2, 3.7, 3.1, 3.8, 4.2, 3.8,
+                3.4, 4.4, 10.7, 13.9, 4.3, 3.3, 16.5, 3.2, 3.1, 15.8, 4.1, 3.6, 7.0, 10.0, 3.4,
+                20.6, 11.1, 3.7, 4.3, 3.0, 3.8, 2.9, 4.5, 2.7, 3.7, 2.6, 17.5, 17.5, 5.9, 11.4, 3.3,
+                20.2, 16.3, 23.2, 3.6, 7.4, 22.0, 20.9, 3.4, 19.3, 3.2, 13.1, 19.2, 14.9, 3.8, 10.0,
+                5.5, 4.4, 7.8, 5.2, 3.6, 4.6, 3.7, 3.1, 5.4, 5.5, 3.4, 5.6, 4.5, 4.8, 4.9, 3.8, 5.0,
+                4.1, 3.8, 3.5, 3.9, 4.2, 3.2, 4.7, 3.3, 3.4, 3.9, 3.4, 3.9, 4.0, 3.5, 3.0, 3.7, 3.0,
+                4.3, 3.9, 3.3, 3.4, 2.6, 4.8, 34.3, 36.9, 44.8, 47.1, 3.5, 3.7, 3.6, 3.9, 3.7, 4.3,
+                4.0, 4.2, 9.5, 4.7, 4.0, 3.9, 3.7, 5.4, 5.8, 5.5, 5.9, 4.7, 4.2, 3.9, 3.4, 3.5, 4.1,
+                3.4, 4.0, 3.8, 3.6, 3.5, 3.3, 4.1, 3.4, 3.9, 4.2, 4.1, 3.9, 4.0, 3.9, 4.0, 55.4,
+                4.1, 50.9, 12.0, 60.8, 32.8, 49.4, 25.5, 3.7, 3.8, 3.6, 48.8, 4.2, 31.6, 28.2, 3.7,
+                13.7, 14.1, 44.8, 8.2, 7.1, 3.7, 3.9, 3.5, 3.5, 3.5, 3.7, 20.8, 3.5, 3.5, 11.1, 3.8,
+                19.5, 3.6, 3.4, 3.7, 2.9, 3.2, 3.4, 4.2, 2.8, 3.8, 3.5, 3.7, 3.1, 3.9, 3.3, 4.4,
+                3.4, 3.9, 4.0, 4.1, 4.8, 4.5, 4.3, 4.1, 3.7, 3.2, 3.8, 3.7, 5.2, 1.9, 2.2, 2.9, 2.4,
+                2.7, 2.6, 3.2, 2.6, 3.0, 3.3, 2.6, 0.0, 3.1, 6.7, 2.8, 23.4, 16.1, 27.9, 3.2, 21.5,
+                3.6, 3.6, 3.3, 3.4, 3.3, 3.2, 2.6, 2.4, 3.1, 2.9, 3.5, 3.0, 2.9, 2.8, 3.2, 2.5, 2.7,
+                3.2, 3.0, 2.9, 3.0, 2.9, 2.6, 1.8, 2.3, 4.7, 16.3, 3.7, 19.5, 4.4, 4.3, 4.2, 5.3,
+                4.1, 3.7, 4.0, 3.7, 3.9, 3.6, 3.9, 3.5, 3.3, 3.5, 3.6, 3.4, 3.6, 3.9, 4.0, 6.7, 5.3,
+                5.8, 10.3, 6.0, 15.2, 9.2, 13.8, 4.1, 5.4, 3.5, 3.5, 3.7, 8.9, 3.7, 9.8, 3.7, 5.0,
+                10.6, 4.0, 4.0, 3.7, 4.2, 4.0, 3.7, 3.6, 3.5, 3.1, 3.6, 3.6, 3.8, 3.3, 3.6, 3.7,
+                3.5, 3.8, 3.5, 3.7, 14.4, 3.3, 3.2, 6.2, 16.9, 3.1, 5.2, 30.1, 3.7, 3.9, 3.4, 3.6,
+                3.7, 9.0, 3.4, 26.3, 10.5, 3.7, 3.4, 2.8, 5.1, 3.2, 2.6, 3.0, 2.8, 3.3, 3.1, 3.4,
+                3.4, 3.5, 3.6, 4.1, 3.1, 3.4, 4.1, 3.9, 3.8, 4.3, 3.7, 3.9, 3.3, 3.4, 3.9, 3.7, 3.5,
+                3.4, 3.3, 3.6, 3.6, 3.6, 3.6, 3.9, 3.2, 3.3, 3.8, 3.7, 4.0, 3.7, 4.7, 3.7, 4.3, 4.8,
+                4.3, 4.2, 4.7, 4.7, 9.3, 22.5, 4.5, 4.3, 17.8, 4.5, 7.2, 4.6, 4.2, 4.4, 4.3, 7.4,
+                16.7, 9.9, 3.1, 3.2, 3.7, 3.4, 3.9, 3.6, 3.3, 3.7, 3.3, 3.7, 3.4, 2.4, 3.8, 4.0,
+                4.0, 3.9, 4.0, 3.8, 3.8, 3.9, 3.8, 3.6, 3.7, 3.7, 3.4, 3.3, 3.5, 3.5, 3.2, 3.3, 3.4,
+                12.1, 4.4, 17.6, 9.2, 4.2, 4.8, 5.2, 4.2, 4.5, 12.4, 4.3, 4.8, 4.5, 13.9, 5.7, 4.3,
+                4.4, 3.8, 8.1, 3.8, 4.3, 4.3, 5.2, 3.9, 3.7, 3.8, 3.8, 3.7, 3.6, 3.4, 14.0, 20.2,
+                14.2, 21.4, 3.7, 24.4, 31.8, 15.7, 19.9, 29.6, 30.0, 35.6, 23.8, 20.1, 25.9, 19.7,
+                18.6, 14.3, 8.6, 3.2, 2.7, 3.1, 2.9, 3.4, 3.9, 11.9, 3.6, 3.2, 3.7, 27.6, 3.4, 30.2,
+                3.7, 4.1, 4.0, 32.1, 3.9, 5.1, 3.8, 29.1, 29.5, 3.9, 36.1, 42.5, 5.4, 31.8, 27.5,
+                13.3, 21.7, 37.3, 36.2, 8.1, 5.1, 4.2, 3.1, 4.0, 3.7, 3.7, 11.6, 5.1, 4.4, 4.5, 6.1,
+                6.0, 6.4, 3.0, 3.5, 4.6, 4.1, 3.5, 3.8, 3.8, 4.1, 4.0, 3.6, 3.3, 3.2, 3.5, 10.9,
+                6.7, 4.0, 4.0, 4.0, 3.9, 3.8, 2.9, 22.8, 12.7, 3.5, 3.9, 3.9, 4.7, 4.7, 4.4, 4.1,
+                4.3, 4.5, 3.2, 3.3, 3.7, 3.8, 4.2, 4.3, 3.7, 3.5, 3.0, 3.1, 3.5, 3.2, 3.2, 3.6, 4.3,
+                4.8, 3.9, 3.7, 3.8, 3.7
+            ]
+        },
+        "disability": {
+            "5": [
+                2.2, 0.6, 0.9, 1.0, 1.0, 1.3, 1.1, 1.5, 1.2, 1.4, 1.2, 1.8, 1.8, 1.4, 1.1, 1.4, 1.1,
+                1.6, 1.2, 1.9, 2.0, 1.9, 1.9, 1.9, 1.7, 1.4, 1.9, 1.0, 1.2, 1.5, 2.1, 1.8, 1.8, 1.4,
+                1.7, 2.1, 2.2, 2.1, 2.2, 1.9, 4.7, 2.2, 1.9, 2.1, 2.1, 2.0, 2.1, 1.8, 2.2, 2.3, 2.1,
+                2.3, 2.2, 2.1, 2.2, 2.1, 1.7, 1.8, 1.8, 1.8, 2.0, 1.9, 1.4, 2.0, 2.2, 1.9, 1.6, 2.4,
+                2.1, 1.5, 2.2, 1.3, 1.8, 1.7, 1.2, 1.5, 1.9, 1.6, 1.6, 1.5, 1.8, 1.2, 1.8, 1.7, 1.8,
+                1.6, 1.7, 1.5, 2.1, 1.3, 1.7, 1.1, 4.8, 6.1, 3.6, 1.5, 1.7, 17.3, 14.1, 9.5, 2.0,
+                1.7, 15.4, 18.6, 1.8, 16.2, 1.6, 1.5, 7.9, 12.8, 1.6, 1.4, 1.8, 1.6, 2.3, 1.6, 1.8,
+                1.8, 1.1, 1.2, 1.5, 1.5, 1.5, 1.5, 1.1, 1.0, 1.0, 1.1, 1.1, 1.2, 1.8, 0.8, 1.1, 1.3,
+                1.3, 3.1, 1.3, 1.4, 1.1, 0.8, 1.2, 1.1, 1.4, 1.3, 0.9, 1.0, 2.1, 1.9, 1.3, 1.4, 0.9,
+                3.1, 32.4, 35.0, 42.8, 45.0, 1.4, 1.4, 1.3, 1.8, 1.4, 2.0, 1.8, 2.0, 1.7, 1.8, 1.8,
+                1.8, 1.9, 3.8, 4.1, 3.8, 4.1, 3.0, 2.5, 1.9, 1.7, 1.6, 1.7, 1.5, 1.8, 1.7, 1.6, 1.6,
+                1.5, 1.8, 1.5, 1.6, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 53.2, 1.9, 48.8, 10.0, 58.5, 30.6,
+                47.3, 23.3, 1.4, 1.5, 1.4, 37.5, 1.7, 29.4, 1.3, 1.4, 11.6, 12.0, 29.2, 5.4, 5.0,
+                1.4, 1.5, 1.3, 1.3, 1.1, 1.4, 1.0, 1.3, 1.3, 1.0, 1.1, 1.4, 1.3, 1.7, 1.9, 1.3, 1.3,
+                1.7, 1.8, 1.2, 2.0, 1.7, 1.6, 1.5, 1.7, 1.5, 2.4, 1.6, 2.1, 2.0, 2.1, 2.1, 2.4, 2.3,
+                1.8, 1.9, 1.4, 1.9, 1.0, 1.1, 0.4, 0.5, 0.9, 0.6, 0.9, 0.8, 1.2, 0.8, 1.0, 1.2, 0.8,
+                0.0, 1.5, 1.8, 1.4, 1.8, 1.3, 1.4, 1.6, 1.2, 1.9, 1.8, 1.7, 1.7, 1.6, 1.4, 0.9, 0.8,
+                1.1, 1.2, 1.4, 1.1, 1.0, 1.0, 1.3, 0.8, 1.0, 1.3, 1.2, 1.1, 1.1, 1.0, 0.9, 0.4, 0.7,
+                1.1, 1.7, 1.3, 1.7, 2.0, 2.0, 1.8, 1.7, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.7,
+                1.7, 1.7, 1.7, 1.8, 2.1, 2.1, 1.7, 3.3, 3.7, 1.7, 3.1, 1.6, 1.8, 1.2, 1.8, 1.3, 1.6,
+                1.6, 1.7, 1.5, 1.7, 1.5, 1.7, 1.6, 1.3, 1.6, 1.7, 1.8, 1.9, 1.8, 1.6, 1.7, 1.5, 1.4,
+                1.6, 1.5, 1.6, 1.3, 1.2, 1.6, 1.4, 1.6, 1.3, 1.5, 1.2, 1.3, 1.2, 1.2, 2.6, 1.1, 1.0,
+                28.4, 1.8, 1.4, 1.2, 1.3, 1.3, 7.3, 1.1, 24.6, 8.8, 1.3, 1.3, 1.0, 3.6, 1.3, 0.9,
+                1.2, 1.1, 1.5, 1.4, 1.5, 1.5, 1.6, 1.6, 1.5, 1.5, 1.3, 1.6, 1.8, 1.7, 1.7, 1.7, 1.8,
+                1.6, 1.4, 1.8, 1.7, 1.8, 1.7, 1.4, 1.6, 1.6, 1.6, 1.6, 1.8, 1.4, 1.4, 1.7, 1.7, 1.8,
+                1.7, 1.4, 0.7, 1.1, 1.5, 1.1, 1.2, 1.4, 1.5, 0.7, 0.8, 1.3, 1.5, 1.1, 1.3, 1.0, 1.4,
+                1.0, 1.2, 1.2, 1.0, 0.9, 1.0, 1.2, 1.4, 1.6, 1.4, 1.6, 1.4, 1.2, 1.4, 1.2, 1.4, 1.3,
+                0.7, 1.9, 2.1, 2.0, 2.0, 2.0, 1.9, 1.9, 1.9, 1.9, 1.7, 1.9, 1.7, 1.7, 1.6, 1.5, 1.7,
+                1.3, 1.4, 1.5, 1.7, 2.0, 1.8, 1.9, 2.0, 2.0, 2.0, 2.0, 2.1, 2.0, 2.1, 2.0, 2.2, 1.7,
+                2.1, 2.1, 2.2, 1.8, 2.0, 1.8, 2.0, 2.1, 1.7, 1.8, 1.8, 1.8, 1.9, 1.8, 1.7, 1.3,
+                11.7, 18.0, 12.0, 19.0, 1.5, 21.3, 29.6, 13.4, 16.8, 21.5, 25.8, 13.7, 18.6, 7.6,
+                2.0, 1.8, 2.4, 1.4, 1.3, 1.2, 1.2, 1.2, 1.2, 1.3, 1.1, 1.1, 1.3, 1.1, 1.3, 11.9,
+                1.2, 10.0, 1.4, 1.8, 1.5, 17.9, 1.5, 3.3, 1.4, 25.0, 27.6, 1.5, 34.1, 40.6, 3.6,
+                29.8, 25.6, 11.5, 19.9, 35.5, 34.5, 6.5, 1.9, 2.8, 1.0, 1.9, 2.1, 2.2, 9.8, 3.6,
+                2.1, 2.6, 4.6, 1.7, 1.9, 1.5, 1.6, 1.8, 1.8, 1.7, 1.9, 1.9, 1.9, 1.8, 1.7, 1.3, 1.3,
+                1.3, 1.3, 0.9, 0.8, 2.0, 2.0, 1.9, 1.9, 1.2, 0.7, 0.9, 1.6, 1.9, 2.0, 2.2, 2.2, 2.4,
+                2.1, 1.3, 1.4, 1.2, 1.2, 1.7, 1.8, 1.7, 1.7, 1.7, 1.6, 1.0, 1.3, 1.7, 1.5, 1.6, 1.7,
+                2.0, 2.1, 1.8, 1.9, 1.9, 1.8
+            ],
+            "10": [
+                3.0, 1.2, 1.5, 1.6, 1.6, 2.0, 1.7, 2.1, 1.8, 2.1, 1.8, 2.5, 2.4, 2.0, 1.7, 2.0, 1.7,
+                2.3, 1.8, 3.4, 3.4, 2.6, 3.3, 3.3, 2.4, 2.8, 3.3, 1.6, 2.5, 2.9, 3.6, 3.2, 3.1, 2.8,
+                3.0, 3.6, 3.6, 3.4, 3.7, 3.3, 12.9, 3.6, 3.3, 3.6, 3.6, 3.3, 3.4, 19.2, 3.6, 3.7,
+                11.3, 3.7, 3.5, 3.5, 3.7, 3.4, 2.9, 2.9, 2.8, 2.5, 3.2, 2.5, 1.9, 2.6, 2.8, 2.5,
+                2.0, 3.0, 2.8, 2.3, 2.9, 1.8, 2.4, 2.3, 1.8, 2.0, 2.5, 2.1, 2.1, 2.0, 2.4, 1.7, 2.4,
+                2.3, 2.4, 2.1, 2.3, 2.0, 2.8, 2.0, 2.3, 1.8, 5.7, 7.3, 4.6, 2.3, 2.4, 18.6, 15.4,
+                10.7, 2.6, 2.3, 16.7, 19.9, 2.5, 17.4, 2.2, 2.1, 8.8, 14.0, 2.8, 1.9, 4.6, 3.3, 6.8,
+                4.0, 2.5, 3.0, 2.0, 1.9, 3.5, 3.5, 2.0, 3.5, 2.5, 2.9, 3.0, 2.1, 3.1, 2.3, 2.3, 1.8,
+                2.2, 2.4, 2.1, 3.5, 2.1, 2.3, 2.1, 1.8, 2.3, 2.2, 2.3, 1.9, 2.0, 1.8, 2.8, 2.5, 1.9,
+                2.0, 1.4, 3.6, 33.0, 35.6, 43.4, 45.7, 2.1, 2.2, 2.1, 2.5, 2.3, 2.8, 2.6, 2.7, 8.0,
+                3.5, 2.3, 2.2, 2.4, 4.3, 4.6, 4.3, 4.6, 3.5, 3.0, 2.7, 2.2, 2.3, 2.9, 2.3, 2.9, 2.6,
+                2.6, 2.4, 2.3, 3.0, 2.3, 2.8, 3.1, 3.0, 2.8, 2.9, 2.9, 2.9, 53.9, 2.6, 49.5, 10.6,
+                59.3, 31.3, 47.9, 24.0, 2.2, 2.2, 2.1, 47.8, 2.6, 30.1, 27.2, 2.2, 12.3, 12.7, 43.9,
+                6.1, 5.7, 2.2, 2.3, 2.0, 2.0, 1.8, 2.2, 20.0, 2.0, 2.0, 1.7, 1.8, 2.4, 2.1, 2.2,
+                2.7, 1.8, 1.8, 2.1, 3.2, 1.7, 2.5, 2.4, 2.2, 2.0, 2.3, 2.0, 3.0, 2.2, 2.6, 2.6, 2.7,
+                2.6, 3.0, 2.8, 2.3, 2.4, 2.2, 2.4, 2.0, 3.1, 0.8, 1.0, 1.5, 1.2, 1.4, 1.3, 1.8, 1.3,
+                1.6, 1.9, 1.3, 0.0, 1.9, 2.2, 1.7, 2.2, 1.7, 1.8, 2.0, 1.5, 2.4, 2.3, 2.1, 2.1, 2.0,
+                2.1, 1.6, 1.4, 2.1, 1.8, 2.4, 1.9, 1.8, 1.7, 2.1, 1.5, 1.7, 2.0, 1.9, 1.8, 1.9, 1.8,
+                1.6, 1.0, 1.4, 1.9, 2.4, 2.1, 2.2, 2.9, 2.8, 2.6, 2.3, 2.7, 2.4, 2.6, 2.4, 2.6, 2.3,
+                2.5, 2.3, 2.3, 2.2, 2.4, 2.3, 2.5, 2.7, 2.7, 5.7, 4.4, 4.8, 9.0, 4.9, 13.8, 7.9,
+                12.4, 3.0, 2.3, 2.5, 2.3, 2.6, 2.2, 2.6, 2.4, 2.6, 2.3, 2.1, 2.5, 2.8, 2.7, 2.8,
+                2.7, 2.5, 2.6, 2.4, 2.3, 2.4, 2.4, 2.5, 2.1, 2.0, 2.4, 2.3, 2.5, 2.1, 2.5, 2.0, 2.2,
+                2.0, 2.0, 3.3, 2.0, 1.8, 29.1, 2.6, 2.7, 2.4, 2.5, 2.6, 8.1, 2.4, 25.3, 9.6, 2.5,
+                2.4, 1.8, 4.3, 2.1, 1.6, 2.0, 1.8, 2.2, 2.1, 2.1, 2.1, 2.2, 2.2, 2.1, 1.9, 1.7, 2.1,
+                2.5, 2.4, 2.3, 2.3, 2.5, 1.9, 2.1, 2.5, 2.4, 2.1, 2.1, 2.1, 2.2, 2.2, 2.2, 2.3, 2.5,
+                2.0, 2.0, 2.4, 2.4, 2.7, 2.4, 2.3, 1.5, 1.9, 2.3, 2.0, 2.0, 2.3, 2.4, 1.5, 1.6, 2.2,
+                2.3, 1.9, 2.2, 1.9, 2.3, 1.8, 2.1, 2.0, 1.8, 5.1, 1.6, 1.8, 2.0, 2.3, 2.2, 2.7, 2.5,
+                2.3, 2.5, 2.2, 2.5, 2.3, 1.4, 2.7, 2.9, 2.8, 2.8, 2.9, 2.6, 2.7, 2.7, 2.7, 2.5, 2.6,
+                2.5, 2.4, 2.3, 2.4, 2.4, 2.1, 2.2, 2.3, 10.6, 3.0, 16.0, 7.6, 2.6, 2.7, 3.9, 2.7,
+                2.7, 10.8, 2.7, 3.3, 2.9, 12.3, 2.8, 2.7, 2.8, 2.4, 6.7, 2.4, 2.6, 2.7, 3.9, 2.6,
+                2.4, 2.5, 2.7, 2.6, 2.5, 2.0, 12.6, 18.7, 12.7, 19.9, 2.2, 22.0, 30.3, 14.2, 18.5,
+                24.2, 28.2, 20.1, 22.2, 18.0, 13.0, 17.6, 16.5, 12.1, 6.5, 1.9, 1.9, 2.2, 2.0, 2.5,
+                1.9, 1.8, 2.5, 2.3, 2.6, 12.5, 2.4, 10.7, 2.6, 2.9, 2.8, 18.6, 2.8, 4.3, 2.7, 25.7,
+                28.4, 2.8, 35.0, 41.4, 4.5, 30.6, 26.4, 12.4, 20.7, 36.3, 35.2, 7.0, 2.4, 3.3, 2.3,
+                3.1, 2.8, 2.8, 10.5, 4.2, 3.4, 3.3, 5.1, 2.6, 5.3, 2.0, 2.2, 3.6, 2.7, 2.4, 2.8,
+                2.8, 2.8, 2.8, 2.7, 2.1, 2.0, 2.0, 2.2, 2.8, 1.6, 2.9, 2.8, 2.7, 2.7, 1.7, 1.4, 1.7,
+                2.4, 2.7, 2.8, 3.7, 3.7, 3.0, 2.7, 2.5, 2.6, 2.2, 2.2, 2.5, 2.6, 2.2, 2.3, 2.1, 2.4,
+                1.7, 1.9, 2.6, 2.3, 2.0, 2.1, 2.6, 2.8, 2.6, 2.6, 2.7, 2.5
+            ],
+            "12": [
+                3.2, 1.6, 1.9, 2.0, 2.0, 2.4, 2.1, 2.5, 2.2, 2.5, 2.2, 2.8, 2.8, 2.4, 2.1, 2.4, 2.1,
+                2.6, 2.2, 3.5, 3.5, 3.0, 3.4, 3.5, 2.7, 2.9, 3.4, 2.0, 2.6, 3.0, 3.8, 3.2, 3.3, 2.9,
+                3.1, 3.7, 3.7, 3.5, 3.8, 3.4, 13.1, 3.7, 3.3, 3.7, 3.7, 3.4, 3.5, 19.3, 3.7, 3.8,
+                11.4, 3.8, 3.6, 3.6, 3.8, 3.4, 3.0, 2.9, 2.8, 2.9, 3.3, 2.9, 2.3, 3.1, 3.3, 3.0,
+                2.6, 3.5, 3.2, 2.3, 3.4, 2.2, 2.8, 2.4, 2.3, 2.1, 2.9, 2.7, 2.7, 2.2, 2.6, 1.9, 2.6,
+                2.7, 2.7, 2.3, 2.6, 2.1, 3.1, 2.1, 2.5, 2.0, 6.1, 16.7, 4.8, 10.7, 2.5, 19.3, 15.5,
+                22.5, 2.8, 6.6, 21.2, 20.0, 2.6, 18.4, 2.4, 12.3, 18.4, 14.1, 3.0, 9.3, 4.7, 3.5,
+                6.9, 4.3, 2.7, 3.4, 2.7, 2.3, 4.2, 4.2, 2.4, 4.2, 3.2, 3.6, 3.7, 2.7, 3.8, 2.9, 2.7,
+                2.4, 2.8, 3.0, 2.3, 3.9, 2.4, 2.5, 2.8, 2.4, 3.0, 2.9, 2.6, 2.2, 2.6, 2.3, 3.1, 2.9,
+                2.3, 2.4, 1.7, 3.9, 33.4, 36.0, 43.7, 46.0, 2.4, 2.5, 2.4, 2.8, 2.6, 3.1, 2.9, 3.1,
+                8.4, 3.6, 2.9, 2.9, 2.8, 4.7, 5.0, 4.7, 5.0, 3.9, 3.4, 3.0, 2.6, 2.7, 3.2, 2.6, 3.2,
+                2.9, 2.9, 2.7, 2.6, 3.3, 2.6, 3.2, 3.4, 3.3, 3.1, 3.2, 3.2, 3.2, 54.3, 2.9, 49.8,
+                11.0, 59.6, 31.7, 48.3, 24.4, 2.5, 2.6, 2.4, 47.9, 2.9, 30.5, 27.3, 2.5, 12.6, 13.0,
+                44.0, 6.5, 6.1, 2.5, 2.6, 2.4, 2.4, 2.2, 2.5, 20.0, 2.4, 2.4, 2.0, 2.2, 2.7, 2.4,
+                2.6, 2.9, 2.2, 2.2, 2.7, 3.3, 2.1, 3.1, 2.7, 2.6, 2.4, 2.7, 2.5, 3.6, 2.6, 3.2, 3.2,
+                3.3, 3.2, 3.6, 3.4, 2.8, 2.9, 2.6, 3.0, 2.7, 3.8, 1.2, 1.4, 1.9, 1.6, 1.8, 1.7, 2.2,
+                1.7, 2.0, 2.3, 1.7, 0.0, 2.4, 2.8, 2.3, 2.8, 2.2, 2.4, 2.6, 2.1, 2.9, 2.8, 2.7, 2.7,
+                2.6, 2.4, 1.8, 1.7, 2.4, 2.1, 2.7, 2.2, 2.0, 2.0, 2.3, 1.8, 1.9, 2.3, 2.2, 2.0, 2.1,
+                2.0, 1.8, 1.2, 1.6, 2.2, 2.7, 2.4, 2.4, 3.2, 3.2, 3.0, 2.5, 3.1, 2.7, 3.0, 2.6, 2.9,
+                2.6, 2.9, 2.5, 2.5, 2.5, 2.7, 2.5, 2.7, 3.0, 3.0, 5.9, 4.6, 5.0, 9.4, 5.2, 14.2,
+                8.3, 12.8, 3.3, 2.6, 2.8, 2.6, 2.9, 2.4, 2.9, 2.6, 2.9, 2.4, 2.4, 2.8, 3.1, 2.9,
+                3.0, 2.9, 2.7, 2.7, 2.6, 2.4, 2.6, 2.6, 2.7, 2.3, 2.1, 2.6, 2.5, 2.7, 2.3, 2.7, 2.2,
+                2.4, 2.2, 2.2, 3.5, 2.2, 2.0, 29.3, 2.8, 3.0, 2.7, 2.8, 2.9, 8.2, 2.7, 25.5, 9.8,
+                2.8, 2.7, 1.9, 4.5, 2.3, 1.8, 2.2, 2.0, 2.4, 2.3, 2.4, 2.5, 2.6, 2.6, 3.2, 2.2, 2.5,
+                3.2, 2.8, 2.7, 3.4, 2.7, 2.8, 2.3, 2.4, 2.8, 2.7, 2.5, 2.4, 2.4, 2.6, 2.6, 2.5, 2.6,
+                2.8, 2.3, 2.3, 2.8, 2.8, 3.0, 2.8, 3.5, 2.6, 3.1, 3.5, 3.1, 3.1, 3.5, 3.5, 2.6, 2.7,
+                3.4, 3.4, 3.0, 3.4, 3.0, 3.5, 2.9, 3.3, 3.2, 2.9, 6.2, 1.9, 2.1, 2.3, 2.6, 2.5, 3.0,
+                2.8, 2.6, 2.8, 2.6, 2.8, 2.7, 1.6, 2.8, 3.1, 3.0, 3.0, 3.0, 2.8, 2.9, 2.9, 2.9, 2.7,
+                2.8, 2.7, 2.6, 2.5, 2.6, 2.6, 2.3, 2.4, 2.5, 11.0, 3.3, 16.4, 8.0, 3.1, 3.7, 4.1,
+                3.0, 3.4, 11.2, 3.2, 3.7, 3.3, 12.8, 4.6, 3.2, 3.3, 2.8, 7.0, 2.8, 3.2, 3.2, 4.2,
+                3.0, 2.7, 2.8, 2.8, 2.8, 2.7, 2.4, 12.9, 19.1, 13.1, 20.2, 2.6, 22.3, 30.6, 14.6,
+                18.8, 24.8, 28.6, 21.0, 22.8, 19.1, 14.1, 18.7, 17.6, 13.3, 7.7, 2.0, 2.0, 2.4, 2.1,
+                2.8, 2.0, 2.0, 2.8, 2.6, 2.9, 12.7, 2.7, 10.9, 2.9, 3.0, 3.1, 18.8, 3.1, 4.4, 3.0,
+                25.9, 28.6, 3.1, 35.1, 41.5, 4.7, 30.8, 26.5, 12.5, 20.9, 36.4, 35.4, 7.4, 4.5, 3.5,
+                2.4, 3.4, 3.0, 3.0, 10.8, 4.4, 3.6, 3.6, 5.4, 3.2, 5.5, 2.3, 2.5, 3.8, 3.1, 2.7,
+                3.0, 3.0, 3.1, 3.0, 2.9, 2.4, 2.3, 2.4, 2.7, 3.5, 2.7, 3.1, 3.0, 2.9, 2.9, 2.2, 2.5,
+                2.9, 2.6, 3.0, 3.0, 3.8, 3.8, 3.6, 3.3, 3.1, 3.2, 2.5, 2.5, 2.8, 2.9, 3.3, 3.4, 2.6,
+                2.6, 2.1, 2.3, 2.8, 2.5, 2.2, 2.6, 3.2, 3.7, 3.0, 2.8, 2.9, 2.9
+            ],
+            "20": [
+                4.1, 2.2, 2.7, 2.7, 2.8, 3.2, 2.9, 3.4, 3.0, 3.4, 3.1, 3.7, 3.7, 3.3, 2.9, 3.3, 2.9,
+                3.5, 3.0, 4.2, 4.3, 3.9, 4.1, 4.2, 3.6, 3.5, 4.1, 2.8, 3.2, 3.7, 4.6, 4.0, 4.0, 3.5,
+                3.7, 4.5, 4.5, 4.3, 4.7, 4.1, 13.7, 4.5, 4.1, 4.5, 4.4, 4.2, 4.3, 20.1, 4.4, 4.6,
+                12.2, 4.6, 4.4, 4.3, 4.5, 4.2, 4.0, 3.6, 3.5, 3.5, 4.1, 3.6, 2.9, 3.7, 4.1, 3.7,
+                3.3, 4.2, 10.5, 13.8, 4.2, 3.2, 16.4, 3.1, 3.0, 15.7, 4.0, 3.6, 6.9, 9.8, 3.3, 20.5,
+                11.0, 3.7, 4.2, 2.9, 3.7, 2.8, 4.4, 2.7, 3.7, 2.6, 17.3, 17.4, 5.7, 11.3, 3.1, 20.0,
+                16.1, 23.1, 3.4, 7.3, 21.8, 20.8, 3.3, 19.2, 3.0, 13.0, 19.1, 14.8, 3.6, 9.9, 5.3,
+                4.2, 7.7, 5.1, 3.4, 4.5, 3.6, 3.0, 5.4, 5.4, 3.3, 5.5, 4.4, 4.7, 4.8, 3.8, 4.9, 4.0,
+                3.7, 3.4, 3.8, 4.2, 3.1, 4.6, 3.2, 3.3, 3.8, 3.4, 3.8, 3.9, 3.4, 2.9, 3.6, 2.9, 4.1,
+                3.8, 3.2, 3.3, 2.5, 4.7, 34.2, 36.8, 44.7, 46.9, 12.8, 3.4, 4.2, 12.4, 3.5, 4.0,
+                3.8, 7.5, 9.4, 4.5, 4.0, 5.1, 3.8, 5.4, 5.8, 5.5, 5.8, 4.7, 4.2, 3.8, 3.3, 3.5, 4.0,
+                3.4, 4.1, 3.7, 3.7, 3.5, 3.4, 4.2, 3.4, 4.0, 4.3, 4.2, 3.9, 4.0, 3.9, 4.0, 55.3,
+                3.9, 50.8, 11.9, 60.7, 32.6, 49.3, 25.3, 4.1, 3.6, 8.8, 48.7, 4.0, 31.4, 28.1, 9.6,
+                13.6, 14.0, 44.7, 8.1, 7.0, 15.0, 8.0, 15.8, 5.3, 3.3, 13.0, 20.7, 3.2, 13.9, 10.9,
+                3.7, 19.3, 3.4, 3.3, 3.6, 2.8, 3.1, 3.4, 4.0, 2.7, 3.7, 3.4, 3.6, 3.0, 3.8, 3.3,
+                4.3, 3.2, 3.8, 3.9, 4.0, 4.7, 4.4, 4.2, 4.0, 3.6, 3.2, 3.7, 3.6, 5.1, 1.8, 2.1, 2.7,
+                2.2, 2.6, 2.4, 3.0, 2.4, 2.8, 3.1, 2.5, 0.0, 3.0, 6.6, 2.8, 23.3, 16.0, 27.8, 3.2,
+                21.4, 3.6, 3.5, 3.3, 3.3, 3.2, 3.1, 2.5, 2.3, 3.1, 2.8, 3.5, 2.9, 2.8, 2.7, 3.1,
+                2.4, 2.6, 3.1, 3.0, 2.8, 2.9, 2.8, 2.5, 1.7, 2.2, 4.5, 16.1, 3.5, 19.3, 4.2, 4.1,
+                4.0, 5.0, 7.4, 3.5, 3.8, 13.5, 10.6, 14.6, 3.7, 14.2, 7.0, 7.9, 3.4, 3.4, 3.4, 3.7,
+                3.8, 6.7, 5.3, 5.8, 10.3, 6.0, 15.2, 9.3, 13.8, 4.1, 3.4, 3.6, 3.4, 3.7, 3.2, 3.8,
+                3.4, 3.8, 3.3, 3.0, 3.6, 3.9, 3.6, 4.1, 3.9, 3.6, 3.6, 3.5, 3.2, 3.6, 3.5, 3.7, 3.2,
+                2.8, 3.6, 3.5, 3.8, 3.3, 3.6, 3.1, 3.3, 3.1, 3.0, 4.3, 3.0, 2.8, 30.0, 3.6, 3.8,
+                3.4, 3.6, 3.7, 9.0, 3.3, 26.2, 10.5, 3.6, 3.3, 2.7, 5.1, 3.1, 2.5, 2.9, 2.7, 3.2,
+                3.0, 3.2, 3.2, 3.3, 3.4, 4.0, 2.9, 3.3, 4.0, 3.7, 3.6, 4.2, 3.5, 3.7, 3.1, 3.2, 3.7,
+                3.6, 3.3, 3.3, 3.2, 3.4, 3.4, 3.4, 3.4, 3.7, 3.1, 3.1, 3.6, 3.6, 3.9, 3.6, 4.6, 3.6,
+                4.2, 4.6, 4.1, 4.1, 4.5, 4.5, 9.1, 22.4, 4.3, 4.1, 17.7, 4.3, 7.1, 4.4, 4.0, 4.2,
+                4.1, 7.2, 16.5, 9.7, 3.0, 3.0, 3.5, 3.3, 3.8, 3.6, 3.2, 3.6, 3.2, 3.6, 3.3, 2.3,
+                3.7, 3.9, 3.8, 3.8, 3.9, 3.6, 3.7, 3.7, 3.7, 3.5, 3.6, 3.6, 3.3, 3.2, 3.5, 3.3, 3.1,
+                3.2, 3.3, 11.9, 4.2, 17.4, 9.0, 4.0, 4.5, 5.0, 4.0, 4.3, 12.2, 4.1, 4.7, 4.3, 13.8,
+                5.5, 4.1, 4.2, 3.7, 8.0, 3.6, 4.1, 4.1, 5.1, 3.8, 3.6, 3.6, 3.6, 3.6, 3.5, 3.3,
+                13.9, 20.1, 14.1, 21.3, 3.5, 24.3, 31.7, 15.6, 19.8, 29.5, 29.9, 35.5, 23.7, 19.9,
+                25.7, 19.5, 18.5, 14.1, 8.5, 2.8, 2.7, 3.1, 2.9, 3.4, 2.7, 2.7, 3.5, 3.2, 3.6, 13.4,
+                3.3, 11.6, 3.6, 3.7, 3.9, 19.6, 3.9, 5.1, 3.8, 26.7, 29.5, 3.8, 36.0, 42.4, 5.4,
+                31.7, 27.4, 13.3, 21.7, 37.2, 36.2, 8.0, 5.0, 4.1, 3.0, 4.0, 3.7, 3.7, 11.5, 5.1,
+                4.3, 4.4, 6.2, 6.0, 6.4, 3.0, 3.5, 4.6, 4.0, 3.5, 3.8, 3.8, 4.2, 4.1, 3.7, 3.2, 3.1,
+                3.3, 10.8, 6.7, 3.8, 3.9, 3.9, 3.7, 3.7, 2.9, 22.7, 12.6, 3.4, 3.8, 3.8, 4.6, 4.6,
+                4.3, 4.0, 4.3, 4.4, 3.1, 3.2, 3.5, 3.7, 4.1, 4.2, 3.5, 3.4, 2.8, 3.0, 3.6, 3.3,
+                11.1, 8.6, 4.1, 4.6, 3.8, 3.6, 3.7, 3.6
+            ]
+        },
+        "deprivation": {
+            "5": [
+                2.2, 0.6, 0.9, 1.0, 1.0, 1.3, 1.1, 1.5, 1.2, 1.4, 1.2, 1.8, 1.8, 1.4, 1.1, 1.4, 1.1,
+                1.6, 1.2, 1.9, 2.0, 1.9, 1.9, 1.9, 1.7, 1.4, 1.9, 1.0, 1.2, 1.5, 2.1, 1.8, 1.8, 1.4,
+                1.7, 2.1, 2.2, 2.1, 2.2, 1.9, 4.7, 2.2, 1.9, 2.1, 2.1, 2.0, 2.1, 1.8, 2.2, 2.3, 2.1,
+                2.3, 2.2, 2.1, 2.2, 2.1, 1.7, 1.8, 1.8, 1.8, 2.0, 1.9, 1.4, 2.0, 2.2, 1.9, 1.6, 2.4,
+                2.1, 1.5, 2.2, 1.3, 1.8, 1.7, 1.2, 1.5, 1.9, 1.6, 1.6, 1.5, 1.8, 1.2, 1.8, 1.7, 1.8,
+                1.6, 1.7, 1.5, 2.1, 1.3, 1.7, 1.1, 4.8, 6.1, 3.6, 1.5, 1.7, 17.3, 14.1, 9.5, 2.0,
+                1.7, 15.4, 18.6, 1.8, 16.2, 1.6, 1.5, 7.9, 12.8, 1.6, 1.4, 1.8, 1.6, 2.3, 1.6, 1.8,
+                1.8, 1.1, 1.2, 1.5, 1.5, 1.5, 1.5, 1.1, 1.0, 1.0, 1.1, 1.1, 1.2, 1.8, 0.8, 1.1, 1.3,
+                1.3, 3.1, 1.3, 1.4, 1.1, 0.8, 1.2, 1.1, 1.4, 1.3, 0.9, 1.0, 2.1, 1.9, 1.3, 1.4, 0.9,
+                3.1, 32.4, 35.0, 42.8, 45.0, 1.4, 1.4, 1.3, 1.8, 1.4, 2.0, 1.8, 2.0, 1.7, 1.8, 1.8,
+                1.8, 1.9, 3.8, 4.1, 3.8, 4.1, 3.0, 2.5, 1.9, 1.7, 1.6, 1.7, 1.5, 1.8, 1.7, 1.6, 1.6,
+                1.5, 1.8, 1.5, 1.6, 1.8, 1.7, 1.6, 1.6, 1.6, 1.6, 53.2, 1.9, 48.8, 10.0, 58.5, 30.6,
+                47.3, 23.3, 1.4, 1.5, 1.4, 37.5, 1.7, 29.4, 1.3, 1.4, 11.6, 12.0, 29.2, 5.4, 5.0,
+                1.4, 1.5, 1.3, 1.3, 1.1, 1.4, 1.0, 1.3, 1.3, 1.0, 1.1, 1.4, 1.3, 1.7, 1.9, 1.3, 1.3,
+                1.7, 1.8, 1.2, 2.0, 1.7, 1.6, 1.5, 1.7, 1.5, 2.4, 1.6, 2.1, 2.0, 2.1, 2.1, 2.4, 2.3,
+                1.8, 1.9, 1.4, 1.9, 1.0, 1.1, 0.4, 0.5, 0.9, 0.6, 0.9, 0.8, 1.2, 0.8, 1.0, 1.2, 0.8,
+                0.0, 1.5, 1.8, 1.4, 1.8, 1.3, 1.4, 1.6, 1.2, 1.9, 1.8, 1.7, 1.7, 1.6, 1.4, 0.9, 0.8,
+                1.1, 1.2, 1.4, 1.1, 1.0, 1.0, 1.3, 0.8, 1.0, 1.3, 1.2, 1.1, 1.1, 1.0, 0.9, 0.4, 0.7,
+                1.1, 1.7, 1.3, 1.7, 2.0, 2.0, 1.8, 1.7, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.9, 1.8, 1.7,
+                1.7, 1.7, 1.7, 1.8, 2.1, 2.1, 1.7, 3.3, 3.7, 1.7, 3.1, 1.6, 1.8, 1.2, 1.8, 1.3, 1.6,
+                1.6, 1.7, 1.5, 1.7, 1.5, 1.7, 1.6, 1.3, 1.6, 1.7, 1.8, 1.9, 1.8, 1.6, 1.7, 1.5, 1.4,
+                1.6, 1.5, 1.6, 1.3, 1.2, 1.6, 1.4, 1.6, 1.3, 1.5, 1.2, 1.3, 1.2, 1.2, 2.6, 1.1, 1.0,
+                28.4, 1.8, 1.4, 1.2, 1.3, 1.3, 7.3, 1.1, 24.6, 8.8, 1.3, 1.3, 1.0, 3.6, 1.3, 0.9,
+                1.2, 1.1, 1.5, 1.4, 1.5, 1.5, 1.6, 1.6, 1.5, 1.5, 1.3, 1.6, 1.8, 1.7, 1.7, 1.7, 1.8,
+                1.6, 1.4, 1.8, 1.7, 1.8, 1.7, 1.4, 1.6, 1.6, 1.6, 1.6, 1.8, 1.4, 1.4, 1.7, 1.7, 1.8,
+                1.7, 1.4, 0.7, 1.1, 1.5, 1.1, 1.2, 1.4, 1.5, 0.7, 0.8, 1.3, 1.5, 1.1, 1.3, 1.0, 1.4,
+                1.0, 1.2, 1.2, 1.0, 0.9, 1.0, 1.2, 1.4, 1.6, 1.4, 1.6, 1.4, 1.2, 1.4, 1.2, 1.4, 1.3,
+                0.7, 1.9, 2.1, 2.0, 2.0, 2.0, 1.9, 1.9, 1.9, 1.9, 1.7, 1.9, 1.7, 1.7, 1.6, 1.5, 1.7,
+                1.3, 1.4, 1.5, 1.7, 2.0, 1.8, 1.9, 2.0, 2.0, 2.0, 2.0, 2.1, 2.0, 2.1, 2.0, 2.2, 1.7,
+                2.1, 2.1, 2.2, 1.8, 2.0, 1.8, 2.0, 2.1, 1.7, 1.8, 1.8, 1.8, 1.9, 1.8, 1.7, 1.3,
+                11.7, 18.0, 12.0, 19.0, 1.5, 21.3, 29.6, 13.4, 16.8, 21.5, 25.8, 13.7, 18.6, 7.6,
+                2.0, 1.8, 2.4, 1.4, 1.3, 1.2, 1.2, 1.2, 1.2, 1.3, 1.1, 1.1, 1.3, 1.1, 1.3, 11.9,
+                1.2, 10.0, 1.4, 1.8, 1.5, 17.9, 1.5, 3.3, 1.4, 25.0, 27.6, 1.5, 34.1, 40.6, 3.6,
+                29.8, 25.6, 11.5, 19.9, 35.5, 34.5, 6.5, 1.9, 2.8, 1.0, 1.9, 2.1, 2.2, 9.8, 3.6,
+                2.1, 2.6, 4.6, 1.7, 1.9, 1.5, 1.6, 1.8, 1.8, 1.7, 1.9, 1.9, 1.9, 1.8, 1.7, 1.3, 1.3,
+                1.3, 1.3, 0.9, 0.8, 2.0, 2.0, 1.9, 1.9, 1.2, 0.7, 0.9, 1.6, 1.9, 2.0, 2.2, 2.2, 2.4,
+                2.1, 1.3, 1.4, 1.2, 1.2, 1.7, 1.8, 1.7, 1.7, 1.7, 1.6, 1.0, 1.3, 1.7, 1.5, 1.6, 1.7,
+                2.0, 2.1, 1.8, 1.9, 1.9, 1.8
+            ],
+            "10": [
+                2.8, 1.1, 1.5, 1.5, 1.6, 1.9, 1.6, 2.1, 1.7, 2.0, 1.8, 2.4, 2.3, 1.9, 1.6, 2.0, 1.7,
+                2.2, 1.8, 2.4, 2.5, 2.4, 2.4, 2.4, 2.2, 1.9, 2.3, 1.5, 1.6, 2.0, 2.7, 2.3, 2.3, 1.9,
+                2.1, 2.7, 2.8, 2.6, 2.8, 2.5, 5.1, 2.8, 2.4, 2.6, 2.7, 2.5, 2.7, 2.3, 2.7, 2.8, 2.6,
+                2.8, 2.8, 2.6, 2.8, 2.6, 2.5, 2.2, 2.2, 2.4, 2.5, 2.4, 1.9, 2.4, 2.7, 2.4, 2.0, 2.8,
+                9.5, 12.8, 2.8, 1.7, 15.3, 2.2, 1.7, 14.6, 2.4, 2.0, 5.8, 8.8, 2.3, 19.3, 9.9, 2.1,
+                2.8, 2.0, 2.2, 1.8, 2.8, 1.8, 2.3, 1.7, 5.3, 6.6, 4.2, 2.0, 2.2, 17.8, 14.7, 9.9,
+                2.5, 2.1, 15.9, 19.2, 2.3, 16.7, 2.2, 1.9, 8.3, 13.4, 2.1, 1.7, 2.4, 2.2, 2.9, 2.7,
+                2.4, 3.0, 2.0, 1.8, 3.4, 3.4, 1.9, 3.4, 2.4, 2.8, 2.9, 2.0, 3.0, 2.2, 2.2, 1.7, 2.1,
+                2.3, 1.8, 3.5, 1.9, 2.0, 2.0, 1.7, 2.2, 2.1, 2.0, 1.7, 1.9, 1.6, 2.6, 2.3, 1.8, 1.9,
+                1.2, 3.4, 32.8, 35.5, 43.2, 45.5, 11.1, 1.8, 2.6, 10.8, 1.9, 2.4, 2.2, 2.5, 7.9,
+                3.4, 2.3, 2.2, 2.4, 4.2, 4.5, 4.2, 4.5, 3.4, 2.9, 2.6, 2.1, 2.2, 2.6, 2.1, 2.6, 2.4,
+                2.3, 2.2, 2.0, 2.7, 2.1, 2.6, 2.8, 2.8, 2.6, 2.7, 2.6, 2.7, 53.7, 2.3, 49.3, 10.4,
+                59.1, 31.1, 47.7, 23.7, 2.4, 1.9, 7.1, 38.0, 2.2, 29.8, 1.7, 7.9, 12.1, 12.5, 29.6,
+                5.8, 5.5, 13.2, 6.2, 14.1, 3.7, 1.5, 11.2, 1.4, 1.7, 12.2, 1.5, 1.6, 1.9, 1.8, 2.2,
+                2.4, 1.8, 1.8, 2.1, 2.3, 1.7, 2.5, 2.2, 2.1, 1.9, 2.2, 2.0, 3.0, 2.1, 2.6, 2.5, 2.7,
+                2.6, 2.9, 2.8, 2.3, 2.4, 2.2, 2.4, 1.9, 3.0, 0.8, 1.0, 1.5, 1.1, 1.4, 1.3, 1.7, 1.3,
+                1.6, 1.8, 1.3, 0.0, 1.9, 2.2, 1.7, 2.2, 1.7, 1.8, 2.0, 1.6, 2.3, 2.3, 2.1, 2.1, 2.0,
+                1.9, 1.4, 1.2, 1.9, 1.7, 2.2, 1.7, 1.6, 1.5, 1.8, 1.3, 1.5, 1.8, 1.7, 1.6, 1.7, 1.6,
+                1.4, 0.8, 1.2, 1.6, 2.2, 1.8, 2.2, 2.6, 2.6, 2.4, 2.2, 2.4, 2.3, 2.5, 2.3, 2.4, 2.3,
+                2.5, 2.3, 2.2, 2.2, 2.3, 2.2, 2.4, 2.7, 2.7, 5.5, 4.3, 4.7, 8.9, 4.8, 13.7, 7.8,
+                12.2, 2.7, 2.1, 2.2, 2.1, 2.3, 2.0, 2.3, 2.1, 2.4, 2.0, 1.9, 2.2, 2.5, 2.4, 2.5,
+                2.4, 2.2, 2.3, 2.1, 2.1, 2.1, 2.1, 2.2, 1.9, 1.7, 2.1, 2.0, 2.2, 1.8, 2.1, 1.7, 1.8,
+                1.7, 1.7, 3.1, 1.7, 1.5, 29.0, 2.4, 2.5, 2.2, 2.3, 2.4, 7.9, 2.1, 25.2, 9.4, 2.3,
+                2.2, 1.6, 4.1, 1.9, 1.5, 1.8, 1.6, 2.0, 1.9, 2.0, 2.1, 2.2, 2.1, 2.0, 1.8, 1.7, 2.0,
+                2.4, 2.3, 2.2, 2.2, 2.4, 1.9, 2.0, 2.4, 2.3, 2.0, 2.0, 2.0, 2.2, 2.1, 2.1, 2.2, 2.4,
+                1.9, 1.9, 2.3, 2.3, 2.5, 2.3, 2.2, 1.4, 1.9, 2.3, 1.9, 1.9, 2.3, 2.3, 1.4, 1.6, 2.1,
+                2.2, 1.8, 2.1, 1.8, 2.2, 1.7, 2.0, 2.0, 1.8, 5.1, 1.5, 1.7, 1.9, 2.2, 2.0, 2.5, 2.3,
+                2.0, 2.3, 2.0, 2.3, 2.1, 1.2, 2.5, 2.7, 2.6, 2.6, 2.6, 2.4, 2.5, 2.5, 2.5, 2.3, 2.4,
+                2.3, 2.2, 2.2, 2.1, 2.3, 1.9, 1.9, 2.0, 10.5, 2.9, 15.8, 7.5, 2.5, 2.5, 3.8, 2.6,
+                2.6, 10.7, 2.6, 3.2, 2.7, 12.2, 2.6, 2.6, 2.7, 2.3, 6.6, 2.3, 2.5, 2.6, 3.8, 2.4,
+                2.3, 2.3, 2.5, 2.4, 2.3, 1.7, 12.3, 18.5, 12.4, 19.6, 1.9, 21.7, 30.0, 13.9, 18.2,
+                24.0, 28.0, 19.9, 22.0, 17.9, 12.9, 17.5, 16.4, 12.0, 6.4, 1.6, 1.6, 2.0, 1.7, 2.2,
+                1.7, 1.6, 2.3, 2.1, 2.4, 12.4, 2.2, 10.5, 2.4, 2.6, 2.6, 18.4, 2.5, 4.1, 2.4, 25.5,
+                28.2, 2.5, 34.7, 41.1, 4.3, 30.4, 26.2, 12.2, 20.5, 36.1, 35.1, 7.0, 2.4, 3.3, 2.2,
+                3.0, 2.7, 2.7, 10.4, 4.1, 3.2, 3.2, 5.1, 2.5, 5.2, 2.0, 2.1, 3.5, 2.6, 2.2, 2.5,
+                2.5, 2.5, 2.4, 2.3, 1.9, 1.8, 1.7, 2.3, 2.7, 1.6, 2.6, 2.6, 2.5, 2.5, 1.7, 1.4, 1.7,
+                2.2, 2.5, 2.6, 2.8, 2.8, 2.9, 2.6, 2.4, 2.5, 1.9, 2.0, 2.4, 2.5, 2.1, 2.2, 2.0, 2.2,
+                1.6, 1.9, 2.4, 2.1, 2.0, 2.1, 2.5, 2.6, 2.4, 2.4, 2.5, 2.4
+            ],
+            "12": [
+                3.1, 1.4, 1.8, 1.9, 1.9, 2.3, 2.0, 2.4, 2.1, 2.4, 2.1, 2.7, 2.7, 2.3, 2.0, 2.3, 2.0,
+                2.5, 2.1, 2.7, 2.8, 2.8, 2.6, 2.7, 2.5, 2.1, 2.6, 1.8, 1.8, 2.2, 3.0, 2.5, 2.5, 2.1,
+                2.3, 2.9, 3.0, 2.7, 3.0, 2.6, 12.3, 2.9, 2.6, 2.9, 2.9, 2.6, 2.7, 18.5, 2.9, 3.1,
+                10.6, 3.0, 2.8, 2.8, 3.0, 2.6, 2.7, 2.4, 2.4, 2.7, 2.7, 2.8, 2.2, 2.9, 3.2, 2.8,
+                2.4, 3.3, 9.8, 13.0, 3.2, 2.0, 15.5, 2.5, 2.0, 14.9, 2.7, 2.5, 6.1, 9.1, 2.6, 19.6,
+                10.2, 2.4, 3.1, 2.3, 2.5, 2.1, 3.2, 2.1, 2.6, 2.0, 5.4, 6.8, 4.4, 2.3, 2.5, 18.0,
+                14.9, 10.1, 2.9, 2.4, 16.1, 19.4, 2.6, 16.9, 2.5, 2.2, 8.5, 13.6, 2.5, 2.0, 2.7,
+                2.6, 3.3, 3.2, 2.7, 3.4, 2.4, 2.0, 4.0, 4.1, 2.2, 4.1, 3.1, 3.5, 3.5, 2.5, 3.6, 2.7,
+                2.5, 2.3, 2.6, 2.9, 2.0, 3.8, 2.1, 2.2, 2.6, 2.2, 2.8, 2.7, 2.3, 1.9, 2.4, 2.0, 2.9,
+                2.7, 2.1, 2.2, 1.5, 3.7, 33.1, 35.8, 43.5, 45.8, 11.5, 2.2, 2.9, 11.2, 2.3, 2.8,
+                2.6, 2.8, 8.3, 3.5, 2.9, 2.9, 2.8, 4.6, 4.9, 4.6, 4.9, 3.7, 3.3, 2.8, 2.4, 2.5, 2.9,
+                2.4, 2.9, 2.6, 2.6, 2.5, 2.3, 3.0, 2.3, 2.9, 3.1, 3.0, 2.8, 2.9, 2.9, 2.9, 54.1,
+                2.6, 49.6, 10.7, 59.4, 31.4, 48.1, 24.1, 2.8, 2.3, 7.5, 47.1, 2.6, 30.2, 26.5, 8.2,
+                12.4, 12.8, 43.3, 6.3, 5.8, 13.6, 6.6, 14.5, 4.1, 1.9, 11.6, 19.3, 2.0, 12.6, 1.8,
+                1.9, 2.6, 2.1, 2.5, 2.6, 2.1, 2.0, 2.5, 2.5, 2.0, 2.9, 2.5, 2.4, 2.2, 2.5, 2.4, 3.4,
+                2.4, 3.0, 3.0, 3.1, 3.0, 3.4, 3.2, 2.6, 2.8, 2.4, 2.8, 2.5, 3.6, 1.1, 1.3, 1.8, 1.4,
+                1.7, 1.6, 2.1, 1.6, 1.9, 2.2, 1.6, 0.0, 2.2, 2.6, 2.1, 2.6, 2.0, 2.2, 2.4, 1.9, 2.8,
+                2.7, 2.5, 2.5, 2.4, 2.2, 1.5, 1.4, 2.1, 1.9, 2.4, 1.9, 1.7, 1.7, 2.0, 1.5, 1.6, 2.0,
+                1.9, 1.8, 1.8, 1.7, 1.5, 0.9, 1.3, 2.0, 2.5, 2.2, 2.5, 3.0, 2.9, 2.7, 2.6, 2.8, 2.7,
+                2.9, 2.5, 2.8, 2.6, 2.9, 2.5, 2.5, 2.5, 2.7, 2.5, 2.7, 2.9, 3.0, 5.9, 4.6, 5.0, 9.3,
+                5.1, 14.1, 8.2, 12.7, 3.0, 2.4, 2.5, 2.4, 2.6, 2.2, 2.6, 2.4, 2.7, 2.2, 2.1, 2.5,
+                2.8, 2.6, 2.6, 2.6, 2.4, 2.5, 2.3, 2.2, 2.3, 2.3, 2.4, 2.0, 1.9, 2.3, 2.2, 2.4, 2.0,
+                2.3, 1.8, 2.0, 1.9, 1.8, 3.2, 1.8, 1.7, 29.1, 2.6, 2.7, 2.4, 2.5, 2.6, 8.0, 2.4,
+                25.3, 9.5, 2.5, 2.4, 1.7, 4.2, 2.1, 1.6, 1.9, 1.7, 2.2, 2.0, 2.3, 2.4, 2.5, 2.5,
+                3.1, 2.1, 2.4, 3.1, 2.7, 2.6, 3.3, 2.5, 2.7, 2.2, 2.3, 2.7, 2.6, 2.4, 2.3, 2.3, 2.5,
+                2.5, 2.4, 2.5, 2.7, 2.2, 2.2, 2.7, 2.6, 2.8, 2.6, 3.4, 2.5, 3.0, 3.4, 3.0, 3.0, 3.4,
+                3.4, 2.5, 2.6, 3.3, 3.3, 2.9, 3.3, 2.9, 3.4, 2.8, 3.1, 3.1, 2.8, 6.1, 1.8, 2.0, 2.2,
+                2.5, 2.3, 2.7, 2.5, 2.3, 2.6, 2.3, 2.5, 2.4, 1.3, 2.6, 2.9, 2.8, 2.8, 2.8, 2.6, 2.7,
+                2.7, 2.7, 2.5, 2.6, 2.4, 2.4, 2.3, 2.2, 2.4, 2.0, 2.1, 2.1, 10.9, 3.2, 16.3, 7.9,
+                3.0, 3.5, 4.0, 2.9, 3.3, 11.1, 3.1, 3.6, 3.2, 12.7, 4.4, 3.1, 3.2, 2.7, 6.9, 2.6,
+                3.1, 3.1, 4.1, 2.7, 2.6, 2.6, 2.6, 2.5, 2.5, 2.0, 12.6, 18.8, 12.8, 19.9, 2.2, 22.0,
+                30.3, 14.2, 18.5, 24.5, 28.4, 20.8, 22.5, 19.0, 14.0, 18.6, 17.5, 13.2, 7.6, 1.8,
+                1.8, 2.1, 1.9, 2.5, 1.8, 1.8, 2.5, 2.3, 2.6, 12.5, 2.4, 10.6, 2.6, 2.7, 2.8, 18.6,
+                2.8, 4.2, 2.7, 25.7, 28.4, 2.8, 34.9, 41.3, 4.5, 30.6, 26.3, 12.3, 20.6, 36.2, 35.2,
+                7.3, 2.7, 3.6, 2.4, 3.4, 3.1, 3.0, 10.8, 4.5, 3.6, 3.6, 5.5, 3.1, 5.6, 2.4, 2.5,
+                3.8, 3.1, 2.5, 2.7, 2.7, 2.8, 2.6, 2.5, 2.1, 2.0, 2.1, 2.5, 3.3, 2.6, 2.8, 2.8, 2.7,
+                2.6, 2.1, 2.4, 2.8, 2.4, 2.7, 2.8, 3.0, 3.1, 3.3, 3.0, 2.9, 3.0, 2.2, 2.2, 2.5, 2.6,
+                3.2, 3.3, 2.5, 2.4, 2.0, 2.2, 2.6, 2.3, 2.2, 2.6, 3.2, 3.5, 2.7, 2.6, 2.7, 2.8
+            ],
+            "20": [
+                4.1, 2.3, 2.7, 2.8, 2.9, 3.2, 2.9, 3.4, 3.0, 3.4, 3.1, 3.7, 3.7, 3.3, 2.9, 3.3, 2.9,
+                3.5, 3.1, 4.3, 4.3, 3.9, 4.2, 4.2, 3.7, 3.6, 4.1, 2.9, 3.3, 3.8, 4.6, 4.0, 4.0, 3.6,
+                3.8, 4.6, 4.5, 4.3, 4.7, 4.1, 13.8, 4.5, 4.1, 4.5, 4.4, 4.2, 4.3, 20.1, 4.4, 4.6,
+                12.2, 4.6, 4.4, 4.3, 4.6, 4.2, 4.0, 3.6, 3.5, 3.5, 4.1, 3.6, 2.9, 3.7, 4.1, 3.7,
+                3.3, 4.2, 10.5, 13.8, 4.2, 3.2, 16.4, 3.1, 3.0, 15.7, 4.0, 3.6, 6.9, 9.8, 3.3, 20.5,
+                11.0, 3.7, 4.2, 2.9, 3.7, 2.7, 4.4, 2.7, 3.7, 2.6, 17.3, 17.4, 5.7, 11.3, 3.1, 20.0,
+                16.1, 23.1, 3.4, 7.3, 21.8, 20.8, 3.3, 19.2, 3.0, 12.9, 19.1, 14.8, 3.6, 9.9, 5.3,
+                4.2, 7.7, 5.1, 3.4, 4.5, 3.6, 3.0, 5.4, 5.5, 3.3, 5.5, 4.4, 4.8, 4.8, 3.8, 4.9, 4.0,
+                3.7, 3.4, 3.8, 4.2, 3.1, 4.6, 3.2, 3.3, 3.8, 3.4, 3.8, 3.9, 3.4, 2.9, 3.6, 2.9, 4.2,
+                3.8, 3.2, 3.3, 2.5, 4.8, 34.2, 36.9, 44.7, 47.0, 12.8, 3.5, 4.2, 12.4, 3.5, 4.0,
+                3.8, 7.5, 9.4, 4.5, 4.0, 5.1, 3.8, 5.4, 5.8, 5.5, 5.8, 4.7, 4.2, 3.8, 3.3, 3.4, 4.0,
+                3.3, 4.1, 3.7, 3.6, 3.5, 3.3, 4.1, 3.4, 3.9, 4.3, 4.2, 3.9, 4.0, 3.9, 4.0, 55.3,
+                3.9, 50.8, 11.9, 60.7, 32.7, 49.3, 25.3, 4.1, 3.6, 8.8, 48.7, 4.0, 31.4, 28.1, 9.6,
+                13.7, 14.0, 44.7, 8.1, 7.0, 15.0, 8.0, 15.8, 5.3, 3.3, 13.0, 20.7, 3.2, 13.9, 10.9,
+                3.7, 19.3, 3.4, 3.3, 3.6, 2.8, 3.1, 3.3, 4.0, 2.7, 3.8, 3.4, 3.6, 2.9, 3.8, 3.2,
+                4.4, 3.2, 3.8, 3.9, 4.0, 3.9, 4.4, 4.2, 3.5, 3.6, 3.2, 3.7, 3.7, 4.9, 1.8, 2.1, 2.7,
+                2.3, 2.6, 2.5, 3.0, 2.5, 2.9, 3.1, 2.5, 0.0, 3.0, 3.4, 2.8, 3.4, 2.8, 2.9, 3.2, 2.6,
+                3.6, 3.5, 3.3, 3.4, 3.2, 3.1, 2.5, 2.3, 3.1, 2.8, 3.4, 2.9, 2.8, 2.7, 3.1, 2.4, 2.6,
+                3.1, 2.9, 2.8, 2.9, 2.8, 2.5, 1.7, 2.2, 4.5, 16.1, 3.5, 19.3, 4.2, 4.1, 4.0, 5.1,
+                7.4, 3.5, 3.8, 13.5, 10.6, 14.6, 3.7, 14.2, 7.0, 7.9, 3.4, 3.4, 3.4, 3.6, 3.8, 6.7,
+                5.3, 5.8, 10.3, 5.9, 15.2, 9.3, 13.8, 4.1, 3.4, 3.6, 3.4, 3.7, 3.2, 3.7, 3.4, 3.8,
+                3.3, 3.0, 3.5, 3.9, 3.6, 4.1, 3.9, 3.6, 3.6, 3.5, 3.2, 3.6, 3.5, 3.7, 3.2, 2.8, 3.6,
+                3.5, 3.8, 3.3, 3.6, 3.1, 3.3, 3.2, 3.1, 4.3, 3.1, 2.9, 30.1, 3.6, 3.8, 3.4, 3.6,
+                3.7, 9.0, 3.4, 26.3, 10.5, 3.6, 3.4, 2.7, 5.2, 3.1, 2.6, 2.9, 2.7, 3.2, 3.0, 3.1,
+                3.1, 3.3, 3.4, 3.9, 6.8, 10.2, 4.0, 3.7, 3.6, 4.1, 11.6, 3.7, 4.7, 16.3, 3.7, 9.7,
+                3.3, 3.2, 14.6, 3.4, 3.4, 9.8, 3.5, 3.6, 10.5, 4.7, 3.6, 3.6, 3.8, 3.5, 4.6, 3.7,
+                4.2, 4.6, 4.2, 4.1, 4.6, 4.6, 9.2, 22.4, 4.4, 4.2, 17.7, 4.4, 7.1, 4.5, 4.1, 4.2,
+                4.2, 7.3, 16.5, 9.7, 3.0, 3.0, 3.5, 3.3, 3.8, 3.5, 3.2, 3.6, 3.2, 3.6, 3.3, 2.3,
+                3.7, 3.9, 3.8, 3.8, 3.9, 3.6, 3.7, 3.7, 3.7, 3.5, 3.6, 3.6, 3.4, 3.3, 3.5, 3.4, 3.2,
+                3.3, 3.4, 12.0, 4.2, 17.4, 9.0, 4.0, 4.5, 5.0, 4.0, 4.3, 12.2, 4.1, 4.7, 4.3, 13.8,
+                5.5, 4.1, 4.2, 3.7, 8.0, 3.6, 4.1, 4.1, 5.1, 3.8, 3.6, 3.6, 3.6, 3.6, 3.5, 3.3,
+                14.0, 20.2, 14.1, 21.3, 3.6, 24.3, 31.7, 15.6, 19.8, 29.5, 29.9, 35.5, 23.7, 19.9,
+                25.7, 19.6, 18.5, 14.2, 8.4, 2.8, 2.8, 3.2, 2.9, 3.5, 2.7, 2.7, 3.6, 3.2, 3.6, 13.5,
+                3.4, 11.7, 3.7, 3.7, 3.9, 19.6, 3.9, 5.2, 3.8, 26.8, 29.5, 3.8, 36.0, 42.4, 5.5,
+                31.7, 27.4, 13.4, 21.7, 37.3, 36.2, 8.0, 5.0, 4.1, 3.0, 4.0, 3.7, 3.6, 11.5, 5.0,
+                4.3, 4.4, 6.2, 6.0, 6.4, 3.0, 3.5, 4.6, 4.0, 3.5, 3.8, 3.8, 4.2, 4.1, 3.7, 3.2, 3.1,
+                3.4, 3.3, 4.6, 3.8, 3.9, 3.9, 3.7, 3.7, 2.9, 22.7, 12.6, 3.4, 3.8, 3.8, 4.6, 4.6,
+                4.3, 3.9, 4.3, 4.4, 3.1, 3.2, 3.6, 3.7, 4.1, 4.1, 3.5, 3.4, 2.9, 3.0, 3.6, 3.3,
+                11.1, 8.6, 4.1, 4.6, 3.8, 3.6, 3.7, 3.6
+            ]
+        }
+    },
+    "stations": {
+        "940GZZBPSUST": {
+            "name": "Battersea Power Station",
+            "lon": -0.14214,
+            "lat": 51.47993,
+            "stepFree": "full"
+        },
+        "940GZZLUACT": {
+            "name": "Acton Town",
+            "lon": -0.28046,
+            "lat": 51.50306,
+            "stepFree": "full"
+        },
+        "940GZZLUACY": { "name": "Archway", "lon": -0.13482, "lat": 51.56548, "stepFree": "none" },
+        "940GZZLUADE": {
+            "name": "Aldgate East",
+            "lon": -0.07238,
+            "lat": 51.51504,
+            "stepFree": "none"
+        },
+        "940GZZLUAGL": { "name": "Angel", "lon": -0.10635, "lat": 51.53184, "stepFree": "none" },
+        "940GZZLUALD": { "name": "Aldgate", "lon": -0.07569, "lat": 51.51425, "stepFree": "none" },
+        "940GZZLUALP": { "name": "Alperton", "lon": -0.29961, "lat": 51.54063, "stepFree": "none" },
+        "940GZZLUAMS": { "name": "Amersham", "lon": -0.60771, "lat": 51.67413, "stepFree": "full" },
+        "940GZZLUASG": {
+            "name": "Arnos Grove",
+            "lon": -0.13306,
+            "lat": 51.61645,
+            "stepFree": "none"
+        },
+        "940GZZLUASL": { "name": "Arsenal", "lon": -0.10746, "lat": 51.55866, "stepFree": "none" },
+        "940GZZLUBBB": {
+            "name": "Bromley-by-Bow",
+            "lon": -0.01154,
+            "lat": 51.52484,
+            "stepFree": "full"
+        },
+        "940GZZLUBBN": {
+            "name": "Barbican",
+            "lon": -0.09799,
+            "lat": 51.52027,
+            "stepFree": "partial"
+        },
+        "940GZZLUBDS": {
+            "name": "Bounds Green",
+            "lon": -0.12423,
+            "lat": 51.60703,
+            "stepFree": "none"
+        },
+        "940GZZLUBEC": { "name": "Becontree", "lon": 0.12702, "lat": 51.54033, "stepFree": "none" },
+        "940GZZLUBKE": {
+            "name": "Barkingside",
+            "lon": 0.08858,
+            "lat": 51.58569,
+            "stepFree": "partial"
+        },
+        "940GZZLUBKF": {
+            "name": "Blackfriars",
+            "lon": -0.10366,
+            "lat": 51.51158,
+            "stepFree": "full"
+        },
+        "940GZZLUBKG": { "name": "Barking", "lon": 0.08105, "lat": 51.53932, "stepFree": "full" },
+        "940GZZLUBKH": {
+            "name": "Buckhurst Hill",
+            "lon": 0.04676,
+            "lat": 51.6266,
+            "stepFree": "full"
+        },
+        "940GZZLUBLG": {
+            "name": "Bethnal Green",
+            "lon": -0.05551,
+            "lat": 51.52722,
+            "stepFree": "none"
+        },
+        "940GZZLUBLM": { "name": "Balham", "lon": -0.153, "lat": 51.44329, "stepFree": "none" },
+        "940GZZLUBLR": {
+            "name": "Blackhorse Road",
+            "lon": -0.04115,
+            "lat": 51.58692,
+            "stepFree": "none"
+        },
+        "940GZZLUBMY": {
+            "name": "Bermondsey",
+            "lon": -0.06399,
+            "lat": 51.49775,
+            "stepFree": "full"
+        },
+        "940GZZLUBND": {
+            "name": "Bond Street",
+            "lon": -0.14972,
+            "lat": 51.5143,
+            "stepFree": "full"
+        },
+        "940GZZLUBNK": { "name": "Bank", "lon": -0.09005, "lat": 51.51313, "stepFree": "partial" },
+        "940GZZLUBOR": {
+            "name": "Borough",
+            "lon": -0.09337,
+            "lat": 51.5012,
+            "stepFree": "partial"
+        },
+        "940GZZLUBOS": {
+            "name": "Boston Manor",
+            "lon": -0.32494,
+            "lat": 51.49564,
+            "stepFree": "none"
+        },
+        "940GZZLUBSC": {
+            "name": "Barons Court",
+            "lon": -0.21343,
+            "lat": 51.49031,
+            "stepFree": "none"
+        },
+        "940GZZLUBST": {
+            "name": "Baker Street",
+            "lon": -0.15713,
+            "lat": 51.52288,
+            "stepFree": "none"
+        },
+        "940GZZLUBTK": {
+            "name": "Burnt Oak",
+            "lon": -0.26405,
+            "lat": 51.60277,
+            "stepFree": "none"
+        },
+        "940GZZLUBTX": {
+            "name": "Brent Cross",
+            "lon": -0.21362,
+            "lat": 51.57665,
+            "stepFree": "none"
+        },
+        "940GZZLUBWR": { "name": "Bow Road", "lon": -0.02513, "lat": 51.52694, "stepFree": "none" },
+        "940GZZLUBWT": {
+            "name": "Bayswater",
+            "lon": -0.18794,
+            "lat": 51.51228,
+            "stepFree": "none"
+        },
+        "940GZZLUBXN": { "name": "Brixton", "lon": -0.11489, "lat": 51.46262, "stepFree": "full" },
+        "940GZZLUBZP": {
+            "name": "Belsize Park",
+            "lon": -0.16465,
+            "lat": 51.55031,
+            "stepFree": "none"
+        },
+        "940GZZLUCAL": {
+            "name": "Chalfont & Latimer",
+            "lon": -0.56069,
+            "lat": 51.66799,
+            "stepFree": "full"
+        },
+        "940GZZLUCAR": {
+            "name": "Caledonian Road",
+            "lon": -0.11849,
+            "lat": 51.54852,
+            "stepFree": "full"
+        },
+        "940GZZLUCFM": {
+            "name": "Chalk Farm",
+            "lon": -0.15339,
+            "lat": 51.54412,
+            "stepFree": "none"
+        },
+        "940GZZLUCGN": {
+            "name": "Covent Garden",
+            "lon": -0.12444,
+            "lat": 51.51309,
+            "stepFree": "none"
+        },
+        "940GZZLUCGT": {
+            "name": "Canning Town",
+            "lon": 0.00832,
+            "lat": 51.51358,
+            "stepFree": "full"
+        },
+        "940GZZLUCHL": {
+            "name": "Chancery Lane",
+            "lon": -0.11158,
+            "lat": 51.51825,
+            "stepFree": "none"
+        },
+        "940GZZLUCHX": {
+            "name": "Charing Cross",
+            "lon": -0.12728,
+            "lat": 51.50741,
+            "stepFree": "none"
+        },
+        "940GZZLUCKS": {
+            "name": "Cockfosters",
+            "lon": -0.14917,
+            "lat": 51.65152,
+            "stepFree": "full"
+        },
+        "940GZZLUCND": {
+            "name": "Colindale",
+            "lon": -0.24992,
+            "lat": 51.59542,
+            "stepFree": "full"
+        },
+        "940GZZLUCPC": {
+            "name": "Clapham Common",
+            "lon": -0.13832,
+            "lat": 51.46174,
+            "stepFree": "none"
+        },
+        "940GZZLUCPK": {
+            "name": "Canons Park",
+            "lon": -0.29469,
+            "lat": 51.6077,
+            "stepFree": "none"
+        },
+        "940GZZLUCPN": {
+            "name": "Clapham North",
+            "lon": -0.13002,
+            "lat": 51.46513,
+            "stepFree": "none"
+        },
+        "940GZZLUCPS": {
+            "name": "Clapham South",
+            "lon": -0.14758,
+            "lat": 51.45265,
+            "stepFree": "none"
+        },
+        "940GZZLUCSD": {
+            "name": "Colliers Wood",
+            "lon": -0.17809,
+            "lat": 51.41816,
+            "stepFree": "none"
+        },
+        "940GZZLUCSM": { "name": "Chesham", "lon": -0.61125, "lat": 51.70521, "stepFree": "full" },
+        "940GZZLUCST": {
+            "name": "Cannon Street",
+            "lon": -0.09043,
+            "lat": 51.51151,
+            "stepFree": "partial"
+        },
+        "940GZZLUCTN": {
+            "name": "Camden Town",
+            "lon": -0.14274,
+            "lat": 51.53929,
+            "stepFree": "none"
+        },
+        "940GZZLUCWL": { "name": "Chigwell", "lon": 0.07504, "lat": 51.61792, "stepFree": "none" },
+        "940GZZLUCWP": {
+            "name": "Chiswick Park",
+            "lon": -0.26797,
+            "lat": 51.49463,
+            "stepFree": "none"
+        },
+        "940GZZLUCWR": {
+            "name": "Canada Water",
+            "lon": -0.0494,
+            "lat": 51.49793,
+            "stepFree": "full"
+        },
+        "940GZZLUCXY": { "name": "Croxley", "lon": -0.44172, "lat": 51.64704, "stepFree": null },
+        "940GZZLUCYD": {
+            "name": "Chorleywood",
+            "lon": -0.51846,
+            "lat": 51.65436,
+            "stepFree": "full"
+        },
+        "940GZZLUCYF": {
+            "name": "Canary Wharf",
+            "lon": -0.01825,
+            "lat": 51.50349,
+            "stepFree": "full"
+        },
+        "940GZZLUDBN": { "name": "Debden", "lon": 0.08378, "lat": 51.64539, "stepFree": "full" },
+        "940GZZLUDGE": {
+            "name": "Dagenham East",
+            "lon": 0.16602,
+            "lat": 51.5441,
+            "stepFree": "none"
+        },
+        "940GZZLUDGY": {
+            "name": "Dagenham Heathway",
+            "lon": 0.14753,
+            "lat": 51.54164,
+            "stepFree": "full"
+        },
+        "940GZZLUDOH": {
+            "name": "Dollis Hill",
+            "lon": -0.23907,
+            "lat": 51.55195,
+            "stepFree": "none"
+        },
+        "940GZZLUEAC": {
+            "name": "Elephant & Castle",
+            "lon": -0.10061,
+            "lat": 51.49454,
+            "stepFree": "partial"
+        },
+        "940GZZLUEAE": { "name": "Eastcote", "lon": -0.39737, "lat": 51.57651, "stepFree": "none" },
+        "940GZZLUEAN": {
+            "name": "East Acton",
+            "lon": -0.24725,
+            "lat": 51.51661,
+            "stepFree": "none"
+        },
+        "940GZZLUEBY": {
+            "name": "Ealing Broadway",
+            "lon": -0.30146,
+            "lat": 51.51502,
+            "stepFree": "full"
+        },
+        "940GZZLUECM": {
+            "name": "Ealing Common",
+            "lon": -0.28826,
+            "lat": 51.51014,
+            "stepFree": "none"
+        },
+        "940GZZLUECT": {
+            "name": "Earl's Court",
+            "lon": -0.19338,
+            "lat": 51.49206,
+            "stepFree": "full"
+        },
+        "940GZZLUEFY": {
+            "name": "East Finchley",
+            "lon": -0.16501,
+            "lat": 51.58713,
+            "stepFree": "none"
+        },
+        "940GZZLUEGW": { "name": "Edgware", "lon": -0.27493, "lat": 51.61365, "stepFree": "full" },
+        "940GZZLUEHM": { "name": "East Ham", "lon": 0.05119, "lat": 51.53895, "stepFree": "full" },
+        "940GZZLUEMB": {
+            "name": "Embankment",
+            "lon": -0.12267,
+            "lat": 51.50706,
+            "stepFree": "none"
+        },
+        "940GZZLUEPG": { "name": "Epping", "lon": 0.11377, "lat": 51.69368, "stepFree": "full" },
+        "940GZZLUEPK": { "name": "Elm Park", "lon": 0.19864, "lat": 51.54977, "stepFree": "full" },
+        "940GZZLUEPY": { "name": "East Putney", "lon": -0.211, "lat": 51.4592, "stepFree": "none" },
+        "940GZZLUERB": {
+            "name": "Edgware Road (Bakerloo)",
+            "lon": -0.17015,
+            "lat": 51.5203,
+            "stepFree": "none"
+        },
+        "940GZZLUERC": {
+            "name": "Edgware Road (Circle Line)",
+            "lon": -0.16783,
+            "lat": 51.51986,
+            "stepFree": "none"
+        },
+        "940GZZLUESQ": {
+            "name": "Euston Square",
+            "lon": -0.13583,
+            "lat": 51.5256,
+            "stepFree": "partial"
+        },
+        "940GZZLUEUS": { "name": "Euston", "lon": -0.13378, "lat": 51.528, "stepFree": "none" },
+        "940GZZLUFBY": {
+            "name": "Fulham Broadway",
+            "lon": -0.19542,
+            "lat": 51.48008,
+            "stepFree": "full"
+        },
+        "940GZZLUFCN": {
+            "name": "Farringdon",
+            "lon": -0.10491,
+            "lat": 51.52025,
+            "stepFree": "full"
+        },
+        "940GZZLUFLP": { "name": "Fairlop", "lon": 0.091, "lat": 51.59562, "stepFree": "none" },
+        "940GZZLUFPK": {
+            "name": "Finsbury Park",
+            "lon": -0.10683,
+            "lat": 51.56416,
+            "stepFree": "full"
+        },
+        "940GZZLUFYC": {
+            "name": "Finchley Central",
+            "lon": -0.19253,
+            "lat": 51.60092,
+            "stepFree": "full"
+        },
+        "940GZZLUFYR": {
+            "name": "Finchley Road",
+            "lon": -0.17985,
+            "lat": 51.54682,
+            "stepFree": "none"
+        },
+        "940GZZLUGBY": {
+            "name": "Gunnersbury",
+            "lon": -0.27527,
+            "lat": 51.4918,
+            "stepFree": "none"
+        },
+        "940GZZLUGDG": {
+            "name": "Goodge Street",
+            "lon": -0.13436,
+            "lat": 51.5206,
+            "stepFree": "none"
+        },
+        "940GZZLUGFD": {
+            "name": "Greenford",
+            "lon": -0.34605,
+            "lat": 51.54242,
+            "stepFree": "full"
+        },
+        "940GZZLUGGH": {
+            "name": "Grange Hill",
+            "lon": 0.09207,
+            "lat": 51.61338,
+            "stepFree": "none"
+        },
+        "940GZZLUGGN": {
+            "name": "Golders Green",
+            "lon": -0.19404,
+            "lat": 51.57226,
+            "stepFree": "full"
+        },
+        "940GZZLUGHK": {
+            "name": "Goldhawk Road",
+            "lon": -0.22671,
+            "lat": 51.502,
+            "stepFree": "none"
+        },
+        "940GZZLUGPK": {
+            "name": "Green Park",
+            "lon": -0.14279,
+            "lat": 51.50695,
+            "stepFree": "full"
+        },
+        "940GZZLUGPS": {
+            "name": "Great Portland Street",
+            "lon": -0.14426,
+            "lat": 51.52384,
+            "stepFree": "none"
+        },
+        "940GZZLUGTH": {
+            "name": "Gants Hill",
+            "lon": 0.06618,
+            "lat": 51.57654,
+            "stepFree": "none"
+        },
+        "940GZZLUGTR": {
+            "name": "Gloucester Road",
+            "lon": -0.18266,
+            "lat": 51.49432,
+            "stepFree": "none"
+        },
+        "940GZZLUHAI": {
+            "name": "Highbury & Islington",
+            "lon": -0.10332,
+            "lat": 51.54635,
+            "stepFree": "none"
+        },
+        "940GZZLUHAW": {
+            "name": "Harrow & Wealdstone",
+            "lon": -0.33522,
+            "lat": 51.59227,
+            "stepFree": "full"
+        },
+        "940GZZLUHBN": { "name": "Holborn", "lon": -0.12047, "lat": 51.51758, "stepFree": "none" },
+        "940GZZLUHBT": {
+            "name": "High Barnet",
+            "lon": -0.1943,
+            "lat": 51.65054,
+            "stepFree": "full"
+        },
+        "940GZZLUHCH": {
+            "name": "Hornchurch",
+            "lon": 0.21912,
+            "lat": 51.55409,
+            "stepFree": "none"
+        },
+        "940GZZLUHCL": {
+            "name": "Hendon Central",
+            "lon": -0.22642,
+            "lat": 51.5833,
+            "stepFree": "full"
+        },
+        "940GZZLUHGD": {
+            "name": "Hillingdon",
+            "lon": -0.44983,
+            "lat": 51.55371,
+            "stepFree": "full"
+        },
+        "940GZZLUHGR": {
+            "name": "Hanger Lane",
+            "lon": -0.2927,
+            "lat": 51.53018,
+            "stepFree": "none"
+        },
+        "940GZZLUHGT": { "name": "Highgate", "lon": -0.14586, "lat": 51.57753, "stepFree": "none" },
+        "940GZZLUHLT": { "name": "Hainault", "lon": 0.09348, "lat": 51.60366, "stepFree": "full" },
+        "940GZZLUHNX": {
+            "name": "Hatton Cross",
+            "lon": -0.42319,
+            "lat": 51.46675,
+            "stepFree": "none"
+        },
+        "940GZZLUHOH": {
+            "name": "Harrow-on-the-Hill",
+            "lon": -0.33722,
+            "lat": 51.57919,
+            "stepFree": "full"
+        },
+        "940GZZLUHPC": {
+            "name": "Hyde Park Corner",
+            "lon": -0.15244,
+            "lat": 51.50303,
+            "stepFree": "none"
+        },
+        "940GZZLUHPK": {
+            "name": "Holland Park",
+            "lon": -0.20568,
+            "lat": 51.50714,
+            "stepFree": "none"
+        },
+        "940GZZLUHR4": {
+            "name": "Heathrow Terminal 4",
+            "lon": -0.44577,
+            "lat": 51.45852,
+            "stepFree": "full"
+        },
+        "940GZZLUHR5": {
+            "name": "Heathrow Terminal 5",
+            "lon": -0.49056,
+            "lat": 51.47005,
+            "stepFree": "full"
+        },
+        "940GZZLUHRC": {
+            "name": "Heathrow Terminals 2 & 3",
+            "lon": -0.45226,
+            "lat": 51.47124,
+            "stepFree": "full"
+        },
+        "940GZZLUHSC": {
+            "name": "Hammersmith (H&C Line)",
+            "lon": -0.22503,
+            "lat": 51.49339,
+            "stepFree": "full"
+        },
+        "940GZZLUHSD": {
+            "name": "Hammersmith (Dist&Picc Line)",
+            "lon": -0.22362,
+            "lat": 51.4923,
+            "stepFree": "full"
+        },
+        "940GZZLUHSK": {
+            "name": "High Street Kensington",
+            "lon": -0.19279,
+            "lat": 51.50106,
+            "stepFree": "none"
+        },
+        "940GZZLUHSN": {
+            "name": "Harlesden",
+            "lon": -0.25788,
+            "lat": 51.53631,
+            "stepFree": "none"
+        },
+        "940GZZLUHTD": {
+            "name": "Hampstead",
+            "lon": -0.17746,
+            "lat": 51.55624,
+            "stepFree": "none"
+        },
+        "940GZZLUHWC": {
+            "name": "Hounslow Central",
+            "lon": -0.36658,
+            "lat": 51.47129,
+            "stepFree": "none"
+        },
+        "940GZZLUHWE": {
+            "name": "Hounslow East",
+            "lon": -0.35647,
+            "lat": 51.47321,
+            "stepFree": "full"
+        },
+        "940GZZLUHWT": {
+            "name": "Hounslow West",
+            "lon": -0.38654,
+            "lat": 51.47347,
+            "stepFree": "full"
+        },
+        "940GZZLUHWY": {
+            "name": "Holloway Road",
+            "lon": -0.11324,
+            "lat": 51.5527,
+            "stepFree": "none"
+        },
+        "940GZZLUICK": { "name": "Ickenham", "lon": -0.44222, "lat": 51.56177, "stepFree": "full" },
+        "940GZZLUKBN": { "name": "Kilburn", "lon": -0.20425, "lat": 51.54718, "stepFree": "full" },
+        "940GZZLUKBY": {
+            "name": "Kingsbury",
+            "lon": -0.27879,
+            "lat": 51.58485,
+            "stepFree": "full"
+        },
+        "940GZZLUKEN": { "name": "Kenton", "lon": -0.31691, "lat": 51.58176, "stepFree": "none" },
+        "940GZZLUKNB": {
+            "name": "Knightsbridge",
+            "lon": -0.16051,
+            "lat": 51.50167,
+            "stepFree": "full"
+        },
+        "940GZZLUKNG": {
+            "name": "Kennington",
+            "lon": -0.10596,
+            "lat": 51.48834,
+            "stepFree": "none"
+        },
+        "940GZZLUKOY": {
+            "name": "Kensington (Olympia)",
+            "lon": -0.21002,
+            "lat": 51.49762,
+            "stepFree": "full"
+        },
+        "940GZZLUKPK": {
+            "name": "Kilburn Park",
+            "lon": -0.19423,
+            "lat": 51.53498,
+            "stepFree": "none"
+        },
+        "940GZZLUKSH": {
+            "name": "Kentish Town",
+            "lon": -0.14073,
+            "lat": 51.55031,
+            "stepFree": "none"
+        },
+        "940GZZLUKSL": {
+            "name": "Kensal Green",
+            "lon": -0.22502,
+            "lat": 51.53054,
+            "stepFree": "none"
+        },
+        "940GZZLUKSX": {
+            "name": "King's Cross St. Pancras",
+            "lon": -0.12319,
+            "lat": 51.53066,
+            "stepFree": "full"
+        },
+        "940GZZLUKWG": {
+            "name": "Kew Gardens",
+            "lon": -0.28524,
+            "lat": 51.47706,
+            "stepFree": "full"
+        },
+        "940GZZLULAD": {
+            "name": "Ladbroke Grove",
+            "lon": -0.21039,
+            "lat": 51.51745,
+            "stepFree": "none"
+        },
+        "940GZZLULBN": {
+            "name": "Lambeth North",
+            "lon": -0.11231,
+            "lat": 51.49881,
+            "stepFree": "none"
+        },
+        "940GZZLULGN": { "name": "Loughton", "lon": 0.05548, "lat": 51.64144, "stepFree": "none" },
+        "940GZZLULGT": {
+            "name": "Lancaster Gate",
+            "lon": -0.17549,
+            "lat": 51.51172,
+            "stepFree": "none"
+        },
+        "940GZZLULNB": {
+            "name": "London Bridge",
+            "lon": -0.08887,
+            "lat": 51.50572,
+            "stepFree": "full"
+        },
+        "940GZZLULRD": {
+            "name": "Latimer Road",
+            "lon": -0.2178,
+            "lat": 51.51339,
+            "stepFree": "none"
+        },
+        "940GZZLULSQ": {
+            "name": "Leicester Square",
+            "lon": -0.12843,
+            "lat": 51.51139,
+            "stepFree": "none"
+        },
+        "940GZZLULVT": {
+            "name": "Liverpool Street",
+            "lon": -0.08318,
+            "lat": 51.51737,
+            "stepFree": "partial"
+        },
+        "940GZZLULYN": { "name": "Leyton", "lon": -0.00552, "lat": 51.55659, "stepFree": "none" },
+        "940GZZLULYS": {
+            "name": "Leytonstone",
+            "lon": 0.00819,
+            "lat": 51.56832,
+            "stepFree": "none"
+        },
+        "940GZZLUMBA": {
+            "name": "Marble Arch",
+            "lon": -0.15895,
+            "lat": 51.51342,
+            "stepFree": "none"
+        },
+        "940GZZLUMDN": { "name": "Morden", "lon": -0.19484, "lat": 51.40214, "stepFree": "full" },
+        "940GZZLUMED": { "name": "Mile End", "lon": -0.03364, "lat": 51.52512, "stepFree": "none" },
+        "940GZZLUMGT": { "name": "Moorgate", "lon": -0.08832, "lat": 51.51818, "stepFree": "full" },
+        "940GZZLUMHL": {
+            "name": "Mill Hill East",
+            "lon": -0.20999,
+            "lat": 51.60823,
+            "stepFree": "full"
+        },
+        "940GZZLUMMT": { "name": "Monument", "lon": -0.08597, "lat": 51.5107, "stepFree": "none" },
+        "940GZZLUMPK": {
+            "name": "Moor Park",
+            "lon": -0.43245,
+            "lat": 51.62985,
+            "stepFree": "none"
+        },
+        "940GZZLUMRH": {
+            "name": "Manor House",
+            "lon": -0.09612,
+            "lat": 51.57074,
+            "stepFree": "none"
+        },
+        "940GZZLUMSH": {
+            "name": "Mansion House",
+            "lon": -0.09401,
+            "lat": 51.51212,
+            "stepFree": "none"
+        },
+        "940GZZLUMTC": {
+            "name": "Mornington Crescent",
+            "lon": -0.13879,
+            "lat": 51.53468,
+            "stepFree": "none"
+        },
+        "940GZZLUMVL": {
+            "name": "Maida Vale",
+            "lon": -0.18576,
+            "lat": 51.52978,
+            "stepFree": "none"
+        },
+        "940GZZLUMYB": {
+            "name": "Marylebone",
+            "lon": -0.16321,
+            "lat": 51.52232,
+            "stepFree": "none"
+        },
+        "940GZZLUNAN": {
+            "name": "North Acton",
+            "lon": -0.25976,
+            "lat": 51.52352,
+            "stepFree": "none"
+        },
+        "940GZZLUNBP": { "name": "Newbury Park", "lon": 0.09, "lat": 51.57573, "stepFree": "full" },
+        "940GZZLUNDN": { "name": "Neasden", "lon": -0.24984, "lat": 51.55399, "stepFree": "none" },
+        "940GZZLUNEN": {
+            "name": "North Ealing",
+            "lon": -0.28887,
+            "lat": 51.5175,
+            "stepFree": "none"
+        },
+        "940GZZLUNFD": {
+            "name": "Northfields",
+            "lon": -0.31472,
+            "lat": 51.49932,
+            "stepFree": "none"
+        },
+        "940GZZLUNGW": {
+            "name": "North Greenwich",
+            "lon": 0.00429,
+            "lat": 51.50047,
+            "stepFree": "full"
+        },
+        "940GZZLUNHA": {
+            "name": "North Harrow",
+            "lon": -0.36241,
+            "lat": 51.58487,
+            "stepFree": "none"
+        },
+        "940GZZLUNHG": {
+            "name": "Notting Hill Gate",
+            "lon": -0.1961,
+            "lat": 51.50913,
+            "stepFree": "none"
+        },
+        "940GZZLUNHT": { "name": "Northolt", "lon": -0.3687, "lat": 51.54824, "stepFree": "full" },
+        "940GZZLUNKP": {
+            "name": "Northwick Park",
+            "lon": -0.31806,
+            "lat": 51.57848,
+            "stepFree": "none"
+        },
+        "940GZZLUNOW": {
+            "name": "Northwood",
+            "lon": -0.42383,
+            "lat": 51.61105,
+            "stepFree": "none"
+        },
+        "940GZZLUNWH": {
+            "name": "Northwood Hills",
+            "lon": -0.40946,
+            "lat": 51.60057,
+            "stepFree": "none"
+        },
+        "940GZZLUNWY": {
+            "name": "North Wembley",
+            "lon": -0.304,
+            "lat": 51.56255,
+            "stepFree": "none"
+        },
+        "940GZZLUOAK": { "name": "Oakwood", "lon": -0.13218, "lat": 51.64773, "stepFree": "full" },
+        "940GZZLUODS": {
+            "name": "Old Street",
+            "lon": -0.08777,
+            "lat": 51.52586,
+            "stepFree": "none"
+        },
+        "940GZZLUOSY": { "name": "Osterley", "lon": -0.35222, "lat": 51.48127, "stepFree": "full" },
+        "940GZZLUOVL": { "name": "Oval", "lon": -0.11244, "lat": 51.48185, "stepFree": "none" },
+        "940GZZLUOXC": {
+            "name": "Oxford Circus",
+            "lon": -0.1419,
+            "lat": 51.51522,
+            "stepFree": "none"
+        },
+        "940GZZLUPAC": {
+            "name": "Paddington",
+            "lon": -0.17569,
+            "lat": 51.51658,
+            "stepFree": "partial"
+        },
+        "940GZZLUPAH": {
+            "name": "Paddington (H&C Line)-Underground",
+            "lon": -0.17831,
+            "lat": 51.51819,
+            "stepFree": "full"
+        },
+        "940GZZLUPCC": {
+            "name": "Piccadilly Circus",
+            "lon": -0.1338,
+            "lat": 51.51005,
+            "stepFree": "none"
+        },
+        "940GZZLUPCO": { "name": "Pimlico", "lon": -0.13376, "lat": 51.4891, "stepFree": "none" },
+        "940GZZLUPKR": {
+            "name": "Park Royal",
+            "lon": -0.28434,
+            "lat": 51.52712,
+            "stepFree": "none"
+        },
+        "940GZZLUPLW": { "name": "Plaistow", "lon": 0.01745, "lat": 51.53134, "stepFree": "none" },
+        "940GZZLUPNR": { "name": "Pinner", "lon": -0.38116, "lat": 51.5929, "stepFree": "full" },
+        "940GZZLUPRD": {
+            "name": "Preston Road",
+            "lon": -0.29511,
+            "lat": 51.57197,
+            "stepFree": "none"
+        },
+        "940GZZLUPSG": {
+            "name": "Parsons Green",
+            "lon": -0.20117,
+            "lat": 51.47528,
+            "stepFree": "none"
+        },
+        "940GZZLUPVL": { "name": "Perivale", "lon": -0.32345, "lat": 51.53672, "stepFree": "none" },
+        "940GZZLUPYB": {
+            "name": "Putney Bridge",
+            "lon": -0.20873,
+            "lat": 51.46826,
+            "stepFree": "none"
+        },
+        "940GZZLUQBY": {
+            "name": "Queensbury",
+            "lon": -0.28622,
+            "lat": 51.59419,
+            "stepFree": "none"
+        },
+        "940GZZLUQPS": {
+            "name": "Queen's Park",
+            "lon": -0.20457,
+            "lat": 51.53416,
+            "stepFree": "none"
+        },
+        "940GZZLUQWY": {
+            "name": "Queensway",
+            "lon": -0.18715,
+            "lat": 51.51031,
+            "stepFree": "none"
+        },
+        "940GZZLURBG": { "name": "Redbridge", "lon": 0.04536, "lat": 51.57624, "stepFree": "none" },
+        "940GZZLURGP": {
+            "name": "Regent's Park",
+            "lon": -0.14644,
+            "lat": 51.52334,
+            "stepFree": "none"
+        },
+        "940GZZLURKW": {
+            "name": "Rickmansworth",
+            "lon": -0.4737,
+            "lat": 51.64021,
+            "stepFree": "partial"
+        },
+        "940GZZLURMD": { "name": "Richmond", "lon": -0.30134, "lat": 51.46324, "stepFree": "full" },
+        "940GZZLURSG": {
+            "name": "Ruislip Gardens",
+            "lon": -0.41071,
+            "lat": 51.56074,
+            "stepFree": "none"
+        },
+        "940GZZLURSM": {
+            "name": "Ruislip Manor",
+            "lon": -0.41297,
+            "lat": 51.5732,
+            "stepFree": "none"
+        },
+        "940GZZLURSP": {
+            "name": "Ruislip",
+            "lon": -0.4219,
+            "lat": 51.57135,
+            "stepFree": "partial"
+        },
+        "940GZZLURSQ": {
+            "name": "Russell Square",
+            "lon": -0.12429,
+            "lat": 51.52307,
+            "stepFree": "none"
+        },
+        "940GZZLURVP": {
+            "name": "Ravenscourt Park",
+            "lon": -0.23588,
+            "lat": 51.49412,
+            "stepFree": "none"
+        },
+        "940GZZLURVY": {
+            "name": "Roding Valley",
+            "lon": 0.04365,
+            "lat": 51.6172,
+            "stepFree": "full"
+        },
+        "940GZZLURYL": {
+            "name": "Rayners Lane",
+            "lon": -0.37113,
+            "lat": 51.57515,
+            "stepFree": "none"
+        },
+        "940GZZLURYO": {
+            "name": "Royal Oak",
+            "lon": -0.18875,
+            "lat": 51.51911,
+            "stepFree": "none"
+        },
+        "940GZZLUSBC": {
+            "name": "Shepherd's Bush (Central)",
+            "lon": -0.21881,
+            "lat": 51.50438,
+            "stepFree": "none"
+        },
+        "940GZZLUSBM": {
+            "name": "Shepherd's Bush Market",
+            "lon": -0.22637,
+            "lat": 51.50558,
+            "stepFree": "none"
+        },
+        "940GZZLUSEA": {
+            "name": "South Ealing",
+            "lon": -0.30742,
+            "lat": 51.501,
+            "stepFree": "none"
+        },
+        "940GZZLUSFB": {
+            "name": "Stamford Brook",
+            "lon": -0.2457,
+            "lat": 51.49492,
+            "stepFree": "none"
+        },
+        "940GZZLUSFS": {
+            "name": "Southfields",
+            "lon": -0.2066,
+            "lat": 51.44507,
+            "stepFree": "full"
+        },
+        "940GZZLUSGN": {
+            "name": "Stepney Green",
+            "lon": -0.0466,
+            "lat": 51.52186,
+            "stepFree": "none"
+        },
+        "940GZZLUSGP": {
+            "name": "Stonebridge Park",
+            "lon": -0.27589,
+            "lat": 51.54396,
+            "stepFree": "none"
+        },
+        "940GZZLUSGT": {
+            "name": "Southgate",
+            "lon": -0.12782,
+            "lat": 51.63231,
+            "stepFree": "none"
+        },
+        "940GZZLUSHH": {
+            "name": "South Harrow",
+            "lon": -0.35249,
+            "lat": 51.56489,
+            "stepFree": "none"
+        },
+        "940GZZLUSJP": {
+            "name": "St. James's Park",
+            "lon": -0.13361,
+            "lat": 51.49954,
+            "stepFree": "none"
+        },
+        "940GZZLUSJW": {
+            "name": "St. John's Wood",
+            "lon": -0.17395,
+            "lat": 51.53452,
+            "stepFree": "none"
+        },
+        "940GZZLUSKS": {
+            "name": "South Kensington",
+            "lon": -0.17414,
+            "lat": 51.49409,
+            "stepFree": "none"
+        },
+        "940GZZLUSKT": {
+            "name": "South Kenton",
+            "lon": -0.30843,
+            "lat": 51.57023,
+            "stepFree": "none"
+        },
+        "940GZZLUSKW": {
+            "name": "Stockwell",
+            "lon": -0.12264,
+            "lat": 51.47218,
+            "stepFree": "none"
+        },
+        "940GZZLUSNB": {
+            "name": "Snaresbrook",
+            "lon": 0.02144,
+            "lat": 51.58068,
+            "stepFree": "none"
+        },
+        "940GZZLUSPU": {
+            "name": "St. Paul's",
+            "lon": -0.09757,
+            "lat": 51.51494,
+            "stepFree": "none"
+        },
+        "940GZZLUSRP": {
+            "name": "South Ruislip",
+            "lon": -0.39892,
+            "lat": 51.55685,
+            "stepFree": "none"
+        },
+        "940GZZLUSSQ": {
+            "name": "Sloane Square",
+            "lon": -0.15638,
+            "lat": 51.49227,
+            "stepFree": "none"
+        },
+        "940GZZLUSTD": {
+            "name": "Stratford",
+            "lon": -0.00346,
+            "lat": 51.54181,
+            "stepFree": "full"
+        },
+        "940GZZLUSTM": { "name": "Stanmore", "lon": -0.30327, "lat": 51.61984, "stepFree": "full" },
+        "940GZZLUSUH": {
+            "name": "Sudbury Hill",
+            "lon": -0.33643,
+            "lat": 51.55695,
+            "stepFree": "full"
+        },
+        "940GZZLUSUT": {
+            "name": "Sudbury Town",
+            "lon": -0.31574,
+            "lat": 51.55082,
+            "stepFree": "full"
+        },
+        "940GZZLUSVS": {
+            "name": "Seven Sisters",
+            "lon": -0.07258,
+            "lat": 51.58333,
+            "stepFree": "none"
+        },
+        "940GZZLUSWC": {
+            "name": "Swiss Cottage",
+            "lon": -0.17489,
+            "lat": 51.54368,
+            "stepFree": "none"
+        },
+        "940GZZLUSWF": {
+            "name": "South Woodford",
+            "lon": 0.02734,
+            "lat": 51.59191,
+            "stepFree": "full"
+        },
+        "940GZZLUSWK": {
+            "name": "Southwark",
+            "lon": -0.10533,
+            "lat": 51.50427,
+            "stepFree": "full"
+        },
+        "940GZZLUSWN": {
+            "name": "South Wimbledon",
+            "lon": -0.19201,
+            "lat": 51.41531,
+            "stepFree": "none"
+        },
+        "940GZZLUTAW": {
+            "name": "Totteridge & Whetstone",
+            "lon": -0.17921,
+            "lat": 51.6306,
+            "stepFree": "none"
+        },
+        "940GZZLUTBC": {
+            "name": "Tooting Bec",
+            "lon": -0.15974,
+            "lat": 51.43568,
+            "stepFree": "none"
+        },
+        "940GZZLUTBY": {
+            "name": "Tooting Broadway",
+            "lon": -0.16837,
+            "lat": 51.42763,
+            "stepFree": "none"
+        },
+        "940GZZLUTCR": {
+            "name": "Tottenham Court Road",
+            "lon": -0.13041,
+            "lat": 51.51643,
+            "stepFree": "full"
+        },
+        "940GZZLUTFP": {
+            "name": "Tufnell Park",
+            "lon": -0.13843,
+            "lat": 51.55682,
+            "stepFree": "none"
+        },
+        "940GZZLUTHB": {
+            "name": "Theydon Bois",
+            "lon": 0.10308,
+            "lat": 51.67176,
+            "stepFree": "partial"
+        },
+        "940GZZLUTMH": {
+            "name": "Tottenham Hale",
+            "lon": -0.06024,
+            "lat": 51.58811,
+            "stepFree": "full"
+        },
+        "940GZZLUTMP": { "name": "Temple", "lon": -0.11426, "lat": 51.51101, "stepFree": "none" },
+        "940GZZLUTNG": {
+            "name": "Turnham Green",
+            "lon": -0.25455,
+            "lat": 51.49515,
+            "stepFree": "none"
+        },
+        "940GZZLUTPN": {
+            "name": "Turnpike Lane",
+            "lon": -0.10295,
+            "lat": 51.59027,
+            "stepFree": "none"
+        },
+        "940GZZLUTWH": {
+            "name": "Tower Hill",
+            "lon": -0.07655,
+            "lat": 51.50997,
+            "stepFree": "full"
+        },
+        "940GZZLUUPB": {
+            "name": "Upminster Bridge",
+            "lon": 0.23581,
+            "lat": 51.55856,
+            "stepFree": "none"
+        },
+        "940GZZLUUPK": {
+            "name": "Upton Park",
+            "lon": 0.03526,
+            "lat": 51.53534,
+            "stepFree": "none"
+        },
+        "940GZZLUUPM": { "name": "Upminster", "lon": 0.25088, "lat": 51.55906, "stepFree": "full" },
+        "940GZZLUUPY": { "name": "Upney", "lon": 0.10153, "lat": 51.53837, "stepFree": "full" },
+        "940GZZLUUXB": { "name": "Uxbridge", "lon": -0.47795, "lat": 51.54657, "stepFree": "full" },
+        "940GZZLUVIC": { "name": "Victoria", "lon": -0.1431, "lat": 51.49636, "stepFree": "full" },
+        "940GZZLUVXL": { "name": "Vauxhall", "lon": -0.1242, "lat": 51.48574, "stepFree": "full" },
+        "940GZZLUWAF": { "name": "Watford", "lon": -0.41738, "lat": 51.65745, "stepFree": "none" },
+        "940GZZLUWBN": {
+            "name": "West Brompton",
+            "lon": -0.1956,
+            "lat": 51.48727,
+            "stepFree": "partial"
+        },
+        "940GZZLUWCY": {
+            "name": "White City",
+            "lon": -0.2243,
+            "lat": 51.51196,
+            "stepFree": "none"
+        },
+        "940GZZLUWFN": {
+            "name": "West Finchley",
+            "lon": -0.18836,
+            "lat": 51.60943,
+            "stepFree": "full"
+        },
+        "940GZZLUWHM": { "name": "West Ham", "lon": 0.00505, "lat": 51.52814, "stepFree": "full" },
+        "940GZZLUWHP": {
+            "name": "West Hampstead",
+            "lon": -0.19106,
+            "lat": 51.54664,
+            "stepFree": "none"
+        },
+        "940GZZLUWHW": {
+            "name": "West Harrow",
+            "lon": -0.3534,
+            "lat": 51.57971,
+            "stepFree": "none"
+        },
+        "940GZZLUWIG": {
+            "name": "Willesden Green",
+            "lon": -0.22154,
+            "lat": 51.54915,
+            "stepFree": "none"
+        },
+        "940GZZLUWIM": {
+            "name": "Wimbledon",
+            "lon": -0.20657,
+            "lat": 51.42121,
+            "stepFree": "full"
+        },
+        "940GZZLUWIP": {
+            "name": "Wimbledon Park",
+            "lon": -0.19972,
+            "lat": 51.43457,
+            "stepFree": "full"
+        },
+        "940GZZLUWJN": {
+            "name": "Willesden Junction",
+            "lon": -0.24428,
+            "lat": 51.53226,
+            "stepFree": "full"
+        },
+        "940GZZLUWKA": {
+            "name": "Warwick Avenue",
+            "lon": -0.18378,
+            "lat": 51.52326,
+            "stepFree": "none"
+        },
+        "940GZZLUWKN": {
+            "name": "West Kensington",
+            "lon": -0.20664,
+            "lat": 51.49046,
+            "stepFree": "none"
+        },
+        "940GZZLUWLA": {
+            "name": "Wood Lane",
+            "lon": -0.22453,
+            "lat": 51.50967,
+            "stepFree": "full"
+        },
+        "940GZZLUWLO": {
+            "name": "Waterloo",
+            "lon": -0.11478,
+            "lat": 51.5033,
+            "stepFree": "partial"
+        },
+        "940GZZLUWOF": { "name": "Woodford", "lon": 0.03397, "lat": 51.6069, "stepFree": "full" },
+        "940GZZLUWOG": {
+            "name": "Wood Green",
+            "lon": -0.10989,
+            "lat": 51.59748,
+            "stepFree": "none"
+        },
+        "940GZZLUWOP": {
+            "name": "Woodside Park",
+            "lon": -0.18542,
+            "lat": 51.61801,
+            "stepFree": "full"
+        },
+        "940GZZLUWPL": {
+            "name": "Whitechapel",
+            "lon": -0.05997,
+            "lat": 51.51952,
+            "stepFree": "full"
+        },
+        "940GZZLUWRP": {
+            "name": "West Ruislip",
+            "lon": -0.43789,
+            "lat": 51.56969,
+            "stepFree": "none"
+        },
+        "940GZZLUWRR": {
+            "name": "Warren Street",
+            "lon": -0.13832,
+            "lat": 51.52495,
+            "stepFree": "none"
+        },
+        "940GZZLUWSD": { "name": "Wanstead", "lon": 0.02853, "lat": 51.5755, "stepFree": "none" },
+        "940GZZLUWSM": {
+            "name": "Westminster",
+            "lon": -0.12486,
+            "lat": 51.50132,
+            "stepFree": "full"
+        },
+        "940GZZLUWSP": {
+            "name": "Westbourne Park",
+            "lon": -0.20106,
+            "lat": 51.52111,
+            "stepFree": "none"
+        },
+        "940GZZLUWTA": { "name": "West Acton", "lon": -0.28098, "lat": 51.518, "stepFree": "none" },
+        "940GZZLUWWL": {
+            "name": "Walthamstow Central",
+            "lon": -0.01988,
+            "lat": 51.58297,
+            "stepFree": "none"
+        },
+        "940GZZLUWYC": {
+            "name": "Wembley Central",
+            "lon": -0.29685,
+            "lat": 51.5523,
+            "stepFree": "full"
+        },
+        "940GZZLUWYP": {
+            "name": "Wembley Park",
+            "lon": -0.27926,
+            "lat": 51.5632,
+            "stepFree": "full"
+        },
+        "940GZZNEUGST": {
+            "name": "Nine Elms",
+            "lon": -0.12848,
+            "lat": 51.47991,
+            "stepFree": "full"
+        }
+    },
+    "check": { "pool": 12, "k": 3, "greedyShareOfOptimum": 1.0, "sameSet": true }
+}

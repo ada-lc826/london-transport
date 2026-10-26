@@ -25,7 +25,7 @@ from __future__ import annotations
 import gzip
 import json
 import math
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 import numpy as np
@@ -99,6 +99,10 @@ class Graph:
     # (edges x len(PARAMS)): edge time = features @ theta.
     features: np.ndarray
     n_nodes: int
+    # Per edge: ("access", station, line) for an entry or exit, ("transfer", station, line,
+    # other) for a change, () for rides and walks. Lets a caller switch a station's step-free
+    # edges on and off without rebuilding the graph (upgrades.py).
+    labels: list[tuple[str, ...]] = field(default_factory=list)
 
     def _matrix(self, theta: np.ndarray) -> csr_matrix:
         weights = self.features @ theta
@@ -164,10 +168,12 @@ def build_graph(
 
     street = np.array([node(i) for i in ids])
     edges: dict[tuple[int, int], dict[str, float]] = {}
+    labels: dict[tuple[int, int], tuple[str, ...]] = {}
 
-    def add(a: int, b: int, coefficients: dict[str, float]) -> None:
+    def add(a: int, b: int, coefficients: dict[str, float], label: tuple[str, ...] = ()) -> None:
         # Two routes of a line can give the same pair twice; the times are identical.
         edges.setdefault((a, b), coefficients)
+        labels.setdefault((a, b), label)
 
     def step_free(station: str, line: str) -> bool:
         return access is None or access.get((station, line)) is True
@@ -186,11 +192,17 @@ def build_graph(
     for station, lines in lines_at.items():
         for line in lines:
             if step_free(station, line):
-                add(node(station), node(station, line), {access_param: 1.0})
-                add(node(station, line), node(station), {access_param: 1.0})
+                label = ("access", station, line)
+                add(node(station), node(station, line), {access_param: 1.0}, label)
+                add(node(station, line), node(station), {access_param: 1.0}, label)
             for other in lines:
                 if other != line and (transfers is None or (station, line, other) in transfers):
-                    add(node(station, line), node(station, other), {transfer_param: 1.0})
+                    add(
+                        node(station, line),
+                        node(station, other),
+                        {transfer_param: 1.0},
+                        ("transfer", station, line, other),
+                    )
 
     for i, a in enumerate(ids):
         for b in ids[i + 1 :]:
@@ -204,7 +216,7 @@ def build_graph(
         for name, value in coefficients.items():
             features[row, column[name]] = value
     src, dst = (np.array(side) for side in zip(*edges.keys(), strict=True))
-    return Graph(ids, street, src, dst, features, len(nodes))
+    return Graph(ids, street, src, dst, features, len(nodes), list(labels.values()))
 
 
 def default_theta() -> np.ndarray:

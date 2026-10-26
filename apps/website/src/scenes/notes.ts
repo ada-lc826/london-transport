@@ -89,6 +89,20 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: 'Every red ring is a station someone was told was step-free, that was not at that moment. Some of them are not even a broken lift: the station had no staff to run it.'
         }
     ],
+    'the-fix': [
+        {
+            cue: "TfL's list of the next stations it will make step-free, ringed in white; on the left, what they would save.",
+            say: 'So what would fix it? TfL has named the next stations it will make step-free. Run them through our model and the average step-free journey gets about three minutes shorter.'
+        },
+        {
+            cue: 'Our plan for the same number of stations lights up in gold, and the neighbourhoods it helps turn green. Tablet B chooses who to put first and how many stations.',
+            say: 'Now let the model choose. Same number of stations, chosen for the journeys people actually make: the saving grows by more than half, and many more Londoners gain five minutes or more.'
+        },
+        {
+            cue: 'The trade-off curve on the left: weighting the most deprived neighbourhoods; on the right, the overlap with TfL’s list and the caveat on cost.',
+            say: 'And we can choose whom to help first. Put the most deprived neighbourhoods first and they gain a quarter more, for a few percent less overall. That is a choice for people, not for a model; the model just makes it visible.'
+        }
+    ],
     calibration: [
         {
             cue: 'Test card: coordinates on every screen; rings and diagonals cross every bezel.',
