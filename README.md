@@ -51,6 +51,7 @@ Query flags: `layout=mini` uses the 3×2 wall instead of 16×4; `m=dev` adds the
 | S6 · The Race          | 3     | One of 9 trips (chosen on the tablet), raced leg by leg along the wall at 5 minutes a column: A on the fastest route, B on the fastest step-free one, then the gap. Journeys: [`docs/methods/travel-times.md`](docs/methods/travel-times.md#s6-the-race)                                                                                      |
 | S5 · On Paper          | 2     | Step-free on paper against step-free in practice: the 95 fully step-free stations against those still step-free at the latest sample of our lift log, the stations cut off and TfL's message for each; then the whole log replayed. Method: [`docs/methods/lifts.md`](docs/methods/lifts.md)                                                  |
 | S7 · What Would Fix It | 3     | A decision theatre: TfL's 12 stations to be made step-free next and what they would save; our 5–20 stations for the same budget, putting first the most people, the most deprived or disabled residents (chosen on the tablet); then the trade-off and the overlap. Method: [`docs/methods/upgrades.md`](docs/methods/upgrades.md)            |
+| S8 · Close             | 2     | One figure from each scene, each computed from that scene's own data; then how it was done, every data source with its credit, and a QR code to this repository.                                                                                                                                                                              |
 | Calibration            | 1     | Test card for checking a real wall                                                                                                                                                                                                                                                                                                            |
 | Map check              | 1     | Whole-wall basemap driven by the tablets                                                                                                                                                                                                                                                                                                      |
 
@@ -77,6 +78,16 @@ Powered by TfL Open Data.
 A starter for creating DO custom applications.
 
 This starter repo is built with Vite+.
+
+## Data and attribution
+
+The same list is shown on the wall at the end of S8 (`apps/website/src/data/attribution.ts`); keep the two in step.
+
+- **Transport for London**: Unified API, Journey Planner, station topology, NUMBAT demand, lift disruptions. Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019].
+- **Office for National Statistics**: Census 2021 TS038 and TS007A (via Nomis); MSOA population weighted centroids. Source: Office for National Statistics licensed under the Open Government Licence v3.0. Contains National Statistics data © Crown copyright and database right 2025; contains OS data © Crown copyright and database right 2025.
+- **Ministry of Housing, Communities and Local Government**: English Indices of Deprivation 2025. Contains public sector information licensed under the Open Government Licence v3.0.
+
+S8's QR code (`apps/website/public/qr-repo.svg`) links to this repository. If the repository moves, regenerate it (for example with Python's `segno`, error level M), keeping black modules on white, the 4-module quiet zone, and a `viewBox` in place of a fixed size so the wall can scale it.
 
 ## Runtime Context Note (Top-Level vs Iframe)
 

@@ -103,6 +103,16 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: 'And we can choose whom to help first. Put the most deprived neighbourhoods first and they gain a quarter more, for a few percent less overall. That is a choice for people, not for a model; the model just makes it visible.'
         }
     ],
+    'the-close': [
+        {
+            cue: 'One figure from each scene across the wall: what we found.',
+            say: "To close. Only about a third of tube stations are step-free, and two in five journeys start at one that isn't. The steps add almost twenty minutes to the average journey, they fall on where you live rather than who you are, and even the step-free stations lose it when a lift fails. But the order in which we fix them matters: the same budget can do two thirds more."
+        },
+        {
+            cue: 'How we did it, every data source and its credit, and a QR code to the code and methods.',
+            say: 'Everything here is open data and open code: the methods, the data and every number are in the repository behind that QR code. Thank you.'
+        }
+    ],
     calibration: [
         {
             cue: 'Test card: coordinates on every screen; rings and diagonals cross every bezel.',
