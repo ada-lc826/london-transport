@@ -111,3 +111,17 @@ uv run python -m mind_the_step.lift_outages --log <data-branch> \
 ```
 
 Method: [`docs/methods/lifts.md`](../docs/methods/lifts.md).
+
+## Equity (S4)
+
+`mind_the_step.equity_sources` fetches Census 2021 TS038 and TS007A, IoD 2025 and the MSOA population weighted centroids to `equity/raw/` on the `data` branch (the `fetch-equity` workflow). `mind_the_step.equity` runs network model v1 from every London MSOA to every tube station, standard and step-free, and joins the penalty to disability, age and deprivation; it writes `apps/website/public/data/equity.json`. Method: [`docs/methods/equity.md`](../docs/methods/equity.md).
+
+```sh
+uv run python -m mind_the_step.equity --raw <data-branch>/equity/raw \
+    --snapshot <data-branch>/snapshots/2026-10-19 \
+    --topology ../data/tfl-station-topology/2026-10-20 \
+    --model ../data/model/network-model-v1.json \
+    --network ../apps/website/public/data/network.json \
+    --pulse ../apps/website/public/data/pulse.json \
+    --out ../apps/website/public/data/equity.json
+```

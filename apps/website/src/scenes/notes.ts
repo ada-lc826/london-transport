@@ -65,6 +65,20 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
             say: 'A has long since arrived. This is the same trip, step-free. Tablet B can pick another one.'
         }
     ],
+    'who-pays': [
+        {
+            cue: 'Every London neighbourhood near the tube, coloured by how much longer its tube journeys take step-free; boroughs ranked on the right. Tablet B switches minutes and share of the tube lost.',
+            say: "So who pays for the steps? For each of London's neighbourhoods we ran every tube journey twice through our model, standard and step-free. On an average journey the steps cost almost twenty minutes, and they cost most in a band across north London."
+        },
+        {
+            cue: 'Colours change to penalty against the share of residents who are disabled; the scatter on the left; the two averages on the right.',
+            say: "We expected the penalty to fall hardest where more disabled people live. It doesn't. The average disabled Londoner and everyone else face the same penalty. The steps don't choose who you are; they choose where you live."
+        },
+        {
+            cue: 'Hot spots light up: neighbourhoods with a high penalty surrounded by others like them. Left: how many disabled Londoners lose half the tube.',
+            say: 'And where you live decides a lot. Eight in ten disabled Londoners who live near the tube lose more than half of what it reaches in 45 minutes. The penalty is not random: it clusters, and that tells you where to build.'
+        }
+    ],
     'the-lifts': [
         {
             cue: 'The latest sample of our lift log: step-free stations on paper, how many are in practice, and which are not, with TfL’s own message.',

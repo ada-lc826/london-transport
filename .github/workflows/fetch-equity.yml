@@ -1,0 +1,54 @@
+name: Fetch S4 equity data
+
+# Census 2021 disability and age, IoD 2025 and MSOA centroids for S4 (Who pays), to
+# equity/raw/ on the `data` branch (pipeline/src/mind_the_step/equity_sources.py). Run by hand;
+# also runs when the fetcher changes on a working branch, so a new source can be tried before
+# the workflow reaches main. What was found is committed even when a source fails.
+
+on:
+    workflow_dispatch:
+    push:
+        branches: ['claude/**']
+        paths:
+            ['pipeline/src/mind_the_step/equity_sources.py', '.github/workflows/fetch-equity.yml']
+
+permissions:
+    contents: write
+
+concurrency:
+    group: fetch-equity
+    cancel-in-progress: false
+
+jobs:
+    fetch:
+        runs-on: ubuntu-latest
+        timeout-minutes: 30
+        steps:
+            - uses: actions/checkout@v7
+
+            - uses: astral-sh/setup-uv@v7
+              with:
+                  working-directory: pipeline
+
+            - name: Check out the data branch
+              run: |
+                  git config --global user.name "github-actions[bot]"
+                  git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+                  git fetch --depth=50 origin data
+                  git worktree add -B data data-branch FETCH_HEAD
+
+            - name: Fetch
+              id: fetch
+              continue-on-error: true
+              working-directory: pipeline
+              run: uv run --frozen python -m mind_the_step.equity_sources --out ../data-branch
+
+            - name: Commit and push
+              run: |
+                  .github/scripts/commit-data.sh data-branch "equity sources: $(date -u +%Y-%m-%dT%H:%MZ)"
+
+            - name: Fail if a source failed
+              if: steps.fetch.outcome != 'success'
+              run: |
+                  cat data-branch/equity/raw/manifest.json
+                  exit 1

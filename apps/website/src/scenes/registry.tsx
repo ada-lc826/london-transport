@@ -9,6 +9,7 @@ import { ThePulseScene } from './the-pulse';
 import { TheRaceScene } from './the-race';
 import { TheStepScene } from './the-step';
 import { TwoLondonsScene } from './two-londons';
+import { WhoPaysScene } from './who-pays';
 
 export type SceneProps = { scene: SceneState };
 
@@ -19,6 +20,7 @@ export const SCENE_COMPONENTS: Record<SceneId, ComponentType<SceneProps>> = {
     'the-pulse': ThePulseScene,
     'the-step': TheStepScene,
     'two-londons': TwoLondonsScene,
+    'who-pays': WhoPaysScene,
     'the-race': TheRaceScene,
     'the-lifts': TheLiftsScene,
     calibration: CalibrationScene,

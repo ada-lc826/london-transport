@@ -1,3 +1,4 @@
+import { loadEquity, roughCount } from '../data/equity';
 import { loadJourneyTimes, summariseOrigin } from '../data/journeys';
 import { downgradedAt, loadLiftRecord } from '../data/lifts';
 import { loadNetwork, summariseStepFree } from '../data/network';
@@ -45,6 +46,7 @@ function LiveFigures({ scene }: { scene: SceneState }) {
     const races = useAsset(loadRaces);
     const pulse = useAsset(loadPulse);
     const lifts = useAsset(loadLiftRecord);
+    const equity = useAsset(loadEquity);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -75,6 +77,14 @@ function LiveFigures({ scene }: { scene: SceneState }) {
                 ? ''
                 : `${Math.round(share * 100)}% of tube entries at stations with no step-free access`
         ].filter(Boolean);
+    } else if (scene.id === 'who-pays' && equity) {
+        const h = equity.headline;
+        figures = [
+            `Disabled +${h.disabled.toFixed(1)} min · everyone else +${h.notDisabled.toFixed(1)} min`,
+            `Spearman ρ with disability share ${equity.spearman.disabledShare.toFixed(2)}`,
+            `${roughCount(h.disabledLosingHalf)} of ${roughCount(h.disabledInReach)} disabled near the tube lose half`,
+            `Hot spots: ${equity.hotspots.boroughs.join(', ')}`
+        ];
     } else if (scene.id === 'the-lifts' && lifts) {
         const last = lifts.times.length - 1;
         figures = [
