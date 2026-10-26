@@ -10,6 +10,7 @@ export const SCENE_IDS = [
     'who-pays',
     'the-race',
     'the-lifts',
+    'the-fix',
     'calibration',
     'map-check'
 ] as const;
@@ -93,6 +94,31 @@ export const SCENE_META: Record<SceneId, SceneMeta> = {
         }
     },
     'the-lifts': { title: 'S5 · On Paper', steps: 2 },
+    'the-fix': {
+        title: 'S7 · What Would Fix It',
+        steps: 3,
+        params: {
+            // Keep in step with STRATEGIES and shown_k in pipeline/src/mind_the_step/
+            // upgrades.py: upgrades.json only has these plans and maps.
+            strategy: {
+                label: 'Put first',
+                options: [
+                    { value: 'people', label: 'The most people' },
+                    { value: 'deprivation', label: 'The most deprived' },
+                    { value: 'disability', label: 'Disabled residents' }
+                ]
+            },
+            k: {
+                label: 'Stations',
+                options: [
+                    { value: '12', label: '12, as many as TfL' },
+                    { value: '5', label: '5' },
+                    { value: '10', label: '10' },
+                    { value: '20', label: '20' }
+                ]
+            }
+        }
+    },
     calibration: { title: 'Calibration', steps: 1 },
     'map-check': { title: 'Map check', steps: 1 }
 };

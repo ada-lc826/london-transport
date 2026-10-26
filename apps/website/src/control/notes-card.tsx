@@ -4,6 +4,7 @@ import { downgradedAt, loadLiftRecord } from '../data/lifts';
 import { loadNetwork, summariseStepFree } from '../data/network';
 import { loadPulse, shareWithoutStepFree } from '../data/pulse';
 import { loadRaces } from '../data/races';
+import { loadUpgradePlans, outcomeAt, type Strategy } from '../data/upgrades';
 import { nextNote, stepNote } from '../scenes/notes';
 import { SCENE_META, type SceneState } from '../scenes/scene-state';
 import { useAsset } from '../scenes/use-asset';
@@ -47,6 +48,7 @@ function LiveFigures({ scene }: { scene: SceneState }) {
     const pulse = useAsset(loadPulse);
     const lifts = useAsset(loadLiftRecord);
     const equity = useAsset(loadEquity);
+    const plans = useAsset(loadUpgradePlans);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -84,6 +86,16 @@ function LiveFigures({ scene }: { scene: SceneState }) {
             `Spearman ρ with disability share ${equity.spearman.disabledShare.toFixed(2)}`,
             `${roughCount(h.disabledLosingHalf)} of ${roughCount(h.disabledInReach)} disabled near the tube lose half`,
             `Hot spots: ${equity.hotspots.boroughs.join(', ')}`
+        ];
+    } else if (scene.id === 'the-fix' && plans) {
+        const k = Number(scene.params.k) || 12;
+        const strategy = (scene.params.strategy ?? 'people') as Strategy;
+        const ours = outcomeAt(plans, strategy, k);
+        const tfl = plans.tfl[plans.tfl.length - 1];
+        figures = [
+            `Our ${k}: −${ours.savedEveryone.toFixed(1)} min · ${roughCount(ours.helped)} gain 5+`,
+            `TfL's 12: −${tfl.savedEveryone.toFixed(1)} min · ${roughCount(tfl.helped)} gain 5+`,
+            `Most deprived fifth: −${ours.savedDeprived.toFixed(1)} min (TfL −${tfl.savedDeprived.toFixed(1)})`
         ];
     } else if (scene.id === 'the-lifts' && lifts) {
         const last = lifts.times.length - 1;

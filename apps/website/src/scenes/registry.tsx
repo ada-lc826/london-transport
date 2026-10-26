@@ -4,6 +4,7 @@ import { AttractScene } from './attract';
 import { CalibrationScene } from './calibration';
 import { MapCheckScene } from './map-check';
 import type { SceneId, SceneState } from './scene-state';
+import { TheFixScene } from './the-fix';
 import { TheLiftsScene } from './the-lifts';
 import { ThePulseScene } from './the-pulse';
 import { TheRaceScene } from './the-race';
@@ -23,6 +24,7 @@ export const SCENE_COMPONENTS: Record<SceneId, ComponentType<SceneProps>> = {
     'who-pays': WhoPaysScene,
     'the-race': TheRaceScene,
     'the-lifts': TheLiftsScene,
+    'the-fix': TheFixScene,
     calibration: CalibrationScene,
     'map-check': MapCheckScene
 };

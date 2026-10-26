@@ -125,3 +125,7 @@ uv run python -m mind_the_step.equity --raw <data-branch>/equity/raw \
     --pulse ../apps/website/public/data/pulse.json \
     --out ../apps/website/public/data/equity.json
 ```
+
+## Upgrades (S7)
+
+`mind_the_step.upgrades` chooses, greedily and with each pick re-evaluated on the network model, the stations whose upgrade to full step-free access most lowers S4's penalty, for three neighbourhood weightings, and evaluates TfL's own list the same way. It takes the same arguments as `mind_the_step.equity` (`--check` adds a comparison with exhaustive search) and writes `apps/website/public/data/upgrades.json`. Method: [`docs/methods/upgrades.md`](../docs/methods/upgrades.md).
