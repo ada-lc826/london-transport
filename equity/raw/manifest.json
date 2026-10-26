@@ -222,5 +222,9 @@
   "centroids": {
     "service": "MSOA_December_2021_EW_PWC_V2",
     "features": 7264
+  },
+  "naptan": {
+    "url": "https://naptan.api.dft.gov.uk/v1/access-nodes",
+    "stops": 20058
   }
 }
