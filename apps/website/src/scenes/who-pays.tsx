@@ -53,7 +53,7 @@ export function WhoPaysScene({ scene }: SceneProps) {
             <Where record={record} metric={metric} visible={step === 0} />
             <Who record={record} visible={step === 1} />
             <Clusters record={record} visible={step === 2} />
-            <Source record={record} />
+            <Source />
         </>
     );
 }
@@ -313,29 +313,30 @@ function Who({ record, visible }: { record: EquityRecord; visible: boolean }) {
     );
 }
 
+/** The 3 x 3 colour key, with its axes written beside it at the cell's own type size. */
 function BivariateLegend() {
     const cell = 150;
     return (
-        <svg width={760} height={760} viewBox="0 0 570 570">
-            {BIVARIATE.map((row, p) =>
-                row.map((colour, d) => (
-                    <rect
-                        key={`${p}-${d}`}
-                        x={110 + d * cell}
-                        y={(2 - p) * cell}
-                        width={cell - 8}
-                        height={cell - 8}
-                        fill={colour}
-                    />
-                ))
-            )}
-            <text x={0} y={240} fill="#ffffff" fontSize={60} transform="rotate(-90 40 240)">
-                penalty →
-            </text>
-            <text x={160} y={540} fill="#ffffff" fontSize={60}>
-                disabled →
-            </text>
-        </svg>
+        <span className="flex items-center gap-12">
+            <svg width={450} height={450} viewBox="0 0 450 450" className="shrink-0">
+                {BIVARIATE.map((row, p) =>
+                    row.map((colour, d) => (
+                        <rect
+                            key={`${p}-${d}`}
+                            x={d * cell}
+                            y={(2 - p) * cell}
+                            width={cell - 8}
+                            height={cell - 8}
+                            fill={colour}
+                        />
+                    ))
+                )}
+            </svg>
+            <span>
+                ↑ penalty
+                <br />→ disabled
+            </span>
+        </span>
     );
 }
 
@@ -467,7 +468,7 @@ function Clusters({ record, visible }: { record: EquityRecord; visible: boolean 
     );
 }
 
-function Source({ record }: { record: EquityRecord }) {
+function Source() {
     const { layout } = useWallStage();
     const right = zones(layout).right;
     if (layout.rows < 4) return null;
@@ -475,14 +476,12 @@ function Source({ record }: { record: EquityRecord }) {
         <ScreenText
             col={right.col + right.colSpan - 1}
             row={layout.rows - 1}
-            level="detail"
+            level="h2"
             align="left"
             className="justify-end"
         >
             <span className="text-white/60">
-                Tube journeys from each MSOA, network model v1, weighted by weekday use of each
-                station; censored at {record.params.capMinutes} min. Census 2021, IoD 2025.{' '}
-                {record.source.attribution}.
+                Tube model v1; Census 2021, IoD 2025. Credits in S8.
             </span>
         </ScreenText>
     );

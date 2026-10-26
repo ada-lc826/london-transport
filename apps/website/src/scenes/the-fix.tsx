@@ -576,15 +576,12 @@ function Method() {
         <ScreenText
             col={right.col + right.colSpan - 1}
             row={layout.rows - 1}
-            level="detail"
+            level="h2"
             align="left"
             className="justify-end"
         >
             <span className="text-white/60">
-                Greedy choice on network model v1, each pick re-evaluated exactly; matches
-                exhaustive search on a reduced instance. Counts buses and other rail through the bus
-                fallback model: an upgrade only helps where it beats them. Weights as S4. Powered by
-                TfL Open Data.
+                Greedy, checked by exhaustive search; buses and rail via the bus fallback model.
             </span>
         </ScreenText>
     );

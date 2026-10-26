@@ -4,13 +4,31 @@ import { rectsIntersect, regionRect } from './layout';
 import { useWallStage } from './stage';
 
 // Type scale in wall pixels, as fractions of screen height (plan §4.6; BEST_PRACTICES §6 asks
-// for primary text of at least 20% of screen height for viewing at ~10 m).
+// for primary text of at least 20% of screen height for viewing at ~10 m). Nothing is smaller
+// than h2: the DO Visualisation Toolkit asks for text at least 3-5% of the canvas height, and
+// 0.12 of a 1080 px screen is 130 px, 3% of the 4320 px wall.
 export const TYPE = {
     display: 0.4, // 432 px: the title, one word per screen
     h1: 0.2, // 216 px: headline numbers and the key message
-    h2: 0.1, // 108 px: labels
-    detail: 0.06 // 65 px: close-reading "data wall" detail only; needs a recorded design reason
+    h2: 0.12 // 130 px: labels, sources and credits
 } as const;
+
+/** `text` cut at a word boundary to at most `limit` characters, with an ellipsis: for long
+ *  labels that must fit a screen at the wall's smallest type size rather than be clipped. */
+export function clipText(text: string, limit: number): string {
+    if (text.length <= limit) return text;
+    const cut = text.slice(0, Math.max(1, limit - 1));
+    const space = cut.lastIndexOf(' ');
+    return `${(space > limit / 2 ? cut.slice(0, space) : cut).replace(/[,.;:/]\s*$/, '').trimEnd()}…`;
+}
+
+/** Characters of `level` text that fit in `width` wall pixels (a conservative estimate). */
+export function charsThatFit(width: number, level: TypeLevel, screenHeight: number): number {
+    return Math.floor(width / (0.6 * typeSize(level, screenHeight)));
+}
+
+/** The smallest text the toolkit allows, as a fraction of the wall's height. */
+export const MIN_TEXT_OF_CANVAS = 0.03;
 
 export type TypeLevel = keyof typeof TYPE;
 

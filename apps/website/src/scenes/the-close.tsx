@@ -10,7 +10,7 @@ import { loadUpgradePlans } from '../data/upgrades';
 import { withBase } from '../lib/base-path';
 import { regionRect, rectsIntersect, zones } from '../wall/layout';
 import { useWallStage } from '../wall/stage';
-import { ScreenText, typeSize } from '../wall/typography';
+import { ScreenText } from '../wall/typography';
 import type { SceneProps } from './registry';
 import { useAsset } from './use-asset';
 
@@ -98,6 +98,12 @@ function Findings({ findings, visible }: { findings: Finding[]; visible: boolean
     );
 }
 
+/** A credit as at most two screens' worth: its first sentence, then the rest. */
+export function creditParts(credit: string): string[] {
+    const split = credit.indexOf('. ');
+    return split === -1 ? [credit] : [credit.slice(0, split + 1), credit.slice(split + 2)];
+}
+
 function Credits({ visible }: { visible: boolean }) {
     const { layout, view } = useWallStage();
     const { left, centre, right } = zones(layout);
@@ -106,7 +112,6 @@ function Credits({ visible }: { visible: boolean }) {
     const qr = regionRect(layout, { col: qrCol, row: 1, colSpan: 1, rowSpan: 1 });
     // Square, inside the screen with a margin: phones need the quiet zone clear of the bezel.
     const side = Math.round(layout.screenHeight * 0.86);
-    const detail = typeSize('detail', layout.screenHeight);
     return (
         <>
             {rectsIntersect(qr, view) ? (
@@ -159,32 +164,44 @@ function Credits({ visible }: { visible: boolean }) {
             </ScreenText>
             <ScreenText col={left.col + 1} row={2} level="h2" align="left">
                 <span className="text-white/70" style={fade}>
-                    Descriptive, not causal:
+                    Descriptive, not causal;
                     <br />
-                    tube only, buses
+                    buses estimated by a
                     <br />
-                    not modelled
+                    model, not routed
                 </span>
             </ScreenText>
+            {/* One column per publisher: who and what in the eye-height band, the credit its
+                licence asks for below, a sentence or two per screen at the wall's smallest size. */}
             {ATTRIBUTIONS.map((a, i) => (
-                <ScreenText
-                    key={a.publisher}
-                    col={right.col + 1 + i}
-                    row={1}
-                    level="h2"
-                    align="left"
-                    className="justify-start"
-                >
-                    <span style={fade}>
-                        <strong>{a.publisher}</strong>
-                        <span className="mt-4 block text-white/70" style={{ fontSize: detail }}>
-                            {a.data}
+                <Fragment key={a.publisher}>
+                    <ScreenText
+                        col={right.col + 1 + i}
+                        row={1}
+                        level="h2"
+                        align="left"
+                        className="justify-start"
+                    >
+                        <span style={fade}>
+                            <strong>{a.publisher}</strong>
+                            <span className="mt-4 block text-white/70">{a.data}</span>
                         </span>
-                        <span className="mt-4 block text-white/60" style={{ fontSize: detail }}>
-                            {a.credit}
-                        </span>
-                    </span>
-                </ScreenText>
+                    </ScreenText>
+                    {creditParts(a.credit).map((part, k) => (
+                        <ScreenText
+                            key={k}
+                            col={right.col + 1 + i}
+                            row={2 + k}
+                            level="h2"
+                            align="left"
+                            className="justify-start"
+                        >
+                            <span className="text-white/60" style={fade}>
+                                {part}
+                            </span>
+                        </ScreenText>
+                    ))}
+                </Fragment>
             ))}
             <ScreenText col={centre.col + 1} row={2} level="h1" align="left">
                 <span style={fade}>Thank you</span>

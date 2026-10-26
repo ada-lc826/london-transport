@@ -4,6 +4,30 @@ An interactive story for Imperial's Data Observatory (16 × 4 screens, 30720 × 
 
 ![S2: every tube station by step-free access](docs/img/s2-the-step.png)
 
+## The story
+
+Framed as the DO Visualisation Toolkit asks.
+
+- **Key message:** in London, how much a step costs you depends on where you live, not who you are. Spent differently, the same budget for new step-free stations would save almost twice as much time.
+- **Audience:** Data Observatory visitors: students, researchers, and the people who plan and campaign for accessible transport.
+- **Takeaway:** "step-free" on a map is not step-free in practice. The gap is measurable, it is concentrated in particular places, and it can be closed faster by choosing where to build with data.
+
+The scenes follow the toolkit's five-part narrative:
+
+| Part                | Scenes                                                     |
+| ------------------- | ---------------------------------------------------------- |
+| Problem and context | S0 Attract, S1 The Pulse, S2 The Step                      |
+| Exploration         | S3 Two Londons, S6 The Race                                |
+| Insight             | S4 Who Pays, S5 On Paper                                   |
+| Implications        | S7 What Would Fix It (recommendations)                     |
+| Future              | S8 Close: findings, and the open data and code to build on |
+
+The layout follows the toolkit's design rules:
+
+- **Central focal layout:** the key message sits in the centre zone (5 \| 6 \| 5 screens), with context and implications on either side.
+- **Text size:** no text is smaller than 130 px, 3% of the 4,320 px canvas height. A unit test enforces it.
+- **No text across a screen boundary:** checked for every scene and step by the browser tests.
+
 ## In two minutes
 
 **What it finds**
@@ -126,6 +150,7 @@ The same list is shown on the wall at the end of S8 (`apps/website/src/data/attr
 
 - **Transport for London**: Unified API, Journey Planner, station topology, NUMBAT demand, lift disruptions. Powered by TfL Open Data. Contains OS data © Crown copyright and database rights 2016 and Geomni UK Map data © and database rights [2019].
 - **Office for National Statistics**: Census 2021 TS038 and TS007A (via Nomis); MSOA population weighted centroids. Source: Office for National Statistics licensed under the Open Government Licence v3.0. Contains National Statistics data © Crown copyright and database right 2025; contains OS data © Crown copyright and database right 2025.
+- **Department for Transport**: NaPTAN, the national register of bus stops. Contains public sector information licensed under the Open Government Licence v3.0.
 - **Ministry of Housing, Communities and Local Government**: English Indices of Deprivation 2025. Contains public sector information licensed under the Open Government Licence v3.0.
 
 S8's QR code (`apps/website/public/qr-repo.svg`) links to this repository. If the repository moves, regenerate it (for example with Python's `segno`, error level M), keeping black modules on white, the 4-module quiet zone, and a `viewBox` in place of a fixed size so the wall can scale it.

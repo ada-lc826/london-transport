@@ -81,7 +81,8 @@ function Skyline({ pulse, now }: { pulse: Pulse; now: Now }) {
     const values = pulse.network.onNetwork;
     const peak = Math.max(...values);
     // Leaves room under the baseline for the hour marks, above the bezel.
-    const base = h * 0.82;
+    // High enough that the hour labels below it, at the wall's smallest type, stay on the screen.
+    const base = h * 0.76;
     const y = (v: number) => base - (v / peak) * h * 0.55;
     const points = values.map((v, i) => `${dayX(width, i + 0.5)},${y(v)}`).join(' ');
     const cursor = dayX(width, now.quarter + now.within);
@@ -124,7 +125,7 @@ function Skyline({ pulse, now }: { pulse: Pulse; now: Now }) {
                         style={{
                             left: col * layout.screenWidth + pad / 2,
                             top: base + pad / 4,
-                            fontSize: typeSize('detail', h)
+                            fontSize: typeSize('h2', h)
                         }}
                     >
                         {hh}:{mm}
@@ -368,7 +369,7 @@ function Numbers({
             <ScreenText
                 col={0}
                 row={layout.rows - 1}
-                level="detail"
+                level="h2"
                 align="left"
                 className="justify-end"
             >
