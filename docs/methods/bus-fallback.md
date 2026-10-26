@@ -48,7 +48,9 @@ For each station, the mean out-of-fold predicted residual of the step-free journ
 
 ## What it means for S4 and S7
 
-S4's and S7's penalties are the tube's. The index shows they overstate the whole network's penalty most exactly where they are largest. Four of S7's first seven stations by people are in the top 3% of the index: Wood Green, Walthamstow Central, Leyton and East Finchley. Upgrading them helps tube journeys a great deal, but step-free travellers there already have other ways round, so the whole-network gain would be smaller than S7 shows. TfL's own list scores higher on the index too, so the comparison does not simply flip. Re-running S7 on corrected times is the natural next step.
+S4's penalties are the tube's, and the index shows they overstate the whole network's penalty most where they are largest. On the tube alone, four of S7's first seven stations (Wood Green, Walthamstow Central, Leyton, East Finchley) were in the top 3% of the index.
+
+S7 now uses the model. `whole_network_step_free` turns the index into an estimate of today's whole-network step-free time between every pair of stations, and an upgrade counts only where its new tube route beats that ([upgrades.md](upgrades.md)). Every saving shrinks by about two thirds, TfL's list slightly more than ours, so ours now save 87% more than TfL's (66% on the tube alone).
 
 ## Limitations
 

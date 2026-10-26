@@ -49,3 +49,48 @@ def test_graph_labels_name_each_stations_step_free_edges():
     assert ("transfer", "A", "central", "victoria") in labels
     assert () in labels  # rides and walks
     assert len(graph.labels) == len(graph.src)
+
+
+def test_upgrade_counts_only_where_it_beats_the_whole_network():
+    from mind_the_step.model import default_theta
+    from mind_the_step.upgrades import Upgrader
+
+    network = {
+        "stations": [
+            {"id": "A", "lat": 51.5, "lon": -0.1},
+            {"id": "B", "lat": 51.6, "lon": -0.1},
+        ]
+    }
+    graph = build_graph(
+        network,
+        {"central": {("A", "B"), ("B", "A")}},
+        {("A", "central"): True, ("B", "central"): True},
+    )
+    theta = default_theta()
+    # Today: only A is step-free, so B cannot be reached step-free by tube.
+    base = np.array([not label or label[1] == "A" for label in graph.labels])
+    owner = np.array([label[1] if label else "" for label in graph.labels])
+    walk = np.array([[0.0, np.inf]])  # one area, at A
+    standard = np.array([[0.0, 30.0]])
+    upgrader = Upgrader(
+        graph, base, owner, graph.features @ theta, walk, standard, np.array([0.0, 1.0])
+    )
+    tube_now = upgrader.extra(frozenset())[0]
+    tube_after = upgrader.extra(frozenset({"B"}))[0]
+    assert tube_now == 120.0 - 30.0 and tube_after < tube_now
+
+    # A bus already gets there in 40 minutes: today's penalty is 10, and the upgrade only
+    # helps if its tube route is faster than the bus.
+    alternative = np.array([[0.0, 40.0], [40.0, 0.0]])
+    whole = Upgrader(
+        graph,
+        base,
+        owner,
+        graph.features @ theta,
+        walk,
+        standard,
+        np.array([0.0, 1.0]),
+        alternative,
+    )
+    assert whole.extra(frozenset())[0] == 10.0
+    assert whole.extra(frozenset({"B"}))[0] == min(tube_after, 10.0)

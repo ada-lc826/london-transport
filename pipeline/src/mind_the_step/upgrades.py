@@ -52,6 +52,7 @@ from .equity import (
     read_areas,
 )
 from .model import PARAMS, Graph, build_graph, read_adjacency
+from .residuals import whole_network_step_free
 from .topology import line_access, read_topology
 
 K_MAX = 20
@@ -86,6 +87,9 @@ class Upgrader:
     walk: np.ndarray  # area x station walking minutes (inf beyond reach)
     standard: np.ndarray  # area x station standard minutes
     destinations: np.ndarray  # station weights, summing to 1
+    # Station x station step-free minutes on today's whole network (residuals.py), or None
+    # for the tube alone. A step-free traveller takes the faster of it and the tube.
+    alternative: np.ndarray | None = None
 
     def extra(self, upgraded: frozenset[str]) -> np.ndarray:
         """Each area's weighted mean extra minutes, step-free over standard, censored.
@@ -95,14 +99,20 @@ class Upgrader:
             cache[upgraded] = self._extra(upgraded)
         return cache[upgraded]
 
-    def _extra(self, upgraded: frozenset[str]) -> np.ndarray:
+    def tube_between(self, upgraded: frozenset[str]) -> np.ndarray:
+        """Station x station step-free tube minutes with `upgraded` made step-free."""
         mask = self.base | np.isin(self.owner, list(upgraded))
         g = self.graph
         matrix = csr_matrix(
             (np.maximum(self.weights[mask], 1e-6), (g.src[mask], g.dst[mask])),
             shape=(g.n_nodes, g.n_nodes),
         )
-        between = dijkstra(matrix, directed=True, indices=g.street)[:, g.street]
+        return dijkstra(matrix, directed=True, indices=g.street)[:, g.street]
+
+    def _extra(self, upgraded: frozenset[str]) -> np.ndarray:
+        between = self.tube_between(upgraded)
+        if self.alternative is not None:
+            between = np.minimum(between, self.alternative)
         step_free = self._door(between)
         std = np.minimum(self.standard, CAP_MINUTES)
         return (np.minimum(step_free, CAP_MINUTES) - std) @ self.destinations
@@ -204,7 +214,11 @@ def build(
     params: dict[str, float],
     pulse: dict,
     check: bool = False,
+    whole_network: tuple[Path, Path] | None = None,
 ) -> dict:
+    """The plans. With `whole_network` (planner records, NaPTAN bus stops), a step-free
+    traveller may also use what the rest of today's network offers (residuals.py), so an
+    upgrade counts only where its new tube route beats that."""
     theta = np.array([params[name] for name in PARAMS])
     topology = read_topology(topology_dir)
     access = line_access(topology.platforms)
@@ -240,6 +254,21 @@ def build(
         standard,
         destinations / destinations.sum(),
     )
+    residents_all = np.array([a["residents"] for a in inside], dtype=float)
+    tube_only = None
+    if whole_network is not None:
+        tube_only = _tube_only_summary(upgrader, inside, network, residents_all, names, status)
+        records, stops = whole_network
+        upgrader.alternative = whole_network_step_free(
+            records,
+            stops,
+            network,
+            pulse,
+            standard_graph.stations,
+            standard_graph.times(theta, every),
+            upgrader.tube_between(frozenset()),
+        )
+        upgrader.__dict__.pop("_cache", None)
     now = upgrader.extra(frozenset())
 
     residents = np.array([a["residents"] for a in inside], dtype=float)
@@ -297,6 +326,8 @@ def build(
     }
 
     result = {
+        "basis": "tube only" if whole_network is None else "whole network (bus-fallback-v1)",
+        "tubeOnly": tube_only,
         "params": {"kMax": K_MAX, "helpedMinutes": HELPED_MINUTES, "shownK": list(shown_k)},
         "now": {
             "everyone": round(float(now @ residents / residents.sum()), 2),
@@ -337,6 +368,25 @@ def build(
     return result
 
 
+def _tube_only_summary(upgrader, inside, network, residents, names, status) -> dict:
+    """TfL's 12 and the people-first 12 on the tube alone, for comparison."""
+    disabled = np.array([a["disabled"] for a in inside], dtype=float)
+    imd = np.array([a["imd"] for a in inside])
+    deprived = imd >= np.quantile(imd, 0.8)
+    now = upgrader.extra(frozenset())
+    candidates = sorted(s for s in names if status[s] != "full" and s in upgrader.owner)
+    ours = greedy(upgrader, candidates, residents, len(TFL_2024), now)
+    tfl = frozenset(s for s in TFL_2024 if s in candidates)
+    return {
+        "now": round(float(now @ residents / residents.sum()), 2),
+        "people12": {
+            "stations": [names[s] for s, _ in ours],
+            **summarise(now, ours[-1][1], residents, disabled, deprived),
+        },
+        "tfl12": summarise(now, upgrader.extra(tfl), residents, disabled, deprived),
+    }
+
+
 def _station_lines(adjacency: dict[str, set[tuple[str, str]]]) -> set[tuple[str, str]]:
     return {(s, line) for line, pairs in adjacency.items() for pair in pairs for s in pair}
 
@@ -351,6 +401,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--pulse", type=Path, required=True, help="pulse.json (NUMBAT entries)")
     parser.add_argument("--out", type=Path, required=True, help="output JSON")
     parser.add_argument("--check", action="store_true", help="greedy against exhaustive search")
+    parser.add_argument("--records", type=Path, help="planner records, for the whole network")
+    parser.add_argument("--stops", type=Path, help="NaPTAN bus stops, for the whole network")
     args = parser.parse_args(argv)
 
     network = json.loads(args.network.read_text(encoding="utf-8"))
@@ -358,8 +410,16 @@ def main(argv: list[str] | None = None) -> int:
     pulse = json.loads(args.pulse.read_text(encoding="utf-8"))
     adjacency = read_adjacency(args.snapshot, {s["id"] for s in network["stations"]})
     areas = read_areas(args.raw)
+    whole = (args.records, args.stops) if args.records and args.stops else None
     report = build(
-        areas, network, adjacency, args.topology, model["params"], pulse, check=args.check
+        areas,
+        network,
+        adjacency,
+        args.topology,
+        model["params"],
+        pulse,
+        check=args.check,
+        whole_network=whole,
     )
     result = {
         "source": {
@@ -378,6 +438,13 @@ def main(argv: list[str] | None = None) -> int:
         keep = ("savedEveryone", "savedDisabled", "savedDeprived", "helped")
         print(key, json.dumps([[r[k] for k in keep] for r in rows]), file=sys.stderr)
     print("check", json.dumps(result.get("check")), file=sys.stderr)
+    print(
+        "now",
+        json.dumps(result["now"]),
+        "tube only",
+        json.dumps(result["tubeOnly"]),
+        file=sys.stderr,
+    )
     return 0
 
 

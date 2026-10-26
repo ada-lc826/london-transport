@@ -92,21 +92,21 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
     'the-fix': [
         {
             cue: "TfL's list of the next stations it will make step-free, ringed in white; on the left, what they would save.",
-            say: 'So what would fix it? TfL has named the next stations it will make step-free. Run them through our model and the average step-free journey gets about three minutes shorter.'
+            say: 'So what would fix it? TfL has named the next stations it will make step-free. Run them through our model, counting buses and rail as well as the tube, and the average step-free journey gets about a minute shorter.'
         },
         {
             cue: 'Our plan for the same number of stations lights up in gold, and the neighbourhoods it helps turn green. Tablet B chooses who to put first and how many stations.',
-            say: 'Now let the model choose. Same number of stations, chosen for the journeys people actually make: the saving grows by more than half, and many more Londoners gain five minutes or more.'
+            say: 'Now let the model choose. Same number of stations, chosen for the journeys people actually make: the saving almost doubles, and twice as many Londoners gain five minutes or more.'
         },
         {
             cue: 'The trade-off curve on the left: weighting the most deprived neighbourhoods; on the right, the overlap with TfL’s list and the caveat on cost.',
-            say: 'And we can choose whom to help first. Put the most deprived neighbourhoods first and they gain a quarter more, for a few percent less overall. That is a choice for people, not for a model; the model just makes it visible.'
+            say: 'And we can choose whom to help first. Put the most deprived neighbourhoods first and they gain over half as much again, for under a tenth less overall. That is a choice for people, not for a model; the model just makes it visible.'
         }
     ],
     'the-close': [
         {
             cue: 'One figure from each scene across the wall: what we found.',
-            say: "To close. Only about a third of tube stations are step-free, and two in five journeys start at one that isn't. The steps add almost twenty minutes to the average journey, they fall on where you live rather than who you are, and even the step-free stations lose it when a lift fails. But the order in which we fix them matters: the same budget can do two thirds more."
+            say: "To close. Only about a third of tube stations are step-free, and two in five journeys start at one that isn't. The steps add almost twenty minutes to the average tube journey, they fall on where you live rather than who you are, and even the step-free stations lose it when a lift fails. But the order in which we fix them matters: the same budget can do almost twice as much."
         },
         {
             cue: 'How we did it, every data source and its credit, and a QR code to the code and methods.',
