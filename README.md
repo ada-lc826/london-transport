@@ -1,10 +1,50 @@
 # Mind the Step: One network, two Londons
 
-A Data Observatory (16×4 screens) demo built on TfL Open Data, measuring how much longer London journeys take for people who need step-free access.
+An interactive story for Imperial's Data Observatory (16 × 4 screens, 30720 × 4320 px), built on TfL Open Data. It asks how much longer London is for people who cannot use stairs, who pays for that, and what would fix it.
 
-> Work in progress. The research and design plan (in Chinese) is at [`docs/plan/mind-the-step-plan.zh-CN.md`](docs/plan/mind-the-step-plan.zh-CN.md).
+![S2: every tube station by step-free access](docs/img/s2-the-step.png)
 
-This repository is built on [`dsi-icl/do-starter-playground`](https://github.com/dsi-icl/do-starter-playground), with its upstream history kept: `git diff upstream/main...` shows everything added on top of it.
+## In two minutes
+
+**What it finds**
+
+|           | Finding                                                                                | Scene |
+| --------- | -------------------------------------------------------------------------------------- | ----- |
+| 95 of 272 | tube stations are step-free from street to platform                                    | S2    |
+| 42%       | of tube journeys start at a station with no step-free access                           | S1    |
+| +19 min   | on the average tube journey for a step-free traveller                                  | S4    |
+| ρ = −0.01 | the penalty does not follow where disabled Londoners live; it follows where you live   | S4    |
+| 13 of 95  | step-free stations lost it at least once to a broken lift in two days of our own log   | S5    |
+| +66%      | more minutes saved by 12 stations chosen for the journeys people make than by TfL's 12 | S7    |
+
+**How to see it**
+
+- **Online demo:** [ada-lc826.github.io/london-transport](https://ada-lc826.github.io/london-transport/). The simulator shows the whole wall plus two tablets: pick a scene on tablet A, press Next step, and make choices on tablet B.
+- **Locally:** `vp install && vp run dev`, then open http://localhost:5780.
+- **The 5-minute route:** S0 → S2 → S3 → S6 → S7 → S8. The full story, S0–S8, takes 8–9 minutes.
+
+![S6: two travellers race the same trip, standard and step-free](docs/img/s6-the-race.png)
+
+**The data science behind it.** Every figure on the wall is recomputed from open data by the Python pipeline in [`pipeline/`](pipeline/README.md), with its method written up in [`docs/methods/`](docs/methods/):
+
+- **Step-free access:** computed footpath by footpath from TfL's station topology, and checked against known stations, TfL's 2024 upgrade list and TfL's lift records.
+- **Network model:** a graph model of tube travel time, standard and step-free, calibrated to TfL Journey Planner journeys by alternating L1 linear programs. Leave-one-origin-out MAE is 3.3 min standard and 4.5 min step-free.
+- **Spatial equity (S4):**
+    - every London neighbourhood (MSOA) joined to Census 2021 disability and IoD 2025 deprivation;
+    - Spearman correlations and an OLS with robust standard errors;
+    - Moran's I, and LISA hot spots with FDR control.
+- **Optimisation (S7):** greedy choice of the stations to upgrade, each pick re-evaluated on the model, and checked against exhaustive search. Trade-off curves weigh people, deprivation and disability.
+- **Machine learning ([bus fallback](docs/methods/bus-fallback.md)):** LightGBM learns how much buses and other rail make up for the tube's steps, with spatial cross-validation (leave one origin out; leave one 5 km block out) and TreeSHAP. It corrects step-free times to within 6.6 min, against 20.4 for the tube alone. It also finds that S7's top picks are where buses already help most, a caveat the demo states.
+- **Our own data:** TfL's lift disruptions logged every 15 minutes since 19 October 2026 by a scheduled GitHub Action, and replayed against the topology (S5).
+- **Engineering:** 85 Python and 75 TypeScript unit tests, plus browser tests that check no text crosses a bezel. All run in CI.
+
+Results are descriptive, not causal, and the models cover the tube only. Each method page ends with its limitations.
+
+![S4: the step-free penalty by neighbourhood, against disability share](docs/img/s4-who-pays.png)
+
+![S7: TfL's next 12 step-free stations against 12 chosen by the model](docs/img/s7-what-would-fix-it.png)
+
+The research and design plan (in Chinese) is at [`docs/plan/mind-the-step-plan.zh-CN.md`](docs/plan/mind-the-step-plan.zh-CN.md). This repository is built on [`dsi-icl/do-starter-playground`](https://github.com/dsi-icl/do-starter-playground), with its upstream history kept: `git diff upstream/main...` shows everything added on top of it.
 
 ## Online demo
 
@@ -67,6 +107,7 @@ Method notes, with results and limitations:
 - [Lifts](docs/methods/lifts.md): stations cut off by lift outages, from our 15-minute lift log (S5).
 - [Equity](docs/methods/equity.md): the step-free penalty by London neighbourhood against Census 2021 disability and IoD 2025 (S4).
 - [Upgrades](docs/methods/upgrades.md): which stations to make step-free next, against TfL's list (S7).
+- [Bus fallback](docs/methods/bus-fallback.md): a LightGBM model of how much buses and other rail make up for the tube's steps, validated leaving one origin or one 5 km block out (MAE 6.6 / 5.5 min against 20.4 for the tube alone).
 - [Network model](docs/methods/network-model.md): a tube-and-walk graph model calibrated to those times (leave-one-origin-out MAE 3.3 min standard, 4.5 min step-free).
 
 Powered by TfL Open Data.

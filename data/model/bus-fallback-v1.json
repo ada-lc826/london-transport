@@ -1,0 +1,2588 @@
+{
+    "model": "bus fallback v1: LightGBM on the network model's step-free residual",
+    "inputs": {
+        "journeys": "jr",
+        "stops": "NaPTAN, London bus stops",
+        "networkModel": "network-model-v1.json"
+    },
+    "target": "min(model step-free minutes, 120) - Journey Planner step-free minutes",
+    "rows": 3240,
+    "residual": {
+        "mean": 18.88,
+        "median": 11.87,
+        "shareAboveFive": 0.665
+    },
+    "plannerStepFreeJourneysUsingBus": 0.763,
+    "params": {
+        "objective": "regression_l1",
+        "learning_rate": 0.05,
+        "num_leaves": 15,
+        "min_data_in_leaf": 30,
+        "feature_fraction": 0.8,
+        "bagging_fraction": 0.8,
+        "bagging_freq": 1,
+        "lambda_l2": 1.0,
+        "seed": 20261026,
+        "deterministic": true,
+        "num_threads": 1,
+        "rounds": 400
+    },
+    "validation": {
+        "leaveOneOriginOut": {
+            "folds": 12,
+            "mae": {
+                "tubeOnly": 20.35,
+                "constant": 17.47,
+                "lightgbm": 6.55
+            }
+        },
+        "leaveOneDestinationBlockOut": {
+            "folds": 42,
+            "mae": {
+                "tubeOnly": 20.35,
+                "constant": 16.93,
+                "lightgbm": 5.54
+            },
+            "blockKm": 5.0
+        }
+    },
+    "ablation": {
+        "withoutBusStops": {
+            "leaveOneOriginOut": 6.35,
+            "leaveOneDestinationBlockOut": 5.68
+        }
+    },
+    "shap": [
+        {
+            "feature": "model_step_free",
+            "meanAbsShap": 14.169,
+            "direction": 0.98
+        },
+        {
+            "feature": "trip_km",
+            "meanAbsShap": 6.387,
+            "direction": -0.84
+        },
+        {
+            "feature": "no_step_free_tube",
+            "meanAbsShap": 2.592,
+            "direction": 0.96
+        },
+        {
+            "feature": "destination_km_to_step_free",
+            "meanAbsShap": 1.796,
+            "direction": 0.6
+        },
+        {
+            "feature": "model_standard",
+            "meanAbsShap": 1.094,
+            "direction": -0.83
+        },
+        {
+            "feature": "destination_centre_km",
+            "meanAbsShap": 1.071,
+            "direction": 0.66
+        },
+        {
+            "feature": "origin_log_entries",
+            "meanAbsShap": 1.057,
+            "direction": 0.07
+        },
+        {
+            "feature": "origin_km_to_step_free",
+            "meanAbsShap": 0.924,
+            "direction": 0.62
+        },
+        {
+            "feature": "destination_bus_800m",
+            "meanAbsShap": 0.67,
+            "direction": 0.4
+        },
+        {
+            "feature": "destination_log_entries",
+            "meanAbsShap": 0.58,
+            "direction": 0.45
+        },
+        {
+            "feature": "origin_status",
+            "meanAbsShap": 0.39,
+            "direction": 0.69
+        },
+        {
+            "feature": "origin_centre_km",
+            "meanAbsShap": 0.356,
+            "direction": 0.45
+        },
+        {
+            "feature": "destination_status",
+            "meanAbsShap": 0.331,
+            "direction": 0.77
+        },
+        {
+            "feature": "origin_bus_400m",
+            "meanAbsShap": 0.326,
+            "direction": 0.51
+        },
+        {
+            "feature": "destination_bus_400m",
+            "meanAbsShap": 0.28,
+            "direction": 0.33
+        },
+        {
+            "feature": "destination_lines",
+            "meanAbsShap": 0.206,
+            "direction": -0.76
+        },
+        {
+            "feature": "origin_bus_800m",
+            "meanAbsShap": 0.205,
+            "direction": 0.55
+        },
+        {
+            "feature": "origin_lines",
+            "meanAbsShap": 0.122,
+            "direction": -0.49
+        }
+    ],
+    "busFallbackIndex": [
+        {
+            "station": "940GZZLULYN",
+            "name": "Leyton",
+            "lon": -0.00552,
+            "lat": 51.55659,
+            "predicted": 65.8,
+            "observed": 71.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHGT",
+            "name": "Highgate",
+            "lon": -0.14586,
+            "lat": 51.57753,
+            "predicted": 63.9,
+            "observed": 61.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWWL",
+            "name": "Walthamstow Central",
+            "lon": -0.01988,
+            "lat": 51.58297,
+            "predicted": 62.1,
+            "observed": 63.6,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLULYS",
+            "name": "Leytonstone",
+            "lon": 0.00819,
+            "lat": 51.56832,
+            "predicted": 61.8,
+            "observed": 63.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEFY",
+            "name": "East Finchley",
+            "lon": -0.16501,
+            "lat": 51.58713,
+            "predicted": 60.2,
+            "observed": 59.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTPN",
+            "name": "Turnpike Lane",
+            "lon": -0.10295,
+            "lat": 51.59027,
+            "predicted": 58.8,
+            "observed": 58.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSGP",
+            "name": "Stonebridge Park",
+            "lon": -0.27589,
+            "lat": 51.54396,
+            "predicted": 56.8,
+            "observed": 56.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWOG",
+            "name": "Wood Green",
+            "lon": -0.10989,
+            "lat": 51.59748,
+            "predicted": 55.7,
+            "observed": 55.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSEA",
+            "name": "South Ealing",
+            "lon": -0.30742,
+            "lat": 51.501,
+            "predicted": 55.3,
+            "observed": 59.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSGT",
+            "name": "Southgate",
+            "lon": -0.12782,
+            "lat": 51.63231,
+            "predicted": 54.4,
+            "observed": 51.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPVL",
+            "name": "Perivale",
+            "lon": -0.32345,
+            "lat": 51.53672,
+            "predicted": 53.3,
+            "observed": 53.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNFD",
+            "name": "Northfields",
+            "lon": -0.31472,
+            "lat": 51.49932,
+            "predicted": 52.3,
+            "observed": 56.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUASG",
+            "name": "Arnos Grove",
+            "lon": -0.13306,
+            "lat": 51.61645,
+            "predicted": 51.0,
+            "observed": 51.3,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUBOS",
+            "name": "Boston Manor",
+            "lon": -0.32494,
+            "lat": 51.49564,
+            "predicted": 49.1,
+            "observed": 51.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBDS",
+            "name": "Bounds Green",
+            "lon": -0.12423,
+            "lat": 51.60703,
+            "predicted": 48.2,
+            "observed": 46.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULGN",
+            "name": "Loughton",
+            "lon": 0.05548,
+            "lat": 51.64144,
+            "predicted": 45.0,
+            "observed": 48.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTHB",
+            "name": "Theydon Bois",
+            "lon": 0.10308,
+            "lat": 51.67176,
+            "predicted": 43.4,
+            "observed": 52.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGTH",
+            "name": "Gants Hill",
+            "lon": 0.06618,
+            "lat": 51.57654,
+            "predicted": 43.2,
+            "observed": 48.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUACY",
+            "name": "Archway",
+            "lon": -0.13482,
+            "lat": 51.56548,
+            "predicted": 42.2,
+            "observed": 44.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHNX",
+            "name": "Hatton Cross",
+            "lon": -0.42319,
+            "lat": 51.46675,
+            "predicted": 37.7,
+            "observed": 39.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNWH",
+            "name": "Northwood Hills",
+            "lon": -0.40946,
+            "lat": 51.60057,
+            "predicted": 36.9,
+            "observed": 36.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURBG",
+            "name": "Redbridge",
+            "lon": 0.04536,
+            "lat": 51.57624,
+            "predicted": 34.5,
+            "observed": 32.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEAN",
+            "name": "East Acton",
+            "lon": -0.24725,
+            "lat": 51.51661,
+            "predicted": 33.9,
+            "observed": 32.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNOW",
+            "name": "Northwood",
+            "lon": -0.42383,
+            "lat": 51.61105,
+            "predicted": 33.9,
+            "observed": 31.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTFP",
+            "name": "Tufnell Park",
+            "lon": -0.13843,
+            "lat": 51.55682,
+            "predicted": 33.6,
+            "observed": 37.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTBY",
+            "name": "Tooting Broadway",
+            "lon": -0.16837,
+            "lat": 51.42763,
+            "predicted": 32.2,
+            "observed": 31.1,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUNDN",
+            "name": "Neasden",
+            "lon": -0.24984,
+            "lat": 51.55399,
+            "predicted": 31.9,
+            "observed": 36.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURKW",
+            "name": "Rickmansworth",
+            "lon": -0.4737,
+            "lat": 51.64021,
+            "predicted": 31.7,
+            "observed": 30.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWAF",
+            "name": "Watford",
+            "lon": -0.41738,
+            "lat": 51.65745,
+            "predicted": 31.4,
+            "observed": 31.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCXY",
+            "name": "Croxley",
+            "lon": -0.44172,
+            "lat": 51.64704,
+            "predicted": 31.1,
+            "observed": 31.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTBC",
+            "name": "Tooting Bec",
+            "lon": -0.15974,
+            "lat": 51.43568,
+            "predicted": 31.0,
+            "observed": 30.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWSD",
+            "name": "Wanstead",
+            "lon": 0.02853,
+            "lat": 51.5755,
+            "predicted": 29.8,
+            "observed": 29.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCWL",
+            "name": "Chigwell",
+            "lon": 0.07504,
+            "lat": 51.61792,
+            "predicted": 29.6,
+            "observed": 32.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSRP",
+            "name": "South Ruislip",
+            "lon": -0.39892,
+            "lat": 51.55685,
+            "predicted": 29.6,
+            "observed": 30.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBZP",
+            "name": "Belsize Park",
+            "lon": -0.16465,
+            "lat": 51.55031,
+            "predicted": 28.1,
+            "observed": 29.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEAE",
+            "name": "Eastcote",
+            "lon": -0.39737,
+            "lat": 51.57651,
+            "predicted": 28.0,
+            "observed": 27.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKSH",
+            "name": "Kentish Town",
+            "lon": -0.14073,
+            "lat": 51.55031,
+            "predicted": 27.9,
+            "observed": 30.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBLM",
+            "name": "Balham",
+            "lon": -0.153,
+            "lat": 51.44329,
+            "predicted": 27.7,
+            "observed": 27.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUDOH",
+            "name": "Dollis Hill",
+            "lon": -0.23907,
+            "lat": 51.55195,
+            "predicted": 27.2,
+            "observed": 28.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHTD",
+            "name": "Hampstead",
+            "lon": -0.17746,
+            "lat": 51.55624,
+            "predicted": 26.9,
+            "observed": 26.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNAN",
+            "name": "North Acton",
+            "lon": -0.25976,
+            "lat": 51.52352,
+            "predicted": 26.4,
+            "observed": 29.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHGR",
+            "name": "Hanger Lane",
+            "lon": -0.2927,
+            "lat": 51.53018,
+            "predicted": 26.1,
+            "observed": 24.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBLR",
+            "name": "Blackhorse Road",
+            "lon": -0.04115,
+            "lat": 51.58692,
+            "predicted": 25.3,
+            "observed": 28.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCFM",
+            "name": "Chalk Farm",
+            "lon": -0.15339,
+            "lat": 51.54412,
+            "predicted": 25.3,
+            "observed": 24.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMED",
+            "name": "Mile End",
+            "lon": -0.03364,
+            "lat": 51.52512,
+            "predicted": 25.3,
+            "observed": 24.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSJW",
+            "name": "St. John's Wood",
+            "lon": -0.17395,
+            "lat": 51.53452,
+            "predicted": 25.3,
+            "observed": 25.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUFYR",
+            "name": "Finchley Road",
+            "lon": -0.17985,
+            "lat": 51.54682,
+            "predicted": 25.2,
+            "observed": 24.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSWC",
+            "name": "Swiss Cottage",
+            "lon": -0.17489,
+            "lat": 51.54368,
+            "predicted": 25.2,
+            "observed": 24.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKPK",
+            "name": "Kilburn Park",
+            "lon": -0.19423,
+            "lat": 51.53498,
+            "predicted": 25.1,
+            "observed": 26.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCTN",
+            "name": "Camden Town",
+            "lon": -0.14274,
+            "lat": 51.53929,
+            "predicted": 24.9,
+            "observed": 25.1,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUKSL",
+            "name": "Kensal Green",
+            "lon": -0.22502,
+            "lat": 51.53054,
+            "predicted": 23.6,
+            "observed": 26.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSVS",
+            "name": "Seven Sisters",
+            "lon": -0.07258,
+            "lat": 51.58333,
+            "predicted": 23.6,
+            "observed": 23.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEPY",
+            "name": "East Putney",
+            "lon": -0.211,
+            "lat": 51.4592,
+            "predicted": 23.5,
+            "observed": 23.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPKR",
+            "name": "Park Royal",
+            "lon": -0.28434,
+            "lat": 51.52712,
+            "predicted": 23.5,
+            "observed": 23.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURSG",
+            "name": "Ruislip Gardens",
+            "lon": -0.41071,
+            "lat": 51.56074,
+            "predicted": 23.5,
+            "observed": 21.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHAI",
+            "name": "Highbury & Islington",
+            "lon": -0.10332,
+            "lat": 51.54635,
+            "predicted": 22.5,
+            "observed": 23.3,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUTAW",
+            "name": "Totteridge & Whetstone",
+            "lon": -0.17921,
+            "lat": 51.6306,
+            "predicted": 22.3,
+            "observed": 26.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSNB",
+            "name": "Snaresbrook",
+            "lon": 0.02144,
+            "lat": 51.58068,
+            "predicted": 22.2,
+            "observed": 19.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUUPK",
+            "name": "Upton Park",
+            "lon": 0.03526,
+            "lat": 51.53534,
+            "predicted": 21.9,
+            "observed": 21.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBKE",
+            "name": "Barkingside",
+            "lon": 0.08858,
+            "lat": 51.58569,
+            "predicted": 21.5,
+            "observed": 26.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMRH",
+            "name": "Manor House",
+            "lon": -0.09612,
+            "lat": 51.57074,
+            "predicted": 21.5,
+            "observed": 20.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUAGL",
+            "name": "Angel",
+            "lon": -0.10635,
+            "lat": 51.53184,
+            "predicted": 21.3,
+            "observed": 21.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUALP",
+            "name": "Alperton",
+            "lon": -0.29961,
+            "lat": 51.54063,
+            "predicted": 21.1,
+            "observed": 23.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEAC",
+            "name": "Elephant & Castle",
+            "lon": -0.10061,
+            "lat": 51.49454,
+            "predicted": 20.9,
+            "observed": 20.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTNG",
+            "name": "Turnham Green",
+            "lon": -0.25455,
+            "lat": 51.49515,
+            "predicted": 20.9,
+            "observed": 18.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBWR",
+            "name": "Bow Road",
+            "lon": -0.02513,
+            "lat": 51.52694,
+            "predicted": 20.5,
+            "observed": 20.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSGN",
+            "name": "Stepney Green",
+            "lon": -0.0466,
+            "lat": 51.52186,
+            "predicted": 20.2,
+            "observed": 21.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCPS",
+            "name": "Clapham South",
+            "lon": -0.14758,
+            "lat": 51.45265,
+            "predicted": 20.1,
+            "observed": 19.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBTX",
+            "name": "Brent Cross",
+            "lon": -0.21362,
+            "lat": 51.57665,
+            "predicted": 19.9,
+            "observed": 23.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUODS",
+            "name": "Old Street",
+            "lon": -0.08777,
+            "lat": 51.52586,
+            "predicted": 19.7,
+            "observed": 21.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSTD",
+            "name": "Stratford",
+            "lon": -0.00346,
+            "lat": 51.54181,
+            "predicted": 19.7,
+            "observed": 20.8,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUQPS",
+            "name": "Queen's Park",
+            "lon": -0.20457,
+            "lat": 51.53416,
+            "predicted": 19.6,
+            "observed": 18.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSHH",
+            "name": "South Harrow",
+            "lon": -0.35249,
+            "lat": 51.56489,
+            "predicted": 19.6,
+            "observed": 19.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURSM",
+            "name": "Ruislip Manor",
+            "lon": -0.41297,
+            "lat": 51.5732,
+            "predicted": 19.5,
+            "observed": 17.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWRR",
+            "name": "Warren Street",
+            "lon": -0.13832,
+            "lat": 51.52495,
+            "predicted": 19.5,
+            "observed": 20.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCSD",
+            "name": "Colliers Wood",
+            "lon": -0.17809,
+            "lat": 51.41816,
+            "predicted": 19.2,
+            "observed": 17.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSKT",
+            "name": "South Kenton",
+            "lon": -0.30843,
+            "lat": 51.57023,
+            "predicted": 19.2,
+            "observed": 18.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWOF",
+            "name": "Woodford",
+            "lon": 0.03397,
+            "lat": 51.6069,
+            "predicted": 19.2,
+            "observed": 20.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMTC",
+            "name": "Mornington Crescent",
+            "lon": -0.13879,
+            "lat": 51.53468,
+            "predicted": 19.1,
+            "observed": 20.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURSP",
+            "name": "Ruislip",
+            "lon": -0.4219,
+            "lat": 51.57135,
+            "predicted": 19.0,
+            "observed": 18.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTMH",
+            "name": "Tottenham Hale",
+            "lon": -0.06024,
+            "lat": 51.58811,
+            "predicted": 18.7,
+            "observed": 20.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWSP",
+            "name": "Westbourne Park",
+            "lon": -0.20106,
+            "lat": 51.52111,
+            "predicted": 18.7,
+            "observed": 14.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNWY",
+            "name": "North Wembley",
+            "lon": -0.304,
+            "lat": 51.56255,
+            "predicted": 18.6,
+            "observed": 18.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULAD",
+            "name": "Ladbroke Grove",
+            "lon": -0.21039,
+            "lat": 51.51745,
+            "predicted": 18.5,
+            "observed": 16.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWTA",
+            "name": "West Acton",
+            "lon": -0.28098,
+            "lat": 51.518,
+            "predicted": 18.5,
+            "observed": 17.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUESQ",
+            "name": "Euston Square",
+            "lon": -0.13583,
+            "lat": 51.5256,
+            "predicted": 18.4,
+            "observed": 19.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBLG",
+            "name": "Bethnal Green",
+            "lon": -0.05551,
+            "lat": 51.52722,
+            "predicted": 18.3,
+            "observed": 18.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMYB",
+            "name": "Marylebone",
+            "lon": -0.16321,
+            "lat": 51.52232,
+            "predicted": 18.1,
+            "observed": 17.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWIG",
+            "name": "Willesden Green",
+            "lon": -0.22154,
+            "lat": 51.54915,
+            "predicted": 18.1,
+            "observed": 18.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBBN",
+            "name": "Barbican",
+            "lon": -0.09799,
+            "lat": 51.52027,
+            "predicted": 18.0,
+            "observed": 20.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKNG",
+            "name": "Kennington",
+            "lon": -0.10596,
+            "lat": 51.48834,
+            "predicted": 18.0,
+            "observed": 19.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPLW",
+            "name": "Plaistow",
+            "lon": 0.01745,
+            "lat": 51.53134,
+            "predicted": 18.0,
+            "observed": 16.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPRD",
+            "name": "Preston Road",
+            "lon": -0.29511,
+            "lat": 51.57197,
+            "predicted": 17.9,
+            "observed": 16.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMVL",
+            "name": "Maida Vale",
+            "lon": -0.18576,
+            "lat": 51.52978,
+            "predicted": 17.8,
+            "observed": 16.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBEC",
+            "name": "Becontree",
+            "lon": 0.12702,
+            "lat": 51.54033,
+            "predicted": 17.7,
+            "observed": 21.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUFCN",
+            "name": "Farringdon",
+            "lon": -0.10491,
+            "lat": 51.52025,
+            "predicted": 17.7,
+            "observed": 20.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULVT",
+            "name": "Liverpool Street",
+            "lon": -0.08318,
+            "lat": 51.51737,
+            "predicted": 17.7,
+            "observed": 18.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURYL",
+            "name": "Rayners Lane",
+            "lon": -0.37113,
+            "lat": 51.57515,
+            "predicted": 17.7,
+            "observed": 17.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUADE",
+            "name": "Aldgate East",
+            "lon": -0.07238,
+            "lat": 51.51504,
+            "predicted": 17.6,
+            "observed": 17.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHSN",
+            "name": "Harlesden",
+            "lon": -0.25788,
+            "lat": 51.53631,
+            "predicted": 17.6,
+            "observed": 16.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBST",
+            "name": "Baker Street",
+            "lon": -0.15713,
+            "lat": 51.52288,
+            "predicted": 17.5,
+            "observed": 16.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULSQ",
+            "name": "Leicester Square",
+            "lon": -0.12843,
+            "lat": 51.51139,
+            "predicted": 17.3,
+            "observed": 18.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSPU",
+            "name": "St. Paul's",
+            "lon": -0.09757,
+            "lat": 51.51494,
+            "predicted": 17.2,
+            "observed": 18.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWHP",
+            "name": "West Hampstead",
+            "lon": -0.19106,
+            "lat": 51.54664,
+            "predicted": 17.2,
+            "observed": 23.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHBN",
+            "name": "Holborn",
+            "lon": -0.12047,
+            "lat": 51.51758,
+            "predicted": 17.1,
+            "observed": 18.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURGP",
+            "name": "Regent's Park",
+            "lon": -0.14644,
+            "lat": 51.52334,
+            "predicted": 17.1,
+            "observed": 17.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUALD",
+            "name": "Aldgate",
+            "lon": -0.07569,
+            "lat": 51.51425,
+            "predicted": 17.0,
+            "observed": 16.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCHX",
+            "name": "Charing Cross",
+            "lon": -0.12728,
+            "lat": 51.50741,
+            "predicted": 17.0,
+            "observed": 18.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGPS",
+            "name": "Great Portland Street",
+            "lon": -0.14426,
+            "lat": 51.52384,
+            "predicted": 17.0,
+            "observed": 15.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPYB",
+            "name": "Putney Bridge",
+            "lon": -0.20873,
+            "lat": 51.46826,
+            "predicted": 16.8,
+            "observed": 13.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBTK",
+            "name": "Burnt Oak",
+            "lon": -0.26405,
+            "lat": 51.60277,
+            "predicted": 16.7,
+            "observed": 17.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGDG",
+            "name": "Goodge Street",
+            "lon": -0.13436,
+            "lat": 51.5206,
+            "predicted": 16.6,
+            "observed": 19.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKSX",
+            "name": "King's Cross St. Pancras",
+            "lon": -0.12319,
+            "lat": 51.53066,
+            "predicted": 16.6,
+            "observed": 17.0,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUNHA",
+            "name": "North Harrow",
+            "lon": -0.36241,
+            "lat": 51.58487,
+            "predicted": 16.6,
+            "observed": 16.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSKS",
+            "name": "South Kensington",
+            "lon": -0.17414,
+            "lat": 51.49409,
+            "predicted": 16.6,
+            "observed": 13.7,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUFYC",
+            "name": "Finchley Central",
+            "lon": -0.19253,
+            "lat": 51.60092,
+            "predicted": 16.5,
+            "observed": 18.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHWY",
+            "name": "Holloway Road",
+            "lon": -0.11324,
+            "lat": 51.5527,
+            "predicted": 16.5,
+            "observed": 15.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSFB",
+            "name": "Stamford Brook",
+            "lon": -0.2457,
+            "lat": 51.49492,
+            "predicted": 16.5,
+            "observed": 15.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBBB",
+            "name": "Bromley-by-Bow",
+            "lon": -0.01154,
+            "lat": 51.52484,
+            "predicted": 16.4,
+            "observed": 17.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURVY",
+            "name": "Roding Valley",
+            "lon": 0.04365,
+            "lat": 51.6172,
+            "predicted": 16.4,
+            "observed": 16.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNHG",
+            "name": "Notting Hill Gate",
+            "lon": -0.1961,
+            "lat": 51.50913,
+            "predicted": 16.2,
+            "observed": 13.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPCC",
+            "name": "Piccadilly Circus",
+            "lon": -0.1338,
+            "lat": 51.51005,
+            "predicted": 16.2,
+            "observed": 16.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMGT",
+            "name": "Moorgate",
+            "lon": -0.08832,
+            "lat": 51.51818,
+            "predicted": 16.1,
+            "observed": 18.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCHL",
+            "name": "Chancery Lane",
+            "lon": -0.11158,
+            "lat": 51.51825,
+            "predicted": 16.0,
+            "observed": 16.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMSH",
+            "name": "Mansion House",
+            "lon": -0.09401,
+            "lat": 51.51212,
+            "predicted": 16.0,
+            "observed": 15.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTWH",
+            "name": "Tower Hill",
+            "lon": -0.07655,
+            "lat": 51.50997,
+            "predicted": 16.0,
+            "observed": 15.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCAR",
+            "name": "Caledonian Road",
+            "lon": -0.11849,
+            "lat": 51.54852,
+            "predicted": 15.9,
+            "observed": 14.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCPC",
+            "name": "Clapham Common",
+            "lon": -0.13832,
+            "lat": 51.46174,
+            "predicted": 15.9,
+            "observed": 15.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTCR",
+            "name": "Tottenham Court Road",
+            "lon": -0.13041,
+            "lat": 51.51643,
+            "predicted": 15.9,
+            "observed": 18.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSWF",
+            "name": "South Woodford",
+            "lon": 0.02734,
+            "lat": 51.59191,
+            "predicted": 15.9,
+            "observed": 18.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCPK",
+            "name": "Canons Park",
+            "lon": -0.29469,
+            "lat": 51.6077,
+            "predicted": 15.8,
+            "observed": 16.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUFPK",
+            "name": "Finsbury Park",
+            "lon": -0.10683,
+            "lat": 51.56416,
+            "predicted": 15.8,
+            "observed": 12.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURSQ",
+            "name": "Russell Square",
+            "lon": -0.12429,
+            "lat": 51.52307,
+            "predicted": 15.8,
+            "observed": 14.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGGN",
+            "name": "Golders Green",
+            "lon": -0.19404,
+            "lat": 51.57226,
+            "predicted": 15.7,
+            "observed": 16.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEUS",
+            "name": "Euston",
+            "lon": -0.13378,
+            "lat": 51.528,
+            "predicted": 15.6,
+            "observed": 15.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEHM",
+            "name": "East Ham",
+            "lon": 0.05119,
+            "lat": 51.53895,
+            "predicted": 15.5,
+            "observed": 16.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHCH",
+            "name": "Hornchurch",
+            "lon": 0.21912,
+            "lat": 51.55409,
+            "predicted": 15.5,
+            "observed": 17.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUOXC",
+            "name": "Oxford Circus",
+            "lon": -0.1419,
+            "lat": 51.51522,
+            "predicted": 15.4,
+            "observed": 16.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWYC",
+            "name": "Wembley Central",
+            "lon": -0.29685,
+            "lat": 51.5523,
+            "predicted": 15.4,
+            "observed": 19.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCGN",
+            "name": "Covent Garden",
+            "lon": -0.12444,
+            "lat": 51.51309,
+            "predicted": 15.3,
+            "observed": 15.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCYF",
+            "name": "Canary Wharf",
+            "lon": -0.01825,
+            "lat": 51.50349,
+            "predicted": 15.3,
+            "observed": 15.5,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUBKF",
+            "name": "Blackfriars",
+            "lon": -0.10366,
+            "lat": 51.51158,
+            "predicted": 15.2,
+            "observed": 16.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBKH",
+            "name": "Buckhurst Hill",
+            "lon": 0.04676,
+            "lat": 51.6266,
+            "predicted": 15.2,
+            "observed": 15.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCWP",
+            "name": "Chiswick Park",
+            "lon": -0.26797,
+            "lat": 51.49463,
+            "predicted": 15.1,
+            "observed": 13.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWFN",
+            "name": "West Finchley",
+            "lon": -0.18836,
+            "lat": 51.60943,
+            "predicted": 15.1,
+            "observed": 18.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWHM",
+            "name": "West Ham",
+            "lon": 0.00505,
+            "lat": 51.52814,
+            "predicted": 15.1,
+            "observed": 15.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUASL",
+            "name": "Arsenal",
+            "lon": -0.10746,
+            "lat": 51.55866,
+            "predicted": 15.0,
+            "observed": 11.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULBN",
+            "name": "Lambeth North",
+            "lon": -0.11231,
+            "lat": 51.49881,
+            "predicted": 15.0,
+            "observed": 15.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWJN",
+            "name": "Willesden Junction",
+            "lon": -0.24428,
+            "lat": 51.53226,
+            "predicted": 15.0,
+            "observed": 19.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBND",
+            "name": "Bond Street",
+            "lon": -0.14972,
+            "lat": 51.5143,
+            "predicted": 14.9,
+            "observed": 13.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCST",
+            "name": "Cannon Street",
+            "lon": -0.09043,
+            "lat": 51.51151,
+            "predicted": 14.9,
+            "observed": 14.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUECM",
+            "name": "Ealing Common",
+            "lon": -0.28826,
+            "lat": 51.51014,
+            "predicted": 14.9,
+            "observed": 17.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSSQ",
+            "name": "Sloane Square",
+            "lon": -0.15638,
+            "lat": 51.49227,
+            "predicted": 14.9,
+            "observed": 11.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUUPB",
+            "name": "Upminster Bridge",
+            "lon": 0.23581,
+            "lat": 51.55856,
+            "predicted": 14.9,
+            "observed": 19.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWYP",
+            "name": "Wembley Park",
+            "lon": -0.27926,
+            "lat": 51.5632,
+            "predicted": 14.9,
+            "observed": 15.5,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUBOR",
+            "name": "Borough",
+            "lon": -0.09337,
+            "lat": 51.5012,
+            "predicted": 14.8,
+            "observed": 15.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCND",
+            "name": "Colindale",
+            "lon": -0.24992,
+            "lat": 51.59542,
+            "predicted": 14.8,
+            "observed": 16.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGBY",
+            "name": "Gunnersbury",
+            "lon": -0.27527,
+            "lat": 51.4918,
+            "predicted": 14.8,
+            "observed": 10.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUFLP",
+            "name": "Fairlop",
+            "lon": 0.091,
+            "lat": 51.59562,
+            "predicted": 14.8,
+            "observed": 13.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUDGE",
+            "name": "Dagenham East",
+            "lon": 0.16602,
+            "lat": 51.5441,
+            "predicted": 14.7,
+            "observed": 18.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUOAK",
+            "name": "Oakwood",
+            "lon": -0.13218,
+            "lat": 51.64773,
+            "predicted": 14.7,
+            "observed": 15.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUQWY",
+            "name": "Queensway",
+            "lon": -0.18715,
+            "lat": 51.51031,
+            "predicted": 14.7,
+            "observed": 10.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUERB",
+            "name": "Edgware Road (Bakerloo)",
+            "lon": -0.17015,
+            "lat": 51.5203,
+            "predicted": 14.6,
+            "observed": 12.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUERC",
+            "name": "Edgware Road (Circle Line)",
+            "lon": -0.16783,
+            "lat": 51.51986,
+            "predicted": 14.6,
+            "observed": 14.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHCL",
+            "name": "Hendon Central",
+            "lon": -0.22642,
+            "lat": 51.5833,
+            "predicted": 14.6,
+            "observed": 15.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUOVL",
+            "name": "Oval",
+            "lon": -0.11244,
+            "lat": 51.48185,
+            "predicted": 14.6,
+            "observed": 15.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPCO",
+            "name": "Pimlico",
+            "lon": -0.13376,
+            "lat": 51.4891,
+            "predicted": 14.6,
+            "observed": 14.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUTMP",
+            "name": "Temple",
+            "lon": -0.11426,
+            "lat": 51.51101,
+            "predicted": 14.6,
+            "observed": 14.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBNK",
+            "name": "Bank",
+            "lon": -0.09005,
+            "lat": 51.51313,
+            "predicted": 14.5,
+            "observed": 14.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWPL",
+            "name": "Whitechapel",
+            "lon": -0.05997,
+            "lat": 51.51952,
+            "predicted": 14.5,
+            "observed": 15.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMHL",
+            "name": "Mill Hill East",
+            "lon": -0.20999,
+            "lat": 51.60823,
+            "predicted": 14.4,
+            "observed": 16.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKEN",
+            "name": "Kenton",
+            "lon": -0.31691,
+            "lat": 51.58176,
+            "predicted": 14.2,
+            "observed": 14.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMMT",
+            "name": "Monument",
+            "lon": -0.08597,
+            "lat": 51.5107,
+            "predicted": 14.2,
+            "observed": 14.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPAC",
+            "name": "Paddington",
+            "lon": -0.17569,
+            "lat": 51.51658,
+            "predicted": 14.2,
+            "observed": 14.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUQBY",
+            "name": "Queensbury",
+            "lon": -0.28622,
+            "lat": 51.59419,
+            "predicted": 14.1,
+            "observed": 15.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSWK",
+            "name": "Southwark",
+            "lon": -0.10533,
+            "lat": 51.50427,
+            "predicted": 14.1,
+            "observed": 13.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWLA",
+            "name": "Wood Lane",
+            "lon": -0.22453,
+            "lat": 51.50967,
+            "predicted": 14.1,
+            "observed": 14.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKBN",
+            "name": "Kilburn",
+            "lon": -0.20425,
+            "lat": 51.54718,
+            "predicted": 14.0,
+            "observed": 17.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBWT",
+            "name": "Bayswater",
+            "lon": -0.18794,
+            "lat": 51.51228,
+            "predicted": 13.9,
+            "observed": 10.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNKP",
+            "name": "Northwick Park",
+            "lon": -0.31806,
+            "lat": 51.57848,
+            "predicted": 13.8,
+            "observed": 12.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEBY",
+            "name": "Ealing Broadway",
+            "lon": -0.30146,
+            "lat": 51.51502,
+            "predicted": 13.6,
+            "observed": 15.5,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUNEN",
+            "name": "North Ealing",
+            "lon": -0.28887,
+            "lat": 51.5175,
+            "predicted": 13.6,
+            "observed": 12.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUDBN",
+            "name": "Debden",
+            "lon": 0.08378,
+            "lat": 51.64539,
+            "predicted": 13.5,
+            "observed": 16.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHBT",
+            "name": "High Barnet",
+            "lon": -0.1943,
+            "lat": 51.65054,
+            "predicted": 13.4,
+            "observed": 14.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHLT",
+            "name": "Hainault",
+            "lon": 0.09348,
+            "lat": 51.60366,
+            "predicted": 13.4,
+            "observed": 14.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULNB",
+            "name": "London Bridge",
+            "lon": -0.08887,
+            "lat": 51.50572,
+            "predicted": 13.4,
+            "observed": 12.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURYO",
+            "name": "Royal Oak",
+            "lon": -0.18875,
+            "lat": 51.51911,
+            "predicted": 13.3,
+            "observed": 12.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCKS",
+            "name": "Cockfosters",
+            "lon": -0.14917,
+            "lat": 51.65152,
+            "predicted": 13.2,
+            "observed": 12.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEGW",
+            "name": "Edgware",
+            "lon": -0.27493,
+            "lat": 51.61365,
+            "predicted": 13.2,
+            "observed": 16.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHAW",
+            "name": "Harrow & Wealdstone",
+            "lon": -0.33522,
+            "lat": 51.59227,
+            "predicted": 13.1,
+            "observed": 14.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCGT",
+            "name": "Canning Town",
+            "lon": 0.00832,
+            "lat": 51.51358,
+            "predicted": 13.0,
+            "observed": 9.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHRC",
+            "name": "Heathrow Terminals 2 & 3",
+            "lon": -0.45226,
+            "lat": 51.47124,
+            "predicted": 13.0,
+            "observed": 14.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHPK",
+            "name": "Holland Park",
+            "lon": -0.20568,
+            "lat": 51.50714,
+            "predicted": 12.8,
+            "observed": 11.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHSK",
+            "name": "High Street Kensington",
+            "lon": -0.19279,
+            "lat": 51.50106,
+            "predicted": 12.8,
+            "observed": 11.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUVXL",
+            "name": "Vauxhall",
+            "lon": -0.1242,
+            "lat": 51.48574,
+            "predicted": 12.8,
+            "observed": 14.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEPG",
+            "name": "Epping",
+            "lon": 0.11377,
+            "lat": 51.69368,
+            "predicted": 12.7,
+            "observed": 16.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGPK",
+            "name": "Green Park",
+            "lon": -0.14279,
+            "lat": 51.50695,
+            "predicted": 12.7,
+            "observed": 13.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPAH",
+            "name": "Paddington (H&C Line)-Underground",
+            "lon": -0.17831,
+            "lat": 51.51819,
+            "predicted": 12.7,
+            "observed": 11.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMBA",
+            "name": "Marble Arch",
+            "lon": -0.15895,
+            "lat": 51.51342,
+            "predicted": 12.6,
+            "observed": 10.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNBP",
+            "name": "Newbury Park",
+            "lon": 0.09,
+            "lat": 51.57573,
+            "predicted": 12.6,
+            "observed": 16.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSBC",
+            "name": "Shepherd's Bush (Central)",
+            "lon": -0.21881,
+            "lat": 51.50438,
+            "predicted": 12.6,
+            "observed": 13.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUDGY",
+            "name": "Dagenham Heathway",
+            "lon": 0.14753,
+            "lat": 51.54164,
+            "predicted": 12.5,
+            "observed": 17.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGGH",
+            "name": "Grange Hill",
+            "lon": 0.09207,
+            "lat": 51.61338,
+            "predicted": 12.5,
+            "observed": 5.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHPC",
+            "name": "Hyde Park Corner",
+            "lon": -0.15244,
+            "lat": 51.50303,
+            "predicted": 12.5,
+            "observed": 12.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSJP",
+            "name": "St. James's Park",
+            "lon": -0.13361,
+            "lat": 51.49954,
+            "predicted": 12.5,
+            "observed": 10.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWCY",
+            "name": "White City",
+            "lon": -0.2243,
+            "lat": 51.51196,
+            "predicted": 12.5,
+            "observed": 12.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWKA",
+            "name": "Warwick Avenue",
+            "lon": -0.18378,
+            "lat": 51.52326,
+            "predicted": 12.5,
+            "observed": 11.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWOP",
+            "name": "Woodside Park",
+            "lon": -0.18542,
+            "lat": 51.61801,
+            "predicted": 12.5,
+            "observed": 11.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUUPM",
+            "name": "Upminster",
+            "lon": 0.25088,
+            "lat": 51.55906,
+            "predicted": 12.4,
+            "observed": 17.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUUPY",
+            "name": "Upney",
+            "lon": 0.10153,
+            "lat": 51.53837,
+            "predicted": 12.4,
+            "observed": 18.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULGT",
+            "name": "Lancaster Gate",
+            "lon": -0.17549,
+            "lat": 51.51172,
+            "predicted": 12.3,
+            "observed": 9.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSBM",
+            "name": "Shepherd's Bush Market",
+            "lon": -0.22637,
+            "lat": 51.50558,
+            "predicted": 12.2,
+            "observed": 12.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNGW",
+            "name": "North Greenwich",
+            "lon": 0.00429,
+            "lat": 51.50047,
+            "predicted": 12.1,
+            "observed": 13.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSKW",
+            "name": "Stockwell",
+            "lon": -0.12264,
+            "lat": 51.47218,
+            "predicted": 12.1,
+            "observed": 14.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSWN",
+            "name": "South Wimbledon",
+            "lon": -0.19201,
+            "lat": 51.41531,
+            "predicted": 11.9,
+            "observed": 11.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBXN",
+            "name": "Brixton",
+            "lon": -0.11489,
+            "lat": 51.46262,
+            "predicted": 11.8,
+            "observed": 14.5,
+            "journeys": 11
+        },
+        {
+            "station": "940GZZLUHSC",
+            "name": "Hammersmith (H&C Line)",
+            "lon": -0.22503,
+            "lat": 51.49339,
+            "predicted": 11.8,
+            "observed": 10.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBKG",
+            "name": "Barking",
+            "lon": 0.08105,
+            "lat": 51.53932,
+            "predicted": 11.5,
+            "observed": 12.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZNEUGST",
+            "name": "Nine Elms",
+            "lon": -0.12848,
+            "lat": 51.47991,
+            "predicted": 11.5,
+            "observed": 15.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBMY",
+            "name": "Bermondsey",
+            "lon": -0.06399,
+            "lat": 51.49775,
+            "predicted": 11.3,
+            "observed": 12.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGHK",
+            "name": "Goldhawk Road",
+            "lon": -0.22671,
+            "lat": 51.502,
+            "predicted": 11.3,
+            "observed": 7.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKBY",
+            "name": "Kingsbury",
+            "lon": -0.27879,
+            "lat": 51.58485,
+            "predicted": 11.1,
+            "observed": 14.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURMD",
+            "name": "Richmond",
+            "lon": -0.30134,
+            "lat": 51.46324,
+            "predicted": 10.8,
+            "observed": 8.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWHW",
+            "name": "West Harrow",
+            "lon": -0.3534,
+            "lat": 51.57971,
+            "predicted": 10.6,
+            "observed": 8.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEPK",
+            "name": "Elm Park",
+            "lon": 0.19864,
+            "lat": 51.54977,
+            "predicted": 10.5,
+            "observed": 16.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLULRD",
+            "name": "Latimer Road",
+            "lon": -0.2178,
+            "lat": 51.51339,
+            "predicted": 10.5,
+            "observed": 10.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZBPSUST",
+            "name": "Battersea Power Station",
+            "lon": -0.14214,
+            "lat": 51.47993,
+            "predicted": 10.4,
+            "observed": 11.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWLO",
+            "name": "Waterloo",
+            "lon": -0.11478,
+            "lat": 51.5033,
+            "predicted": 10.4,
+            "observed": 10.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCPN",
+            "name": "Clapham North",
+            "lon": -0.13002,
+            "lat": 51.46513,
+            "predicted": 10.3,
+            "observed": 11.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHOH",
+            "name": "Harrow-on-the-Hill",
+            "lon": -0.33722,
+            "lat": 51.57919,
+            "predicted": 10.3,
+            "observed": 8.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUUXB",
+            "name": "Uxbridge",
+            "lon": -0.47795,
+            "lat": 51.54657,
+            "predicted": 10.3,
+            "observed": 8.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUACT",
+            "name": "Acton Town",
+            "lon": -0.28046,
+            "lat": 51.50306,
+            "predicted": 10.2,
+            "observed": 9.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHSD",
+            "name": "Hammersmith (Dist&Picc Line)",
+            "lon": -0.22362,
+            "lat": 51.4923,
+            "predicted": 10.2,
+            "observed": 9.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCWR",
+            "name": "Canada Water",
+            "lon": -0.0494,
+            "lat": 51.49793,
+            "predicted": 10.0,
+            "observed": 4.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUEMB",
+            "name": "Embankment",
+            "lon": -0.12267,
+            "lat": 51.50706,
+            "predicted": 10.0,
+            "observed": 8.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSUT",
+            "name": "Sudbury Town",
+            "lon": -0.31574,
+            "lat": 51.55082,
+            "predicted": 10.0,
+            "observed": 11.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSTM",
+            "name": "Stanmore",
+            "lon": -0.30327,
+            "lat": 51.61984,
+            "predicted": 9.9,
+            "observed": 9.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHR5",
+            "name": "Heathrow Terminal 5",
+            "lon": -0.49056,
+            "lat": 51.47005,
+            "predicted": 9.7,
+            "observed": 8.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUVIC",
+            "name": "Victoria",
+            "lon": -0.1431,
+            "lat": 51.49636,
+            "predicted": 9.7,
+            "observed": 4.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUMDN",
+            "name": "Morden",
+            "lon": -0.19484,
+            "lat": 51.40214,
+            "predicted": 9.6,
+            "observed": 10.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGTR",
+            "name": "Gloucester Road",
+            "lon": -0.18266,
+            "lat": 51.49432,
+            "predicted": 9.5,
+            "observed": 6.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKNB",
+            "name": "Knightsbridge",
+            "lon": -0.16051,
+            "lat": 51.50167,
+            "predicted": 9.5,
+            "observed": 5.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUNHT",
+            "name": "Northolt",
+            "lon": -0.3687,
+            "lat": 51.54824,
+            "predicted": 9.3,
+            "observed": 8.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWBN",
+            "name": "West Brompton",
+            "lon": -0.1956,
+            "lat": 51.48727,
+            "predicted": 9.3,
+            "observed": 8.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLURVP",
+            "name": "Ravenscourt Park",
+            "lon": -0.23588,
+            "lat": 51.49412,
+            "predicted": 9.2,
+            "observed": 7.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUFBY",
+            "name": "Fulham Broadway",
+            "lon": -0.19542,
+            "lat": 51.48008,
+            "predicted": 9.1,
+            "observed": 7.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUICK",
+            "name": "Ickenham",
+            "lon": -0.44222,
+            "lat": 51.56177,
+            "predicted": 8.7,
+            "observed": 6.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUBSC",
+            "name": "Barons Court",
+            "lon": -0.21343,
+            "lat": 51.49031,
+            "predicted": 8.6,
+            "observed": 6.3,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCSM",
+            "name": "Chesham",
+            "lon": -0.61125,
+            "lat": 51.70521,
+            "predicted": 8.5,
+            "observed": 3.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCYD",
+            "name": "Chorleywood",
+            "lon": -0.51846,
+            "lat": 51.65436,
+            "predicted": 8.5,
+            "observed": 7.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSFS",
+            "name": "Southfields",
+            "lon": -0.2066,
+            "lat": 51.44507,
+            "predicted": 8.5,
+            "observed": 6.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUCAL",
+            "name": "Chalfont & Latimer",
+            "lon": -0.56069,
+            "lat": 51.66799,
+            "predicted": 8.3,
+            "observed": 9.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUECT",
+            "name": "Earl's Court",
+            "lon": -0.19338,
+            "lat": 51.49206,
+            "predicted": 8.3,
+            "observed": 6.6,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHGD",
+            "name": "Hillingdon",
+            "lon": -0.44983,
+            "lat": 51.55371,
+            "predicted": 8.3,
+            "observed": 6.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWKN",
+            "name": "West Kensington",
+            "lon": -0.20664,
+            "lat": 51.49046,
+            "predicted": 8.3,
+            "observed": 6.5,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHR4",
+            "name": "Heathrow Terminal 4",
+            "lon": -0.44577,
+            "lat": 51.45852,
+            "predicted": 8.1,
+            "observed": 8.2,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPSG",
+            "name": "Parsons Green",
+            "lon": -0.20117,
+            "lat": 51.47528,
+            "predicted": 8.0,
+            "observed": 4.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUAMS",
+            "name": "Amersham",
+            "lon": -0.60771,
+            "lat": 51.67413,
+            "predicted": 7.9,
+            "observed": 2.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWRP",
+            "name": "West Ruislip",
+            "lon": -0.43789,
+            "lat": 51.56969,
+            "predicted": 7.9,
+            "observed": 4.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWIM",
+            "name": "Wimbledon",
+            "lon": -0.20657,
+            "lat": 51.42121,
+            "predicted": 7.7,
+            "observed": 6.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKWG",
+            "name": "Kew Gardens",
+            "lon": -0.28524,
+            "lat": 51.47706,
+            "predicted": 7.5,
+            "observed": 4.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUKOY",
+            "name": "Kensington (Olympia)",
+            "lon": -0.21002,
+            "lat": 51.49762,
+            "predicted": 7.4,
+            "observed": 4.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUGFD",
+            "name": "Greenford",
+            "lon": -0.34605,
+            "lat": 51.54242,
+            "predicted": 7.3,
+            "observed": 3.4,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHWC",
+            "name": "Hounslow Central",
+            "lon": -0.36658,
+            "lat": 51.47129,
+            "predicted": 7.3,
+            "observed": 4.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWSM",
+            "name": "Westminster",
+            "lon": -0.12486,
+            "lat": 51.50132,
+            "predicted": 7.3,
+            "observed": 2.8,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUSUH",
+            "name": "Sudbury Hill",
+            "lon": -0.33643,
+            "lat": 51.55695,
+            "predicted": 7.1,
+            "observed": 5.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHWE",
+            "name": "Hounslow East",
+            "lon": -0.35647,
+            "lat": 51.47321,
+            "predicted": 6.9,
+            "observed": 5.1,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUWIP",
+            "name": "Wimbledon Park",
+            "lon": -0.19972,
+            "lat": 51.43457,
+            "predicted": 6.9,
+            "observed": 4.7,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUOSY",
+            "name": "Osterley",
+            "lon": -0.35222,
+            "lat": 51.48127,
+            "predicted": 5.6,
+            "observed": 2.9,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUHWT",
+            "name": "Hounslow West",
+            "lon": -0.38654,
+            "lat": 51.47347,
+            "predicted": 4.5,
+            "observed": -1.0,
+            "journeys": 12
+        },
+        {
+            "station": "940GZZLUPNR",
+            "name": "Pinner",
+            "lon": -0.38116,
+            "lat": 51.5929,
+            "predicted": 4.3,
+            "observed": -1.1,
+            "journeys": 12
+        }
+    ]
+}

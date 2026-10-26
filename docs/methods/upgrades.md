@@ -37,6 +37,6 @@ Today the average step-free tube journey takes 18.9 minutes longer than the stan
 ## Limitations
 
 - **A station counts as one.** Costs differ by an order of magnitude (a deep interchange such as Baker Street against a surface station), and TfL also weighs what can be built, funding and disruption. The comparison is of benefit per station, not per pound.
-- **Tube only, as S4**: a station's value here is its value to tube journeys; buses, Overground and Elizabeth line are not in the model.
+- **Tube only, as S4**: a station's value here is its value to tube journeys; buses, Overground and Elizabeth line are not in the model. The bus fallback model ([bus-fallback.md](bus-fallback.md)) finds four of the first seven picks (Wood Green, Walthamstow Central, Leyton, East Finchley) in the top 3% of stations where the wider network already makes up for the tube, so their whole-network value is smaller than shown here.
 - **A full upgrade** is assumed (every line, every change); real schemes are sometimes partial.
 - **Greedy** is checked on one reduced instance only; the full problem is not solved to proven optimality.
