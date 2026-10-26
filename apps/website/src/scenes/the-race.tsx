@@ -10,7 +10,7 @@ import {
 } from '../data/races';
 import { wallSize, type WallLayout } from '../wall/layout';
 import { useWallStage } from '../wall/stage';
-import { ScreenText, typeSize } from '../wall/typography';
+import { charsThatFit, clipText, ScreenText, typeSize } from '../wall/typography';
 import { placeLabels, type LabelPlacement } from './race-labels';
 import type { SceneProps } from './registry';
 import { useAsset } from './use-asset';
@@ -278,6 +278,9 @@ function SegmentMark({
 function SegmentLabel({ label, row }: { label: LabelPlacement; row: number }) {
     const { layout } = useWallStage();
     const pad = Math.round(layout.screenHeight * 0.06);
+    // Shortened to the label's width at the wall's smallest type, so nothing is cut off.
+    const fits = charsThatFit(label.width, 'h2', layout.screenHeight);
+    const minutes = `${label.minutes}′`;
     return (
         <div
             data-wall-text=""
@@ -290,15 +293,15 @@ function SegmentLabel({ label, row }: { label: LabelPlacement; row: number }) {
             }}
         >
             <div className="truncate" style={{ fontSize: typeSize('h2', layout.screenHeight) }}>
-                <strong>{label.title}</strong>{' '}
-                <span className="text-white/80 tabular-nums">{label.minutes}′</span>
+                <strong>{clipText(label.title, fits - minutes.length - 1)}</strong>{' '}
+                <span className="text-white/80 tabular-nums">{minutes}</span>
             </div>
             {label.detail ? (
                 <div
                     className="truncate text-white/70"
-                    style={{ fontSize: typeSize('detail', layout.screenHeight) }}
+                    style={{ fontSize: typeSize('h2', layout.screenHeight) }}
                 >
-                    {label.detail}
+                    {clipText(label.detail, fits)}
                 </div>
             ) : null}
         </div>
@@ -364,7 +367,7 @@ function Ticks() {
                     style={{
                         left: col * layout.screenWidth + pad / 2,
                         top: (layout.rows - 1) * layout.screenHeight + pad / 2,
-                        fontSize: typeSize('detail', layout.screenHeight)
+                        fontSize: typeSize('h2', layout.screenHeight)
                     }}
                 >
                     {Math.round(col * perColumn)}′

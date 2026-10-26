@@ -10,7 +10,7 @@ import { loadNetwork, type Network } from '../data/network';
 import { projectToWall } from '../wall/camera';
 import { rectsIntersect, regionRect, wallSize, zones } from '../wall/layout';
 import { useWallStage } from '../wall/stage';
-import { ScreenText, typeSize } from '../wall/typography';
+import { clipText, ScreenText, typeSize } from '../wall/typography';
 import type { SceneProps } from './registry';
 import { StatusMark } from './the-step';
 import { networkCamera, useAsset } from './use-asset';
@@ -60,7 +60,8 @@ function Timeline({ record, i }: { record: LiftRecord; i: number }) {
     const base = h * 0.8;
     const top = Math.max(1, ...record.downgraded);
     const x = (k: number) => (k / n) * width;
-    const y = (v: number) => base - (v / top) * h * 0.45;
+    // The chart stays below the two-line title in the corner screen.
+    const y = (v: number) => base - (v / top) * h * 0.33;
     const steps = record.downgraded.map((v, k) => `${x(k)},${y(v)} ${x(k + 1)},${y(v)}`).join(' ');
     const pad = Math.round(h * 0.06);
     return (
@@ -81,7 +82,7 @@ function Timeline({ record, i }: { record: LiftRecord; i: number }) {
                 <line
                     x1={x(i + 0.5)}
                     x2={x(i + 0.5)}
-                    y1={h * 0.25}
+                    y1={h * 0.45}
                     y2={base}
                     stroke="#ffffff"
                     strokeWidth={10}
@@ -98,7 +99,7 @@ function Timeline({ record, i }: { record: LiftRecord; i: number }) {
                         style={{
                             left: col * layout.screenWidth + pad / 2,
                             top: base + pad / 4,
-                            fontSize: typeSize('detail', h)
+                            fontSize: typeSize('h2', h)
                         }}
                     >
                         {londonTime(record.times[k])}
@@ -109,7 +110,7 @@ function Timeline({ record, i }: { record: LiftRecord; i: number }) {
                 <span>
                     <strong>Step-free, in practice</strong>
                     <br />
-                    <span className="text-white/70">stations losing it, every 15 minutes</span>
+                    <span className="text-white/70">stations cut off</span>
                 </span>
             </ScreenText>
         </>
@@ -218,12 +219,7 @@ function PaperVsNow({ record, i }: { record: LiftRecord; i: number }) {
                         <span className="text-white/70">
                             {s.paper} → <span style={{ color: LOST }}>{s.status[i]}</span>
                         </span>
-                        <span
-                            className="block text-white/70"
-                            style={{ fontSize: typeSize('detail', layout.screenHeight) }}
-                        >
-                            {s.message}
-                        </span>
+                        <span className="block text-white/70">{clipText(s.message, 48)}</span>
                     </span>
                 </ScreenText>
             ))}
@@ -287,7 +283,7 @@ function Summary({ record, visible }: { record: LiftRecord; visible: boolean }) 
             <ScreenText
                 col={right.col}
                 row={layout.rows - 1}
-                level="detail"
+                level="h2"
                 align="left"
                 className="justify-end"
             >

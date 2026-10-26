@@ -51,10 +51,7 @@ export function placeLabels(
         const detail =
             part.kind === 'leg' && part.leg.mode !== 'walking' ? `to ${part.leg.to}` : '';
         const width = (col + 1) * sw - pad - x;
-        const needed = Math.max(
-            textWidth(`${title} ${minutes}′`, 'h2'),
-            textWidth(detail, 'detail')
-        );
+        const needed = Math.max(textWidth(`${title} ${minutes}′`, 'h2'), textWidth(detail, 'h2'));
         placed.push({ index, title, detail, minutes, col, x, width });
         taken = x + Math.min(width, needed);
     });

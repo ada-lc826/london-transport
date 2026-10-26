@@ -8,7 +8,7 @@ import {
 import { projectToWall } from '../wall/camera';
 import { rectsIntersect, regionRect, zones } from '../wall/layout';
 import { useWallStage } from '../wall/stage';
-import { ScreenText } from '../wall/typography';
+import { ScreenText, typeSize } from '../wall/typography';
 import type { SceneProps } from './registry';
 import { networkCamera, useAsset } from './use-asset';
 
@@ -202,7 +202,8 @@ function LineBarcodes({ network, reveal }: { network: Network; reveal: boolean }
         band.y +
         (row < perScreen ? row * rowHeight : layout.screenHeight + (row - perScreen) * rowHeight);
     const cellsX = band.x + layout.screenWidth;
-    const labelSize = Math.round(rowHeight * 0.5);
+    // At least the wall's smallest type size, however many lines share the rows.
+    const labelSize = Math.max(Math.round(rowHeight * 0.5), typeSize('h2', layout.screenHeight));
 
     return (
         <svg
@@ -319,7 +320,7 @@ function Numbers({
                 </ScreenText>
             ) : null}
             <Legend />
-            <ScreenText col={c + 4} row={3} level="detail" align="left" className="text-white/60">
+            <ScreenText col={c + 4} row={3} level="h2" align="left" className="text-white/60">
                 {network.source.attribution}
                 <br />
                 Station topology snapshot {network.source.snapshot}

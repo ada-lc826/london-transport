@@ -19,6 +19,11 @@ export const ATTRIBUTIONS: Attribution[] = [
         credit: 'Source: Office for National Statistics licensed under the Open Government Licence v3.0. Contains National Statistics data © Crown copyright and database right 2025; contains OS data © Crown copyright and database right 2025.'
     },
     {
+        publisher: 'Department for Transport',
+        data: 'NaPTAN, the national register of bus stops',
+        credit: 'Contains public sector information licensed under the Open Government Licence v3.0.'
+    },
+    {
         publisher: 'Ministry of Housing, Communities and Local Government',
         data: 'English Indices of Deprivation 2025',
         credit: 'Contains public sector information licensed under the Open Government Licence v3.0.'
