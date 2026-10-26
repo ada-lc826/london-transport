@@ -8,14 +8,14 @@ An interactive story for Imperial's Data Observatory (16 × 4 screens, 30720 × 
 
 **What it finds**
 
-|           | Finding                                                                                | Scene |
-| --------- | -------------------------------------------------------------------------------------- | ----- |
-| 95 of 272 | tube stations are step-free from street to platform                                    | S2    |
-| 42%       | of tube journeys start at a station with no step-free access                           | S1    |
-| +19 min   | on the average tube journey for a step-free traveller                                  | S4    |
-| ρ = −0.01 | the penalty does not follow where disabled Londoners live; it follows where you live   | S4    |
-| 13 of 95  | step-free stations lost it at least once to a broken lift in two days of our own log   | S5    |
-| +66%      | more minutes saved by 12 stations chosen for the journeys people make than by TfL's 12 | S7    |
+|           | Finding                                                                                                         | Scene |
+| --------- | --------------------------------------------------------------------------------------------------------------- | ----- |
+| 95 of 272 | tube stations are step-free from street to platform                                                             | S2    |
+| 42%       | of tube journeys start at a station with no step-free access                                                    | S1    |
+| +19 min   | on the average tube journey for a step-free traveller                                                           | S4    |
+| ρ = −0.01 | the penalty does not follow where disabled Londoners live; it follows where you live                            | S4    |
+| 13 of 95  | step-free stations lost it at least once to a broken lift in two days of our own log                            | S5    |
+| +87%      | more minutes saved by 12 stations chosen for the journeys people make than by TfL's 12, counting buses and rail | S7    |
 
 **How to see it**
 
@@ -34,7 +34,7 @@ An interactive story for Imperial's Data Observatory (16 × 4 screens, 30720 × 
     - Spearman correlations and an OLS with robust standard errors;
     - Moran's I, and LISA hot spots with FDR control.
 - **Optimisation (S7):** greedy choice of the stations to upgrade, each pick re-evaluated on the model, and checked against exhaustive search. Trade-off curves weigh people, deprivation and disability.
-- **Machine learning ([bus fallback](docs/methods/bus-fallback.md)):** LightGBM learns how much buses and other rail make up for the tube's steps, with spatial cross-validation (leave one origin out; leave one 5 km block out) and TreeSHAP. It corrects step-free times to within 6.6 min, against 20.4 for the tube alone. It also finds that S7's top picks are where buses already help most, a caveat the demo states.
+- **Machine learning ([bus fallback](docs/methods/bus-fallback.md)):** LightGBM learns how much buses and other rail make up for the tube's steps, with spatial cross-validation (leave one origin out; leave one 5 km block out) and TreeSHAP. It corrects step-free times to within 6.6 min, against 20.4 for the tube alone. S7 uses it, so an upgrade only counts where it beats what buses and rail already offer.
 - **Our own data:** TfL's lift disruptions logged every 15 minutes since 19 October 2026 by a scheduled GitHub Action, and replayed against the topology (S5).
 - **Engineering:** 85 Python and 75 TypeScript unit tests, plus browser tests that check no text crosses a bezel. All run in CI.
 

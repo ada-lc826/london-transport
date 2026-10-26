@@ -267,9 +267,9 @@ function TflPlan({ plans, visible }: { plans: UpgradePlans; visible: boolean }) 
                 <span className="text-white/70" style={fade}>
                     today: +{plans.now.everyone.toFixed(1)} min
                     <br />
-                    on the average
+                    per step-free journey,
                     <br />
-                    step-free journey
+                    buses and rail included
                 </span>
             </ScreenText>
         </>
@@ -527,9 +527,9 @@ function Overlap({
             </ScreenText>
             <ScreenText col={right.col + 1} row={2} level="h2" align="left">
                 <span className="text-white/70" style={fade}>
-                    Ours: busy stations
+                    Ours follow where
                     <br />
-                    in zones 1–3. TfL&apos;s
+                    people travel. TfL&apos;s
                     <br />
                     reach out to zone 7
                 </span>
@@ -582,8 +582,9 @@ function Method() {
         >
             <span className="text-white/60">
                 Greedy choice on network model v1, each pick re-evaluated exactly; matches
-                exhaustive search on a reduced instance. Penalty and weights as S4. Upgrading means
-                every line step-free from the street. Powered by TfL Open Data.
+                exhaustive search on a reduced instance. Counts buses and other rail through the bus
+                fallback model: an upgrade only helps where it beats them. Weights as S4. Powered by
+                TfL Open Data.
             </span>
         </ScreenText>
     );

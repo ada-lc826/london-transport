@@ -53,7 +53,7 @@ from pathlib import Path
 import lightgbm as lgb
 import numpy as np
 
-from .calibrate import read_observations
+from .calibrate import Observation, read_observations
 from .model import PARAMS, build_graph, haversine_km, read_adjacency
 from .topology import line_access, read_topology
 
@@ -214,6 +214,38 @@ def shap_summary(booster: lgb.Booster, x: np.ndarray) -> list[dict]:
             }
         )
     return sorted(rows, key=lambda r: -r["meanAbsShap"])
+
+
+def whole_network_step_free(
+    records: Path,
+    stops: Path,
+    network: dict,
+    pulse: dict,
+    stations: list[str],
+    standard: np.ndarray,
+    step_free: np.ndarray,
+) -> np.ndarray:
+    """Estimated step-free minutes between every pair of stations on today's whole network
+    (tube, buses and other rail): the tube-only model's time minus the residual predicted by
+    a model trained on all the planner journeys, kept between the standard tube time and CAP.
+
+    `standard` and `step_free` are the network model's station-to-station minutes, indexed
+    like `stations`. Used by upgrades.py: after an upgrade, a step-free traveller takes the
+    faster of the new tube route and this."""
+    index = {s: i for i, s in enumerate(stations)}
+    where = {s["id"]: (s["lat"], s["lon"]) for s in network["stations"]}
+    ends = station_features(network, read_stops(stops), pulse)
+    observations = [o for o in read_observations(records, "step-free") if o.destination in index]
+    x, y, _ = build_rows(observations, standard, step_free, index, where, ends)
+    booster = lgb.train(LGB_PARAMS, lgb.Dataset(x, y), ROUNDS)
+    # Every ordered pair; the minutes are a placeholder, only the features are used.
+    pairs = [Observation(a, b, 0.0, frozenset()) for a in stations for b in stations]
+    x_all, _, _ = build_rows(pairs, standard, step_free, index, where, ends)
+    predicted = booster.predict(x_all).reshape(len(stations), len(stations))
+    estimate = np.minimum(step_free, CAP) - predicted
+    estimate = np.clip(estimate, np.minimum(standard, CAP), CAP)
+    np.fill_diagonal(estimate, 0.0)
+    return estimate
 
 
 def main(argv: list[str] | None = None) -> int:
