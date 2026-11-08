@@ -12,7 +12,14 @@ export default defineConfig({
     timeout: 120_000,
     workers: 1,
     reporter: process.env.CI ? [['github'], ['list']] : 'list',
-    use: { baseURL: `http://localhost:${PORT}`, browserName: 'chromium' },
+    use: {
+        baseURL: `http://localhost:${PORT}`,
+        browserName: 'chromium',
+        // CI uses the runner's preinstalled Google Chrome (PLAYWRIGHT_CHANNEL=chrome) rather
+        // than downloading Playwright's Chromium, whose install step has hung on GitHub's
+        // runners. Locally, Playwright's own Chromium.
+        channel: process.env.PLAYWRIGHT_CHANNEL || undefined
+    },
     webServer: {
         command: 'node .output/server/index.mjs',
         env: { PORT: String(PORT) },

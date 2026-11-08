@@ -32,11 +32,16 @@ jobs:
               with:
                   cache: true
             - run: vp run build -r
-            - name: Install Chromium
-              working-directory: apps/website
-              run: npx playwright install --with-deps chromium
+            # The runner image already has Google Chrome. Downloading Playwright's own
+            # Chromium has hung after the download for the whole job timeout, so the tests
+            # drive the installed Chrome instead (playwright.config.ts reads the channel).
+            - name: Check the preinstalled Chrome
+              run: google-chrome --version
             - name: Run the end-to-end tests
               working-directory: apps/website
+              timeout-minutes: 12
+              env:
+                  PLAYWRIGHT_CHANNEL: chrome
               run: npx playwright test
             - name: Keep the report if anything failed
               if: failure()
