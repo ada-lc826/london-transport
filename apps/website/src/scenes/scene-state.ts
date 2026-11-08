@@ -94,7 +94,7 @@ export const SCENE_META: Record<SceneId, SceneMeta> = {
             }
         }
     },
-    'the-lifts': { title: 'S5 · On Paper', steps: 2 },
+    'the-lifts': { title: 'S5 · On Paper', steps: 3 },
     'the-fix': {
         title: 'S7 · What Would Fix It',
         steps: 3,

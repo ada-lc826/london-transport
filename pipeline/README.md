@@ -110,6 +110,15 @@ uv run python -m mind_the_step.lift_outages --log <data-branch> \
   --network ../apps/website/public/data/network.json --out ../apps/website/public/data/lifts.json
 ```
 
+`mind_the_step.lift_survival` turns the same log into outage durations, with censoring, and fits Kaplan–Meier curves, log-rank tests and a Cox model (lifelines). It writes `apps/website/public/data/lift-survival.json`, also rebuilt daily.
+
+```bash
+uv run python -m mind_the_step.lift_survival --log <data-branch> \
+  --topology ../data/tfl-station-topology/2026-10-20 \
+  --network ../apps/website/public/data/network.json \
+  --out ../apps/website/public/data/lift-survival.json
+```
+
 Method: [`docs/methods/lifts.md`](../docs/methods/lifts.md).
 
 ## Equity (S4)

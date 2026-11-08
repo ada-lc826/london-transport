@@ -59,7 +59,7 @@ export function closingFindings({
         findings.push({
             scene: 'S5',
             figure: `${paper} of ${lifts.paper.full}`,
-            caption: 'step-free stations lost it at least once to a lift, in our log'
+            caption: 'step-free stations lost step-free access at least once, in our lift log'
         });
     }
     if (plans) {
