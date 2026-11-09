@@ -87,6 +87,10 @@ export const SCENE_NOTES: Record<SceneId, StepNote[]> = {
         {
             cue: 'The whole log replays: the top row counts stations cut off, the map flickers, the right zone sums it up.',
             say: 'Every red ring is a station someone was told was step-free, that was not at that moment. Some of them are not even a broken lift: the station had no staff to run it.'
+        },
+        {
+            cue: 'Survival curves on the left: the share of outages still under way, hour by hour, for all lifts, the Underground and the rest. Right: what they mean.',
+            say: 'How long do you wait? Half of all lift outages last more than six hours, and almost a quarter are still out a day later. Underground lifts get fixed about twice as fast as those on rail and the Overground. If the lift you need is out, the odds are you will not get it back today.'
         }
     ],
     'the-fix': [

@@ -34,7 +34,7 @@ jobs:
             - uses: astral-sh/setup-uv@v7
               with:
                   working-directory: pipeline
-            - name: Bring S5's lift record up to date
+            - name: Bring S5's lift record and outage durations up to date
               run: |
                   git fetch --depth=1 origin data
                   git worktree add data-branch FETCH_HEAD
@@ -43,6 +43,10 @@ jobs:
                     --topology ../data/tfl-station-topology/2026-10-20 \
                     --network ../apps/website/public/data/network.json \
                     --out ../apps/website/public/data/lifts.json
+                  uv run --frozen python -m mind_the_step.lift_survival --log ../data-branch \
+                    --topology ../data/tfl-station-topology/2026-10-20 \
+                    --network ../apps/website/public/data/network.json \
+                    --out ../apps/website/public/data/lift-survival.json
             - name: Build the static demo
               working-directory: apps/website
               env:

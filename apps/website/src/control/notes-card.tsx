@@ -1,5 +1,6 @@
 import { loadEquity, roughCount } from '../data/equity';
 import { loadJourneyTimes, summariseOrigin } from '../data/journeys';
+import { formatHours, loadLiftSurvival } from '../data/lift-survival';
 import { downgradedAt, loadLiftRecord } from '../data/lifts';
 import { loadNetwork, summariseStepFree } from '../data/network';
 import { loadPulse, shareWithoutStepFree } from '../data/pulse';
@@ -49,6 +50,7 @@ function LiveFigures({ scene }: { scene: SceneState }) {
     const lifts = useAsset(loadLiftRecord);
     const equity = useAsset(loadEquity);
     const plans = useAsset(loadUpgradePlans);
+    const survival = useAsset(loadLiftSurvival);
     if (!network) return null;
     let figures: string[] = [];
     if (scene.id === 'the-step') {
@@ -96,6 +98,13 @@ function LiveFigures({ scene }: { scene: SceneState }) {
             `Our ${k}: −${ours.savedEveryone.toFixed(1)} min · ${roughCount(ours.helped)} gain 5+`,
             `TfL's 12: −${tfl.savedEveryone.toFixed(1)} min · ${roughCount(tfl.helped)} gain 5+`,
             `Most deprived fifth: −${ours.savedDeprived.toFixed(1)} min (TfL −${tfl.savedDeprived.toFixed(1)})`
+        ];
+    } else if (scene.id === 'the-lifts' && scene.step >= 2 && survival) {
+        const all = survival.km.all;
+        figures = [
+            `Median outage ${formatHours(all.medianHours)} · ${Math.round(all.stillOut['24h'] * 100)}% still out after a day`,
+            `Underground ${formatHours(survival.km.underground.medianHours)} vs elsewhere ${formatHours(survival.km.otherModes.medianHours)} (Cox HR ${survival.cox.underground.hazardRatio.toFixed(1)})`,
+            `${survival.outages.used} outages, ${survival.outages.ongoing} still under way`
         ];
     } else if (scene.id === 'the-lifts' && lifts) {
         const last = lifts.times.length - 1;

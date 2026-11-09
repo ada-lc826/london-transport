@@ -1,3 +1,4 @@
+import { formatHours, loadLiftSurvival, type LiftSurvival } from '../data/lift-survival';
 import {
     downgradedAt,
     hoursBetween,
@@ -23,6 +24,8 @@ import { useTimelineMs } from './use-timeline';
 //
 //   step 0  the latest sample: how many of the stations step-free on paper are now
 //   step 1  the whole log replayed, REPLAY_SECONDS long, looping, with what it adds up to
+//   step 2  how long outages last: Kaplan-Meier curves on the left, what they mean on the
+//           right (pipeline/lift_survival.py)
 //
 // Status keeps S2's shapes: filled = every platform step-free, half = some, ring = none. A
 // station downgraded at the moment shown is drawn at its current status with a red ring.
@@ -34,10 +37,12 @@ const LOST = '#ff6b6b';
 export function TheLiftsScene({ scene }: SceneProps) {
     const record = useAsset(loadLiftRecord);
     const network = useAsset(loadNetwork);
+    const survival = useAsset(loadLiftSurvival);
     const ms = useTimelineMs(scene);
     if (!record || !network) return null;
     const n = record.times.length;
-    const replay = scene.step >= 1;
+    const replay = scene.step === 1;
+    const durations = scene.step >= 2;
     const i = replay
         ? Math.min(n - 1, Math.floor((((ms ?? 0) / 1000 / REPLAY_SECONDS) % 1) * n))
         : n - 1;
@@ -45,8 +50,9 @@ export function TheLiftsScene({ scene }: SceneProps) {
         <>
             <Timeline record={record} i={i} />
             <LiftMap record={record} network={network} i={i} />
-            <PaperVsNow record={record} i={i} />
+            {durations ? null : <PaperVsNow record={record} i={i} />}
             <Summary record={record} visible={replay} />
+            {survival ? <Durations survival={survival} visible={durations} /> : null}
         </>
     );
 }
@@ -291,6 +297,155 @@ function Summary({ record, visible }: { record: LiftRecord; visible: boolean }) 
                     Our log of TfL&apos;s lift disruption feed, {record.source.samples} samples from{' '}
                     {londonTime(record.source.from)} to {londonTime(record.source.to)}.{' '}
                     {record.source.attribution}.
+                </span>
+            </ScreenText>
+        </>
+    );
+}
+
+// Shown on the curves: the first three days, where nearly all outages end.
+const CURVE_HOURS_SHOWN = 72;
+const CURVES = [
+    { group: 'all', colour: '#ffffff', width: 14, label: 'all outages' },
+    { group: 'underground', colour: '#7fd3ff', width: 10, label: 'Underground' },
+    { group: 'otherModes', colour: '#ffb35c', width: 10, label: 'rail, Overground, DLR' }
+] as const;
+
+/** Step 2: Kaplan-Meier curves (share of outages still under way, by hours since the lift
+ *  went out) and what they mean. */
+function Durations({ survival, visible }: { survival: LiftSurvival; visible: boolean }) {
+    const { layout, view } = useWallStage();
+    const { left, right } = zones(layout);
+    const fade = { opacity: visible ? 1 : 0, transition: FADE };
+    const frame = regionRect(layout, { col: left.col, row: 1, colSpan: left.colSpan, rowSpan: 2 });
+    const pad = layout.screenHeight * 0.15;
+    const x = (hour: number) =>
+        frame.x + pad + (hour / CURVE_HOURS_SHOWN) * (frame.width - 2 * pad);
+    const y = (share: number) => frame.y + pad + (1 - share) * (frame.height - 2 * pad);
+    const all = survival.km.all;
+    const tube = survival.km.underground;
+    const other = survival.km.otherModes;
+    const step = (curve: number[]) =>
+        curve
+            .slice(0, CURVE_HOURS_SHOWN + 1)
+            .map((s, h) => `${x(h)},${y(s)}${h < CURVE_HOURS_SHOWN ? ` ${x(h + 1)},${y(s)}` : ''}`)
+            .join(' ');
+    return (
+        <>
+            {rectsIntersect(frame, view) ? (
+                <svg
+                    className="absolute"
+                    style={{ left: frame.x, top: frame.y, ...fade }}
+                    width={frame.width}
+                    height={frame.height}
+                    viewBox={`${frame.x} ${frame.y} ${frame.width} ${frame.height}`}
+                >
+                    {/* One day, two days: faint guides. */}
+                    {[24, 48].map((h) => (
+                        <line
+                            key={h}
+                            x1={x(h)}
+                            x2={x(h)}
+                            y1={y(1)}
+                            y2={y(0)}
+                            stroke="#ffffff"
+                            strokeOpacity={0.2}
+                            strokeWidth={4}
+                            strokeDasharray="16 16"
+                        />
+                    ))}
+                    <line
+                        x1={x(0)}
+                        x2={x(CURVE_HOURS_SHOWN)}
+                        y1={y(0)}
+                        y2={y(0)}
+                        stroke="#ffffff"
+                        strokeOpacity={0.4}
+                        strokeWidth={4}
+                    />
+                    {CURVES.map((c) => (
+                        <polyline
+                            key={c.group}
+                            points={step(survival.km[c.group].curve)}
+                            fill="none"
+                            stroke={c.colour}
+                            strokeWidth={c.width}
+                        />
+                    ))}
+                </svg>
+            ) : null}
+            <ScreenText col={left.col} row={3} level="h2" align="left">
+                <span className="text-white/70" style={fade}>
+                    ↑ share still out
+                    <br />→ hours, 0 to 3 days
+                </span>
+            </ScreenText>
+            {CURVES.map((c, k) => (
+                <ScreenText key={c.group} col={left.col + 1 + k} row={3} level="h2" align="left">
+                    <span className="flex items-center gap-8" style={fade}>
+                        <svg width={110} height={40} viewBox="0 0 110 40" className="shrink-0">
+                            <line
+                                x1={0}
+                                x2={110}
+                                y1={20}
+                                y2={20}
+                                stroke={c.colour}
+                                strokeWidth={c.width}
+                            />
+                        </svg>
+                        {c.label}
+                    </span>
+                </ScreenText>
+            ))}
+            <ScreenText col={right.col} row={1} level="h1" align="right" className="tabular-nums">
+                <span style={fade}>{formatHours(all.medianHours)}</span>
+            </ScreenText>
+            <ScreenText col={right.col + 1} row={1} level="h2" align="left">
+                <span style={fade}>
+                    median outage: half
+                    <br />
+                    last longer than this
+                </span>
+            </ScreenText>
+            <ScreenText
+                col={right.col + 2}
+                row={1}
+                level="h1"
+                align="right"
+                className="tabular-nums"
+            >
+                <span style={{ ...fade, color: LOST }}>
+                    {Math.round(all.stillOut['24h'] * 100)}%
+                </span>
+            </ScreenText>
+            <ScreenText col={right.col + 3} row={1} level="h2" align="left">
+                <span style={fade}>
+                    still out a day later;
+                    <br />
+                    {Math.round(all.stillOut['168h'] * 100)}% after a week
+                </span>
+            </ScreenText>
+            <ScreenText col={right.col} row={2} level="h1" align="right" className="tabular-nums">
+                <span style={{ ...fade, color: '#7fd3ff' }}>
+                    {survival.cox.underground.hazardRatio.toFixed(1)}×
+                </span>
+            </ScreenText>
+            <ScreenText col={right.col + 1} row={2} level="h2" align="left">
+                <span style={fade}>
+                    faster repairs on the
+                    <br />
+                    Underground: {formatHours(tube.medianHours)} against
+                    <br />
+                    {formatHours(other.medianHours)} elsewhere
+                </span>
+            </ScreenText>
+            <ScreenText col={right.col + 2} row={2} level="h2" align="left">
+                <span className="text-white/70 tabular-nums" style={fade}>
+                    {survival.outages.used} outages of
+                    <br />
+                    {survival.outages.lifts} lifts; Tube Alerter
+                    <br />
+                    found {formatHours(survival.tubeAlerter.medianHours)} too
                 </span>
             </ScreenText>
         </>
