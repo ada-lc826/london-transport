@@ -63,7 +63,12 @@ jobs:
                       # Exit code 2: missing or rejected key. Nothing will work until it is fixed.
                       exit "$status"
                     fi
-                    .github/scripts/commit-data.sh data-branch "lifts: $(date -u +%Y-%m-%dT%H:%MZ)"
+                    # A failed push (GitHub unreachable) must not end the run: the sample stays
+                    # committed in the worktree and goes out with the next successful push.
+                    # Two attempts here (each can take ~2 min to time out when GitHub is down),
+                    # so an outage cannot stall the 15-minute grid for long.
+                    PUSH_ATTEMPTS=2 .github/scripts/commit-data.sh data-branch "lifts: $(date -u +%Y-%m-%dT%H:%MZ)" \
+                      || echo "::warning::Push failed; the sample will go out with the next one"
                     if [ "$i" -lt "$SAMPLES" ]; then
                       # Sleep to the next :07/:22/:37/:52 so samples stay on a regular grid.
                       now=$(date +%s)
@@ -71,3 +76,8 @@ jobs:
                       sleep $(( next - now ))
                     fi
                   done
+
+            - name: Push anything still waiting
+              # Fails the run only if samples are still unpushed at the end.
+              run: |
+                  .github/scripts/commit-data.sh data-branch "lifts: $(date -u +%Y-%m-%dT%H:%MZ)"
